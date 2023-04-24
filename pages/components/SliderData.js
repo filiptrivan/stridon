@@ -1,5 +1,3 @@
-import {bos} from '../../public/bos.webp'
-// import {devalt} from '../../public/bos.webp'
 
 export const SliderData = [
     {

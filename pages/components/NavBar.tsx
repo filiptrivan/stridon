@@ -1,7 +1,8 @@
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,16 +31,35 @@ const Navbar = () => {
           {/* nav links */}
         </Link>
         <ul style={{ color: `black` }} className="hidden sm:flex">
-          <li className="p-4">
+          <li className="pb-4 pt-4 pr-8">
             <Link href="/">Početna</Link>
           </li>
-          <li className="p-4">
+          <li className="nav-link pb-4 pt-4 pr-8">
+            <Link href="/">Menu </Link>
+            <div className="dropdown">
+              <ul className="leading-5">
+                <li className="dropdown-link">
+                  <a href="#">Bosch</a>
+                </li>
+                <li className="dropdown-link">
+                  <a href="#">DeWalt</a>
+                </li>
+                <li className="dropdown-link">
+                  <a href="#">Makita</a>
+                </li>
+                <li className="dropdown-link">
+                  <a href="#">Stanley</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="pb-4 pt-4 pr-8">
             <Link href="/#brands">Brendovi</Link>
           </li>
-          <li className="p-4">
+          <li className="pb-4 pt-4 pr-8">
             <Link href="/#work">Katalog</Link>
           </li>
-          <li className="p-4">
+          <li className="pb-4 pt-4 pr-2">
             <Link href="/contact">Kontakt</Link>
           </li>
         </ul>
