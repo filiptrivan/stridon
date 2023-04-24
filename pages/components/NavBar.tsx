@@ -30,20 +30,20 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
     >
-      <div className='max-w-[1140px] m-auto flex items-center p-3 text-white'>
+      <div className='max-w-[1140px] m-auto flex justify-between items-center p-3 text-white'>
         <Link href='/'>
           <Image 
           src="/stridon-prodavnica-alata.png"
           alt='/'
-          width={140}
-          height={140}
+          width={150}
+          height={150}
           />
           {/* <h1 style={{ color: `${textColor}` }} className='font-bold text-4xl'> */}
             
           {/* </h1> */}
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className='ml-5 p-4'>
+          <li className='p-4'>
             <Link href='/'>Početna</Link>
           </li>
           <li className='p-4'>

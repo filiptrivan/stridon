@@ -1,14 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const Hero = ({heading, message}) => {
+const Hero = () => {
   return (
-    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
+    <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
       {/* Overlay */}
-      <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]' />
-      <div className='p-5 text-white z-[2] mt-[-10rem]'>
-        <h2 className='text-5xl font-bold'>{heading}</h2>
-        <p className='py-5 text-xl'>{message}</p>
-        <button className='px-8 py-2 border'>Pogledaj cene</button>
+      <div className="flex absolute top-0 left-0 right-0 bg-black/60 custom-img-bg" />
+      <div className='left-0 w-full z-[2]'>
+        <div className=" max-w-[1140px] p-5 text-white mx-auto">
+          <h1 className="text-7xl mb-2 font-semibold">Stridon Group</h1>
+          <p className="text-xl">
+            Najbolja prodavnica alata u gradu, raspolazemo sa najvecim
+            asortimanom alata i masina u Srbiji.
+          </p>
+        </div>
       </div>
     </div>
   );

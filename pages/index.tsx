@@ -13,7 +13,7 @@ export default function Home() {
         <meta name='description' content='Prodavnica alata' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Hero heading="Stridon Group" message="Kompanija koja se bavi prodajom alata za različite namene"/>
+    <Hero />
     <Slider slides={SliderData} />
     <Instagram/>
     </main>

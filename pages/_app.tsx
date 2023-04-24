@@ -1,19 +1,19 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Raleway } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import Navbar from './components/NavBar';
 
-const raleway = Raleway ({
+const roboto = Roboto ({
   subsets: ['latin'],
-  variable: '--font-raleway',
-  // weight: ['400', '100','200','300','500','600','700','800','900'],
+  variable: '--font-roboto',
+  weight: [ '100','300','400','500','700','900'],
 });
 
 
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${raleway.variable} font-sans`}>
+    <main className={`${roboto.variable} font-sans`}>
       <Navbar/>
       <Component {...pageProps} />
     </main>
