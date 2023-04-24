@@ -7,9 +7,16 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 .custom-img {
   height: 50vh;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
@@ -17,9 +24,19 @@ html {
 
 .custom-img-bg {
   height: 50vh;
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
+.card {
+  max-width: 160px;
+  margin: auto 1.5rem;
+}
+
+.react-multi-carousel-arrow--left {
+  left: 20px;
+}
+.react-multi-carousel-arrow--right {
+  right: 20px;
+}

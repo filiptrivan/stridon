@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import { SliderData } from './components/SliderData'
 import Slider from './components/Slider'
 import Instagram from './components/Instagram'
+import Brendovi from './components/Brendovi'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Hero />
+    <Brendovi/>
     <Slider slides={SliderData} />
     <Instagram/>
     </main>

@@ -12,9 +12,10 @@ const roboto = Roboto ({
 
 
 export default function App({ Component, pageProps }: AppProps) {
+  const {statusCode} = pageProps;
   return (
     <main className={`${roboto.variable} font-sans`}>
-      <Navbar/>
+      {statusCode != 404 && <Navbar/>}
       <Component {...pageProps} />
     </main>
   )
