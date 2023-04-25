@@ -14,7 +14,10 @@ export default function Home() {
         <meta name='description' content='Prodavnica alata' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Hero />
+    <Hero 
+    titleNaHomePage={"Stridon Group"} 
+    opisNaHomePage={"Najbolja prodavnica alata u gradu, raspolazemo sa najvecim asortimanom alata i masina u Srbiji."}
+    />
     <Brendovi/>
     <Slider slides={SliderData} />
     <Instagram/>

@@ -15,17 +15,28 @@ html {
 }
 
 .custom-img {
-  height: 50vh;
-  /* background-size: cover; */
+  height: 35vh;
+  /* ovo nista ne radi */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+}
+
+  /* bg hero images */
+.custom-img-landing-page{
   background-image: url('https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.custom-img-bosch{
+  background-image: url('/bos.webp');
 }
 
 .custom-img-bg {
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 35vh;
+  margin-top: 79.56px;
+}
+
+.nav-container{
+  height: 79.56px;
 }
 
 .card {

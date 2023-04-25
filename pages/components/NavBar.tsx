@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,6 +13,7 @@ const Navbar = () => {
   };
 
   return (
+    <div className="nav-container">
     <div
       style={{ backgroundColor: `white` }}
       className="fixed left-0 top-0 w-full z-10"
@@ -34,27 +34,79 @@ const Navbar = () => {
           <li className="pb-4 pt-4 pr-8">
             <Link href="/">Početna</Link>
           </li>
-          <li className="nav-link pb-4 pt-4 pr-8">
-            <Link href="/">Menu </Link>
-            <div className="dropdown">
+          <li className="nav-link pb-4 pt-4 pr-7">
+            <Link href="/">
+              <div className="flex">
+               Brendovi <FaAngleDown className="mt-1 ml-0.5 text-black" /> 
+              </div> 
+            </Link>
+            <ul>
+            <li className="absolute text-transparent cursor-default">
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            </li>
+            </ul>
+            <div className="dropdown mt-2.5">
               <ul className="leading-5">
                 <li className="dropdown-link">
-                  <a href="#">Bosch</a>
+                  <Link href="/bosch">Bosch</Link>
                 </li>
                 <li className="dropdown-link">
-                  <a href="#">DeWalt</a>
+                  <Link href="#">DeWalt</Link>
                 </li>
                 <li className="dropdown-link">
-                  <a href="#">Makita</a>
+                  <Link href="#">Makita</Link>
                 </li>
                 <li className="dropdown-link">
-                  <a href="#">Stanley</a>
+                  <Link href="#">Stanley</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Nike</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Adidas</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Puma</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Experimental</Link>
                 </li>
               </ul>
             </div>
           </li>
-          <li className="pb-4 pt-4 pr-8">
-            <Link href="/#brands">Brendovi</Link>
+          <li className="nav-link pb-4 pt-4 pr-7">
+            <Link href="/blog">
+              <div className="flex">
+               Blog <FaAngleDown className="mt-1 ml-0.5 text-black" /> 
+              </div> 
+            </Link>
+            <ul>
+            <li className="absolute text-transparent cursor-default">
+            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            </li>
+            </ul>
+            <div className="dropdown mt-2.5">
+              <ul className="leading-5">
+                <li className="dropdown-link">
+                  <Link href="/blog/bosch">Bosch</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">DeWalt</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Makita</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Profi</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Amateri</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href="#">Noviteti</Link>
+                </li>
+              </ul>
+            </div>
           </li>
           <li className="pb-4 pt-4 pr-8">
             <Link href="/#work">Katalog</Link>
@@ -108,6 +160,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 };
