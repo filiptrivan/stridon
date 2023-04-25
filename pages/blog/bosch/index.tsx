@@ -1,6 +1,7 @@
 import Hero from "@/pages/components/Hero";
 import React from "react";
 import Card from "../components/Card";
+import CardBosch from "../components/CardBosch";
 
 
 const index = () => {
@@ -12,7 +13,7 @@ const index = () => {
           "Najbolja prodavnica alata u gradu, raspolazemo sa najvecim asortimanom alata i masina u Srbiji."
         }
       />
-      <Card />
+      <CardBosch/>
     </div>
   );
 };

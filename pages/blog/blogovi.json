@@ -21,7 +21,7 @@
     "text": "A classic Italian dish consisting of breaded chicken topped with tomato sauce and melted cheese.chicken topped with tomato sauce and melted cheese.create interactive effects within web browsers.",
     "type": "recipe",
     "date": "2021-05-19",
-    "image": "/boschlogo.webp"
+    "image": "/boschlogo.png"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "text": "Tokyo is a vibrant city known for its delicious food, cutting-edge technology, and beautiful temples.cutting-edge technology, and beautiful temples.create interactive effects within web browsers.",
     "type": "guide",
     "date": "2022-02-28",
-    "image": "/dewaltlogo.webp"
+    "image": "/dewaltlogo.png"
   },
   {
     "id": 6,
@@ -46,5 +46,13 @@
     "type": "review",
     "date": "2022-04-10",
     "image": "/bos.webp"
+  },
+  {
+    "id": 7,
+    "title": "Product Review: Apple iPhone 12",
+    "text": "The latest iPhone features a stunning display, lightning-fast performance, and an impressive camera system.ightning-fast performance, and an impressive camera system.create interactive effects within web browsers.",
+    "type": "review",
+    "date": "2022-04-10",
+    "image": "/vera.webp"
   }
 ]
