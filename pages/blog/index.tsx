@@ -1,9 +1,20 @@
-import React from "react";
-import Card from "./components/Card";
+"use client"
+import React, { useState } from "react";
+import CardList from "./components/CardList";
 import Hero from "../components/Hero";
 import Head from "next/head";
+import Records from "./blogovi.json";
+import Pagination from "./components/Pagination";
 
 const index = () => {
+  const [blogData, setBlogData] = useState(Records);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(14);
+
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPosts =  Records.slice(firstPostIndex, lastPostIndex);
+
   return (
     <div>
       <Head >
@@ -17,7 +28,8 @@ const index = () => {
           "Najbolja prodavnica alata u gradu, raspolazemo sa najvecim asortimanom alata i masina u Srbiji."
         }
       />
-      <Card/>
+      <CardList blogData={currentPosts} />
+      <Pagination totalPosts = {Records.length} postsPerPage={postsPerPage} />
     </div>
   );
 };

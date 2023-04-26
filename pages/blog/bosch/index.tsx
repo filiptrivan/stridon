@@ -1,7 +1,7 @@
 import Hero from "@/pages/components/Hero";
 import React from "react";
-import CardBosch from "./components/CardBosch";
 import Head from "next/head";
+import CardListBosch from "./components/CardListBosch";
 
 
 const index = () => {
@@ -18,7 +18,7 @@ const index = () => {
           "Najbolja prodavnica alata u gradu, raspolazemo sa najvecim asortimanom alata i masina u Srbiji."
         }
       />
-      <CardBosch />
+      <CardListBosch />
     </div>
   );
 };
