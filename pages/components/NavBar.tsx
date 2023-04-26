@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -5,8 +6,6 @@ import { FaAngleDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState("transparent");
-  const [textColor, setTextColor] = useState("white");
 
   const handleNav = () => {
     setNav(!nav);
@@ -30,7 +29,7 @@ const Navbar = () => {
 
           {/* nav links */}
         </Link>
-        <ul style={{ color: `black` }} className="hidden sm:flex">
+        <ul className="hidden sm:flex text-black">
           <li className="pb-4 pt-4 pr-8">
             <Link href="/">Početna</Link>
           </li>
@@ -119,9 +118,9 @@ const Navbar = () => {
         {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
           {nav ? (
-            <AiOutlineClose size={20} style={{ color: "white" }} />
+            <AiOutlineClose size={20} className="text-white" />
           ) : (
-            <AiOutlineMenu size={20} style={{ color: `black` }} />
+            <AiOutlineMenu size={20} className="text-black"/>
           )}
         </div>
         {/* Mobile Menu */}

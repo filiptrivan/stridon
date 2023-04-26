@@ -15,9 +15,3 @@ const BrendoviImg = ({ brendoviImg }) => {
 };
 
 export default BrendoviImg;
-
-// .product--image {
-//     width: 100%;
-//     height: 16em;
-//     object-fit: cover;
-//   }

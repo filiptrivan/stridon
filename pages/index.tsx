@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Head >
         <title>Stridon</title>
-        <meta name='description' content='Prodavnica alata' />
+        <meta name='Prodavnica Alata' content='Mašine i alati' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Hero 
