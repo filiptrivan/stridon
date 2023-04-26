@@ -29,7 +29,7 @@ const index = () => {
         }
       />
       <CardList blogData={currentPosts} />
-      <Pagination totalPosts = {Records.length} postsPerPage={postsPerPage} />
+      <Pagination totalPosts = {Records.length} postsPerPage={postsPerPage} setCurrentPage={setCurrentPage}/>
     </div>
   );
 };
