@@ -5,9 +5,20 @@ import Records from "../blogovi.json";
 import Link from "next/link";
 import Card from "./Card";
 import { useState } from "react";
+import { PrismaClient } from "@prisma/client"; 
+
+// const prisma = new PrismaClient();
+
+// const fetchBlogs = async () => {
+//   const blogs = await prisma.blog.findMany();
+
+//   return blogs;
+// } 
 
 
 const CardList = ({blogData}) => {
+
+  // const blogs = await fetchBlogs();
 
   return (
     <div>
@@ -18,7 +29,7 @@ const CardList = ({blogData}) => {
               {blogData.map((record, index) => {
                 return (
                   <Card 
-                  key={index}
+                  keyy={index}
                   title={record.title}
                   text={record.text}
                   date={record.date}

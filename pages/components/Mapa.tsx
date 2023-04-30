@@ -8,59 +8,70 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const Mapa = () => {
+const Mapa = ({email, kontakt, kontakt2, adresa}) => {
   return (
     <>
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-20">
-        <div className="max-w-full lg:max-w-[570px] lg:pr-10 mb-4">
-          <div className="mb-6">
+        <div className="max-w-full lg:max-w-[570px] lg:pr-8 mb-4">
+          <div className="mb-6 pr-16">
             <p className="font-semibold text-lg ">
               <FaEnvelope className="inline-block mr-2" />
               Email
             </p>
-            <a href="mailto:stridongroup@gmail.rs" className="mb-4">
-              stridongroup@gmail.rs
+            <a href="mailto:stridongroup@gmail.rs" className="mb-4 hover:text-slate-700 duration-200">
+              {email}
             </a>
           </div>
           <div className="mb-6">
-            <p className="font-semibold text-lg">
+            <p className="font-semibold text-lg inline-block">
               <FaPhone className="inline-block mr-2" />
-              Kontakt Telefon
+               Kontakt Telefon
             </p>
-            <a href="tel:0646165003" className="mb-4">
-              064/616-5003 / 060/737-88-05
+            <p>
+            <a href="tel:0646165003" className="mb-4 hover:text-slate-700 duration-200">
+              {kontakt}
             </a>
+            </p>
+            <p>
+            <a href="tel:0646165003" className="mb-4 hover:text-slate-700 duration-200">
+              {kontakt2}
+            </a>
+            </p>
           </div>
           <div className="mb-6">
             <p className="font-semibold text-lg">
               <FaMapMarkerAlt className="inline-block mr-2" />
               Adresa
             </p>
-            <p className="mb-4">Vojislava Ilića 141 g</p>
+            <p className="mb-4">{adresa}</p>
           </div>
           <div className="">
             <p className="font-semibold text-lg">Zaprati nas!</p>
-            <div className="flex text-3xl">
+            <div className="flex text-3xl mt-1">
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/prodavnicaalata/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-3"
+                className="mr-3 p-2 cursor-pointer inline-flex items-center
+                rounded-full text-gray-100 bg-stone-950 text-xl hover:text-gray-100 hover:bg-red-500 duration-300 "
               >
                 <FaInstagram className="inline-block" />
               </a>
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/prodavnicaalataa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-3"
+                className="mr-3 p-2 cursor-pointer inline-flex items-center
+                rounded-full text-gray-100 bg-stone-950 text-xl hover:text-gray-100 hover:bg-red-500 duration-300 "
               >
                 <FaFacebook className="inline-block" />
               </a>
               <a
-                href="https://www.youtube.com"
+                href="https://www.youtube.com/@prodavnicaalata5203"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="mr-3 p-2 cursor-pointer inline-flex items-center
+                rounded-full text-gray-100 bg-stone-950 text-xl hover:text-gray-100 hover:bg-red-500 duration-300 "
               >
                 <FaYoutube className="inline-block" />
               </a>
@@ -81,3 +92,4 @@ const Mapa = () => {
 };
 
 export default Mapa;
+

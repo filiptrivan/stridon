@@ -1,0 +1,30 @@
+export const PRODUCTS = [
+    { name: "+381-11-4520-171", link: "#" },
+    { name: "office@prodavnicaalata.rs", link: "#" },
+  ];
+  export const RADNOVREME = [
+    { name: "Ponedeljak - Petak: 8:00 - 18:00h", link: "#" },
+    { name: "Subota: 9:00 - 15:00h", link: "#" },
+    { name: "Nedelja: Neradan dan", link: "#" },
+  ];
+  export const INFORMACIJE = [
+    { name: "Početna", link: "/" },
+    { name: "O nama", link: "/onama" },
+    { name: "Blog", link: "/blog" },
+    { name: "Kontakt", link: "/contact" },
+    { name: "Kako produžiti garanciju", link: "#" },
+  ];
+  export const KOMPANIJA = [
+    { name: "Brendovi", link: "#brands" },
+    { name: "B2B", link: "/b2b" },
+    { name: "Katalozi", link: "/katalozi" },
+    { name: "Servis", link: "/servis" },
+  ];
+  
+  export const Icons = [
+    { name: "FaFacebook", link: "https://www.instagram.com/prodavnicaalata/" },
+    { name: "logo-twitter", link: "https://www.instagram.com/prodavnicaalata/" },
+    { name: "logo-github", link: "https://www.instagram.com/prodavnicaalata/" },
+    { name: "logo-linkedin", link: "https://www.instagram.com/prodavnicaalata/" },
+    { name: "logo-instagram", link: "https://www.instagram.com/prodavnicaalata/" },
+  ];

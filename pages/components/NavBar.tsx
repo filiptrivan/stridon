@@ -12,10 +12,11 @@ const Navbar = () => {
   };
 
   return (
+    <div>
     <div className="nav-container">
     <div
       style={{ backgroundColor: `white` }}
-      className="fixed left-0 top-0 w-full z-10"
+      className="fixed left-0 top-0 w-full z-10 shadow-md"
     >
       <div className="max-w-[1140px] m-auto flex justify-between items-center p-2.5 text-white">
         {/* logo */}
@@ -29,14 +30,11 @@ const Navbar = () => {
 
           {/* nav links */}
         </Link>
-        <ul className="hidden sm:flex text-black">
-          <li className="pb-4 pt-4 pr-8">
-            <Link href="/">Početna</Link>
-          </li>
-          <li className="nav-link pb-4 pt-4 pr-7">
+        <ul className="hidden sm:flex text-zinc-950">
+          <li className="nav-link pb-4 pt-4 pr-7  hover:text-slate-700 duration-200">
             <Link href="/">
               <div className="flex">
-               Brendovi <FaAngleDown className="mt-1 ml-0.5 text-black" /> 
+               Brendovi <FaAngleDown className="mt-1 ml-0.5 text-zinc-950" /> 
               </div> 
             </Link>
             <ul>
@@ -73,45 +71,26 @@ const Navbar = () => {
               </ul>
             </div>
           </li>
-          <li className="nav-link pb-4 pt-4 pr-7">
+          <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200">
             <Link href="/blog">
               <div className="flex">
-               Blog <FaAngleDown className="mt-1 ml-0.5 text-black" /> 
+               Blog
               </div> 
             </Link>
-            <ul>
-            <li className="absolute text-transparent cursor-default">
-            ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-            </li>
-            </ul>
-            <div className="dropdown mt-2.5">
-              <ul className="leading-5">
-                <li className="dropdown-link">
-                  <Link href="/blog/bosch">Bosch</Link>
-                </li>
-                <li className="dropdown-link">
-                  <Link href="#">DeWalt</Link>
-                </li>
-                <li className="dropdown-link">
-                  <Link href="#">Makita</Link>
-                </li>
-                <li className="dropdown-link">
-                  <Link href="#">Profi</Link>
-                </li>
-                <li className="dropdown-link">
-                  <Link href="#">Amateri</Link>
-                </li>
-                <li className="dropdown-link">
-                  <Link href="#">Noviteti</Link>
-                </li>
-              </ul>
-            </div>
+           
           </li>
-          <li className="pb-4 pt-4 pr-8">
-            <Link href="/#work">Katalog</Link>
+          <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
+            <Link href="/katalozi">Katalozi</Link>
           </li>
-          <li className="pb-4 pt-4 pr-2">
+          <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
+            <Link href="/servis">Servis</Link>
+          </li>
+
+          <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
             <Link href="/contact">Kontakt</Link>
+          </li>
+          <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200">
+            <Link href="/#work">B2B</Link>
           </li>
         </ul>
 
@@ -120,7 +99,7 @@ const Navbar = () => {
           {nav ? (
             <AiOutlineClose size={20} className="text-white" />
           ) : (
-            <AiOutlineMenu size={20} className="text-black"/>
+            <AiOutlineMenu size={20} className="text-zinc-950"/>
           )}
         </div>
         {/* Mobile Menu */}
@@ -159,6 +138,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+    </div>
     </div>
     </div>
   );

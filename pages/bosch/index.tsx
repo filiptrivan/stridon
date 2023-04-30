@@ -14,6 +14,7 @@ const index = () => {
         <Hero 
         title={"Bosch"} 
         opis={"Najbolja prodavnica alata u gradu, raspolazemo sa najvecim asortimanom alata i masina u Srbiji."}
+        naslovButtona={"Preuzmi PDF katalog"}
         />
         <TextoviISlike/>
     </div>

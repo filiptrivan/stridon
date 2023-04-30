@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const Card = ({ key ,title, text, date, image, type}) => {
+// interface
+
+const Card = ({ keyy ,title, text, date, image, type}) => {
   return (
-      <div className="border max-w-[550px] max-h-[407px] mb-10" key={key}>
+      <div className="border max-w-[550px] max-h-[407px] mb-10" key={keyy}>
         <Link href={"/[slug]"}>
           <div className="mb-2">
             <img

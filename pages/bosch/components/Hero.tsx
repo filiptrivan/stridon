@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 
-const Hero = ({ title, opis }) => {
+const Hero = ({ title, opis, naslovButtona }) => {
   return (
     <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-bosch">
       {/* Overlay */}
@@ -12,8 +12,8 @@ const Hero = ({ title, opis }) => {
           <h1 className="text-6xl mb-2 font-semibold">{title}</h1>
           <p className="text-xl mb-2">{opis}</p>
           <a href="katalog.pdf" download>
-            <button className="px-8 py-2 border hover:bg-slate-600">
-              Preuzmi PDF katalog
+            <button className="px-8 py-2 border hover:bg-slate-600 duration-200">
+              {naslovButtona}
             </button>
           </a>
         </div>

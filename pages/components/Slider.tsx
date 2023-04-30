@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { SliderData } from './SliderData';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 
 
 
@@ -23,7 +23,7 @@ const Slider = ({ slides }) => {
 
   return (
     <div id='gallery' className='max-w-[1140px] mx-auto pb-24'>
-      <h1 className='text-2xl font-bold text-center'>Proizvođači</h1>
+      <h1 className='text-2xl font-bold text-center'>Galerija</h1>
       <div className='relative flex justify-center p-4'>
 
       {SliderData.map((slide, index) => {
@@ -38,7 +38,7 @@ const Slider = ({ slides }) => {
           >
               <FaArrowCircleLeft
                 onClick={prevSlide}
-                className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
+                className='absolute top-[50%] left-[30px] text-white/80 hover:text-black/80 duration-200 cursor-pointer select-none z-[2]'
                 size={50}
               />
               {index === current && (
@@ -51,7 +51,7 @@ const Slider = ({ slides }) => {
               )}
               <FaArrowCircleRight
                 onClick={nextSlide}
-                className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
+                className='absolute top-[50%] right-[30px] text-white/80 hover:text-black/80 duration-200 cursor-pointer select-none z-[2]'
                 size={50}
               />
             </div>
