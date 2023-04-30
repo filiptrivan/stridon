@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
+import { SliderData } from '../../components/SliderData';
 import { FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 
 interface SliderProps{
