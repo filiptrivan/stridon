@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
-const SocialIcons = ({ Icons }) => {
+const SocialIcons = () => {
   return (
     <div className="text-red-500">
       <Link

@@ -1,7 +1,13 @@
 import React from "react";
-import { FaAngleDown, FaArrowRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
-const Hero = ({ titleNaHomePage, opisNaHomePage, naslovButtona }) => {
+interface HeroProps {
+  titleNaHomePage: string;
+  opisNaHomePage: string;
+  naslovButtona: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ titleNaHomePage, opisNaHomePage, naslovButtona }) => {
   return (
     <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-landing-page">
       {/* Overlay */}

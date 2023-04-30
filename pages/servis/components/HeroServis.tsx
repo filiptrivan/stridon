@@ -1,6 +1,11 @@
 import React from "react";
 
-const HeroServis = ({titleNaHomePage, opisNaHomePage}) => {
+interface HeroServisProps {
+  titleNaHomePage: string;
+  opisNaHomePage: string;
+}
+
+const HeroServis : React.FC<HeroServisProps> = ({titleNaHomePage, opisNaHomePage}) => {
   return (
     <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-servis-page">
       {/* Overlay */}

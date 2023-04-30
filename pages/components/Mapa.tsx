@@ -8,7 +8,14 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const Mapa = ({email, kontakt, kontakt2, adresa}) => {
+interface MapaProps {
+  email: string;
+  kontakt: string;
+  kontakt2: string;
+  adresa: string;
+}
+
+const Mapa: React.FC<MapaProps> = ({ email, kontakt, kontakt2, adresa }) => {
   return (
     <>
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-20">
@@ -18,24 +25,33 @@ const Mapa = ({email, kontakt, kontakt2, adresa}) => {
               <FaEnvelope className="inline-block mr-2" />
               Email
             </p>
-            <a href="mailto:stridongroup@gmail.rs" className="mb-4 hover:text-slate-700 duration-200">
+            <a
+              href="mailto:stridongroup@gmail.rs"
+              className="mb-4 hover:text-slate-700 duration-200"
+            >
               {email}
             </a>
           </div>
           <div className="mb-6">
             <p className="font-semibold text-lg inline-block">
               <FaPhone className="inline-block mr-2" />
-               Kontakt Telefon
+              Kontakt Telefon
             </p>
             <p>
-            <a href="tel:0646165003" className="mb-4 hover:text-slate-700 duration-200">
-              {kontakt}
-            </a>
+              <a
+                href="tel:0646165003"
+                className="mb-4 hover:text-slate-700 duration-200"
+              >
+                {kontakt}
+              </a>
             </p>
             <p>
-            <a href="tel:0646165003" className="mb-4 hover:text-slate-700 duration-200">
-              {kontakt2}
-            </a>
+              <a
+                href="tel:0646165003"
+                className="mb-4 hover:text-slate-700 duration-200"
+              >
+                {kontakt2}
+              </a>
             </p>
           </div>
           <div className="mb-6">
@@ -92,4 +108,3 @@ const Mapa = ({email, kontakt, kontakt2, adresa}) => {
 };
 
 export default Mapa;
-

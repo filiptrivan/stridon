@@ -1,8 +1,12 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
 
-const InstagramImg = ({ socialImg }) => {
+interface InstagramImgProps{
+  socialImg: StaticImageData;
+}
+
+const InstagramImg: React.FC<InstagramImgProps> = ({ socialImg }) => {
   return (
     <div className='relative'>
       <Image

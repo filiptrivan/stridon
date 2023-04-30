@@ -1,8 +1,12 @@
 import React from "react";
-import Link from "next/link";
 
+interface HeroProps {
+  title: string;
+  opis: string;
+  naslovButtona: string;
+}
 
-const Hero = ({ title, opis, naslovButtona }) => {
+const Hero: React.FC<HeroProps> = ({ title, opis, naslovButtona }) => {
   return (
     <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-bosch">
       {/* Overlay */}

@@ -4,11 +4,9 @@ import { SliderData } from "./components/SliderData";
 import Slider from "./components/Slider";
 import Instagram from "./components/Instagram";
 import Brendovi from "./components/Brendovi";
-import axios from "axios";
-import { prisma } from "../server/db/client";
 import SnageStridona from "./components/SnageStridona";
 
-export default function Home({ blogs }) {
+export default function Home( ) {
   return (
     <main>
       <Head>
@@ -28,23 +26,8 @@ export default function Home({ blogs }) {
       <SnageStridona/>
       <Slider slides={SliderData} />
       <Instagram />
-      
-      {blogs.map((blog) => (
-        <div key={blog.id}>
-          <h2>{blog.title}</h2>
-          <p>{blog.id}</p>
-        </div>
-      ))}
     </main>
   );
 }
 
-export async function getServerSideProps() {
-  const blogs = await prisma.blog.findMany()
 
-  return {
-    props: {
-      blogs: JSON.parse(JSON.stringify(blogs)),
-    },
-  };
-}

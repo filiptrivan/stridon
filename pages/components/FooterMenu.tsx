@@ -3,9 +3,9 @@ export const PRODUCTS = [
     { name: "office@prodavnicaalata.rs", link: "#" },
   ];
   export const RADNOVREME = [
-    { name: "Ponedeljak - Petak: 8:00 - 18:00h", link: "#" },
-    { name: "Subota: 9:00 - 15:00h", link: "#" },
-    { name: "Nedelja: Neradan dan", link: "#" },
+    { name: "Ponedeljak - Petak: 8:00 - 18:00h", link: "" },
+    { name: "Subota: 9:00 - 15:00h", link: "" },
+    { name: "Nedelja: Neradan dan", link: "" },
   ];
   export const INFORMACIJE = [
     { name: "Početna", link: "/" },
@@ -19,12 +19,4 @@ export const PRODUCTS = [
     { name: "B2B", link: "/b2b" },
     { name: "Katalozi", link: "/katalozi" },
     { name: "Servis", link: "/servis" },
-  ];
-  
-  export const Icons = [
-    { name: "FaFacebook", link: "https://www.instagram.com/prodavnicaalata/" },
-    { name: "logo-twitter", link: "https://www.instagram.com/prodavnicaalata/" },
-    { name: "logo-github", link: "https://www.instagram.com/prodavnicaalata/" },
-    { name: "logo-linkedin", link: "https://www.instagram.com/prodavnicaalata/" },
-    { name: "logo-instagram", link: "https://www.instagram.com/prodavnicaalata/" },
   ];

@@ -1,13 +1,15 @@
-
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import BrendoviImg from "./BrendoviImg";
 import boschlogo from "../../public/boschlogo.png";
-import dewaltlogo from "../../public/dewaltlogo.png" ;
+import dewaltlogo from "../../public/dewaltlogo.png";
 
+interface BrendoviProps {
+  title: string;
+}
 
-const Brendovi = ({title}) => {
+const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -32,34 +34,40 @@ const Brendovi = ({title}) => {
     },
   };
   return (
-    <div id = "brands" className="max-w-[1140px] mx-auto pb-24 pt-4">
+    <div id="brands" className="max-w-[1140px] mx-auto pb-24 pt-4">
       <h1 className="text-2xl font-bold text-center pb-4">{title}</h1>
       {/* div samo za peding od slika brendova */}
       <div className="p-4">
-        <Carousel ssr={true} className="z-[1]" centerMode={true} removeArrowOnDeviceType={["tablet", "mobile"]} keyBoardControl={true} infinite={true} draggable={false} responsive={responsive}>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={dewaltlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
-          
-            <BrendoviImg brendoviImg={boschlogo}/>
+        <Carousel
+          ssr={true}
+          className="z-[1]"
+          centerMode={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          keyBoardControl={true}
+          infinite={true}
+          draggable={false}
+          responsive={responsive}
+        >
+          <BrendoviImg brendoviImg={boschlogo} />
 
+          <BrendoviImg brendoviImg={dewaltlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
+
+          <BrendoviImg brendoviImg={boschlogo} />
         </Carousel>
-        </div>
-        </div>  
-      
+      </div>
+    </div>
   );
 };
 

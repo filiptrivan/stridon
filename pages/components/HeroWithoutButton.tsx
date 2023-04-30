@@ -1,7 +1,11 @@
 import React from "react";
-import { FaAngleDown, FaArrowRight } from "react-icons/fa";
 
-const HeroWithoutButton = ({ titleNaHomePage, opisNaHomePage }) => {
+interface HeroWithoutButtonProps {
+  titleNaHomePage: string;
+  opisNaHomePage: string;
+}
+
+const HeroWithoutButton: React.FC<HeroWithoutButtonProps> = ({titleNaHomePage, opisNaHomePage}) => {
   return (
     <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-landing-page">
       {/* Overlay */}

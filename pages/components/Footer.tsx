@@ -1,6 +1,5 @@
 import React from "react";
 import SocialIcons from "./FooterSocialIcons";
-import { Icons } from "./FooterMenu";
 import FooterIconsContainer from "./FooterIconsContainer";
 import Link from "next/link";
 
@@ -16,7 +15,7 @@ const Footer = () => {
       >
         <span>© 2023 Sva prava zaštićena. Stridon Group d.o.o.</span>
         <span><Link className=" hover:text-red-500 duration-200" href={"/podacizaidentifikaciju"}> Podaci za Identifikaciju · </Link> <Link className=" hover:text-red-500 duration-200" href={"/politikaprivatnosti"}> Politika Privatnosti </Link> </span>
-        <SocialIcons Icons={Icons}/>
+        <SocialIcons />
       </div>
     </footer>
     </div>
