@@ -1,26 +1,32 @@
 import React from "react";
-import returnPaginationRange from "../utils/appUtils"
+import returnPaginationRange from "../utils/appUtils";
 
+interface Props {
+  postsPerPage: number;
+  setCurrentPage: (page: number) => void;
+  currentPage: number;
+  siblings: number;
+  totalPage: number;
+}
 
-const Pagination = ({
+const Pagination: React.FC<Props> = ({
   postsPerPage,
   setCurrentPage,
   currentPage,
   siblings,
-  totalPage
+  totalPage,
 }) => {
-  
-  let pages = [];
+  let pages: number[] = [];
   for (let i = 1; i <= totalPage; i++) {
     pages.push(i);
   }
 
-  const handleClick = (page) => {
+  const handleClick = (page: number) => {
     setCurrentPage(page);
     window.scrollTo(0, 0);
   };
 
-  let array = returnPaginationRange(totalPage, currentPage, postsPerPage, siblings)
+  let array = returnPaginationRange(totalPage, currentPage, postsPerPage, siblings);
 
   return (
     <div>
@@ -54,8 +60,8 @@ const Pagination = ({
       </div>
     </div>
   );
-  
 };
 
 export default Pagination;
+
 
