@@ -32,7 +32,7 @@ const Navbar = () => {
         </Link>
         <ul className="hidden sm:flex text-zinc-950">
           <li className="nav-link pb-4 pt-4 pr-7  hover:text-slate-700 duration-200">
-            <Link href="/">
+            <Link href="/brendovi">
               <div className="flex">
                Brendovi <FaAngleDown className="mt-1 ml-0.5 text-zinc-950" /> 
               </div> 
@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="dropdown mt-2.5">
               <ul className="leading-5">
                 <li className="dropdown-link">
-                  <Link href="/bosch">Bosch</Link>
+                  <Link href="/brendovi/bosch">Bosch</Link>
                 </li>
                 <li className="dropdown-link">
                   <Link href="#">DeWalt</Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
               </ul>
             </div>
           </li>
-          <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200">
+          <li className="nav-link pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
             <Link href="/blog">
               <div className="flex">
                Blog
@@ -106,34 +106,49 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-200"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-200"
+              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex pt-14 pl-6 w-full h-screen bg-black ease-in duration-200 "
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex pt-14 pl-6  w-full h-screen bg-black ease-in duration-200"
           }
         >
           <ul>
+            
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
             >
-              <Link href="/">Home</Link>
+              <Link href="/" >Brendovi</Link>
+              
+            </li>
+            
+            <li
+              onClick={handleNav}
+              className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+            >
+              <Link href="/#gallery">Blog</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
             >
-              <Link href="/#gallery">Gallery</Link>
+              <Link href="/#work">Katalozi</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
             >
-              <Link href="/#work">Work</Link>
+              <Link href="/contact">Servis</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-gray-500"
+              className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
             >
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">Kontakt</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+            >
+              <Link href="/contact">B2B</Link>
             </li>
           </ul>
         </div>

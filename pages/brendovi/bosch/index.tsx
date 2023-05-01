@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from './components/Hero'
-import TextoviISlike from './components/TextoviISlike'
+import Hero from '../../brendovi/bosch/components/Hero'
+import TextoviISlike from '../../brendovi/bosch/components/TextoviISlike'
 import Head from 'next/head'
 
 const index = () => {

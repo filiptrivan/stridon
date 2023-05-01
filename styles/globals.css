@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #09090b;
 }
 
@@ -16,7 +16,7 @@ html {
 }
 
 .custom-img {
-  height: 35vh;
+  height: 40vh;
   /* ovo nista ne radi */
   /* background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ html {
 }
 
 .custom-img-bg {
-  height: 35vh;
+  height: 40vh;
   margin-top: 79.56px;
 }
 

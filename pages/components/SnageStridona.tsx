@@ -2,8 +2,8 @@ import React from "react";
 
 const SnageStridona = () => {
   return (
-    <div>
-      <div className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center  mb-16 ">
+    <div className="w-full bg-zinc-100">
+      <div className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center pb-14 pt-10 ">
         <div className="">
             <div><img src="/boschlogo.png" alt="" width={100} height={100} className="m-auto"/></div>
             <div className="text-xl font-medium mb-3"> Čekovima građana</div>

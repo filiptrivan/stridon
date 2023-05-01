@@ -27,8 +27,8 @@ const Slider  =  ({ slides }: SliderProps) => {
   }
 
   return (
-    <div id='gallery' className='max-w-[1140px] mx-auto pb-24'>
-      <h1 className='text-2xl font-bold text-center'>Galerija</h1>
+    <div id='gallery' className='max-w-[1140px] mx-auto pb-16 pt-16'>
+      <h1 className='text-2xl font-bold text-center mb-1'>Galerija</h1>
       <div className='relative flex justify-center p-4'>
 
       {slides.map((slide, index) => {

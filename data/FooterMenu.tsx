@@ -1,8 +1,8 @@
 
 
 export const PRODUCTS = [
-    { name: "+381-11-4520-171", link: "#" },
-    { name: "office@prodavnicaalata.rs", link: "#" },
+    { name: "+381-11-4520-171", link: "tel:+381-11-4520-171" },
+    { name: "office@prodavnicaalata.rs", link: "mailto:stridongroup@gmail.rs" },
   ];
   export const RADNOVREME = [
     { name: "Ponedeljak - Petak: 8:00 - 18:00h", link: "" },
