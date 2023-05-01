@@ -6,6 +6,7 @@ import Pagination from "./components/Pagination";
 import { prisma } from "../../server/db/client";
 import { VrstaBloga } from "@prisma/client";
 import type { NextPage } from "next";
+import { orderBy } from "lodash";
 
 export interface BlogCardType {
   title: string;
@@ -65,6 +66,9 @@ export async function getServerSideProps() {
   const blogs = await prisma.blog.findMany({
     include:{
       vrsta:true
+    },
+    orderBy:{
+      created_time: 'desc'
     }
   });
 
