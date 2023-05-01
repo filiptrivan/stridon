@@ -2,12 +2,16 @@ import React from "react";
 import Card from "./Card";
 import { BlogCardType } from "../index";
 import { NextPage } from "next";
+import ErrorPage from "@/pages/_error";
 
 interface Props {
   blogData: BlogCardType[];
 }
 
 const CardList:NextPage<Props> = ({ blogData }) => {
+  if (!blogData) {
+    return <div><ErrorPage/></div>;
+  }
   return (
     <div>
       <div className="max-w-[1140px] mx-auto p-3 text-center ">

@@ -1,13 +1,17 @@
-"use client"
+
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
+import ErrorPage from '../_error';
 
 interface SliderProps{
 slides: {image: string}[];
 } 
 
 const Slider  =  ({ slides }: SliderProps) => {
+  if(!slides){
+    return <ErrorPage/>
+  }
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
