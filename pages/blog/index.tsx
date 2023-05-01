@@ -1,12 +1,30 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import CardList from "./components/CardList";
 import HeroWithoutButton from "../components/HeroWithoutButton";
 import Head from "next/head";
 import Pagination from "./components/Pagination";
 import { prisma } from "../../server/db/client";
+import { VrstaBloga } from "@prisma/client";
+import type { NextPage } from "next";
 
-const index = ({ blogs }) => {
-  const [blogData, setBlogData] = useState(blogs);
+export interface BlogCardType {
+  title: string;
+  id: number;
+  description: string;
+  created_time: ReactNode;
+  updated_time: ReactNode;
+  main_img: string;
+  vrsta: VrstaBloga;
+  slug:string;
+  vrsta_id:number;
+}
+
+interface Props {
+  blogs: BlogCardType[];
+}
+
+
+const index:NextPage<Props>  = ({ blogs }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(14);
 
@@ -31,7 +49,6 @@ const index = ({ blogs }) => {
       />
       <CardList blogData={currentPosts} />
       <Pagination
-        totalPosts={blogs.length}
         postsPerPage={postsPerPage}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
@@ -46,9 +63,9 @@ export default index;
 
 export async function getServerSideProps() {
   const blogs = await prisma.blog.findMany({
-    include: {
-      vrsta: true,
-    },
+    include:{
+      vrsta:true
+    }
   });
 
   return {

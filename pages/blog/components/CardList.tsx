@@ -1,20 +1,13 @@
 import React from "react";
 import Card from "./Card";
+import { BlogCardType } from "../index";
+import { NextPage } from "next";
 
 interface Props {
-  blogData: {
-    title: string;
-    id: number;
-    description: string;
-    created_time: string;
-    main_img: string;
-    vrsta: {
-      title: string;
-    };
-  }[];
+  blogData: BlogCardType[];
 }
 
-const CardList: React.FC<Props> = ({ blogData }) => {
+const CardList:NextPage<Props> = ({ blogData }) => {
   return (
     <div>
       <div className="max-w-[1140px] mx-auto p-3 text-center ">
@@ -25,11 +18,7 @@ const CardList: React.FC<Props> = ({ blogData }) => {
                 return (
                   <Card
                     key={record.id}
-                    title={record.title}
-                    text={record.description}
-                    date={record.created_time}
-                    image={record.main_img}
-                    vrsta={record.vrsta}
+                    record = {record}
                   />
                 );
               })}

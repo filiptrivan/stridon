@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.jsx", "pages/api/blogs.js", "pages/api/seed.js", "pages/blog/index.jsx", "pages/blog/utils/appUtils.tsx", "pages/blog/components/CardList.tsx", "pages/blog/components/Pagination.tsx", "pages/blog/components/Card.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"]
 }

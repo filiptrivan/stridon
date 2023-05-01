@@ -1,11 +1,11 @@
 import _ from "lodash";
 
 const returnPaginationRange = (
-  totalPage,
-  currentPage,
-  postsPerPage,
-  siblings
-) => {
+  totalPage: number,
+  currentPage: number,
+  postsPerPage: number,
+  siblings: number
+): Array<number | string> => {
   let totalPageNoInArray = 7 + siblings;
   if (totalPageNoInArray >= totalPage) {
     return _.range(1, totalPage + 1);

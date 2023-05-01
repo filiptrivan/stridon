@@ -1,32 +1,51 @@
+import { GetServerSideProps } from 'next';
+import { prisma } from '../../../server/db/client';
+import { BlogCardType } from '..';
+import BlogDetails from './components/BlogDetails';
 
-import React from 'react'
-import BlogDetails, {BlogData} from './components/BlogDetails'
-import {prisma} from "../../../server/db/client"
-
-interface IndexProps {
-  blogs: BlogData[]
+interface Props {
+  blogSlug: BlogCardType;
 }
 
-const index: React.FC<IndexProps> = ({ blogs }) => {
+
+
+const BlogPage: React.FC<Props> = ({ blogSlug }) => {
   return (
     <div className='max-w-[1140px] mx-auto '>
-      <BlogDetails blogData = {blogs}/>
+      <BlogDetails blogData={blogSlug} />
     </div>
-  )
-}
+  );
+};
 
-export default index
+export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
+  const { slug } = context.params || {}; // add a default value of an empty object and destructure `slug` from it
 
-export async function getServerSideProps() {
-  const blogs = await prisma.blog.findMany({
-    include: {
-      vrsta: true,
+  if (!slug) {
+    return {
+      notFound: true, // or redirect to a 404 page
+    };
+  }
+
+  const blogSlug = await prisma.blog.findUnique({
+    where: {
+      slug: typeof slug === 'string' ? slug : slug[0], // check if `slug` is an array or a string and adjust accordingly
     },
+    include:{
+      vrsta:true
+    }
   });
+
+  if (!blogSlug) {
+    return {
+      notFound: true, // or redirect to a 404 page
+    };
+  }
 
   return {
     props: {
-      blogs: JSON.parse(JSON.stringify(blogs)),
+      blogSlug: JSON.parse(JSON.stringify(blogSlug)),
     },
   };
-}
+};
+
+export default BlogPage;

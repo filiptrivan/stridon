@@ -51,7 +51,7 @@ const Pagination: React.FC<Props> = ({
                   : "p-2 px-4 mb-24 border hover:bg-slate-300"
               }
               key={index}
-              onClick={() => handleClick(page)}
+              onClick={() => handleClick(Number(page))}
             >
               {page}
             </button>

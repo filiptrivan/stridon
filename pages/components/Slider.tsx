@@ -1,14 +1,13 @@
 "use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { SliderData } from '../../components/SliderData';
 import { FaArrowCircleLeft, FaArrowCircleRight} from 'react-icons/fa';
 
 interface SliderProps{
-slides: string;
+slides: {image: string}[];
 } 
 
-const Slider : React.FC<SliderProps> =  ({ slides }) => {
+const Slider  =  ({ slides }: SliderProps) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -28,7 +27,7 @@ const Slider : React.FC<SliderProps> =  ({ slides }) => {
       <h1 className='text-2xl font-bold text-center'>Galerija</h1>
       <div className='relative flex justify-center p-4'>
 
-      {SliderData.map((slide, index) => {
+      {slides.map((slide, index) => {
         return (
           <div
             key={index}
