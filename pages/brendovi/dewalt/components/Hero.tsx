@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ title, opis, naslovButtona }) => {
         </div>
       </div>
       <MyModal
-        imeKataloga1={"Katalog1"}
+        imeKataloga1={"Katalog1Dewalt"}
         imeKataloga2={" "}
         imeKataloga3={" "}
         imeKataloga4={" "}

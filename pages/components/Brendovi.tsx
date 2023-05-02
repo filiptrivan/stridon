@@ -4,6 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import BrendoviImg from "./BrendoviImg";
 import boschlogo from "../../public/boschlogo.png";
 import dewaltlogo from "../../public/dewaltlogo.png";
+import aleksatrivan from "../../public/devalt.webp"
+import Link from "next/link";
 
 interface BrendoviProps {
   title: string;
@@ -49,11 +51,11 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
           responsive={responsive}
           swipeable={false}
         >
-          <BrendoviImg brendoviImg={boschlogo} />
+          <Link href={"/brendovi/bosch"} ><BrendoviImg brendoviImg={boschlogo} /></Link>
 
-          <BrendoviImg brendoviImg={dewaltlogo} />
+          <Link href={"/brendovi/dewalt"} ><BrendoviImg brendoviImg={dewaltlogo} /></Link>
 
-          <BrendoviImg brendoviImg={boschlogo} />
+          <BrendoviImg brendoviImg={aleksatrivan} />
 
           <BrendoviImg brendoviImg={boschlogo} />
 

@@ -48,7 +48,7 @@ const Navbar = () => {
                   <Link href="/brendovi/bosch">Bosch</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">DeWalt</Link>
+                  <Link href="/brendovi/dewalt">DeWalt</Link>
                 </li>
                 <li className="dropdown-link">
                   <Link href="#">Makita</Link>
