@@ -35,18 +35,19 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
   };
   return (
     <div id="brands" className="max-w-[1140px] mx-auto pb-10 pt-4">
-      <h1 className="text-2xl font-bold text-center pb-4">{title}</h1>
+      <h1 className="text-2xl sm:text-3xl  font-medium text-center pb-6">{title}</h1>
       {/* div samo za peding od slika brendova */}
       <div className="px-4 pt-2 py-4">
         <Carousel
           ssr={true}
           className="z-[1]"
           centerMode={true}
-          removeArrowOnDeviceType={["tablet", "mobile"]}
+          // removeArrowOnDeviceType={["tablet", "mobile"]}
           keyBoardControl={true}
           infinite={true}
           draggable={false}
           responsive={responsive}
+          swipeable={false}
         >
           <BrendoviImg brendoviImg={boschlogo} />
 

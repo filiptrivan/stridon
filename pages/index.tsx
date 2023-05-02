@@ -5,6 +5,8 @@ import Slider from "./components/Slider";
 import Instagram from "./components/Instagram";
 import Brendovi from "./components/Brendovi";
 import SnageStridona from "./components/SnageStridona";
+import DynamicCounterContainer from "./components/DynamicCounterContainer";
+import Button from "./components/Button";
 
 export default function Home( ) {
   return (
@@ -23,8 +25,10 @@ export default function Home( ) {
         naslovButtona={"Idi na našu online prodavnicu alata"}
       />
       <Brendovi title={"Brendovi"} />
+      <Button naslovButtona="Detaljnije o Brendovima"/>
       <SnageStridona/>
       <Slider slides={SliderData} />
+      <DynamicCounterContainer/>
       <Instagram />
     </main>
   );

@@ -3,6 +3,7 @@ import React from "react";
 import { BlogCardType } from "../..";
 import DateFormater from "@/pages/components/DateFormater";
 import ErrorPage from "@/pages/_error";
+import Image from "next/image";
 
 interface Props {
   blogData: BlogCardType;
@@ -18,10 +19,12 @@ const BlogDetails: NextPage<Props> = ({ blogData }) => {
       <div>
         <div>
           {blogData.main_img && (
-            <img
+            <Image
               src={blogData.main_img}
               alt=""
               className="w-full max-h-[400px] object-cover px-3"
+              width={1920}
+              height={1080}
             />
           )}
         </div>

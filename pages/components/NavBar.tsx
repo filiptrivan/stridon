@@ -90,7 +90,7 @@ const Navbar = () => {
             <Link href="/contact">Kontakt</Link>
           </li>
           <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200">
-            <Link href="/#work">B2B</Link>
+            <Link href="/b2b">B2B</Link>
           </li>
         </ul>
 

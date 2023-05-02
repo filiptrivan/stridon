@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ titleNaHomePage, opisNaHomePage, naslovButt
           <h1 className="text-6xl mb-2 font-medium">{titleNaHomePage}</h1>
           <p className="text-xl mb-4">{opisNaHomePage}</p>
           <a href="https://www.prodavnicaalata.rs" target="_blank">
-             <button className="px-8 py-2 border hover:bg-slate-600 duration-200 flex items-center m-auto">
+             <button className="px-8 py-2 border rounded-md hover:bg-slate-600 duration-200 flex items-center m-auto">
                {naslovButtona}<FaArrowRight className="ml-2 text-sm"/> 
              </button>
          </a>

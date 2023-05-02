@@ -9,6 +9,7 @@ const BrendoviImg: React.FC<BrendoviImgProps> = ({ brendoviImg }) => {
   return (
     <div className="relative card">
       <Image
+        priority
         src={brendoviImg}
         alt="/"
         className="w-full h-full cursor-pointer"

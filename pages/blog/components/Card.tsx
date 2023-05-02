@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BlogCardType } from "..";
 import DateFormater from "@/pages/components/DateFormater";
 import ErrorPage from "@/pages/_error";
+import Image from "next/image";
 
 interface Props {
   record: BlogCardType;
@@ -28,10 +29,13 @@ const Card = ({ record }: Props) => {
           >
             <div className="mb-2">
               {record.slug && (
-                <img
+                <Image
+                  priority
                   src={record.main_img}
                   alt=""
                   className="w-full max-h-[200px] object-cover"
+                  width={1920}
+                  height={1080}
                 />
               )}
             </div>
@@ -69,28 +73,3 @@ const Card = ({ record }: Props) => {
 };
 
 export default Card;
-
-// {blogData.main_img && (
-//   <img
-//     src={blogData.main_img}
-//     alt=""
-//     className="w-full max-h-[400px] object-cover px-3"
-//   />
-// )}
-// </div>
-
-// <div className="max-w-[760px] mx-auto px-3 mb-20">
-// <div className="text-right py-2 mb-3">
-//   {blogData.created_time && (
-//     <DateFormater dateString={blogData.created_time} />
-//   )}
-// </div>
-// {blogData.title && (
-//   <div className="text-4xl mb-2 font-medium">{blogData.title}</div>
-// )}
-// {blogData.vrsta?.title && (
-//   <div>{blogData.vrsta.title}</div>
-// )}
-// {blogData.description && (
-//   <div className="mt-10">{blogData.description}</div>
-// )}
