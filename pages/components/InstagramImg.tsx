@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
-import { FaDownload } from 'react-icons/fa';
 
 interface InstagramImgProps{
   socialImg: StaticImageData;
@@ -16,10 +15,7 @@ const InstagramImg: React.FC<InstagramImgProps> = ({ socialImg }) => {
         layout='responsive'
       />
       {/* Overlay */}
-      <div className='flex justify-center w-full h-full items-center absolute top-0 left-0 right-0 bottom-0 hover:bg-black/50 group cursor-pointer'>
-      <p className='text-gray-300 hidden group-hover:block'>
-        <FaDownload size={30} className='z-10' />
-      </p>
+      <div className='flex justify-center w-full h-full items-center absolute top-0 left-0 right-0 bottom-0 group'>
       </div>
     </div>
   );

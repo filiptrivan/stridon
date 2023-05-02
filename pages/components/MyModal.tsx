@@ -35,7 +35,7 @@ const MyModal = ({
 
   return (
     <div className="fixed inset-0 bg-black z-50 bg-opacity-60 backdrop-blur-sm flex justify-center items-center">
-      <div className="bg-slate-50 rounded-md ">
+      <div className="bg-slate-50 rounded-t-md ">
         <button onClick={onClose} className="font-black mb-2 mt-2 ml-48">
           X
         </button>

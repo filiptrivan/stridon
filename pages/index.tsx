@@ -7,6 +7,8 @@ import Brendovi from "./components/Brendovi";
 import SnageStridona from "./components/SnageStridona";
 import DynamicCounterContainer from "./components/DynamicCounterContainer";
 import Button from "./components/Button";
+import TestimonList from "./components/TestimonList";
+import records from "../data/testimonials.json"
 
 export default function Home( ) {
   return (
@@ -29,6 +31,7 @@ export default function Home( ) {
       <SnageStridona/>
       <Slider slides={SliderData} />
       <DynamicCounterContainer/>
+      <TestimonList records = {records}/>
       <Instagram />
     </main>
   );

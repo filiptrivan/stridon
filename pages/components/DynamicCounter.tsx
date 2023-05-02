@@ -67,7 +67,7 @@ interface CounterValue {
       // grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center pb-14 pt-10
 
   return (
-    <div className="w-full bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 mb-20">
+    <div className="w-full bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950">
       <div className="text-slate-50 sm:text-4xl text-2xl text-center pt-12 px-10">Brojevi govore umesto nas</div>
       <div className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center pb-20 pt-12" ref={counterSectionRef}>
         

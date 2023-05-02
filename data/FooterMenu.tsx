@@ -13,11 +13,10 @@ export const PRODUCTS = [
     { name: "Početna", link: "/" },
     { name: "O nama", link: "/onama" },
     { name: "Blog", link: "/blog" },
-    { name: "Kontakt", link: "/contact" },
-    { name: "Kako produžiti garanciju", link: "#" },
+    { name: "Kontakt", link: "/kontakt" },
   ];
   export const KOMPANIJA = [
-    { name: "Brendovi", link: "#brands" },
+    { name: "Brendovi", link: "/brendovi" },
     { name: "B2B", link: "/b2b" },
     { name: "Katalozi", link: "/katalozi" },
     { name: "Servis", link: "/servis" },

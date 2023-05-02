@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Hero from "../../brendovi/bosch/components/Hero";
 import TextoviISlike from "../../brendovi/bosch/components/TextoviISlike";
 import Head from "next/head";
-import bosch from "../../../public/bos.webp"
+import bosch from "../../../public/bos.webp";
 
 const index = () => {
   return (

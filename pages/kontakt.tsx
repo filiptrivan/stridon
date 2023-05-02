@@ -2,7 +2,7 @@ import React from "react";
 import Mapa from "./components/Mapa";
 import HeroWithoutButton from "./components/HeroWithoutButton";
 
-const contact = () => {
+const kontakt = () => {
   return (
     <div>
       <HeroWithoutButton titleNaHomePage={"Kontaktirajte nas!"} opisNaHomePage={""}/>
@@ -11,6 +11,6 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default kontakt;
 
 
