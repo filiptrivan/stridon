@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['www.boschtools.com', 'normand.ca', 'encrypted-tbn0.gstatic.com', 'panzura.com', 'www-de.wera.de', 'i00.eu']
+    domains: ['www.boschtools.com', 'normand.ca', 'encrypted-tbn0.gstatic.com', 'panzura.com', 'www-de.wera.de', 'i00.eu', 'images.pexels.com']
   }
 }
 
