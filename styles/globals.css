@@ -16,11 +16,7 @@ html {
 }
 
 .custom-img {
-  height: 40vh;
-  /* ovo nista ne radi */
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
+  height: 45vh;
 }
 
   /* bg hero images */
@@ -35,7 +31,7 @@ html {
 }
 
 .custom-img-bg {
-  height: 40vh;
+  height: 45vh;
   margin-top: 79.56px;
 }
 

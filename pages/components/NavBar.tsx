@@ -48,28 +48,40 @@ const Navbar = () => {
             <div className="dropdown mt-2.5">
               <ul className="leading-5">
                 <li className="dropdown-link">
-                  <Link href="/brendovi/bosch">Bosch</Link>
-                </li>
-                <li className="dropdown-link">
                   <Link href="/brendovi/dewalt">DeWalt</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">Makita</Link>
+                  <Link href="/brendovi/bosch">Bosch</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">Stanley</Link>
+                  <Link href={"/brendovi/boschdiy"}>Bosch Diy</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">Nike</Link>
+                  <Link href={"/brendovi/stanley"}>Stanley</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">Adidas</Link>
+                   <Link href={"/brendovi/makita"}>Makita</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">Puma</Link>
+                  <Link href={"/brendovi/einhell"}>Einhell</Link>
                 </li>
                 <li className="dropdown-link">
-                  <Link href="#">Experimental</Link>
+                  <Link href={"/brendovi/knipex"}>Knipex</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href={"/brendovi/gude"}>Güde</Link>
+                </li>
+                <li className="dropdown-link">
+                   <Link href={"/brendovi/kwb"}>Kwb</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href={"/brendovi/hogert"}>Högert</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href={"/brendovi/karcher"}>Karcher</Link>
+                </li>
+                <li className="dropdown-link">
+                  <Link href={"/brendovi/wolfcraft"}>Wolfcraft</Link>
                 </li>
               </ul>
             </div>

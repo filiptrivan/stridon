@@ -9,11 +9,11 @@ export interface Record {
 };
 
 interface Props {
-  records: Record[];
+  Brendovi: Record[];
 }
 
-const CardList = ({ records }: Props) => {
-    if(!records){
+const CardList = ({ Brendovi }: Props) => {
+    if(!Brendovi){
         return <ErrorPage/>
     }
   return (
@@ -21,7 +21,7 @@ const CardList = ({ records }: Props) => {
         
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
       {/* naslov */}
-      {records.map((record, index) => (
+      {Brendovi.map((record, index) => (
         <Card
           key={index}
           title={record.title}

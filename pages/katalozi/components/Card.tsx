@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaAngleDown, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import bos from "../../../public/boschlogo.png"
+import dewalt from "../../../public/dewaltlogo.png"
 
 const Card = () => {
   return (
@@ -65,7 +66,7 @@ const Card = () => {
         </div>
         <div className=" max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-yellow-600 to-yellow-100 rounded">
           <div className="ml-4">
-            <Image src="/dewaltlogo.png" alt="" width={150} height={150} />
+            <Image src={dewalt} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
             Dewalt
@@ -230,7 +231,7 @@ const Card = () => {
         </div>
         <div className=" max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-yellow-600 to-yellow-100 rounded">
           <div className="ml-4">
-            <Image src="/dewaltlogo.png" alt="" width={150} height={150} />
+            <Image src={dewalt} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
             Dewalt

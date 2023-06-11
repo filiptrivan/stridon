@@ -4,7 +4,16 @@ import "react-multi-carousel/lib/styles.css";
 import BrendoviImg from "./BrendoviImg";
 import boschlogo from "../../public/boschlogo.png";
 import dewaltlogo from "../../public/dewaltlogo.png";
-import aleksatrivan from "../../public/devalt.webp"
+import boschdiy from "../../public/bosch-diy.png";
+import stanley from "../../public/stanley-logo.png";
+import makita from "../../public/makita-logo.png";
+import einhell from "../../public/einhell-logo.png";
+import knipex from "../../public/knipex-logo.png";
+import gude from "../../public/gude-logo.png";
+import kwb from "../../public/kwb-logo.png";
+import hoegert from "../../public/hogert-logo.png";
+import karcher from "../../public/karcher-logo.png";
+import wolfcraft from "../../public/wolfcraft-logo.png";
 import Link from "next/link";
 
 interface BrendoviProps {
@@ -37,7 +46,9 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
   };
   return (
     <div id="brands" className="max-w-[1140px] mx-auto pb-10 pt-4">
-      <h1 className="text-2xl sm:text-3xl  font-medium text-center pb-6">{title}</h1>
+      <h1 className="text-2xl sm:text-3xl  font-medium text-center pb-6">
+        {title}
+      </h1>
       {/* div samo za peding od slika brendova */}
       <div className="px-4 pt-2 py-4">
         <Carousel
@@ -51,23 +62,45 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
           responsive={responsive}
           swipeable={false}
         >
-          <Link href={"/brendovi/bosch"} ><BrendoviImg brendoviImg={boschlogo} /></Link>
+          <Link href={"/brendovi/dewalt"}>
+            <BrendoviImg brendoviImg={dewaltlogo} />
+          </Link>
+          <Link href={"/brendovi/bosch"}>
+            <BrendoviImg brendoviImg={boschlogo} />
+          </Link>
+          <Link href={"/brendovi/boschdiy"}>
+            <BrendoviImg brendoviImg={boschdiy} />
+          </Link>
 
-          <Link href={"/brendovi/dewalt"} ><BrendoviImg brendoviImg={dewaltlogo} /></Link>
+          <Link href={"/brendovi/stanley"}>
+            <BrendoviImg brendoviImg={stanley} />
+          </Link>
+          <Link href={"/brendovi/makita"}>
+            <BrendoviImg brendoviImg={makita} />
+          </Link>
 
-          <BrendoviImg brendoviImg={aleksatrivan} />
+          <Link href={"/brendovi/einhell"}>
+            <BrendoviImg brendoviImg={einhell} />
+          </Link>
+          <Link href={"/brendovi/knipex"}>
+            <BrendoviImg brendoviImg={knipex} />
+          </Link>
 
-          <BrendoviImg brendoviImg={boschlogo} />
-
-          <BrendoviImg brendoviImg={boschlogo} />
-
-          <BrendoviImg brendoviImg={boschlogo} />
-
-          <BrendoviImg brendoviImg={boschlogo} />
-
-          <BrendoviImg brendoviImg={boschlogo} />
-
-          <BrendoviImg brendoviImg={boschlogo} />
+          <Link href={"/brendovi/gude"}>
+            <BrendoviImg brendoviImg={gude} />
+          </Link>
+          <Link href={"/brendovi/kwb"}>
+            <BrendoviImg brendoviImg={kwb} />
+          </Link>
+          <Link href={"/brendovi/hogert"}>
+            <BrendoviImg brendoviImg={hoegert} />
+          </Link>
+          <Link href={"/brendovi/karcher"}>
+            <BrendoviImg brendoviImg={karcher} />
+          </Link>
+          <Link href={"/brendovi/wolfcraft"}>
+            <BrendoviImg brendoviImg={wolfcraft} />
+          </Link>
         </Carousel>
       </div>
     </div>
