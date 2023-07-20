@@ -46,9 +46,9 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
   };
   return (
     <div id="brands" className="max-w-[1140px] mx-auto pb-10 pt-4">
-      <h1 className="text-2xl sm:text-3xl  font-medium text-center pb-6">
+      <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-6">
         {title}
-      </h1>
+      </h2>
       {/* div samo za peding od slika brendova */}
       <div className="px-4 pt-2 py-4">
         <Carousel

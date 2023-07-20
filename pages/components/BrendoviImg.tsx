@@ -8,7 +8,7 @@ interface BrendoviImgProps {
 const BrendoviImg: React.FC<BrendoviImgProps> = ({ brendoviImg }) => {
   return (
     <div className="relative card">
-      <Image
+      <Image 
         priority
         src={brendoviImg}
         alt="/"

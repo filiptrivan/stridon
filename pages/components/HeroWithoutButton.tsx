@@ -13,7 +13,7 @@ const HeroWithoutButton: React.FC<HeroWithoutButtonProps> = ({titleNaHomePage, o
       <div className="left-0 w-full z-[2]">
         <div className=" max-w-[1140px] p-3 text-white mx-auto">
           <h1 className="text-6xl mb-2 font-medium">{titleNaHomePage}</h1>
-          <p className="text-xl mb-4">{opisNaHomePage}</p>
+          <h2 className="text-xl mb-4">{opisNaHomePage}</h2>
         </div>
       </div>
     </div>

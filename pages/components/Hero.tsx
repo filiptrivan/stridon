@@ -5,9 +5,15 @@ interface HeroProps {
   titleNaHomePage: string;
   opisNaHomePage: string;
   naslovButtona: string;
+  slug: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ titleNaHomePage, opisNaHomePage, naslovButtona }) => {
+const Hero: React.FC<HeroProps> = ({
+  titleNaHomePage,
+  opisNaHomePage,
+  naslovButtona,
+  slug,
+}) => {
   return (
     <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-landing-page text-center">
       {/* Overlay */}
@@ -15,12 +21,13 @@ const Hero: React.FC<HeroProps> = ({ titleNaHomePage, opisNaHomePage, naslovButt
       <div className="left-0 w-full z-[2]">
         <div className=" max-w-[1140px] p-3 text-white mx-auto">
           <h1 className="text-6xl mb-2 font-medium">{titleNaHomePage}</h1>
-          <p className="text-xl mb-4">{opisNaHomePage}</p>
-          <a href="https://www.prodavnicaalata.rs" target="_blank">
-             <button className="px-8 py-2 border rounded-md hover:bg-slate-600 duration-200 flex items-center m-auto">
-               {naslovButtona}<FaArrowRight className="ml-2 text-sm"/> 
-             </button>
-         </a>
+          <h2 className="text-xl mb-4">{opisNaHomePage}</h2>
+          <button className="px-8 py-2 border rounded-md hover:bg-slate-600 duration-200 flex items-center m-auto">
+            <a href={slug} target="_blank" className="flex items-center">
+              {naslovButtona}
+              <FaArrowRight className="ml-2 text-sm" />
+            </a>
+          </button>
         </div>
       </div>
     </div>
@@ -28,4 +35,3 @@ const Hero: React.FC<HeroProps> = ({ titleNaHomePage, opisNaHomePage, naslovButt
 };
 
 export default Hero;
-

@@ -8,7 +8,7 @@ import SnageStridona from "./components/SnageStridona";
 import DynamicCounterContainer from "./components/DynamicCounterContainer";
 import Button from "./components/Button";
 import TestimonList from "./components/TestimonList";
-import records from "../data/testimonials.json"
+import records from "../data/testimonials.json" 
 
 export default function Home( ) {
   return (
@@ -24,7 +24,8 @@ export default function Home( ) {
         opisNaHomePage={
           "Najbolja prodavnica alata u gradu, najveci asortiman alata u Srbiji."
         }
-        naslovButtona={"Idi na našu online prodavnicu alata"}
+        naslovButtona={"Online prodavnica"}
+        slug={"https://www.prodavnicaalata.rs"}
       />
       <Brendovi title={"Brendovi"} />
       <Button naslovButtona="Detaljnije o Brendovima"/>

@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -96,8 +95,8 @@ const Navbar = () => {
               <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
                 <Link href="/kontakt">Kontakt</Link>
               </li>
-              <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200">
-                <Link href="/b2b">B2B</Link>
+              <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200 ">
+                <Link className="border border-red-500 hover:bg-red-100 rounded-md py-1 px-4" href="/b2b">B2B</Link>
               </li>
             </ul>
 
