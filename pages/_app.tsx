@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import { Roboto } from "next/font/google";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <main className={`${roboto.variable} font-sans`}>
       {statusCode != 404 && <Navbar />}
       <Component {...pageProps} />
-      <Analytics/>
+      {/* <Analytics/> */}
       {statusCode != 404 && <Footer />}
     </main>
   );

@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface Props {
-  naslovPasusa1:string;
+  naslovPasusa1: string;
   naslovPasusa2: string;
   naslovPasusa3: string;
   textPasusa1: string;
@@ -11,6 +11,7 @@ interface Props {
   slika1: StaticImageData;
   slika2: StaticImageData;
   slika3: StaticImageData;
+  textDoKraja: string;
 }
 
 const TextoviISlike = ({
@@ -23,6 +24,7 @@ const TextoviISlike = ({
   slika1,
   slika2,
   slika3,
+  textDoKraja,
 }: Props) => {
   return (
     <>
@@ -59,7 +61,7 @@ const TextoviISlike = ({
         </div>
       </div>
 
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20">
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-10">
         <div className="max-w-full lg:max-w-[570px] lg:mb-0">
           <Image
             priority
@@ -72,12 +74,10 @@ const TextoviISlike = ({
         </div>
         <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
           <p className="text-4xl font-semibold mb-3">{naslovPasusa3}</p>
-          <p>
-            {" "}
-            {textPasusa3}{" "}
-          </p>
+          <p> {textPasusa3} </p>
         </div>
       </div>
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20">{textDoKraja}</div>
     </>
   );
 };

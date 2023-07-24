@@ -7,22 +7,25 @@ import Brendovi from "./components/Brendovi";
 import SnageStridona from "./components/SnageStridona";
 import DynamicCounterContainer from "./components/DynamicCounterContainer";
 import Button from "./components/Button";
-import TestimonList from "./components/TestimonList";
+import TestimonList from "./components/TestimonList"; 
 import records from "../data/testimonials.json" 
 
 export default function Home( ) {
   return (
     <main>
       <Head>
-        <title>Stridon</title>
-        <meta name="Prodavnica Alata" content="Mašine i alati" />
+        <title>Najbolja prodavnica alata u Srbiji - Stridon Group DOO</title>
+        <meta
+          name="description"
+          content="Veleprodaja, maloprodaja i online prodaja opreme, alata i mašina najpoznatijih brendova po jeftinim cenama. Cene, akcije i katalozi za 2023. godinu.✅"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
       <Hero
         titleNaHomePage={"Stridon Group"}
         opisNaHomePage={
-          "Najbolja prodavnica alata u gradu, najveci asortiman alata u Srbiji."
+          "Veleprodaja, maloprodaja i online prodaja alata i mašina."
         }
         naslovButtona={"Online prodavnica"}
         slug={"https://www.prodavnicaalata.rs"}

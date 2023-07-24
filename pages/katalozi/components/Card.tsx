@@ -39,8 +39,8 @@ const Card = () => {
                 <div className="dropdown dropdownbutton">
                   <ul className="">
                     <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
+                      <a href="/https://media.prodavnicaalata.rs/uploads//2020/09/05/max.pdf" rel="noopener noreferrer" download>
+                        Bosch1a
                       </a>
                     </li>
                     <li className="dropdown-link">
@@ -74,7 +74,7 @@ const Card = () => {
 
           <div className="border-b pb-2 text-start mx-4 text-base mb-2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.
+            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.aeius. Velit magnam accusamus accusantium natus id qui omnis.a
           </div>
           <Link href={"/brendovi/dewalt"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">

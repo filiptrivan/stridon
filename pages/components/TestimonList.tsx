@@ -8,6 +8,7 @@ export interface Record {
   image: string;
   title: string;
   description: string;
+  name:string
 }
 
 interface Props {
@@ -42,34 +43,35 @@ const TestimonList = ({ records }: Props) => {
       slidesToSlide: 1,
     },
   };
-
+ 
   return (
     <div className="w-full bg-slate-100">
-      <div className="text-2xl sm:text-3xl  font-medium text-center pb-2 pt-16">
-        Testimonials
-      </div>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pb-10"> */}
+      <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-2 pt-16">
+        Šta naši saradnici kažu o nama
+      </h2>
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pb-10"> */}
       <div className="max-w-[1140px] mx-auto px- sm:px-6 text-center mt-10">
-          <Carousel
-            ssr={true}
-            className="z-[1]"
-            centerMode={true}
-            // removeArrowOnDeviceType={["tablet", "mobile"]}
-            keyBoardControl={true}
-            infinite={true}
-            draggable={false}
-            responsive={responsive}
-            swipeable={false}
-          >
-            {records.map((record, index) => (
-              <TestimonCard
-                key={index}
-                title={record.title}
-                image={record.image}
-                description={record.description}
-              />
-            ))}
-          </Carousel>
+        <Carousel
+          ssr={true}
+          className="z-[1]"
+          centerMode={true}
+          // removeArrowOnDeviceType={["tablet", "mobile"]}
+          keyBoardControl={true}
+          infinite={true}
+          draggable={false}
+          responsive={responsive}
+          swipeable={false}
+        >
+          {records.map((record, index) => (
+            <TestimonCard
+              key={index}
+              title={record.title}
+              image={record.image}
+              description={record.description}
+              name={record.name}
+            />
+          ))}
+        </Carousel>
         {/* </div> */}
       </div>
     </div>

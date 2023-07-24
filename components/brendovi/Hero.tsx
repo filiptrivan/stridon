@@ -5,9 +5,15 @@ interface HeroProps {
   title: string;
   opis: string;
   naslovButtona: string;
+  catalogueValues:any;
 }
 
-const Hero: React.FC<HeroProps> = ({ title, opis, naslovButtona }) => {
+const Hero: React.FC<HeroProps> = ({
+  title,
+  opis,
+  naslovButtona,
+  catalogueValues
+}) => {
   const [visible, setVisible] = useState(false);
 
   const handleOnClose = () => {
@@ -31,16 +37,7 @@ const Hero: React.FC<HeroProps> = ({ title, opis, naslovButtona }) => {
         </div>
       </div>
       <MyModal
-        imeKataloga1={"Katalog1"}
-        imeKataloga2={" "}
-        imeKataloga3={" "}
-        imeKataloga4={" "}
-        imeKataloga5={" "}
-        rutaKataloga1={"/katalog.pdf"}
-        rutaKataloga2={" "}
-        rutaKataloga3={" "}
-        rutaKataloga4={" "}
-        rutaKataloga5={" "}
+        catalogueValues={catalogueValues}
         onClose={handleOnClose}
         visible={visible}
       />

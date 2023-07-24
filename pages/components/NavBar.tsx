@@ -6,10 +6,10 @@ import { FaAngleDown } from "react-icons/fa";
 import stridon from "../../public/stridon-prodavnica-alata.webp";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-  const handleNav = () => {
-    setNav(!nav);
+  const navHandler = () => {
+    setNavbar(!navbar);
   };
 
   return (
@@ -20,11 +20,11 @@ const Navbar = () => {
           className="fixed left-0 top-0 w-full z-10 shadow-md"
         >
           <div className="max-w-[1140px] m-auto flex justify-between items-center p-2.5 text-white">
-            {/* logo */}
+            {/* //logo */}
             <Link href="/">
               <Image priority src={stridon} alt="/" width={140} height={140} />
 
-              {/* nav links */}
+              {/* //nav links */}
             </Link>
             <ul className="hidden sm:flex text-zinc-950">
               <li className="nav-link pb-4 pt-4 pr-7  hover:text-slate-700 duration-200">
@@ -34,12 +34,7 @@ const Navbar = () => {
                     <FaAngleDown className="mt-1 ml-0.5 text-zinc-950" />
                   </div>
                 </Link>
-                <ul>
-                  <li className="absolute text-transparent cursor-default">
-                    ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-                  </li>
-                </ul>
-                <div className="dropdown mt-2.5">
+                <div className="dropdown">
                   <ul className="leading-5">
                     <li className="dropdown-link">
                       <Link href="/brendovi/dewalt">DeWalt</Link>
@@ -80,11 +75,6 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-              {/* <li className="nav-link pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
-                <Link href="/blog">
-                  <div className="flex">Blog</div>
-                </Link>
-              </li> */}
               <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
                 <Link href="/katalozi">Katalozi</Link>
               </li>
@@ -96,66 +86,64 @@ const Navbar = () => {
                 <Link href="/kontakt">Kontakt</Link>
               </li>
               <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200 ">
-                <Link className="border border-red-500 hover:bg-red-100 rounded-md py-1 px-4" href="/b2b">B2B</Link>
+                <Link
+                  className="border border-red-500 hover:bg-red-100 rounded-md py-1 px-4"
+                  href="/b2b"
+                >
+                  B2B
+                </Link>
               </li>
             </ul>
 
-            {/* Mobile Button */}
-            <div onClick={handleNav} className="block sm:hidden z-10">
-              {nav ? (
+            {/* //Mobile Button */}
+            <div onClick={navHandler} className="block sm:hidden z-10">
+              {navbar ? (
                 <AiOutlineClose size={20} className="text-white" />
               ) : (
                 <AiOutlineMenu size={20} className="text-zinc-950" />
               )}
             </div>
-            {/* Mobile Menu */}
+            {/* //Mobile Menu */}
             <div
               className={
-                nav
+                navbar
                   ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex pt-14 pl-6 w-full h-screen bg-black ease-in duration-200 "
                   : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex pt-14 pl-6  w-full h-screen bg-black ease-in duration-200"
               }
             >
               <ul>
                 <li
-                  onClick={handleNav}
+                  onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
                   <Link href="/brendovi">Brendovi</Link>
                 </li>
-
-                {/* <li
-                  onClick={handleNav}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
-                >
-                  <Link href="/blog">Blog</Link>
-                </li> */}
                 <li
-                  onClick={handleNav}
+                  onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
                   <Link href="/katalozi">Katalozi</Link>
                 </li>
                 <li
-                  onClick={handleNav}
+                  onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
                   <Link href="/servis">Servis</Link>
                 </li>
                 <li
-                  onClick={handleNav}
+                  onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
                   <Link href="/kontakt">Kontakt</Link>
                 </li>
                 <li
-                  onClick={handleNav}
+                  onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
                   <Link href="/b2b">B2B</Link>
                 </li>
                 <li
-                  onClick={handleNav}
+                  onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
                   <Link href="/onama">O nama</Link>

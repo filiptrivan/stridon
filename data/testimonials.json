@@ -1,52 +1,50 @@
 [
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    },
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    },
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }, 
-    {
-      "image": "/boschlogo.png",
-      "title": "Bosch",
-      "description": "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet."
-    }
-] 
+  {
+      "image": "/ingradnjaa.png",
+      "title": "IN GRADNJA",
+      "name": "Miloš Veselinović",
+      "description": "Veliki profesionalci i dobri ljudi, uvek spremni da ispune zahteve i rokove. Sve preporuke za bilo koju vrstu saradnje."
+  },
+  {
+      "image": "/enterijerjankovic.png",
+      "title": "ENTERIJER JANKOVIC",
+      "name": "Jelena Simić",
+      "description": "Vrlo dobro iskustvo u radu sa firmom Stridon Group. Odlični u komunikaciji, drže se rokova, uvek imaju dobar profesionalni savet i alat na lageru!"
+  },
+  {
+      "image": "/hidroina.png",
+      "title": "HIDRO INA",
+      "name": "Zoran Aćimović",
+      "description": "Firma koja uvek zna šta našoj firmi treba. Neprocenjivi prijateljski saveti i rešenja koja samo veliki profesionalci u svom poslu znaju. Sve preporuke za Stridon!"
+  },
+  {
+      "image": "/termotim.png",
+      "title": "TERMO TIM",
+      "name": "Goran Sobić",
+      "description": "Jednostavna i brza svakodnevna saradnja. Ljudi koji su uvek spremni da izađu u susret potrebama kupaca."
+  },
+  {
+      "image": "/silmaxlogo.png",
+      "title": "SILMAX doo",
+      "name": "Sladimir Ilić",
+      "description": "Odličan lager alata i poznavanje potreba kupaca. Takođe, veliki broj brendova koje Stridon uvozi, čini ih nezaobilaznim svakodnevnim dobavljačem!"
+  },
+  {
+      "image": "/mbmrad.png",
+      "title": "MBM RAD",
+      "name": "Goran Šotra",
+      "description": "Saveti profesionalnih prodavaca Stridona doveli su do skraćenja rada naše firme na pojedinim delovima projekata i do 50%!"
+  },
+  {
+      "image": "/galens.png",
+      "title": "Galens",
+      "name": "Miodrag Pećanac",
+      "description": "Koliki god da projekat počinjete, Stridon uvek ima dovoljno alata za vas. Isporuka sutradan, alati kvalitetni, a želja da se kupcu istinski pomogne - nemerljiva!"
+  },
+  {
+      "image": "/coligoars.png",
+      "title": "COLLIGO ARS",
+      "name": "Dragan Ćeranić",
+      "description": "Verni saradnik na svim našim projektima. U dugogodišnjoj saradnji nas ni jednom nisu izneverili. Preporuke za firmu Stridon!"
+  }
+]
