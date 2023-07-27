@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stridon | Stanley </title>
+        <title>Stanley - Stridon Group DOO </title>
         <meta name="description" content="Stanley mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+      title={"Stanley"}
         naslovPasusa1={"Tržište"}
         naslovPasusa2={"Ručni alati"}
         naslovPasusa3={"Tehnologija i napredak"}

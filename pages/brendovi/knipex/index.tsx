@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stridon | Knipex </title>
+        <title>Knipex - Stridon Group DOO 2023</title>
         <meta name="Knipex" content="Knipex mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+      title={"Knipex"}
         naslovPasusa1={"Tržište i kvalitet"}
         naslovPasusa2={"Asortiman"}
         naslovPasusa3={"Tehnologija i napredak"}

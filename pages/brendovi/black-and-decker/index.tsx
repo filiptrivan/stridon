@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stridon | Black+Decker </title>
+        <title>Black+Decker - Stridon Group DOO 2023</title>
         <meta name="description" content="Black+Decker mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+      title={"Black+Decker"}
         naslovPasusa1={"Standard na tržištu"}
         naslovPasusa2={"Asortiman"}
         naslovPasusa3={"Tehnologija i napredak"}

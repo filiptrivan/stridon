@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stridon | Wolfcraft </title>
+        <title>Wolfcraft - Stridon Group DOO 2023</title>
         <meta name="description" content="Wolfcraft mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+        title={"Wolfcraft"}
         naslovPasusa1={"Standard na tržištu"}
         naslovPasusa2={"Asortiman"}
         naslovPasusa3={"Tehnologija i napredak"}
@@ -30,7 +31,6 @@ const index = () => {
           "Wolfcraft inženjeri su posvećeni razvoju alata koji odgovaraju potrebama korisnika. Naša stalna težnja za inovacijama rezultira proizvodima koji su u korak sa tehnološkim napretkom, omogućavajući vam da obavljate poslove sa visokom preciznošću i efikasnošću."
         }
         slika1={wolfcraft}
-        
         textDoKraja="Kvalitet materijala kojima se koristimo je od suštinske važnosti. Wolfcraft alati su izrađeni od visokokvalitetnih materijala kako bi izdržali najzahtevnije radne uslove i pružili vam dugotrajnost tokom dugog veka trajanja.
 
         Wolfcraft alati se odlikuju ergonomskim dizajnom i praktičnom upotrebom. Naši proizvodi pružaju vam udobnost tokom rada, omogućavajući vam da postignete vrhunske rezultate sa manje napora.

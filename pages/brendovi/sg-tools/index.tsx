@@ -6,7 +6,7 @@ const index = () => {
   return ( 
     <div>
       <Head>
-        <title>Stridon | SG Tools </title>
+        <title>SG Tools - Stridon Group DOO 2023</title>
         <meta name="description" content="SG Tools mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+       title={"SG Tools"}
         naslovPasusa1={"Renomirani brend"}
         naslovPasusa2={"Asortiman"}
         naslovPasusa3={"Cena i kvalitet"}

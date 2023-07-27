@@ -10,6 +10,7 @@ interface Props {
   textPasusa3: string;
   slika1: StaticImageData;
   textDoKraja: string;
+  title:string
 }
 
 const TextoviISlike = ({
@@ -21,6 +22,7 @@ const TextoviISlike = ({
   textPasusa3,
   slika1,
   textDoKraja,
+  title
 }: Props) => {
   return (
     <>
@@ -29,26 +31,26 @@ const TextoviISlike = ({
           <Image
             priority
             src={slika1}
-            alt=""
+            alt={title}
             width={570}
           />
         </div>
         <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
-          <p className="text-4xl font-semibold mb-3">{naslovPasusa1}</p>
+          <h2 className="text-4xl font-semibold mb-3">{naslovPasusa1}</h2>
           <p className="text-base sm:text-xl"> {textPasusa1} </p>
         </div>
       </div>
 
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-8">
         <div className="max-w-full mb-4">
-          <p className="text-4xl font-semibold mb-3">{naslovPasusa2}</p>
+          <h2 className="text-4xl font-semibold mb-3">{naslovPasusa2}</h2>
           <p className="text-base sm:text-xl"> {textPasusa2} </p>
         </div>
       </div>
 
       <div className="max-w-[1140px] mx-auto p-3 flex lg:flex-ro mb-8">
         <div className="max-w-full mb-4">
-          <p className="text-4xl font-semibold mb-3">{naslovPasusa3}</p>
+          <h2 className="text-4xl font-semibold mb-3">{naslovPasusa3}</h2>
           <p className="text-base sm:text-xl"> {textPasusa3} </p>
         </div>
       </div>

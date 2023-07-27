@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stridon | Wiha </title>
+        <title>Wiha - Stridon Group DOO 2023</title>
         <meta name="description" content="Wiha mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+      title={"Wiha"}
         naslovPasusa1={"Kvalitet i standard"}
         naslovPasusa2={"Širok asortiman"}
         naslovPasusa3={"Tehnologija i napredak"}

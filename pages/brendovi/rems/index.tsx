@@ -6,7 +6,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stridon | REMS </title>
+        <title>REMS - Stridon Group DOO 2023</title>
         <meta name="description" content="Rems mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,6 +17,7 @@ const index = () => {
         catalogueValues={""}
       />
       <TextoviISlike
+      title={"REMS"}
         naslovPasusa1={"Tržište"}
         naslovPasusa2={"Cevi i instalacije"}
         naslovPasusa3={"Tehnologija i napredak"}

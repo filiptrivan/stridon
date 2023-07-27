@@ -2,35 +2,36 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import dewalt from "../../../public/dewaltlogo.png";
-const dewaltKatalogVrednosti = [
-  {
-    imeKataloga: "1.Dewalt katalog",
-    rutaKataloga: "/katalog.pdf",
-  },
-  {
-    imeKataloga: "2.Dewalt katalog",
-    rutaKataloga: "/katalog.pdf",
-  },
-  {
-    imeKataloga: "3.Dewalt katalog",
-    rutaKataloga: "/katalog.pdf",
-  },
-];
+// const dewaltKatalogVrednosti = [
+//   {
+//     imeKataloga: "1.Dewalt katalog",
+//     rutaKataloga: "/katalog.pdf",
+//   },
+//   {
+//     imeKataloga: "2.Dewalt katalog",
+//     rutaKataloga: "/katalog.pdf",
+//   },
+//   {
+//     imeKataloga: "3.Dewalt katalog",
+//     rutaKataloga: "/katalog.pdf",
+//   },
+// ];
 const index = () => {
   return (
     <div>
       <Head>
-        <title>DeWalt - Stridon Group DOO</title>
+        <title>DeWalt - Stridon Group DOO 2023</title>
         <meta name="description" content="DeWalt mašine i alati" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
         title={"DeWalt"}
         opis={"DEWALT alati - Uvoznik za Srbiju"}
-        naslovButtona={"Preuzmi PDF katalog"}
-        catalogueValues={dewaltKatalogVrednosti}
+        naslovButtona={""}
+        catalogueValues={""}
       />
       <TextoviISlike
+      title={"Dewalt"}
         naslovPasusa1={"Vodeći brend"}
         textPasusa1={
           "DEWALT alati, kao vodeći svetski brend u industriji električnih alata, predstavljeni su vam sa ponosom od strane našeg tima kao ekskluzivni uvoznik za Srbiju. Sa više od jednog veka iskustva i inovacija, DEWALT je sinonim za vrhunsku kvalitetu, pouzdanost i performanse koje prevazilaze očekivanja."
