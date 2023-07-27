@@ -1,25 +1,24 @@
-import React, { useState } from "react";
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import bosch from "../../../public/bos.webp";
+import bosch from "../../../public/boschlogo.png";
 const boschKatalogVrednosti = [
   {
     imeKataloga: "1.bosch katalog",
-    rutaKataloga: "/katalog.pdf"
+    rutaKataloga: "/katalog.pdf",
   },
   {
     imeKataloga: "2.bosch katalog",
-    rutaKataloga: "/katalog.pdf"
+    rutaKataloga: "/katalog.pdf",
   },
   {
     imeKataloga: "3.bosch katalog",
-    rutaKataloga: "/katalog.pdf"
+    rutaKataloga: "/katalog.pdf",
   },
   {
     imeKataloga: "4.bosch katalog",
-    rutaKataloga: "/katalog.pdf"
-  }
+    rutaKataloga: "/katalog.pdf",
+  },
 ];
 const index = () => {
   return (
@@ -31,31 +30,26 @@ const index = () => {
       </Head>
       <Hero
         title={"Bosch"}
-        opis={
-          "Najbolja prodavnica alata u gradu, raspolazemo sa najvecim asortimanom alata i masina u Srbiji."
-        }
+        opis={"BOSCH alati - Uvoznik za Srbiju"}
         naslovButtona={"Preuzmi PDF katalog"}
         catalogueValues={boschKatalogVrednosti}
       />
       <TextoviISlike
-        naslovPasusa1={"Bosch1"}
-        naslovPasusa2={"Bosch2"}
-        naslovPasusa3={"Bosch3"}
+        naslovPasusa1={"Tržište"}
+        naslovPasusa2={"Vrste alata"}
+        naslovPasusa3={"Istorija Bosch-a u Srbiji"}
         textPasusa1={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse sequi delectus eum exercitationem placeat fugiat labore est officia, doloribus temporibus consequatur explicabo neque dignissimos modi dolorem nostrum accusantium adipisci. Exercitationem a eaque assumenda perspiciatis libero ipsam atque iste voluptatum quibusdam."
+          "Bosch Power Tools je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet i trajnost. Bosch električni i akumulatorski alati su jedni od najkorišćenijih i najprodavanijih alata na tržišu."
         }
         textPasusa2={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse sequi delectus eum exercitationem placeat fugiat labore est officia, doloribus temporibus consequatur explicabo neque dignissimos modi dolorem nostrum accusantium adipisci. Exercitationem a eaque assumenda perspiciatis libero ipsam atque iste voluptatum quibusdam."
+          "Sem Bosch plavih profesionalnih alata, postoje i Bosch HG alati - to su Bosch Hobby zeleni alati i Bosch baštenski alati. Kao i Bosch plavi alat i ovi alati su izuzetno kvalitetni, a o tome nam govori i garancija koja iznosi 3 godine na obe serije alata."
         }
         textPasusa3={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse sequi delectus eum exercitationem placeat fugiat labore est officia, doloribus temporibus consequatur explicabo neque dignissimos modi dolorem nostrum accusantium adipisci. Exercitationem a eaque assumenda perspiciatis libero ipsam atque iste voluptatum quibusdam."
+          "Bosch Srbija je ogranak kompanije koji na našem tržištu posluje od 2006. godine i kontinuirano je najzastupljenija marka u Srbiji. Kompanija Bosch sa brendovima kao što su Bosch i Dremel, baca fokus na kupce i veliki inženjerski napredak. Osnovni faktori uspeha su inovativna snaga i tempo inovacija."
         }
         slika1={bosch}
-        slika2={bosch}
-        slika3={bosch}
-        textDoKraja={
-          'Jedan od najznačajnijih napredaka bio je razvoj XR tehnologije (Extended Runtime) koja je poboljšala trajnost baterija i osigurala duže vreme rada alata. Osim toga, DeWalt je pionirski predstavio brusilice s poboljšanom prašinskom kontrolom, akumulatorske alate s visokim naponom i izuzetno otporne alate za rad u zahtevnim uslovima. DeWalt je takođe poznat po svom sistemu "FlexVolt", koji omogućava da se akumulatorski alati koriste s različitim naponima, u zavisnosti od potreba posla. Ova inovacija omogućava korisnicima da imaju snažne alate za najzahtevnije zadatke, ali i lakše i kompaktnije alate za manje poslove, sve uz isti akumulator. Njihova linija alata nije ograničena samo na profesionalce; DeWalt se takođe fokusira na potrebe kućnih majstora i entuzijasta. Njihov širok asortiman alata, od jednostavnih bušilica i ubodnih testera do sofisticiranih višenamenskih alata, omogućava svima, bez obzira na nivo iskustva, da obavljaju poslove sa lakoćom i efikasnošću. DeWalt je ne samo sinonim za izvrsne proizvode, već i za izvanrednu podršku korisnicima. Njihova usluga i jamstvena podrška osiguravaju da kupci imaju poverenje u svoje alate, znajući da je kompanija tu da im pomogne u slučaju bilo kakvih problema. Danas, DeWalt je globalno prepoznata marka koja je postala nezamenljiv partner brojnim profesionalcima i entuzijastima širom sveta. Njihova predanost kvalitetu, inovacijama i korisničkom iskustvu osigurava da će DeWalt i dalje ostati vodeća snaga u svetu električnih alata i da će nastaviti transformisati način na koji se poslovi obavljaju u različitim industrijskim granama.'
-        }
+        
+        textDoKraja=" U 2019. godini Bosch električni alati su lansirali više od 100 novih proizvoda na nemačko tržište u svoja četiri poslovna segmenta električni alati, dodaci, merni alati i baštenski alati. Kontinuiran razvojem i inovacijama Bosch ostaje lider na tržištu alata u celom svetu. Uz Bosch Biturbo alate za profesionalce i IouSeries za hobi korisnike sa najvišim potrebama, Bosch lansira potpuno nove bežične električne alate. Bosch električni alati predstavljaju inovaciju, rekao je Henk Becker, predsednik Robert Bosch Power Tools GmbH. Oblikujemo tehnički razvoj industrije. Naša je tvrdnja da imamo najmanje i najsnažnije baterije na tržištu, da zamenjujemo kablovske alate bežičnim alatima na duži rok. Novi Bosch električni alati za profesionalce optimizovani su ProCore18V baterijama za maksimalne performanse. To ih čini moćnijim od svih prethodnih Bosch bežičnih alata. Ovo se zasniva na optimalnoj koordinaciji njihovog motora bez četkica sa elektronikom i baterijom, tako da se baterije visokih performansi mogu iskoristiti u punom potencijalu. Pored toga, Bosch Biturbo alati se mogu pohvaliti dodatnim prednostima kao što su mala težina i interaktivni ekran: Profesionalci stoga mogu prilagoditi alate prema svojim potrebama. Bosch alati neprestano proširuju svoj bežični segment i za kućne entuzijaste i za profesionalce. Fokus je i ostaće na sistemima baterija od 18 volti. Bosch garantuje kompatibilnost sa svim postojećim i budućim električnim alatima iste klase napona - kako u sistemima za profesionalce, tako i u sistemima za diy entuzijaste. Ovo omogućava korisnicima da rade bez baterija i punjača koji im nisu potrebni - istovremeno štedeći novac. Ako želite kvalitetne alate, sa 3 godine garancije birajte Bosch alat!"
       />
     </div>
   );

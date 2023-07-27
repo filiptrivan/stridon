@@ -43,34 +43,55 @@ const Navbar = () => {
                       <Link href="/brendovi/bosch">Bosch</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi/boschdiy"}>Bosch Diy</Link>
-                    </li>
-                    <li className="dropdown-link">
                       <Link href={"/brendovi/stanley"}>Stanley</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi/makita"}>Makita</Link>
+                      <Link href={"/brendovi/rems"}>REMS</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi/einhell"}>Einhell</Link>
+                      <Link href={"/brendovi/wiha"}>Wiha</Link>
                     </li>
                     <li className="dropdown-link">
                       <Link href={"/brendovi/knipex"}>Knipex</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi/gude"}>Güde</Link>
+                      <Link href={"/brendovi/gtv"}>GTV</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi/kwb"}>Kwb</Link>
+                      <Link href={"/brendovi/max"}>MAX</Link>
                     </li>
                     <li className="dropdown-link">
                       <Link href={"/brendovi/hogert"}>Högert</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/wera"}>Wera</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/rubi"}>Rubi</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/senco"}>Senco</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/black-and-decker"}>Black+Decker</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/mtx"}>MTX</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/sparta"}>Sparta</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/sg-tools"}>SG Tools</Link>
                     </li>
                     <li className="dropdown-link">
                       <Link href={"/brendovi/karcher"}>Karcher</Link>
                     </li>
                     <li className="dropdown-link">
                       <Link href={"/brendovi/wolfcraft"}>Wolfcraft</Link>
+                    </li>
+                    <li className="dropdown-link">
+                      <Link href={"/brendovi/kwb"}>Kwb</Link>
                     </li>
                   </ul>
                 </div>

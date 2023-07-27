@@ -26,8 +26,8 @@ html {
 .custom-img-servis-page{
   background-image: url('/majstor-servis.png');
 }
-.custom-img-bosch{
-  background-image: url('/bos.webp');
+.custom-img-stridon{
+  background-image: url('/3333.png');
 }
 
 .custom-img-bg {
@@ -112,6 +112,7 @@ a{
   opacity: 0;
   pointer-events: none;
   transition: .5s;
+  box-shadow: 0 2px 4px rgba(0, 0.2, 0, 0.5);
 }
 
 .dropdown ul{

@@ -1,20 +1,20 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import dewalt from "../../../public/devalt.webp";
+import dewalt from "../../../public/dewaltlogo.png";
 const dewaltKatalogVrednosti = [
   {
     imeKataloga: "1.Dewalt katalog",
-    rutaKataloga: "/katalog.pdf"
+    rutaKataloga: "/katalog.pdf",
   },
   {
     imeKataloga: "2.Dewalt katalog",
-    rutaKataloga: "/katalog.pdf"
+    rutaKataloga: "/katalog.pdf",
   },
   {
     imeKataloga: "3.Dewalt katalog",
-    rutaKataloga: "/katalog.pdf"
-  }
+    rutaKataloga: "/katalog.pdf",
+  },
 ];
 const index = () => {
   return (
@@ -26,28 +26,26 @@ const index = () => {
       </Head>
       <Hero
         title={"DeWalt"}
-        opis={"DeWalt - povest i inovacija u svetu električnih alata"}
+        opis={"DEWALT alati - Uvoznik za Srbiju"}
         naslovButtona={"Preuzmi PDF katalog"}
         catalogueValues={dewaltKatalogVrednosti}
       />
       <TextoviISlike
-        naslovPasusa1={"Vrhunski kvalitet"}
+        naslovPasusa1={"Vodeći brend"}
         textPasusa1={
-          "DeWalt je ime koje svi majstori i profesionalci povezuju sa vrhunskim kvalitetom, pouzdanošću i inovacijama u svetu električnih alata. Kompanija DeWalt, koja je danas deo Stanley Black & Decker grupacije, osnovana je još 1924. godine od strane izumitelja i tvorca prvog radijskog akumulatorskog alata, Raymonda E. DeWalta. Od tada, kompanija neprestano oblikuje industriju alata i pruža korisnicima izuzetne proizvode i tehnologije."
+          "DEWALT alati, kao vodeći svetski brend u industriji električnih alata, predstavljeni su vam sa ponosom od strane našeg tima kao ekskluzivni uvoznik za Srbiju. Sa više od jednog veka iskustva i inovacija, DEWALT je sinonim za vrhunsku kvalitetu, pouzdanost i performanse koje prevazilaze očekivanja."
         }
         slika1={dewalt}
-        naslovPasusa2={"Izdržljivost"}
+        naslovPasusa2={"Rast i razvoj"}
         textPasusa2={
-          "DeWalt je u početku postao poznat po svojim visokokvalitetnim i robusnim električnim alatima koji zadovoljavaju potrebe profesionalnih građevinara, stolara i majstora. Njihovi ručni alati, električne bušilice, testere, brusilice i drugi proizvodi brzo su osvojili poverenje korisnika zahvaljujući svojoj izdržljivosti."
+          "DEWALT inženjeri neprestano rade na razvoju napredne tehnologije kako bi našim korisnicima omogućili alate koji su bez premca u svojoj klasi. Ova posvećenost inovacijama rezultirala je impresivnim asortimanom alata koji zadovoljavaju potrebe kako profesionalaca, tako i entuzijasta sa visokim zahtevima."
         }
-        slika2={dewalt}
         naslovPasusa3={"Izdvajanje od konkurencije"}
         textPasusa3={
-          "Međutim, ono što je DeWalt istinski izdvojilo od konkurencije bila je njihova posvećenost inovacijama. Kompanija je uvek bila u koraku s najnovijim tehnološkim trendovima i potrebama korisnika. Kroz godine, DeWalt je predstavio niz revolucionarnih tehnoloških rešenja koja su rad korisnika učinila jednostavnijim, bržim i efikasnijim."
+          "Naša kolekcija DEWALT alata obuhvata širok spektar proizvoda, uključujući bušilice, brusilice, testere, odvijače, ubodne testere, sekače i mnoge druge. Bez obzira na vrstu posla ili zahteva projekta, DEWALT alati pružaju izuzetne performanse i pouzdanost u svakoj situaciji."
         }
-        slika3={dewalt}
         textDoKraja={
-          'Jedan od najznačajnijih napredaka bio je razvoj XR tehnologije (Extended Runtime) koja je poboljšala trajnost baterija i osigurala duže vreme rada alata. Osim toga, DeWalt je pionirski predstavio brusilice s poboljšanom prašinskom kontrolom, akumulatorske alate s visokim naponom i izuzetno otporne alate za rad u zahtevnim uslovima. DeWalt je takođe poznat po svom sistemu "FlexVolt", koji omogućava da se akumulatorski alati koriste s različitim naponima, u zavisnosti od potreba posla. Ova inovacija omogućava korisnicima da imaju snažne alate za najzahtevnije zadatke, ali i lakše i kompaktnije alate za manje poslove, sve uz isti akumulator. Njihova linija alata nije ograničena samo na profesionalce; DeWalt se takođe fokusira na potrebe kućnih majstora i entuzijasta. Njihov širok asortiman alata, od jednostavnih bušilica i ubodnih testera do sofisticiranih višenamenskih alata, omogućava svima, bez obzira na nivo iskustva, da obavljaju poslove sa lakoćom i efikasnošću. DeWalt je ne samo sinonim za izvrsne proizvode, već i za izvanrednu podršku korisnicima. Njihova usluga i jamstvena podrška osiguravaju da kupci imaju poverenje u svoje alate, znajući da je kompanija tu da im pomogne u slučaju bilo kakvih problema. Danas, DeWalt je globalno prepoznata marka koja je postala nezamenljiv partner brojnim profesionalcima i entuzijastima širom sveta. Njihova predanost kvalitetu, inovacijama i korisničkom iskustvu osigurava da će DeWalt i dalje ostati vodeća snaga u svetu električnih alata i da će nastaviti transformisati način na koji se poslovi obavljaju u različitim industrijskim granama.'
+          "Kada se radi o izdržljivosti, DEWALT alati postavljaju standarde u industriji. Napravljeni od visokokvalitetnih materijala, naši alati su dizajnirani da izdrže teške radne uslove, garantujući dugotrajnost i pouzdanost u svakom trenutku.\n\nBaterijska tehnologija je srce mnogih DEWALT alata, pružajući neograničenu mobilnost i fleksibilnost bez potrebe za stalnom blizinom električne utičnice. Naše baterije su brzo punjive i imaju dug vek trajanja, pružajući vam više vremena za obavljanje posla i manje vremena za čekanje.\n\nDEWALT alati su izrađeni uz pažnju prema bezbednosti korisnika. Svaki proizvod prolazi kroz rigorozne bezbednosne testove kako bi se osiguralo da zadovoljava najviše standarde zaštite i sigurnosti. Bez obzira na vaše iskustvo u radu sa alatima, DEWALT će vas podržati sa bezbednošću i pouzdanošću koju zaslužujete.\n\nPostanite deo globalne zajednice korisnika DEWALT alata i iskusite inovaciju i snagu koju donose naši proizvodi. Kao uvoznik i distributer za Srbiju, ponosimo se što vam pružamo pristup širokom asortimanu alata koji će vam pomoći da ostvarite izuzetne rezultate u svakom projektu.\n\nUverite se zašto DEWALT alati predstavljaju pravi izbor za sve vaše potrebe. Neka vaš rad bude bezgraničan sa DEWALT inovacijama - uz nas, vaš uspeh je zagarantovan."
         }
       />
     </div>

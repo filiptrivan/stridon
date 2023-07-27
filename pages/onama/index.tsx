@@ -44,7 +44,7 @@ const index = () => {
             baštenskog alata, usisivača i još toliko toga! Ovlašćeni smo
             uvoznici i distributeri ogromnog broj svetskih i domaćih brendova
             kao što su: DeWalt, Bosch, Stanley, REMS, Wiha, Knipex, GTV, MAX,
-            Hogert, Wera, Rubi, Senco, Black+Decker, MTX, Sparta,SG Tools,
+            Högert, Wera, Rubi, Senco, Black+Decker, MTX, Sparta,SG Tools,
             Karcher, Wolfcraft.{" "}
           </p>
         </div>

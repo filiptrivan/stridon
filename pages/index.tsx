@@ -31,7 +31,7 @@ export default function Home( ) {
         slug={"https://www.prodavnicaalata.rs"}
       />
       <Brendovi title={"Brendovi"} />
-      <Button naslovButtona="Detaljnije o Brendovima"/>
+      <Button naslovButtona="Svi brendovi"/>
       <SnageStridona/>
       <Slider slides={SliderData} />
       <DynamicCounterContainer/>

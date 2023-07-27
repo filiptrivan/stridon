@@ -6,7 +6,7 @@ import HeroWithoutButton from '../components/HeroWithoutButton'
 const index = () => {
   return (
     <div>
-      <HeroWithoutButton titleNaHomePage='Brendovi' opisNaHomePage='Lorem Ipsum, abonam dela rinq vela ista est ro. Lorem Ipsum, abonam dela rinq vela ista est ro.' />
+      <HeroWithoutButton titleNaHomePage='Brendovi' opisNaHomePage='Deo asortimana koji uvozimo i za koji je naša firma uvoznik i distributer na teritoriji Srbije' />
       <CardList Brendovi = {Brendovi} />
     </div>
   )

@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { FaAngleDown, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import bos from "../../../public/boschlogo.png"
-import dewalt from "../../../public/dewaltlogo.png"
+import bos from "../../../public/boschlogo.png";
+import dewalt from "../../../public/dewaltlogo.png";
 
 const Card = () => {
   return (
@@ -14,12 +14,13 @@ const Card = () => {
             <Image src={bos} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-            Bosch
+            Bosch DIY merni alati
           </div>
 
           <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.
+            Upoznajte se sa najnovijim cenovnikom Bosch DIY mernih alata za jun
+            2023. Ovaj sveobuhvatni cenovnik donosi najaktuelnije informacije o
+            raspoloživim mernim alatima za kućne majstore i entuzijaste.
           </div>
           <Link href={"/brendovi/bosch"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
@@ -31,34 +32,15 @@ const Card = () => {
             <ul>
               <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                 <div className="">
-                  <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                    Preuzmi PDF Katalog{" "}
-                    <FaAngleDown className="ml-0.5 text-gray-200 text-xl" />
-                  </button>
-                </div>
-                <div className="dropdown dropdownbutton">
-                  <ul className="">
-                    <li className="dropdown-link">
-                      <a href="/https://media.prodavnicaalata.rs/uploads//2020/09/05/max.pdf" rel="noopener noreferrer" download>
-                        Bosch1a
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="/Cenovnik Bosch DIY mernih alata - JUN 2023 SRB.pdf"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      Preuzmi PDF Katalog{" "}
+                    </button>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -66,17 +48,18 @@ const Card = () => {
         </div>
         <div className=" max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-yellow-600 to-yellow-100 rounded">
           <div className="ml-4">
-            <Image src={dewalt} alt="" width={150} height={150} />
+            <Image src={bos} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-            Dewalt
+            Bosch pribor
           </div>
 
           <div className="border-b pb-2 text-start mx-4 text-base mb-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.aeius. Velit magnam accusamus accusantium natus id qui omnis.a
+            Otkrijte najnovije ponude u našem cenovniku Bosch pribora za mesec
+            jul 2023. Pregledajte bogat izbor vrhunskog Bosch pribora koji će
+            unaprediti vaše alate i olakšati vaše projekte.
           </div>
-          <Link href={"/brendovi/dewalt"}>
+          <Link href={"/brendovi/bosch"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
               {" "}
               Idi na brend <FaArrowRight className="ml-1 text-sm" />{" "}
@@ -86,34 +69,15 @@ const Card = () => {
             <ul>
               <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                 <div className="">
-                  <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                    Preuzmi PDF Katalog{" "}
-                    <FaAngleDown className="ml-0.5 text-gray-200 text-xl" />
-                  </button>
-                </div>
-                <div className="dropdown dropdownbutton">
-                  <ul className="">
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="/Cenovnik Bosch pribora za mesec jul 2023 - SRB.pdf"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      Preuzmi PDF Katalog{" "}
+                    </button>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -124,12 +88,13 @@ const Card = () => {
             <Image src={bos} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-            Bosch
+            Bosch Dremel
           </div>
 
           <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.
+            Istražite najnoviji cenovnik Dremel alata i pribora za jun 2023. U
+            našem cenovniku možete pronaći bogat izbor visokokvalitetnih Dremel
+            alata i pribora koji će ispuniti sve vaše kreativne potrebe.
           </div>
           <Link href={"/brendovi/bosch"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
@@ -141,34 +106,15 @@ const Card = () => {
             <ul>
               <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                 <div className="">
-                  <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                    Preuzmi PDF Katalog{" "}
-                    <FaAngleDown className="ml-0.5 text-gray-200 text-xl" />
-                  </button>
-                </div>
-                <div className="dropdown dropdownbutton">
-                  <ul className="">
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="/Cenovnik Dremel alata i pribora - JUN 2023 SRB.pdf"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      Preuzmi PDF Katalog{" "}
+                    </button>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -179,14 +125,15 @@ const Card = () => {
             <Image src={bos} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-            Bosch
+            Bosch EXPERT
           </div>
 
           <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.
+            Upoznajte se sa našim "EXPERT Mini katalogom pribora"! U ovom
+            posebnom izdanju, predstavljamo vam široku paletu visokokvalitetnog
+            pribora koji će zadovoljiti sve vaše potrebe.
           </div>
-          <Link href={"/bosch"}>
+          <Link href={"/brendovi/bosch"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
               {" "}
               Idi na brend <FaArrowRight className="ml-1 text-sm" />{" "}
@@ -196,34 +143,15 @@ const Card = () => {
             <ul>
               <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                 <div className="">
-                  <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                    Preuzmi PDF Katalog{" "}
-                    <FaAngleDown className="ml-0.5 text-gray-200 text-xl" />
-                  </button>
-                </div>
-                <div className="dropdown dropdownbutton">
-                  <ul className="">
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="/EXPERT mini katalog pribora.pdf"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      Preuzmi PDF Katalog{" "}
+                    </button>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -231,17 +159,17 @@ const Card = () => {
         </div>
         <div className=" max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-yellow-600 to-yellow-100 rounded">
           <div className="ml-4">
-            <Image src={dewalt} alt="" width={150} height={150} />
+            <Image src={bos} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-            Dewalt
+            Bosch Plavi alati
           </div>
-
           <div className="border-b pb-2 text-start mx-4 text-base mb-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.
+            Pregledajte naš neobavezno preporučeni cenovnik Plavih alata za jul
+            2023. Ovaj cenovnik donosi vam širok izbor vrhunskih alata koji su
+            sinonim za kvalitet i pouzdanost.
           </div>
-          <Link href={"/bosch"}>
+          <Link href={"/brendovi/bosch"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
               {" "}
               Idi na brend <FaArrowRight className="ml-1 text-sm" />{" "}
@@ -251,34 +179,15 @@ const Card = () => {
             <ul>
               <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                 <div className="">
-                  <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                    Preuzmi PDF Katalog{" "}
-                    <FaAngleDown className="ml-0.5 text-gray-200 text-xl" />
-                  </button>
-                </div>
-                <div className="dropdown dropdownbutton">
-                  <ul className="">
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="/Neobavezno preporučeni cenovnik Plavih alata JUL 2023 SRB.pdf"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      Preuzmi PDF Katalog{" "}
+                    </button>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -289,14 +198,16 @@ const Card = () => {
             <Image src={bos} alt="" width={150} height={150} />
           </div>
           <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-            Bosch
+            Bosch VP cenovnik
           </div>
 
           <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio,
-            rerum eius. Velit magnam accusamus accusantium natus id qui omnis.
+            Pregledajte naš neobavezno preporučeni VP cenovnik PRO Mernih alata
+            za jun 2023. U ovom cenovniku vam donosimo širok asortiman vrhunskih
+            PRO Mernih alata koji su dizajnirani za profesionalce i
+            najzahtevnije projekte.
           </div>
-          <Link href={"/bosch"}>
+          <Link href={"/brendovi/bosch"}>
             <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
               {" "}
               Idi na brend <FaArrowRight className="ml-1 text-sm" />{" "}
@@ -306,34 +217,15 @@ const Card = () => {
             <ul>
               <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                 <div className="">
-                  <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                    Preuzmi PDF Katalog{" "}
-                    <FaAngleDown className="ml-0.5 text-gray-200 text-xl" />
-                  </button>
-                </div>
-                <div className="dropdown dropdownbutton">
-                  <ul className="">
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                    <li className="dropdown-link">
-                      <a href="/katalog.pdf" download>
-                        Bosch1
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="/Neobavezno preporučeni VP cenovnik PRO Mernih alata  JUN 2023 SRB.pdf"
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      Preuzmi PDF Katalog{" "}
+                    </button>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -345,5 +237,3 @@ const Card = () => {
 };
 
 export default Card;
-
-

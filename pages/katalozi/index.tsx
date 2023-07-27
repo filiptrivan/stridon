@@ -8,7 +8,7 @@ const index = () => {
       <HeroWithoutButton
         titleNaHomePage={"Katalozi"}
         opisNaHomePage={
-          "lorem ipsum, lorem adenom venum, raqulen esta min oparal.lorem ipsum, lorem adenom venum."
+          "Izbor izvrsnih alata na jednom mestu - Pregledajte naše kataloge!"
         }
       />
       <Card />

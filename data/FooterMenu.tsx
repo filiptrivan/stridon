@@ -15,7 +15,6 @@ export const PRODUCTS = [
   export const INFORMACIJE = [
     { name: "Početna", link: "/" },
     { name: "O nama", link: "/onama" },
-    { name: "Blog", link: "/blog" },
     { name: "Kontakt", link: "/kontakt" },
   ];
   export const KOMPANIJA = [

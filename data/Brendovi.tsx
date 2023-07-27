@@ -1,12 +1,5 @@
 export const Brendovi = [
   {
-    image: "/boschlogo.png",
-    title: "Bosch",
-    description:
-      "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet ...",
-    slug: "bosch",
-  },
-  {
     image: "/dewaltlogo.png",
     title: "DeWalt",
     description:
@@ -14,10 +7,10 @@ export const Brendovi = [
     slug: "dewalt",
   },
   {
-    image: "/bosch-diy.png",
-    title: "Bosch Diy",
+    image: "/boschlogo.png",
+    title: "Bosch",
     description:
-      "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet ...",
+    "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet ...",
     slug: "bosch",
   },
   {
@@ -28,32 +21,109 @@ export const Brendovi = [
     slug: "stanley",
   },
   {
-    image: "/makita-logo.png",
-    title: "Makita",
+    image: "/remslogo.png",
+    title: "REMS",
     description:
-      "Makita je renomirana marka koja se ističe po kvalitetu i inovativnosti svojih alata. Sa dugogodišnjim iskustvom u proizvodnji električnih i ručnih ... ",
-    slug: "makita",
+      "REMS je prepoznatljiva marka koja se specijalizuje za proizvodnju mašina i alata za različite industrije. Njihov asortiman obuhvata različite vrste ...",
+    slug: "rems",
   },
   {
-    image: "/einhell-logo.png",
-    title: "Einhell",
+    image: "/wiha-logo.png",
+    title: "Wiha",
     description:
-      "Einhell alati predstavljaju vrhunac kvaliteta u današnjem vremenu. Bilo da se koriste u građevinskoj industriji, stolarstvu ili bilo kojoj drugoj i... ",
-    slug: "bosch",
+      "Wiha je renomirana nemačka marka koja se specijalizuje za proizvodnju kvalitetnih ručnih alata. Njihov asortiman obuhvata širok spektar proizvoda, u...",
+    slug: "wiha",
   },
   {
     image: "/knipex-logo.png",
     title: "Knipex",
     description:
-      "Knipex je vodeći proizvođač visokokvalitetnih ručnih alata specijalizovanih za rad sa cevima, žicama i sličnim materijalima. Sa preciznim dizajnom ... ",
+      "Knipex je vodeći proizvođač visokokvalitetnih ručnih alata specijalizovanih za rad sa cevima, žicama i sličnim materijalima. Sa preciznim dizajnom ...",
     slug: "knipex",
   },
   {
-    image: "/gude-logo.png",
-    title: "Gude",
+    image: "/gtv-logo.png",
+    title: "GTV",
     description:
-      "Gude je poznati proizvođač električnih alata koji se ističe po svojoj pouzdanosti i pristupačnim cenama. Sa širokim asortimanom proizvoda, Gude nud... ",
-    slug: "gude",
+    "GTV je poznata poljska marka koja se ističe svojom ponudom visokokvalitetnih proizvoda za opremanje enterijera i razne projekte. Njihova specijaln ...",
+    slug: "gtv",
+  },
+  {
+    image: "/max-logo.png",
+    title: "MAX",
+    description:
+    "MAX je poznata marka koja se specijalizuje za proizvodnju vrhunskih alata i mašina za različite industrije. Njihov asortiman obuhvata pneumatske al...",
+    slug: "max",
+  },
+  {
+    image: "/hogert-logo.png",
+    title: "Högert",
+    description:
+      "Hogert je specijalizovani proizvođač ručnih alata koji se ističe po svojoj inovativnosti i ergonomskom dizajnu. Sa fokusom na korisničko iskustvo, H... ",
+    slug: "hogert",
+  },
+  {
+    image: "/wera-logo.png",
+    title: "Wera",
+    description:
+      "Wera je priznata nemačka marka koja je specijalizovana za proizvodnju visokokvalitetnih ručnih alata. Njihov asortiman obuhvata širok spektar proizv...",
+    slug: "wera",
+  },
+  {
+    image: "/rubi-logo2.png",
+    title: "Rubi",
+    description:
+      "Rubi, sinonim za profesionalnost i preciznost, nudi vam vrhunsku kolekciju mašina i alata za keramiku koja zadovoljava visoke standarde u industriji...",
+    slug: "rubi",
+  },
+  {
+    image: "/senco-logo.png",
+    title: "Senco",
+    description:
+      "SENCO, sinonim za snagu i pouzdanost, nudi vam izuzetnu kolekciju zakivača eksera koja zadovoljava visoke standarde u građevinskoj industriji. Sa vi...",
+    slug: "senco",
+  },
+  {
+    image: "/black-and-decker-logo.png",
+    title: "Black+Decker",
+    description:
+      "Black+Decker pruža vam izvanrednu kolekciju alata koja zadovoljava širok spektar potreba kako profesionalaca, tako i entuzijasta širom sveta. Sa više...",
+    slug: "black-and-decker",
+  },
+  {
+    image: "/mtx-logo.png",
+    title: "MTX",
+    description:
+      "MTX - pruža vam izvanrednu kolekciju ručnih alata koja je posebno osmišljena za hobiste i ljubitelje ručnih radova. Sa fokusom na jednostavnost i funk...",
+    slug: "mtx",
+  },
+  {
+    image: "/sparta-logo.png",
+    title: "Sparta",
+    description:
+      "Sparta, vaš pouzdan izbor za hobističke projekte, pruža vam izvanrednu kolekciju ručnih alata koja je posebno namenjena hobistima i ljubiteljima ručn...",
+    slug: "sparta",
+  },
+  {
+    image: "/sg-tools-logo.png",
+    title: "SG Tools",
+    description:
+      "SG Tools je profesionalni brend dijamantskog pribora. SG Tools proizvodi se ističu svojim kvalitetom i dugotrajnošću. Deo ponuda SG Tools proizvoda ... ",
+    slug: "sg-tools",
+  },
+  {
+    image: "/karcher-logo.png",
+    title: "Karcher",
+    description:
+    "Karcher je svetski poznati proizvođač visokokvalitetnih čistača za domaćinstvo i industriju. Sa inovativnim tehnologijama i visokim standardima, Kar... ",
+    slug: "karcher",
+  },
+  {
+    image: "/wolfcraft-logo.png",
+    title: "Wolfcraft",
+    description:
+    "Wolfcraft je renomirani proizvođač alata i pribora za rad na drvetu i metalu. Sa strašću za kvalitetom i inovacijama, Wolfcraft alati su dizajnirani... ",
+    slug: "wolfcraft",
   },
   {
     image: "/kwb-logo.png",
@@ -61,26 +131,5 @@ export const Brendovi = [
     description:
       "Kwb je proizvođač alata i pribora za rad na drvetu i metalu. Sa dugogodišnjim iskustvom i stručnim znanjem, KWB alati su priznati kao simbol kvalit... ",
     slug: "kwb",
-  },
-  {
-    image: "/hogert-logo.png",
-    title: "Hogert",
-    description:
-      "Hogert je specijalizovani proizvođač ručnih alata koji se ističe po svojoj inovativnosti i ergonomskom dizajnu. Sa fokusom na korisničko iskustvo, H... ",
-    slug: "hogert",
-  },
-  {
-    image: "/karcher-logo.png",
-    title: "Karcher",
-    description:
-      "Karcher je svetski poznati proizvođač visokokvalitetnih čistača za domaćinstvo i industriju. Sa inovativnim tehnologijama i visokim standardima, Kar... ",
-    slug: "karcher",
-  },
-  {
-    image: "/wolfcraft-logo.png",
-    title: "Wolfcraft",
-    description:
-      "Wolfcraft je renomirani proizvođač alata i pribora za rad na drvetu i metalu. Sa strašću za kvalitetom i inovacijama, Wolfcraft alati su dizajnirani... ",
-    slug: "wolfcraft",
   },
 ];

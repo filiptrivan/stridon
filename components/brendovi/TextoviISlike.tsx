@@ -9,8 +9,6 @@ interface Props {
   textPasusa2: string;
   textPasusa3: string;
   slika1: StaticImageData;
-  slika2: StaticImageData;
-  slika3: StaticImageData;
   textDoKraja: string;
 }
 
@@ -22,62 +20,41 @@ const TextoviISlike = ({
   textPasusa2,
   textPasusa3,
   slika1,
-  slika2,
-  slika3,
   textDoKraja,
 }: Props) => {
   return (
     <>
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20">
-        <div className="max-w-full lg:max-w-[570px] lg:mb-0">
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-8 items-center">
+        <div>
           <Image
             priority
             src={slika1}
             alt=""
-            className="rounded-md w-full"
-            width={1920}
-            height={1080}
+            width={570}
           />
         </div>
         <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
           <p className="text-4xl font-semibold mb-3">{naslovPasusa1}</p>
-          <p> {textPasusa1} </p>
+          <p className="text-base sm:text-xl"> {textPasusa1} </p>
         </div>
       </div>
 
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-20">
-        <div className="max-w-full lg:max-w-[570px] lg:pr-10 mb-4">
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-8">
+        <div className="max-w-full mb-4">
           <p className="text-4xl font-semibold mb-3">{naslovPasusa2}</p>
-          <p> {textPasusa2} </p>
-        </div>
-        <div className="max-w-full lg:max-w-[570px]">
-          <Image
-            src={slika2}
-            alt=""
-            className="rounded-md w-full"
-            width={1920}
-            height={1080}
-          />
+          <p className="text-base sm:text-xl"> {textPasusa2} </p>
         </div>
       </div>
 
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-10">
-        <div className="max-w-full lg:max-w-[570px] lg:mb-0">
-          <Image
-            priority
-            src={slika3}
-            alt=""
-            className="rounded-md w-full"
-            width={1920}
-            height={1080}
-          />
-        </div>
-        <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
+      <div className="max-w-[1140px] mx-auto p-3 flex lg:flex-ro mb-8">
+        <div className="max-w-full mb-4">
           <p className="text-4xl font-semibold mb-3">{naslovPasusa3}</p>
-          <p> {textPasusa3} </p>
+          <p className="text-base sm:text-xl"> {textPasusa3} </p>
         </div>
       </div>
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20">{textDoKraja}</div>
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20 text-base sm:text-xl">
+        {textDoKraja}
+      </div>
     </>
   );
 };

@@ -6,7 +6,8 @@ import boschlogo from "../../public/boschlogo.png";
 import dewaltlogo from "../../public/dewaltlogo.png";
 import festool from "../../public/festool-logo.png"
 import makita from "../../public/makita-logo.png";
-import rubi from "../../public/rubi-logo.png";
+import metabo from "../../public/metabo-logo.png";
+import rubi from "../../public/rubi-logo2.png";
 import senco from "../../public/senco-logo.png";
 import Link from "next/link";
 
@@ -63,18 +64,17 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
             <BrendoviImg brendoviImg={boschlogo} />
           </Link>
         
-          <Link href={"/brendovi/makita"}>
+          {/* <Link href={"/brendovi/makita"}> */}
             <BrendoviImg brendoviImg={makita} />
-          </Link>
-
-          <Link href={"/brendovi/einhell"}>
+            <BrendoviImg brendoviImg={metabo} />
+          {/* </Link> */}
+          {/* <Link href={"/brendovi/einhell"}> */}
             <BrendoviImg brendoviImg={festool} />
-          </Link>
-          <Link href={"/brendovi/knipex"}>
+          {/* </Link> */}
+          <Link href={"/brendovi/rubi"}>
             <BrendoviImg brendoviImg={rubi} />
           </Link>
-
-          <Link href={"/brendovi/gude"}>
+          <Link href={"/brendovi/senco"}>
             <BrendoviImg brendoviImg={senco} />
           </Link>
         </Carousel>
