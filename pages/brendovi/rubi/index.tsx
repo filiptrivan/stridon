@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import rubi from "../../../public/rubi-logo2.png";
+const rubiKatalogVrednosti = [
+  {
+    imeKataloga: "Rubi akcija 2023",
+    rutaKataloga: "https://drive.google.com/file/d/1Pu0Sd3ZYpC0pF6NHKWoyE0qMG8Upuxv7/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"Rubi"}
         opis={"Rubi alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={rubiKatalogVrednosti}
       />
       <TextoviISlike
       title={"Rubi"}

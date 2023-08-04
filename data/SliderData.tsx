@@ -3,6 +3,11 @@
 export const SliderData = [
     {
         image:
+         '/altina1.png',
+         title:"Ugrinovačka 212 - 1"
+    },
+    {
+        image:
         '/3333.png',
         title:"vojislava ilica 141 g - 3"
     },
@@ -20,11 +25,6 @@ export const SliderData = [
         image:
          '/1.png',
          title:"vojislava ilica 141 g - 1"
-    },
-    {
-        image:
-         '/altina1.png',
-         title:"Ugrinovačka 212 - 1"
     },
     {
         image:

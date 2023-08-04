@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import sparta from "../../../public/sparta-logo.png";
+const spartaKatalogVrednosti = [
+  {
+    imeKataloga: "Sparta, MTX katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1wASvbffFJGKsAIN9fb1R48XCrtJmYXkM/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"Sparta"}
         opis={"Sparta alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={spartaKatalogVrednosti}
       />
       <TextoviISlike
       title={"Sparta"}

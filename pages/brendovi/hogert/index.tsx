@@ -2,6 +2,24 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import hogert from "../../../public/hogert-logo.png";
+const hogertKatalogVrednosti = [
+  {
+    imeKataloga: "Hogert električarski alati",
+    rutaKataloga: "https://drive.google.com/file/d/1hIUpfarX9a1t8VKnGRGQabIm0u2eNwdh/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "Hogert HTZ",
+    rutaKataloga: "https://drive.google.com/file/d/16VbxheVuQsX2_aXxc61DBd4Gn0NqcgKZ/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "Hogert odeća katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1CX8oW1BicRW6SdUNhOAxamVy_Y1dnUCw/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "Hogert ručni alati",
+    rutaKataloga: "https://drive.google.com/file/d/1hFN3PuIF2n-LS86D3cGeI0sIlmXoMUTe/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +31,8 @@ const index = () => {
       <Hero
         title={"Hogert"}
         opis={"Hogert alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={hogertKatalogVrednosti}
       />
       <TextoviISlike
       title={"Hogert"}

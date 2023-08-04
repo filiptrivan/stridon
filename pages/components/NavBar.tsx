@@ -64,9 +64,9 @@ const Navbar = () => {
                       <Link href={"/brendovi/hogert"}>Högert</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi/wera"}>Wera</Link>
+                      <Link href={"/brendovi"}>Svi brendovi</Link>
                     </li>
-                    <li className="dropdown-link">
+                    {/* <li className="dropdown-link">
                       <Link href={"/brendovi/rubi"}>Rubi</Link>
                     </li>
                     <li className="dropdown-link">
@@ -92,7 +92,7 @@ const Navbar = () => {
                     </li>
                     <li className="dropdown-link">
                       <Link href={"/brendovi/kwb"}>Kwb</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </li>

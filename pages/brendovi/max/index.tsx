@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import max from "../../../public/max-logo.png";
+const maxKatalogVrednosti = [
+  {
+    imeKataloga: "MAX katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1k3AzwfcE_RlB8xJiO1Tp1nZQwrnEyZje/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"MAX"}
         opis={"MAX vezivači armature i žica - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={maxKatalogVrednosti}
       />
       <TextoviISlike
       title={"MAX"}

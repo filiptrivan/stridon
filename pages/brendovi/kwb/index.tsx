@@ -2,6 +2,20 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import kwb from "../../../public/kwb-logo.png";
+const kwbKatalogVrednosti = [
+  {
+    imeKataloga: "KWB AKKU TOP pribor za aku alate",
+    rutaKataloga: "https://drive.google.com/file/d/14yFw6dV6jnzqwOksY9_AECaI6wX3K8te/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "KWB dodaci za mašine katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1CpjLO7fBAU_twmPZy5KfHNJk27BG0MhV/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "KWB pribor",
+    rutaKataloga: "https://drive.google.com/file/d/1E06fPvQOqKfLGxCzWH-nh_GQYfK2XtOz/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +27,8 @@ const index = () => {
       <Hero
         title={"KWB"}
         opis={"KWB alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={kwbKatalogVrednosti}
       />
       <TextoviISlike
       title={"KWB"}

@@ -2,6 +2,20 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import wiha from "../../../public/wiha-logo.png";
+const wihaKatalogVrednosti = [
+  {
+    imeKataloga: "Wiha katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1s2s4TmSn_7inwljmfF0mznbdVXWMGEDJ/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "Wiha merni alati",
+    rutaKataloga: "https://drive.google.com/file/d/196RbKP5DyiWkJnqvOx1ML10Gby4M2CiG/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "Wiha XXL III kofer",
+    rutaKataloga: "https://drive.google.com/file/d/1gfqq3qQRqocaSAXVwRm-3s9lGDpyDNbn/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +27,8 @@ const index = () => {
       <Hero
         title={"Wiha"}
         opis={"Wiha alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={wihaKatalogVrednosti}
       />
       <TextoviISlike
       title={"Wiha"}

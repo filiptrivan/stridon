@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import wera from "../../../public/wera-logo.png";
+const weraKatalogVrednosti = [
+  {
+    imeKataloga: "Wera katalog",
+    rutaKataloga: "https://drive.google.com/file/d/140HnM3JRm2k_F4iF_j46tbchAST-S45O/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"Wera"}
         opis={"Wera alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={weraKatalogVrednosti}
       />
       <TextoviISlike
       title={"Wera"}

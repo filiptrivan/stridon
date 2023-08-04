@@ -3,6 +3,16 @@ import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import karcher from "../../../public/karcher-logo.png";
 const index = () => {
+  const karcherKatalogVrednosti = [
+    {
+      imeKataloga: "Karcher profesionalni program katalog",
+      rutaKataloga: "https://drive.google.com/file/d/1rCZ63RGygIn4IeTTar4sLetDzc7UUoaJ/view?usp=drive_link",
+    },
+    {
+      imeKataloga: "Karcher žuti program katalog",
+      rutaKataloga: "https://drive.google.com/file/d/14ERZxuCZexyQZ0rNtbBUXGXKjzZm_x5Q/view?usp=drive_link",
+    },
+  ];
   return (
     <div>
       <Head>
@@ -13,8 +23,8 @@ const index = () => {
       <Hero
         title={"Karcher"}
         opis={"Karcher alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={karcherKatalogVrednosti}
       />
       <TextoviISlike
       title={"Karcher"}

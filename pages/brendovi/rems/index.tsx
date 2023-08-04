@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import rems from "../../../public/remslogo.png";
+const remsKatalogVrednosti = [
+  {
+    imeKataloga: "Rems akcija 2023",
+    rutaKataloga: "https://drive.google.com/file/d/1S_H99PFic4pdtzFZOw2lSC0URAo6YFcV/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"Rems"}
         opis={"Rems alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={remsKatalogVrednosti}
       />
       <TextoviISlike
       title={"REMS"}

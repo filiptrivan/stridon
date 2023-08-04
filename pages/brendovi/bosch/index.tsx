@@ -39,7 +39,7 @@ const index = () => {
       <Hero
         title={"Bosch"}
         opis={"BOSCH alati - Uvoznik za Srbiju"}
-        naslovButtona={"Preuzmi PDF katalog"}
+        naslovButtona={"Pogledaj PDF kataloge"}
         catalogueValues={boschKatalogVrednosti}
       />
       <TextoviISlike

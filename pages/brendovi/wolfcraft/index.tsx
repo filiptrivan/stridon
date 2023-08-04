@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import wolfcraft from "../../../public/wolfcraft-logo.png";
+const wolfcraftKatalogVrednosti = [
+  {
+    imeKataloga: "Wolfcraft katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1SU0y0Lr9TvJqvX0t20R44H6HxHLiWaZJ/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"Wolfcraft"}
         opis={"Wolfcraft alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={wolfcraftKatalogVrednosti}
       />
       <TextoviISlike
         title={"Wolfcraft"}

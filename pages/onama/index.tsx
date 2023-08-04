@@ -11,7 +11,7 @@ const index = () => {
         <div className="max-w-full lg:max-w-[570px] lg:mb-0">
           <Image
             priority
-            src="/3333.png"
+            src="/altina1.png"
             alt="stridon vojislava ilica maloprodaja"
             className="rounded-md w-full"
             width={1920}

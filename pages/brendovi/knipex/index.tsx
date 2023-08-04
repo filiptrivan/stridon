@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import knipex from "../../../public/knipex-logo.png";
+const knipexKatalogVrednosti = [
+  {
+    imeKataloga: "Knipex katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1YgRP6jOCM6D4apCU-mRM_3mNn2yWiTpN/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"Knipex"}
         opis={"Knipex alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={knipexKatalogVrednosti}
       />
       <TextoviISlike
       title={"Knipex"}

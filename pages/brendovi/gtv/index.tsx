@@ -2,6 +2,12 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import gtv from "../../../public/gtv-logo.png";
+const gtvKatalogVrednosti = [
+  {
+    imeKataloga: "GTV katalog",
+    rutaKataloga: "/https://drive.google.com/file/d/1O7cEdZPw2CyvNTsxmfR7ZpL9GAXlpJ5k/view?usp=drive_link",
+  },
+];
 const index = () => {
   return (
     <div>
@@ -13,8 +19,8 @@ const index = () => {
       <Hero
         title={"GTV"}
         opis={"GTV alati - Uvoznik za Srbiju"}
-        naslovButtona={""}
-        catalogueValues={""}
+        naslovButtona={"Pogledaj PDF kataloge"}
+        catalogueValues={gtvKatalogVrednosti}
       />
       <TextoviISlike
       title={"GTV"}
