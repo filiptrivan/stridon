@@ -159,6 +159,16 @@ const Navbar = ({locales, translate}:any) => {
                 >
                   <Link href="/onama">{translate("O namaFon")}</Link>
                 </li>
+                <li
+                  onClick={navHandler}
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                >
+                  {locales?.map((l:any)=> (
+                    <Link href={'/'} locale={l}>
+                      {`${l}\n`} 
+                    </Link>
+                  ))}
+                </li>
               </ul>
             </div>
           </div>
