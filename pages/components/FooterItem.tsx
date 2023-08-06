@@ -1,5 +1,6 @@
 import React from "react";
 import ErrorPage from "../_error";
+import Link from "next/link";
 
 interface Link {
   name: string;
@@ -9,9 +10,10 @@ interface Link {
 interface Props {
   Links: Link[];
   title: string;
+  translate:any;
 }
 
-const FooterItem: React.FC<Props> = ({ Links, title }) => {
+const FooterItem: React.FC<Props> = ({ Links, title, translate }) => {
   if(!Links){
     return <ErrorPage/>
   }
@@ -23,7 +25,7 @@ const FooterItem: React.FC<Props> = ({ Links, title }) => {
       <div className="mb-1 font-semibold">{title}</div>
       {Links.map((link) => (
         <li key={link.name}>
-          <a
+          <Link
             className={
               link.name != "Ponedeljak - Petak: 8:00 - 18:00h" &&
               link.name != "Subota: 9:00 - 15:00h" &&
@@ -35,8 +37,8 @@ const FooterItem: React.FC<Props> = ({ Links, title }) => {
             }
             href={link.link}
           >
-            {link.name}
-          </a>
+            {translate(`${link.name}`)}
+          </Link>
         </li>
       ))}
     </ul>

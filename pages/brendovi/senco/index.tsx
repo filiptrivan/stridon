@@ -2,7 +2,10 @@ import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import senco from "../../../public/senco-logo.png";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const index = () => {
+    const { t: translate } = useTranslation("home");
   return (
     <div>
       <Head>
@@ -12,38 +15,31 @@ const index = () => {
       </Head>
       <Hero
         title={"Senco"}
-        opis={"Senco alati - Uvoznik za Srbiju"}
+        opis={translate("Senco alati - Uvoznik za Srbiju")}
         naslovButtona={""}
+translate={translate}
         catalogueValues={""}
       />
       <TextoviISlike
        title={"Senco"}
-        naslovPasusa1={"Standard na tržištu"}
-        naslovPasusa2={"Asortiman"}
-        naslovPasusa3={"Tehnologija i napredak"}
-        textPasusa1={
-          "SENCO, sinonim za snagu i pouzdanost, nudi vam izuzetnu kolekciju zakivača eksera koja zadovoljava visoke standarde u građevinskoj industriji. Sa više od 75 godina iskustva u proizvodnji alata za građevinare i stolare, SENCO je postao renomirani brend među profesionalcima širom sveta."
-        }
-        textPasusa2={
-          "Naša široka paleta SENCO zakivača eksera obuhvata različite modele i veličine - od pneumatskih zakivača za brze i precizne aplikacije, do baterijskih zakivača koji vam pružaju mobilnost na gradilištu. Svaki SENCO zakivač je pažljivo osmišljen kako bi vam omogućio visok nivo produktivnosti i trajnosti, olakšavajući vaše građevinske i stolarske projekte."
-        }
-        textPasusa3={
-          "SENCO inženjeri su posvećeni inovacijama kako bi vam omogućili alate sa najnaprednijom tehnologijom na tržištu. Naši zakivači se ističu po svojoj snazi i brzini, čime vam omogućavaju brzo i efikasno zakivanje eksera u različite materijale."
-        }
-        slika1={senco}
-        
-        textDoKraja="Kvalitet materijala kojima se koristimo je od suštinskog značaja. Naši zakivači su izrađeni od izdržljivih materijala kako bi izdržali zahtevne radne uslove i pružili vam dugotrajnost i pouzdanost u svakom zakivanju.
-
-        SENCO zakivači eksera se odlikuju ergonomskim dizajnom i jednostavnom upotrebom. Naši alati pružaju vam udobnost tokom rada i omogućavaju vam precizno pozicioniranje eksera, čime postižete savršene rezultate.
-        
-        Sigurnost i performanse su naš prioritet. Naši proizvodi prolaze rigorozne bezbednosne testove kako bismo vam pružili bezbrižno korišćenje i zaštitili vas tokom upotrebe naših zakivača eksera.
-        
-        Bilo da se bavite građevinskim radovima ili stolarskim projektima, SENCO zakivači eksera su pravi izbor za sve vaše potrebe. Pridružite se profesionalcima širom sveta koji veruju u kvalitet i pouzdanost SENCO brenda. Sa SENCO zakivačima eksera, vaši projekti će biti obavljeni brže i sa izvanrednim rezultatima, omogućavajući vam da postignete vrhunske rezultate u svakom građevinskom i stolarskom poduhvatu.
-        
-        "
+       naslovPasusa1={translate("naslov pasusa 1 senco")}
+       naslovPasusa2={translate("naslov pasusa 2 senco")}
+       naslovPasusa3={translate("naslov pasusa 3 senco")}
+       textPasusa1={translate("text pasusa 1 senco")}
+       textPasusa2={translate("text pasusa 2 senco")}
+       textPasusa3={translate("text pasusa 3 senco")}
+       slika1={senco}
+       textDoKraja={translate("text do kraja senco")}
       />
     </div>
   );
 };
 
 export default index;
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["home"])),
+    },
+  };
+}

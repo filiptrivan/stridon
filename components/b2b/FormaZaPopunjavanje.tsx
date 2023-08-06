@@ -10,9 +10,8 @@ const SnackbarAlert = forwardRef<HTMLDivElement, AlertProps>(
     return <Alert elevation={6} ref={ref} {...props} />;
   }
 );
-const FormaZaPopunjavanje = () => {
+const FormaZaPopunjavanje = ({translate}: any) => {
   const [submitted, setSubmitted] = useState(false);
-  const [message, setMessage] = useState(""); // This will be used to show a message if the submission is successful
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -81,7 +80,7 @@ const FormaZaPopunjavanje = () => {
           type="ime"
           name="ime"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-7"
-          placeholder="Ime"
+          placeholder={translate("Ime")}
           value={formik.values.ime}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -96,7 +95,7 @@ const FormaZaPopunjavanje = () => {
           type="prezime"
           name="prezime"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-8"
-          placeholder="Prezime"
+          placeholder={translate("Prezime")}
           value={formik.values.prezime}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -124,7 +123,7 @@ const FormaZaPopunjavanje = () => {
           type="naziv_firme"
           name="naziv_firme"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-7"
-          placeholder="Naziv firme"
+          placeholder={translate("Naziv firme")}
           value={formik.values.naziv_firme}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -138,7 +137,7 @@ const FormaZaPopunjavanje = () => {
           type="adresa_firme"
           name="adresa_firme"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-7"
-          placeholder="Adresa firme"
+          placeholder={translate("Adresa firme")}
           value={formik.values.adresa_firme}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -152,7 +151,7 @@ const FormaZaPopunjavanje = () => {
           type="pib"
           name="pib"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-7"
-          placeholder="Pib firme"
+          placeholder={translate("Pib firme")}
           value={formik.values.pib}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -166,7 +165,7 @@ const FormaZaPopunjavanje = () => {
           type="maticni_broj_firme"
           name="maticni_broj_firme"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-7"
-          placeholder="Matični broj firme"
+          placeholder={translate("Matični broj firme")}
           value={formik.values.maticni_broj_firme}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -181,7 +180,7 @@ const FormaZaPopunjavanje = () => {
           type="kontakt_telefon"
           name="kontakt_telefon"
           className="bg-transparent border border-black/40 rounded-md w-full p-3 mb-7"
-          placeholder="Kontakt telefon"
+          placeholder={translate("Kontakt telefon")}
           value={formik.values.kontakt_telefon}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -197,7 +196,7 @@ const FormaZaPopunjavanje = () => {
           className="p-3 text-black font ring-1 bg-white hover:bg-slate-100 ring-red-500 rounded-md w-full font-semibold"
           disabled={formik.isSubmitting}
         >
-          {!loading && "Potvrdi"}
+          {!loading && translate("Potvrdi")}
           <BeatLoader
             color="#111b2c"
             loading={loading}

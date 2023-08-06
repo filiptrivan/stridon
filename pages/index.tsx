@@ -4,13 +4,17 @@ import { SliderData } from "../data/SliderData";
 import Slider from "./components/Slider";
 import Instagram from "./components/Instagram";
 import Brendovi from "./components/Brendovi";
-import SnageStridona from "./components/SnageStridona";
+import SnageStridona from "./components/SnageStridona"; 
 import DynamicCounterContainer from "./components/DynamicCounterContainer";
 import Button from "./components/Button";
 import TestimonList from "./components/TestimonList"; 
 import records from "../data/testimonials.json" 
-
+import { useTranslation } from "next-i18next";
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import { useRouter } from "next/router";
 export default function Home( ) {
+const {locale} = useRouter()
+const {t:translate} = useTranslation('home')
   return (
     <main>
       <Head>
@@ -23,22 +27,27 @@ export default function Home( ) {
       </Head>
       
       <Hero
-        titleNaHomePage={"Stridon Group"}
-        opisNaHomePage={
-          "Veleprodaja, maloprodaja i online prodaja alata i mašina."
-        }
-        naslovButtona={"Online prodavnica"}
+        titleNaHomePage={`Stridon Group`}
+        opisNaHomePage={translate("hero opis")}
+        naslovButtona={translate("naslov buttona")}
         slug={"https://www.prodavnicaalata.rs"}
       />
-      <Brendovi title={"Brendovi"} />
-      <Button naslovButtona="Svi brendovi"/>
-      <SnageStridona/>
-      <Slider slides={SliderData} />
-      <DynamicCounterContainer/>
-      <TestimonList records = {records}/>
-      <Instagram />
+      <Brendovi title={translate("brendovi")} />
+      <Button naslovButtona={translate("svi brendovi")}/>
+      <SnageStridona translate={translate}/>
+      <Slider slides={SliderData} translate={translate}/>
+      <DynamicCounterContainer translate={translate}/>
+      <TestimonList records={records} translate={translate}/>
+      <Instagram translate={translate}/>
     </main>
   );
 }
 
+export async function getStaticProps({locale}:any) {
+  return{
+    props:{
+      ...(await serverSideTranslations(locale,['home']))
+    }
+  }
+}
 

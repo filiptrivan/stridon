@@ -1,24 +1,22 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Roboto } from "next/font/google";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
+import { useRouter } from "next/router";
+import {appWithTranslation} from 'next-i18next'
 // import { Analytics } from "@vercel/analytics/react";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  variable: "--font-roboto",
-  weight: ["100", "300", "400", "500", "700", "900"],
-});
-
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
+  const {locale, locales, push} = useRouter();
   const { statusCode } = pageProps;
   return (
-    <main className={`${roboto.variable} font-sans`}>
-      {statusCode != 404 && <Navbar />}
+    <main>
+      {statusCode != 404 && <Navbar locales={locales} />}
       <Component {...pageProps} />
       {/* <Analytics/> */}
       {statusCode != 404 && <Footer />}
     </main>
   );
 }
+
+export default appWithTranslation(App);

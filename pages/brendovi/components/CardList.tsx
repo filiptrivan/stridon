@@ -6,31 +6,32 @@ export interface Record {
   title: string;
   description: string;
   slug: string;
-};
+}
 
 interface Props {
   Brendovi: Record[];
+  translate: any;
 }
 
-const CardList = ({ Brendovi }: Props) => {
-    if(!Brendovi){
-        return <ErrorPage/>
-    }
+const CardList = ({ Brendovi, translate }: Props) => {
+  if (!Brendovi) {
+    return <ErrorPage />;
+  }
   return (
     <div className="max-w-[1140px] mx-auto px-6 text-center mt-10">
-        
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
-      {/* naslov */}
-      {Brendovi.map((record, index) => (
-        <Card
-          key={index}
-          title={record.title}
-          image={record.image}
-          description={record.description}
-          slug={record.slug}
-        />
-      ))}
-    </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+        {/* naslov */}
+        {Brendovi.map((record, index) => (
+          <Card
+            translate={translate}
+            key={index}
+            title={record.title}
+            image={record.image}
+            description={record.description}
+            slug={record.slug}
+          />
+        ))}
+      </div>
     </div>
   );
 };

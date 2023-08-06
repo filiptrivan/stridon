@@ -4,13 +4,17 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa";
 import stridon from "../../public/stridon-prodavnica-alata.webp";
+import { useTranslation } from "next-i18next";
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 
-const Navbar = () => {
+const Navbar = ({locales}:any) => {
   const [navbar, setNavbar] = useState(false);
 
   const navHandler = () => {
     setNavbar(!navbar);
   };
+
+  const {t:translate} = useTranslation('home')
 
   return (
     <div>
@@ -26,11 +30,11 @@ const Navbar = () => {
 
               {/* //nav links */}
             </Link>
-            <ul className="hidden sm:flex text-zinc-950">
+            <ul className="hidden sm:flex text-zinc-950 items-center">
               <li className="nav-link pb-4 pt-4 pr-7  hover:text-slate-700 duration-200">
                 <Link href="/brendovi">
                   <div className="flex">
-                    Brendovi{" "}
+                    {translate("BrendoviHeader")}
                     <FaAngleDown className="mt-1 ml-0.5 text-zinc-950" />
                   </div>
                 </Link>
@@ -66,53 +70,40 @@ const Navbar = () => {
                     <li className="dropdown-link">
                       <Link href={"/brendovi"}>Svi brendovi</Link>
                     </li>
-                    {/* <li className="dropdown-link">
-                      <Link href={"/brendovi/rubi"}>Rubi</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/senco"}>Senco</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/black-and-decker"}>Black+Decker</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/mtx"}>MTX</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/sparta"}>Sparta</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/sg-tools"}>SG Tools</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/karcher"}>Karcher</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/wolfcraft"}>Wolfcraft</Link>
-                    </li>
-                    <li className="dropdown-link">
-                      <Link href={"/brendovi/kwb"}>Kwb</Link>
-                    </li> */}
                   </ul>
                 </div>
               </li>
               <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
-                <Link href="/katalozi">Katalozi</Link>
+                <Link href="/katalozi">{translate("KataloziHeader")}</Link>
               </li>
               <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
-                <Link href="/servis">Servis</Link>
+                <Link href="/servis">{translate("ServisHeader")}</Link>
               </li>
 
               <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
-                <Link href="/kontakt">Kontakt</Link>
+                <Link href="/kontakt">{translate("KontaktHeader")}</Link>
               </li>
-              <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200 ">
+              <li className="pb-4 pt-4 pr-4 hover:text-slate-700 duration-200 ">
                 <Link
                   className="border border-red-500 hover:bg-red-100 rounded-md py-1 px-4"
                   href="/b2b"
                 >
                   B2B
                 </Link>
+              </li>
+              <li className="pb-4 pt-4 hover:text-slate-700 duration-200 text-xl">
+                  |
+              </li>
+              <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200 ">
+                <div
+                  className="px-3 flex gap-3"
+                >
+                  {locales?.map((l:any)=> (
+                    <Link href={'/'} locale={l}>
+                      {l}
+                    </Link>
+                  ))}
+                </div>
               </li>
             </ul>
 
@@ -137,25 +128,25 @@ const Navbar = () => {
                   onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/brendovi">Brendovi</Link>
+                  <Link href="/brendovi">{translate("BrendoviFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/katalozi">Katalozi</Link>
+                  <Link href="/katalozi">{translate("KataloziFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/servis">Servis</Link>
+                  <Link href="/servis">{translate("ServisFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/kontakt">Kontakt</Link>
+                  <Link href="/kontakt">{translate("KontaktFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
@@ -167,7 +158,7 @@ const Navbar = () => {
                   onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
-                  <Link href="/onama">O nama</Link>
+                  <Link href="/onama">{translate("O namaFon")}</Link>
                 </li>
               </ul>
             </div>
@@ -179,3 +170,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+export async function getStaticProps({locale}:any) {
+  return{
+    props:{
+      ...(await serverSideTranslations(locale,['home']))
+    }
+  }
+}

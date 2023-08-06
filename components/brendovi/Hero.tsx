@@ -9,6 +9,7 @@ interface HeroProps {
   opis: string;
   naslovButtona: string;
   catalogueValues: any;
+  translate: any;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -16,6 +17,7 @@ const Hero: React.FC<HeroProps> = ({
   opis,
   naslovButtona,
   catalogueValues,
+  translate,
 }) => {
   const [visible, setVisible] = useState(false);
 
@@ -41,6 +43,7 @@ const Hero: React.FC<HeroProps> = ({
         </div>
       </div>
       <MyModal
+        translate={translate}
         catalogueValues={catalogueValues}
         onClose={handleOnClose}
         visible={visible}

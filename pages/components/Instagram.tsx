@@ -14,16 +14,14 @@ import mimiz from "../../public/mimiz.png";
 
 import InstagramImg from "./InstagramImg";
 
-const Instagram = () => {
+const Instagram = ({translate}) => {
   return (
     <div id="work" className="max-w-[1140px] mx-auto text-center p-1">
       <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-2 pt-16">
-        Ko su naši klijenti?
+        {translate("Ko su naši klijenti?")}
       </h2>
       <h3 className="text-base sm:text-xl">
-        Poznate renomirane domaće firme iz oblasti građevine, stolarstva,
-        keramike i drugih. Mala i srednja preduzeća kao i individualci koji
-        imaju potrebu za kvalitetnim alatom i brzom uslugom!
+        {translate("klijenti")}
       </h3>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-3 mt-4 pb-24">
       <InstagramImg socialImg={galens} />

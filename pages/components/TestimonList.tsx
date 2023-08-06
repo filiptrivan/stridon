@@ -13,9 +13,10 @@ export interface Record {
 
 interface Props {
   records: Record[];
+  translate: any;
 }
 
-const TestimonList = ({ records }: Props) => {
+const TestimonList = ({ records, translate }: Props) => {
   if (!records) {
     return null;
   }
@@ -47,7 +48,7 @@ const TestimonList = ({ records }: Props) => {
   return (
     <div className="w-full bg-slate-100">
       <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-2 pt-16">
-        Šta naši saradnici kažu o nama
+        {translate("Šta naši saradnici kažu o nama")}
       </h2>
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pb-10"> */}
       <div className="max-w-[1140px] mx-auto px- sm:px-6 text-center mt-10">
@@ -69,6 +70,7 @@ const TestimonList = ({ records }: Props) => {
               image={record.image}
               description={record.description}
               name={record.name}
+              translate={translate}
             />
           ))}
         </Carousel>

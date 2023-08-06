@@ -6,9 +6,10 @@ import ErrorPage from '../_error';
 
 interface SliderProps{
 slides: {image: string}[];
+translate: any;
 } 
 
-const Slider  =  ({ slides }: SliderProps) => {
+const Slider  =  ({ slides, translate }: SliderProps) => {
   if(!slides){
     return <ErrorPage/>
   }
@@ -28,7 +29,7 @@ const Slider  =  ({ slides }: SliderProps) => {
 
   return (
     <div id='gallery' className='max-w-[1140px] mx-auto pb-16 pt-16 '>
-      <h2 className='text-2xl sm:text-3xl font-medium text-center mb-1'>Galerija</h2>
+      <h2 className='text-2xl sm:text-3xl font-medium text-center mb-1'>{translate("galerija")}</h2>
       <div className='relative flex justify-center p-3'>
 
       {slides.map((slide, index) => {

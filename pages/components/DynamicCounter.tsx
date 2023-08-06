@@ -7,7 +7,7 @@ interface CounterValue {
   intervalId: NodeJS.Timeout | null;
 }
 
-const DynamicCounter = () => {
+const DynamicCounter = ({translate}:any) => {
   const [values, setValues] = useState<CounterValue[]>([]);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const counterSectionRef = useRef<HTMLDivElement>(null);
@@ -78,7 +78,7 @@ const DynamicCounter = () => {
   return (
     <div className="w-full bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950">
       <div className="text-slate-50 sm:text-4xl text-2xl text-center pt-12 px-10">
-        Brojevi govore umesto nas
+        {translate("Brojevi govore umesto nas")}
       </div>
       <div
         className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center pb-20 pt-12"
@@ -93,7 +93,7 @@ const DynamicCounter = () => {
           >
             {values.length > 0 ? values[0].startValue.toLocaleString()+'+' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">Veleprodajnih kupaca</div>
+          <div className="text-xl mb-3 text-slate-50">{translate("Veleprodajnih kupaca")}</div>
         </div>
         {/* <div className="  border-r-zinc-950 border-r "> */}
         <div className=" ">
@@ -104,7 +104,7 @@ const DynamicCounter = () => {
           >
             {values.length > 1 ? values[1].startValue.toLocaleString()+'+' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">Dilera širom Srbije</div>
+          <div className="text-xl mb-3 text-slate-50">{translate("Dilera širom Srbije")}</div>
         </div>
         {/* <div className="  border-r-zinc-950 border-r "> */}
         <div className=" ">
@@ -115,7 +115,7 @@ const DynamicCounter = () => {
           >
             {values.length > 2 ? values[2].startValue.toLocaleString()+'%' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">Zadovoljstvo uslugom</div>
+          <div className="text-xl mb-3 text-slate-50">{translate("Zadovoljstvo uslugom")}</div>
         </div>
         <div className="">
           <i className="fas fa-star"></i>
@@ -126,7 +126,7 @@ const DynamicCounter = () => {
             {values.length > 3 ? values[3].startValue.toLocaleString()+'+' : "0"}
           </div>
           <div className="text-xl mb-3 text-slate-50">
-            Brendova koje zastupamo
+            {translate("Brendova koje zastupamo")}
           </div>
         </div>
       </div>

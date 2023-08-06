@@ -1,19 +1,26 @@
 import React from "react";
 import Card from "./components/Card";
 import HeroWithoutButton from "../components/HeroWithoutButton";
-
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const index = () => {
+  const { t: translate } = useTranslation("home");
   return (
     <div>
       <HeroWithoutButton
-        titleNaHomePage={"Katalozi"}
-        opisNaHomePage={
-          "Izbor izvrsnih alata na jednom mestu - Pregledajte naše kataloge!"
-        }
+        titleNaHomePage={translate("KataloziHeader")}
+        opisNaHomePage={translate("opisNaKatalozima")}
       />
-      <Card />
+      <Card translate={translate} />
     </div>
   );
 };
 
 export default index;
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["home"])),
+    },
+  };
+}

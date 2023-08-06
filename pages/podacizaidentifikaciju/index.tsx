@@ -1,23 +1,31 @@
-import React from "react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const index = () => {
+  const { t: translate } = useTranslation("home");
   return (
     <div>
       <div className="max-w-[1140px] m-auto py-10 my-10 border-2 p-16">
         {/* naslov */}
-        <div className="text-5xl font-medium py-10">Podaci za identifikaciju</div>
+        <div className="text-5xl font-medium py-10">
+          {translate("Podaci za identifikaciju")}
+        </div>
         {/* podnaslov */}
-        <div className="font-medium text-lg pb-4">Podaci firme</div>
-        <div className="">
-          Pun naziv pravnog subjekta: STRIDON GROUP DOO <br />
-          Poštanska adresa: Borivoja Stevanovića 9 <br />
-          Delatnost i šifra delatnosti: 4615 – Posredovanje u prodaji nameštaja,
-          predmeta za domaćinstvo i metalne robe <br />
-          Matični broj: 20588012 <br />
-          Poreski broj (PIB): 106376570 <br />
-          Web adresa: https://www.stridon.rs/ <br />
-          Kontakt telefon: +381-69-8058-374 <br />
-          Kontakt E-mail: office@prodavnicaalata.rs
+        <div className="font-medium text-lg pb-4">
+          {translate("Podaci firme")}
+        </div>
+        <div>
+          {translate("Pun naziv pravnog subjekta: STRIDON GROUP DOO")} <br />
+          {translate("Poštanska adresa: Borivoja Stevanovića 9")} <br />
+          {translate(
+            "Delatnost i šifra delatnosti: 4615 – Posredovanje u prodaji nameštaja, "
+          )}
+          {translate("predmeta za domaćinstvo i metalne robe")} <br />
+          {translate("Matični broj: 20588012")} <br />
+          {translate("Poreski broj (PIB): 106376570")} <br />
+          {translate("Web adresa: https://www.stridon.rs/")} <br />
+          {translate("Kontakt telefon: +381-69-8058-374")} <br />
+          {translate("Kontakt E-mail: office@prodavnicaalata.rs")}
         </div>
       </div>
     </div>
@@ -25,3 +33,10 @@ const index = () => {
 };
 
 export default index;
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["home"])),
+    },
+  };
+}

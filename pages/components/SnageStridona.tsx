@@ -5,32 +5,65 @@ import clock from "../../public/clock (4).png";
 import free from "../../public/free-delivery (4).png";
 import padlock from "../../public/security (1).png";
 
-const SnageStridona = () => {
+const SnageStridona = ({ translate }: any) => {
   return (
     <div className="w-full bg-slate-100">
       <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-2 m-auto justify-center max-w-[1140px] p-3 text-center pb-14 pt-10 ">
         <div className="">
-            <div><Image src={free} alt="" width={48} height={48} className="m-auto  mb-2"/></div>
-            <div className="text-xl font-medium mb-3"> Besplatna dostava</div>
-            <div>Za kupovinu preko 15.000 RSD</div>
+          <div>
+            <Image
+              src={free}
+              alt=""
+              width={48}
+              height={48}
+              className="m-auto  mb-2"
+            />
+          </div>
+          <div className="text-xl font-medium mb-3">
+            {" "}
+            {translate("Besplatna dostava")}
+          </div>
+          <div>{translate("Za kupovinu preko 15.000 RSD")}</div>
         </div>
         <div className="">
-            <div><Image src={clock} alt="" width={48} height={48} className="m-auto  mb-2"/></div>
-            <div className="text-xl font-medium mb-3"> Brza isporuka</div>
-            <div>Isporuka 1-5 radnih dana</div>
+          <div>
+            <Image
+              src={clock}
+              alt=""
+              width={48}
+              height={48}
+              className="m-auto  mb-2"
+            />
+          </div>
+          <div className="text-xl font-medium mb-3"> {translate("Brza isporuka")}</div>
+          <div>{translate("Isporuka 1-5 radnih dana")}</div>
         </div>
         <div className="">
-            <div><Image src={padlock} alt="" width={48} height={48} className="m-auto  mb-2"/></div>
-            <div className="text-xl font-medium mb-3"> Sigurna kupovina</div>
-            <div>Garancija na kupljene mašine</div>
+          <div>
+            <Image
+              src={padlock}
+              alt=""
+              width={48}
+              height={48}
+              className="m-auto  mb-2"
+            />
+          </div>
+          <div className="text-xl font-medium mb-3"> {translate("Sigurna kupovina")}</div>
+          <div>{translate("Garancija na kupljene mašine")}</div>
         </div>
         <div className="">
-            <div><Image src={bank} alt="" width={48} height={48} className="m-auto  mb-2"/></div>
-            <div className="text-xl font-medium mb-3"> Čekovima građana</div>
-            <div>Na 4 rate bez kamate</div>
+          <div>
+            <Image
+              src={bank}
+              alt=""
+              width={48}
+              height={48}
+              className="m-auto  mb-2"
+            />
+          </div>
+          <div className="text-xl font-medium mb-3"> {translate("Čekovima građana")}</div>
+          <div>{translate("Na 4 rate bez kamate")}</div>
         </div>
-        
-        
       </div>
     </div>
   );

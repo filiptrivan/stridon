@@ -7,8 +7,6 @@ const katalozi = [
   {
     id: 1,
     title: "Bosch DIY merni alati",
-    description:
-      "Upoznajte se sa najnovijim cenovnikom Bosch DIY mernih alata za jun 2023. Ovaj sveobuhvatni cenovnik donosi najaktuelnije informacije o raspoloživim mernim alatima za kućne majstore i entuzijaste.",
     slug: "/brendovi/bosch",
     img: "/boschlogo.png",
     pdf_slug: "Cenovnik Bosch DIY mernih alata - JUN 2023 SRB.pdf",
@@ -17,8 +15,6 @@ const katalozi = [
   {
     id: 2,
     title: "Bosch pribor",
-    description:
-      "Otkrijte najnovije ponude u našem cenovniku Bosch pribora za mesec jul 2023. Pregledajte bogat izbor vrhunskog Bosch pribora koji će unaprediti vaše alate i olakšati vaše projekte.",
     slug: "/brendovi/bosch",
     img: "/boschlogo.png",
     pdf_slug: "Cenovnik Bosch pribora za mesec jul 2023 - SRB.pdf",
@@ -27,8 +23,6 @@ const katalozi = [
   {
     id: 3,
     title: "Bosch Dremel",
-    description:
-      "Istražite najnoviji cenovnik Dremel alata i pribora za jun 2023. U našem cenovniku možete pronaći bogat izbor visokokvalitetnih Dremel alata i pribora koji će ispuniti sve vaše kreativne potrebe.",
     slug: "/brendovi/bosch",
     img: "/boschlogo.png",
     pdf_slug: "Cenovnik Dremel alata i pribora - JUN 2023 SRB.pdf",
@@ -37,8 +31,6 @@ const katalozi = [
   {
     id: 4,
     title: "Bosch EXPERT",
-    description:
-      'Upoznajte se sa našim "EXPERT Mini katalogom pribora"! U ovom posebnom izdanju, predstavljamo vam široku paletu visokokvalitetnog pribora koji će zadovoljiti sve vaše potrebe.',
     slug: "/brendovi/bosch",
     img: "/boschlogo.png",
     pdf_slug: "EXPERT mini katalog pribora.pdf",
@@ -46,9 +38,7 @@ const katalozi = [
   },
   {
     id: 5,
-    title: "Bosch Plavi alati",
-    description:
-      "Pregledajte naš neobavezno preporučeni cenovnik Plavih alata za jul 2023. Ovaj cenovnik donosi vam širok izbor vrhunskih alata koji su sinonim za kvalitet i pouzdanost.",
+    title: "Bosch Plavi",
     slug: "/brendovi/bosch",
     img: "/boschlogo.png",
     pdf_slug: "Neobavezno preporučeni cenovnik Plavih alata JUL 2023 SRB.pdf",
@@ -57,8 +47,6 @@ const katalozi = [
   {
     id: 6,
     title: "Bosch VP cenovnik",
-    description:
-      "Pregledajte naš neobavezno preporučeni VP cenovnik PRO Mernih alata za jun 2023. U ovom cenovniku vam donosimo širok asortiman vrhunskih PRO Mernih alata koji su dizajnirani za profesionalce i najzahtevnije projekte.",
     slug: "/brendovi/bosch",
     img: "/boschlogo.png",
     pdf_slug:
@@ -68,8 +56,6 @@ const katalozi = [
   {
     id: 7,
     title: "GTV katalog",
-    description:
-    "Pregledajte najnoviji GTV katalog za jun 2023. U ovom katalogu vam donosimo širok asortiman proizvoda i alata za vaše projekte i zadatke.",
     slug: "/brendovi/gtv",
     img: "/gtv-logo.png",
     pdf_slug:
@@ -79,8 +65,6 @@ const katalozi = [
   {
     id: 8,
     title: "Hogert električarski alati",
-    description:
-    "Upoznajte se sa našim cenovnikom Hogert električarskih alata za jun 2023. Ovaj cenovnik vam donosi širok asortiman visokokvalitetnih električarskih alata za sve vaše električarske potrebe.",
     slug: "/brendovi/hogert",
     img: "/hogert-logo.png",
     pdf_slug:
@@ -90,8 +74,6 @@ const katalozi = [
   {
     id: 9,
     title: "Hogert HTZ",
-    description:
-    "Otkrijte najnovije ponude u našem cenovniku Hogert HTZ opreme za jun 2023. Pregledajte bogat izbor HTZ opreme koja će vam pomoći da obavite poslove sa sigurnošću i efikasnošću.",
     slug: "/brendovi/hogert",
     img: "/hogert-logo.png",
     pdf_slug:
@@ -101,8 +83,6 @@ const katalozi = [
   {
     id: 10,
     title: "Hogert odeća katalog",
-    description:
-    "Pregledajte najnoviji Hogert katalog odeće za jun 2023. U ovom katalogu vam donosimo širok asortiman radne odeće koja će vam pružiti zaštitu i udobnost tokom radnih aktivnosti.",
     slug: "/brendovi/hogert",
     img: "/hogert-logo.png",
     pdf_slug:
@@ -112,8 +92,6 @@ const katalozi = [
   {
     id: 11,
     title: "Hogert ručni alati",
-    description:
-      "Otkrijte naš katalog Hogert ručnih alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Hogert ručnih alata koji su dizajnirani za profesionalce i najzahtevnije projekte.",
     slug: "/brendovi/hogert",
     img: "/hogert-logo.png",
     pdf_slug:
@@ -123,8 +101,6 @@ const katalozi = [
   {
     id: 12,
     title: "Karcher profesionalni program katalog",
-    description:
-      "Pregledajte naš katalog Karcher profesionalnih mašina za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Karcher profesionalnih mašina koje će zadovoljiti sve vaše zahtevne potrebe.",
     slug: "/brendovi/karcher",
     img: "/karcher-logo.png",
     pdf_slug:
@@ -134,8 +110,6 @@ const katalozi = [
   {
     id: 13,
     title: "Karcher žuti program katalog",
-    description:
-      "Otkrijte naš katalog Karcher žutog programa za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Karcher proizvoda koji će vas opremiti za raznovrsne zadatke.",
     slug: "/brendovi/karcher",
     img: "/karcher-logo.png",
     pdf_slug:
@@ -145,8 +119,6 @@ const katalozi = [
   {
     id: 14,
     title: "Knipex katalog",
-    description:
-      "Pregledajte naš katalog Knipex alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Knipex alata koji su dizajnirani za profesionalce i najzahtevnije projekte.",
     slug: "/brendovi/knipex",
     img: "/knipex-logo.png",
     pdf_slug:
@@ -156,8 +128,6 @@ const katalozi = [
   {
     id: 15,
     title: "KWB AKKU TOP pribor za aku alate",
-    description:
-      "Otkrijte naš katalog KWB AKKU TOP pribora za aku alate za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih KWB AKKU TOP pribora koji će olakšati vaš rad sa aku alatima.",
     slug: "/brendovi/kwb",
     img: "/kwb-logo.png",
     pdf_slug:
@@ -167,8 +137,6 @@ const katalozi = [
   {
     id: 16,
     title: "KWB dodaci za mašine katalog",
-    description:
-      "Pregledajte naš katalog KWB dodataka za mašine za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih KWB dodataka za mašine koji će unaprediti vaše performanse.",
     slug: "/brendovi/kwb",
     img: "/kwb-logo.png",
     pdf_slug:
@@ -178,8 +146,6 @@ const katalozi = [
   {
     id: 17,
     title: "KWB pribor",
-    description:
-      "Otkrijte naš katalog KWB pribora za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih KWB pribora koji će vam biti verni partneri na radnom mestu.",
     slug: "/brendovi/kwb",
     img: "/kwb-logo.png",
     pdf_slug:
@@ -189,8 +155,6 @@ const katalozi = [
   {
     id: 18,
     title: "MAX katalog",
-    description:
-      "Pregledajte naš katalog MAX alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih MAX alata koji su pouzdani saveznici u vašim projektima.",
     slug: "/brendovi/max",
     img: "/max-logo.png",
     pdf_slug:
@@ -200,8 +164,6 @@ const katalozi = [
   {
     id: 19,
     title: "MTX, Sparta katalog",
-    description:
-      "Pregledajte naš katalog MTX i Sparta alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih MTX i Sparta alata koji su dizajnirani za različite potrebe.",
     slug: "/brendovi/mtx",
     img: "/mtx-logo.png",
     pdf_slug:
@@ -211,8 +173,6 @@ const katalozi = [
   {
     id: 20,
     title: "Rems akcija 2023",
-    description:
-      "Pregledajte naš katalog Rems akcija za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Rems alata i opreme za vaše radne zadatke.",
     slug: "/brendovi/rems",
     img: "/remslogo.png",
     pdf_slug:
@@ -221,9 +181,7 @@ const katalozi = [
   },
   {
     id: 21,
-    title: "Rubi Katalog 2023",
-    description:
-      "Pregledajte naš katalog Rubi za ovu sezonu na engleskom jeziku. U ovom katalogu vam donosimo širok asortiman vrhunskih Rubi alata koji će zadovoljiti potrebe profesionalnih majstora.",
+    title: "Rubi akcija 2023",
     slug: "/brendovi/rubi",
     img: "/rubi-logo2.png",
     pdf_slug:
@@ -233,8 +191,6 @@ const katalozi = [
   {
     id: 22,
     title: "Wera katalog",
-    description:
-      "Pregledajte naš katalog Wera alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wera alata koji su poznati po svojoj kvaliteti i inovacijama.",
     slug: "/brendovi/wera",
     img: "/wera-logo.png",
     pdf_slug:
@@ -244,8 +200,6 @@ const katalozi = [
   {
     id: 23,
     title: "Wiha katalog",
-    description:
-      "Otkrijte naš katalog Wiha alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wiha alata koji su dizajnirani za preciznost i pouzdanost.",
     slug: "/brendovi/wiha",
     img: "/wiha-logo.png",
     pdf_slug:
@@ -255,8 +209,6 @@ const katalozi = [
   {
     id: 24,
     title: "Wiha merni alati",
-    description:
-      "Pregledajte naš katalog Wiha mernih alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wiha mernih alata koji će vam pomoći u tačnom merenju.",
     slug: "/brendovi/wiha",
     img: "/wiha-logo.png",
     pdf_slug:
@@ -266,8 +218,6 @@ const katalozi = [
   {
     id: 25,
     title: "Wiha XXL III kofer",
-    description:
-      "Otkrijte naš katalog Wiha XXL III kofera za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wiha alata koji su smešteni u praktičnom koferu.",
     slug: "/brendovi/wiha",
     img: "/wiha-logo.png",
     pdf_slug:
@@ -277,8 +227,6 @@ const katalozi = [
   {
     id: 26,
     title: "Wolfcraft katalog",
-    description:
-      "Pregledajte naš katalog Wolfcraft alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wolfcraft alata koji će vam biti verni saradnici u vašim projektima.",
     slug: "/brendovi/wolfcraft",
     img: "/wolfcraft-logo.png",
     pdf_slug:
@@ -287,7 +235,7 @@ const katalozi = [
   },
 ];
 
-const Card = () => {
+const Card = ({ translate }: any) => {
   return (
     <div className="max-w-[1140px] mx-auto p-2 text-center ">
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
@@ -308,29 +256,28 @@ const Card = () => {
               />
             </div>
             <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-              {catalog.title}
+              {translate(`${catalog.title}`)}
             </div>
-
             <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
-              {catalog.description}
+            {translate(`${catalog.id}`)}
             </div>
             <Link href={`${catalog.slug}`}>
               <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
                 {" "}
-                Idi na brend <FaArrowRight className="ml-1 text-sm" />{" "}
+                {translate("Idi na brend")} <FaArrowRight className="ml-1 text-sm" />{" "}
               </div>
             </Link>
             <div className="text-start ml-4 mb-2 text-lg font-semibold">
               <ul>
                 <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
-                  <div className="">
+                  <div>
                     <a
                       href={`${catalog.pdf_slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                        Pogledaj PDF Katalog{" "}
+                        {translate("Pogledaj PDF Katalog")}{" "}
                       </button>
                     </a>
                   </div>

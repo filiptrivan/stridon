@@ -3,9 +3,6 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
-  FaInstagram,
-  FaFacebook,
-  FaYoutube,
 } from "react-icons/fa";
 
 interface MapaProps {
@@ -13,9 +10,10 @@ interface MapaProps {
   kontakt: string;
   adresa: string;
   map_src: string;
+  translate:any;
 }
 
-const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src }) => {
+const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate }) => {
   return (
     <>
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-16">
@@ -35,7 +33,7 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src }) => {
           <div className="mb-6">
             <p className="font-semibold text-lg inline-block">
               <FaPhone className="inline-block mr-2" />
-              Kontakt Telefon
+              {translate("Kontakt Telefon")}
             </p>
             <p>
               <a
@@ -49,7 +47,7 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src }) => {
           <div className="mb-6">
             <p className="font-semibold text-lg">
               <FaMapMarkerAlt className="inline-block mr-2" />
-              Adresa
+              {translate("Adresa")}
             </p>
             <p className="mb-4">{adresa}</p>
           </div>

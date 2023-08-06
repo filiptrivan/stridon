@@ -4,12 +4,14 @@ interface Props {
   visible: boolean;
   onClose: () => void;
   catalogueValues:any;
+  translate:any;
 }
 
 const MyModal = ({
   visible,
   onClose,
-  catalogueValues
+  catalogueValues,
+  translate
 }: Props) => {
   if (!visible) {
     return null;
@@ -30,7 +32,7 @@ const MyModal = ({
                 : "p-0"
             }
           >
-            {value.imeKataloga}
+            {translate(`${value.imeKataloga}`)}
           </div>
         </a>
         ))}
