@@ -1,5 +1,5 @@
 import React from "react";
-import Mapa from "../components/Mapa";
+import Mapa from "../../components/Mapa";
 import HeroServis from "@/components/servis/HeroServis";
 import Text from "@/components/servis/Text";
 import Brendovi from "@/components/servis/Brendovi";

@@ -1,7 +1,7 @@
 import React from 'react'
-import CardList from './components/CardList'
+import CardList from '../../components/components/CardList'
 import {Brendovi} from "../../data/Brendovi"
-import HeroWithoutButton from '../components/HeroWithoutButton'
+import HeroWithoutButton from '../../components/HeroWithoutButton'
 import { useTranslation } from "next-i18next";
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 

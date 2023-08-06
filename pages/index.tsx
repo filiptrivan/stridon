@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Hero from "./components/Hero";
+import Hero from "../components/Hero";
 import { SliderData } from "../data/SliderData";
-import Slider from "./components/Slider";
-import Instagram from "./components/Instagram";
-import Brendovi from "./components/Brendovi";
-import SnageStridona from "./components/SnageStridona"; 
-import DynamicCounterContainer from "./components/DynamicCounterContainer";
-import Button from "./components/Button";
-import TestimonList from "./components/TestimonList"; 
+import Slider from "../components/Slider";
+import Instagram from "../components/Instagram";
+import Brendovi from "../components/Brendovi";
+import SnageStridona from "../components/SnageStridona"; 
+import DynamicCounterContainer from "../components/DynamicCounterContainer";
+import Button from "../components/Button";
+import TestimonList from "../components/TestimonList"; 
 import records from "../data/testimonials.json" 
 import { useTranslation } from "next-i18next";
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'

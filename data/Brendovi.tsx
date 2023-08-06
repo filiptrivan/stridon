@@ -7,7 +7,7 @@ export const Brendovi = [
     slug: "dewalt",
   },
   {
-    image: "/boschlogo.png",
+    image: "/boschlogo2.png",
     title: "Bosch",
     description:
     "Bosch je jedna od najvećih svetskih firmi koja se bavi proizvodnjom električnih i ručnih alata. Bosch Professional predstavlja sinonim za kvalitet ...",

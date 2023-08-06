@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./components/Card";
-import HeroWithoutButton from "../components/HeroWithoutButton";
+import Card from "../../components/katalozi/Card";
+import HeroWithoutButton from "../../components/HeroWithoutButton";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const index = () => {

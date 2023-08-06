@@ -1,6 +1,6 @@
 import React from "react";
-import Mapa from "./components/Mapa";
-import HeroWithoutButton from "./components/HeroWithoutButton";
+import Mapa from "../components/Mapa";
+import HeroWithoutButton from "../components/HeroWithoutButton";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";

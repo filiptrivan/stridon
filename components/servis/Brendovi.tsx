@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import BrendoviImg from "../../pages/components/BrendoviImg";
-import boschlogo from "../../public/boschlogo.png";
+import BrendoviImg from "../../components/BrendoviImg";
+import boschlogo2 from "../../public/boschlogo2.png";
 import dewaltlogo from "../../public/dewaltlogo.png";
 import festool from "../../public/festool-logo.png"
 import makita from "../../public/makita-logo.png";
@@ -61,7 +61,7 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
             <BrendoviImg brendoviImg={dewaltlogo} />
           </Link>
           <Link href={"/brendovi/bosch"}>
-            <BrendoviImg brendoviImg={boschlogo} />
+            <BrendoviImg brendoviImg={boschlogo2} />
           </Link>
         
           {/* <Link href={"/brendovi/makita"}> */}

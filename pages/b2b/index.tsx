@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Hero from "../components/Hero";
+import Hero from "../../components/Hero";
 import dynamic from "next/dynamic";
 const FormaZaPopunjavanje = dynamic(
   () => import("@/components/b2b/FormaZaPopunjavanje"),

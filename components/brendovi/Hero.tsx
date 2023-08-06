@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-const MyModal = dynamic(() => import("@/pages/components/MyModal"), {
+const MyModal = dynamic(() => import("../MyModal"), {
   ssr: false,
 });
 import React, { useState } from "react";
