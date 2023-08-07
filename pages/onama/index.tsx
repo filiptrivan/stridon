@@ -1,11 +1,20 @@
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
-import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
 
 const index = () => {
-const {t:translate} = useTranslation('home')
+  const { t: translate } = useTranslation("home");
   return (
     <div>
+      <Head>
+        <title>O nama - Stridon Group DOO</title>
+        <meta
+          name="description"
+          content="Saznajte više o našoj kompaniji, posvećenosti vrhunskom kvalitetu i širokom asortimanu mašina i alata. Jedan od vodećih uvoznika svetskih brendova.✅"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1 className="text-3xl sm:text-5xl font-medium text-center pb-12 pt-12">
         {translate("O nama")}
       </h1>
@@ -21,7 +30,9 @@ const {t:translate} = useTranslation('home')
           />
         </div>
         <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
-          <h2 className="text-4xl font-semibold mb-3">{translate("Osnivanje")}</h2>
+          <h2 className="text-4xl font-semibold mb-3">
+            {translate("Osnivanje")}
+          </h2>
           <p>
             {" "}
             {translate("tekst 1 o nama")}
@@ -32,7 +43,9 @@ const {t:translate} = useTranslation('home')
 
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-10 sm:mb-20">
         <div className="max-w-full lg:max-w-[570px] lg:pr-10 mb-4">
-          <h2 className="text-4xl font-semibold mb-3">{translate("Veleprodaja i maloprodaja")}</h2>
+          <h2 className="text-4xl font-semibold mb-3">
+            {translate("Veleprodaja i maloprodaja")}
+          </h2>
           <p>
             {" "}
             {translate("tekst 2 o nama")}
@@ -61,7 +74,9 @@ const {t:translate} = useTranslation('home')
           />
         </div>
         <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
-          <h2 className="text-4xl font-semibold mb-3">{translate("Internet prodavnica")}</h2>
+          <h2 className="text-4xl font-semibold mb-3">
+            {translate("Internet prodavnica")}
+          </h2>
           <p>
             {" "}
             {translate("tekst 3 o nama")}
@@ -84,11 +99,13 @@ const {t:translate} = useTranslation('home')
             </h2>
             {translate("Fiksni telefon internet prodaja: 011/4520-171,")} <br />
             {translate("Maloprodaja Ugrinovačka: 011/210-0230,")} <br />
-            {translate("Maloprodaja Vojislava Ilića: 011/2886-509 (samo profesionalni alati)")}{" "}
+            {translate(
+              "Maloprodaja Vojislava Ilića: 011/2886-509 (samo profesionalni alati)"
+            )}{" "}
             <br />
           </div>
           <h2 className="text-xl sm:text-2xl font-semibold">E-mail:</h2>
-            office@stridon.rs
+          office@stridon.rs
         </div>
       </div>
     </div>
@@ -97,10 +114,10 @@ const {t:translate} = useTranslation('home')
 
 export default index;
 
-export async function getStaticProps({locale}:any) {
-  return{
-    props:{
-      ...(await serverSideTranslations(locale,['home']))
-    }
-  }
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["home"])),
+    },
+  };
 }

@@ -9,12 +9,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primaryRed: "#8C2328",
       },
-    },fontFamily: {
+    }
+    ,fontFamily: {
       sans: ["var(--font-raleway)",...fontFamily.sans],
       "2xsm": "10px",
       xsm: "12px",

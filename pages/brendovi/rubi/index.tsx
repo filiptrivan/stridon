@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Rubi - Stridon Group DOO 2023</title>
-        <meta name="description" content="Rubi mašine i alati" />
+        <title>Rubi alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="Rubi mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

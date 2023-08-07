@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>MAX - Stridon Group DOO 2023</title>
-        <meta name="MAX" content="MAX mašine i alati" />
+        <title>MAX alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="MAX mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

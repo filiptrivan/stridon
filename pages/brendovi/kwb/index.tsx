@@ -23,8 +23,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>KWB - Stridon Group DOO 2023</title>
-        <meta name="description" content="KWB mašine i alati" />
+        <title>KWB alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="KWB mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

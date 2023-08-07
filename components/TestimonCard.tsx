@@ -1,8 +1,7 @@
-import React from "react"; 
 import Image from "next/image"; 
 
 
-const TestimonCard = ({ title, image, description,name, translate }: any) => {
+const TestimonCard = ({ title, image,name, translate }: any) => {
   return (
     <div className=" max-w-[400px] max-h-[400px] mb-10 border shadow-lg rounded bg-slate-50 mr-4">
       {/* <div className="p-2 sm:ml-4"> */}

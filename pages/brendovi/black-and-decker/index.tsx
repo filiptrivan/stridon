@@ -9,8 +9,11 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Black+Decker - Stridon Group DOO 2023</title>
-        <meta name="description" content="Black+Decker mašine i alati" />
+        <title>Black+Decker alati - Stridon Group DOO 2023</title>
+        <meta
+          name="description"
+          content="Black+Decker mašine i alati, pogledajte naše električne alate, baštenske alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

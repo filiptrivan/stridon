@@ -5,10 +5,19 @@ import Text from "@/components/servis/Text";
 import Brendovi from "@/components/servis/Brendovi";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
     <div>
+      <Head>
+        <title>Servis mašina i alata - SG Servis, Stridon Group</title>
+        <meta
+          name="description"
+          content="Servis mašina i alata van garantnog roka za DeWalt, Bosch, Makita, Metabo, Festool, Rubi i Senco. Usluge popravke za najpoznatije svetske brendove.✅"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <HeroServis
         titleNaHomePage={translate("SG Servis")}
         opisNaHomePage={translate("opisNaServisu")}

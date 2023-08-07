@@ -11,8 +11,8 @@ export const validacija = Yup.object({
     .max(50, "Adresa firme ne sme imati više od 50 karaktera")
     .required("Adresa firme je obavezna"),
   pib: Yup.string()
-    .min(8, "PIB mora imati najmanje 8 cifara")
-    .max(8, "PIB ne sme imati više od 8 cifara")
+    .min(9, "PIB mora imati najmanje 9 cifara")
+    .max(9, "PIB ne sme imati više od 9 cifara")
     .required("PIB je obavezan"),
   maticni_broj_firme: Yup.string()
     .min(8, "Matični broj mora imati najmanje 8 cifara")

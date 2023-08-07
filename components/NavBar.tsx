@@ -4,16 +4,15 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa";
 import stridon from "../public/stridon-prodavnica-alata.webp";
+import srpski from "../public/serbia (1).png";
+import engleski from "../public/united-kingdom.png";
 
-
-const Navbar = ({locales, translate}:any) => {
+const Navbar = ({ locales, locale, translate }: any) => {
   const [navbar, setNavbar] = useState(false);
 
   const navHandler = () => {
     setNavbar(!navbar);
   };
-
-
 
   return (
     <div>
@@ -67,7 +66,7 @@ const Navbar = ({locales, translate}:any) => {
                       <Link href={"/brendovi/hogert"}>Högert</Link>
                     </li>
                     <li className="dropdown-link">
-                      <Link href={"/brendovi"}>Svi brendovi</Link>
+                      <Link href={"/brendovi"}>{translate("svi brendovi")}</Link>
                     </li>
                   </ul>
                 </div>
@@ -91,17 +90,19 @@ const Navbar = ({locales, translate}:any) => {
                 </Link>
               </li>
               <li className="pb-4 pt-4 hover:text-slate-700 duration-200 text-xl">
-                  |
+                |
               </li>
-              <li className="pb-4 pt-4 pr-2 hover:text-slate-700 duration-200 ">
-                <div
-                  className="px-3 flex gap-3"
-                >
-                  {locales?.map((l:any)=> (
-                    <Link href={'/'} locale={l}>
-                      {l}
+              <li className="pr-2 hover:text-slate-700 duration-200 ">
+                <div className="px-3 py-[0px] flex gap-3">
+                  {locale === "sr" ? (
+                    <Link href={"/"} locale="en">
+                      <Image src={engleski} alt="prevod na engleski" />
                     </Link>
-                  ))}
+                  ) : (
+                    <Link href={"/"} locale="sr">
+                      <Image src={srpski} alt="prevod na srpski" />
+                    </Link>
+                  )}
                 </div>
               </li>
             </ul>
@@ -163,11 +164,15 @@ const Navbar = ({locales, translate}:any) => {
                   onClick={navHandler}
                   className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
                 >
-                  {locales?.map((l:any)=> (
-                    <Link href={'/'} locale={l}>
-                      {`${l}\n`} 
+                  {locale === "sr" ? (
+                    <Link href={"/"} locale="en">
+                      <Image src={engleski} alt="prevod na engleski" />
                     </Link>
-                  ))}
+                  ) : (
+                    <Link href={"/"} locale="sr">
+                      <Image src={srpski} alt="prevod na srpski" />
+                    </Link>
+                  )}
                 </li>
               </ul>
             </div>
@@ -179,4 +184,3 @@ const Navbar = ({locales, translate}:any) => {
 };
 
 export default Navbar;
-

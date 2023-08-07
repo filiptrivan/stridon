@@ -16,8 +16,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>GTV - Stridon Group DOO 2023</title>
-        <meta name="GTV" content="GTV mašine i alati" />
+        <title>GTV alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="GTV mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

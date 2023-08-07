@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Hero from "../../components/Hero";
 import dynamic from "next/dynamic";
 const FormaZaPopunjavanje = dynamic(
@@ -11,12 +11,21 @@ const FormaZaPopunjavanje = dynamic(
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Head from "next/head";
 
 const index = () => {
   const { t: translate } = useTranslation("home");
   const [visible, setVisible] = useState(false);
   return (
     <div>
+      <Head>
+        <title>Postanite naš B2B partner - Stridon Group DOO</title>
+        <meta
+          name="description"
+          content="Pružamo vam mogućnost za rast uz vrhunsku podršku, širok asortiman proizvoda i stručnost našeg tima. Pridružite nam se i ostvarite poslovna dostignuća.✅"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero
         titleNaHomePage="B2B"
         naslovButtona={translate("Link ka portalu")}

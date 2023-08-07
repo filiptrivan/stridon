@@ -37,8 +37,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Bosch - Stridon Group DOO 2023</title>
-        <meta name="description" content="Bosch mašine i alati" />
+        <title>Bosch alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="Bosch mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

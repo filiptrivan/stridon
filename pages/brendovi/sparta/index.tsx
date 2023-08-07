@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Sparta - Stridon Group DOO 2023</title>
-        <meta name="description" content="Sparta mašine i alati" />
+        <title>Sparta alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="Sparta mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

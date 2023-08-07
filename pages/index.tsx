@@ -11,9 +11,8 @@ import TestimonList from "../components/TestimonList";
 import records from "../data/testimonials.json" 
 import { useTranslation } from "next-i18next";
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
-import { useRouter } from "next/router";
+
 export default function Home( ) {
-const {locale} = useRouter()
 const {t:translate} = useTranslation('home')
   return (
     <main>

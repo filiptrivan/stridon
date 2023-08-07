@@ -13,7 +13,7 @@ function App({ Component, pageProps }: AppProps) {
   const { statusCode } = pageProps;
   return (
     <main>
-      {statusCode != 404 && <Navbar locales={locales} translate={translate}/>}
+      {statusCode != 404 && <Navbar locales={locales} locale={locale} translate={translate}/>}
       <Component {...pageProps} />
       {/* <Analytics/> */}
       {statusCode != 404 && <Footer translate={translate}/>}

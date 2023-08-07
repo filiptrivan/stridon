@@ -10,7 +10,7 @@ const index = () => {
     <div>
       <Head>
         <title>Stanley - Stridon Group DOO </title>
-        <meta name="description" content="Stanley mašine i alati" />
+        <meta name="description" content="Stanley mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

@@ -13,7 +13,7 @@ const kontakt = () => {
 
         <meta
           name="description"
-          content="Kontaktirajte Stridon tim za pitanja, podršku ili saradnju. Naša stručna ekipa je tu da vam pomogne i pruži informacije o našim proizvodima i uslugama."
+          content="Kontaktirajte Stridon tim za pitanja, podršku ili saradnju. Naša stručna ekipa je tu da vam pomogne i pruži informacije o našim proizvodima i uslugama.✅"
         />
         <meta
           name="keywords"

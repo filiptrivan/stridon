@@ -1,10 +1,19 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
 
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
     <div>
+      <Head>
+        <title>Podaci za identifikaciju - Stridon Group DOO</title>
+        <meta
+          name="description"
+          content="Otkrijte podatke za identifikaciju kompanije Stridon Group DOO. Saznajte više o našem poslovanju, kontakt informacijama i pravnom statusu.✅"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="max-w-[1140px] m-auto py-10 my-10 border-2 p-16">
         {/* naslov */}
         <div className="text-5xl font-medium py-10">

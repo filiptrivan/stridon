@@ -23,8 +23,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Wiha - Stridon Group DOO 2023</title>
-        <meta name="description" content="Wiha mašine i alati" />
+        <title>Wiha alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="Wiha mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

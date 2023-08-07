@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>MTX - Stridon Group DOO 2023</title>
-        <meta name="description" content="MTX mašine i alati" />
+        <title>MTX alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="MTX mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

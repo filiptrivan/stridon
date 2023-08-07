@@ -10,8 +10,11 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>DeWalt - Stridon Group DOO 2023</title>
-        <meta name="description" content="DeWalt mašine i alati" />
+        <title>DeWalt alati - Stridon Group DOO 2023</title>
+        <meta
+          name="description"
+          content="DeWalt mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

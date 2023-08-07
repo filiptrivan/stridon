@@ -9,8 +9,8 @@ const index = () => {
   return ( 
     <div>
       <Head>
-        <title>SG Tools - Stridon Group DOO 2023</title>
-        <meta name="description" content="SG Tools mašine i alati" />
+        <title>SG Tools alati - Stridon Group DOO 2023</title>
+        <meta name="description" content="SG Tools mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
