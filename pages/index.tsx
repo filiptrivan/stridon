@@ -23,6 +23,9 @@ const {t:translate} = useTranslation('home')
           content="Veleprodaja, maloprodaja i online prodaja opreme, alata i mašina najpoznatijih brendova po jeftinim cenama. Cene, akcije i katalozi za 2023. godinu.✅"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta name='image' property='og:image' content="/stridon-prodavnica-alata.webp" />
+        <meta name='url' property='og:url' content="https://www.stridon.rs" />
+        <meta name='type' property='og:type' content="website" />
       </Head>
       
       <Hero
