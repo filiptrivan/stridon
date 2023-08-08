@@ -23,7 +23,7 @@ const index = () => {
           <Image
             priority
             src="/altina1.png"
-            alt="stridon vojislava ilica maloprodaja"
+            alt="Stridon vojislava ilica maloprodaja"
             className="rounded-md w-full"
             width={1920}
             height={1080}
@@ -55,7 +55,7 @@ const index = () => {
         <div className="max-w-full lg:max-w-[570px]">
           <Image
             src="/altina1.png"
-            alt="stridon altina maloprodaja"
+            alt="Stridon altina maloprodaja"
             className="rounded-md w-full"
             width={1920}
             height={1080}
@@ -67,7 +67,7 @@ const index = () => {
           <Image
             priority
             src="/internetprodajastridon.png"
-            alt=""
+            alt="Prodavnica alata logo"
             className="rounded-md w-full"
             width={1920}
             height={1080}

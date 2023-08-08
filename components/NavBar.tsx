@@ -7,7 +7,7 @@ import stridon from "../public/stridon-prodavnica-alata.webp";
 import srpski from "../public/serbia (1).png";
 import engleski from "../public/united-kingdom.png";
 
-const Navbar = ({ locales, locale, translate }: any) => {
+const Navbar = ({ locale, translate }: any) => {
   const [navbar, setNavbar] = useState(false);
 
   const navHandler = () => {
@@ -24,7 +24,7 @@ const Navbar = ({ locales, locale, translate }: any) => {
           <div className="max-w-[1140px] m-auto flex justify-between items-center p-2.5 text-white">
             {/* //logo */}
             <Link href="/">
-              <Image priority src={stridon} alt="/" width={140} height={140} />
+              <Image priority src={stridon} alt="Stridon Logo" width={140} />
 
               {/* //nav links */}
             </Link>
@@ -92,8 +92,8 @@ const Navbar = ({ locales, locale, translate }: any) => {
               <li className="pb-4 pt-4 hover:text-slate-700 duration-200 text-xl">
                 |
               </li>
-              <li className="pr-2 hover:text-slate-700 duration-200 ">
-                <div className="px-3 py-[0px] flex gap-3">
+              <li className="hover:text-slate-700 duration-200 ">
+                <div className="pl-3 flex gap-3">
                   {locale === "sr" ? (
                     <Link href={"/"} locale="en">
                       <Image src={engleski} alt="prevod na engleski" />

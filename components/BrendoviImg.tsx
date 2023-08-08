@@ -1,17 +1,17 @@
 import Image, { StaticImageData } from "next/image";
-import React from "react";
 
 interface BrendoviImgProps {
   brendoviImg: StaticImageData;
+  title:string;
 }
 
-const BrendoviImg: React.FC<BrendoviImgProps> = ({ brendoviImg }) => {
+const BrendoviImg: React.FC<BrendoviImgProps> = ({ brendoviImg, title }) => {
   return (
     <div className="relative card">
       <Image 
-        priority
+        priority 
         src={brendoviImg}
-        alt="/"
+        alt={title}
         className="w-full h-full cursor-pointer"
         layout="responsive"
       />

@@ -13,7 +13,7 @@ const SnageStridona = ({ translate }: any) => {
           <div>
             <Image
               src={free}
-              alt=""
+              alt={translate("Besplatna dostava")}
               width={48}
               height={48}
               className="m-auto  mb-2"
@@ -29,7 +29,7 @@ const SnageStridona = ({ translate }: any) => {
           <div>
             <Image
               src={clock}
-              alt=""
+              alt={translate("Brza isporuka")}
               width={48}
               height={48}
               className="m-auto  mb-2"
@@ -42,7 +42,7 @@ const SnageStridona = ({ translate }: any) => {
           <div>
             <Image
               src={padlock}
-              alt=""
+              alt={translate("Garancija na kupljene mašine")}
               width={48}
               height={48}
               className="m-auto  mb-2"
@@ -55,7 +55,7 @@ const SnageStridona = ({ translate }: any) => {
           <div>
             <Image
               src={bank}
-              alt=""
+              alt={translate("Čekovima građana")}
               width={48}
               height={48}
               className="m-auto  mb-2"

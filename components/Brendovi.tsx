@@ -67,67 +67,67 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
           swipeable={false}
         >
           <Link href={"/brendovi/dewalt"}>
-            <BrendoviImg brendoviImg={dewaltlogo} />
+            <BrendoviImg brendoviImg={dewaltlogo} title="DeWalt" />
           </Link>
 
           <Link href={"/brendovi/stanley"}>
-            <BrendoviImg brendoviImg={stanley} />
+            <BrendoviImg brendoviImg={stanley} title="Stanley" />
           </Link>
 
           <Link href={"/brendovi/bosch"}>
-            <BrendoviImg brendoviImg={boschlogo2} />
+            <BrendoviImg brendoviImg={boschlogo2} title="Bosch" />
           </Link>
 
           <Link href={"/brendovi/knipex"}>
-            <BrendoviImg brendoviImg={knipex} />
+            <BrendoviImg brendoviImg={knipex} title="Knipex" />
           </Link>
 
           <Link href={"/brendovi/wiha"}>
-            <BrendoviImg brendoviImg={wiha} />
+            <BrendoviImg brendoviImg={wiha} title="Wiha" />
           </Link>
 
           <Link href={"/brendovi/hogert"}>
-            <BrendoviImg brendoviImg={hoegert} />
+            <BrendoviImg brendoviImg={hoegert} title="Hogert" />
           </Link>
 
           <Link href={"/brendovi/gtv"}>
-            <BrendoviImg brendoviImg={gtv} />
+            <BrendoviImg brendoviImg={gtv} title="GTV" />
           </Link>
 
           <Link href={"/brendovi/rems"}>
-            <BrendoviImg brendoviImg={rems} />
+            <BrendoviImg brendoviImg={rems} title="Rems" />
           </Link>
 
           <Link href={"/brendovi/max"}>
-            <BrendoviImg brendoviImg={max} />
+            <BrendoviImg brendoviImg={max} title="Max" />
           </Link>
 
           <Link href={"/brendovi/karcher"}>
-            <BrendoviImg brendoviImg={karcher} />
+            <BrendoviImg brendoviImg={karcher} title="Karcher" />
           </Link>
 
           <Link href={"/brendovi/wera"}>
-            <BrendoviImg brendoviImg={wera} />
+            <BrendoviImg brendoviImg={wera} title="Wera" />
           </Link>
 
           <Link href={"/brendovi/mtx"}>
-            <BrendoviImg brendoviImg={mtx} />
+            <BrendoviImg brendoviImg={mtx} title="MTX" />
           </Link>
 
           <Link href={"/brendovi/sgtools"}>
-            <BrendoviImg brendoviImg={sgtools} />
+            <BrendoviImg brendoviImg={sgtools} title="SGTools" />
           </Link>
 
           <Link href={"/brendovi/blackdecker"}>
-            <BrendoviImg brendoviImg={blackdecker} />
+            <BrendoviImg brendoviImg={blackdecker} title="Black+Decker" />
           </Link>
 
           <Link href={"/brendovi/rubi"}>
-            <BrendoviImg brendoviImg={rubi} />
+            <BrendoviImg brendoviImg={rubi} title="Rubi" />
           </Link>
 
           <Link href={"/brendovi/senco"}>
-            <BrendoviImg brendoviImg={senco} />
+            <BrendoviImg brendoviImg={senco} title="Senco" />
           </Link>
         </Carousel>
       </div>
