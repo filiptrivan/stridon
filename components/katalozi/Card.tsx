@@ -247,12 +247,12 @@ const Card = ({ translate }: any) => {
               background: `linear-gradient(to top, ${catalog?.color}, ${catalog?.color}50)`,
             }}
           >
-            <div className="ml-4">
+            <div className="ml-4 w-[150px]">
               <Image
                 src={catalog.img}
                 alt={catalog.title}
-                width={150}
-                height={150}
+                width={1000}
+                height={563}
               />
             </div>
             <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">

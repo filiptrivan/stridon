@@ -1,12 +1,10 @@
 import TestimonCard from "./TestimonCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export interface Record {
   image: string;
   title: string;
-  description: string;
   name:string
 }
 
@@ -65,13 +63,11 @@ const TestimonList = ({ records, translate }: Props) => {
               key={index}
               title={record.title}
               image={record.image}
-              description={record.description}
               name={record.name}
               translate={translate}
             />
           ))}
         </Carousel>
-        {/* </div> */}
       </div>
     </div>
   );

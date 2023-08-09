@@ -66,7 +66,7 @@ const FormaZaPopunjavanje = ({translate}: any) => {
   };
 
   return (
-    <div className="max-w-[1140px] m-auto py-10 border p-4 sm:p-16">
+    <div className="max-w-[1140px] m-auto py-10 border-2 rounded-md p-4 sm:p-16">
       {error && (
         <div
           className="text-white p-2 bg-red-600 rounded-md mt-[-50px] absolute"

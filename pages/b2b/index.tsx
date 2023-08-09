@@ -1,16 +1,15 @@
 import { useState } from "react";
 import Hero from "../../components/Hero";
-import dynamic from "next/dynamic";
-const FormaZaPopunjavanje = dynamic(
-  () => import("@/components/b2b/FormaZaPopunjavanje"),
-  {
-    ssr: false,
-  }
-);
-// import FormaZaPopunjavanje from "@/components/b2b/FormaZaPopunjavanje";
+// import dynamic from "next/dynamic";
+// const FormaZaPopunjavanje = dynamic(
+//   () => import("@/components/b2b/FormaZaPopunjavanje"),
+//   {
+//     ssr: false,
+//   }
+// );
+import FormaZaPopunjavanje from "@/components/b2b/FormaZaPopunjavanje";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Head from "next/head";
 
 const index = () => {
@@ -32,16 +31,17 @@ const index = () => {
         opisNaHomePage={translate("Imate B2B nalog sa nama? Idite na portal.")}
         slug="https://b2b.wings.rs/stridon#"
       />
-      <div
-        onClick={() => {
-          setVisible(!visible);
-        }}
-        className="text-center text-xl max-w-[1140px] m-auto py-4 border rounded-md hover:bg-slate-200 cursor-pointer shadow-lg"
-      >
-        {translate("Zatražite pristup B2B platformi")}
-        <KeyboardArrowDownIcon />
+      <div className="p-2 sm:p-0">
+        <h2
+          onClick={() => {
+            setVisible(!visible);
+          }}
+          className="text-2xl sm:text-3xl font-medium text-center pb-8 pt-4"
+        >
+          {translate("Zatražite pristup B2B platformi")}
+        </h2>
+        <FormaZaPopunjavanje translate={translate} />
       </div>
-      {visible && <FormaZaPopunjavanje translate={translate} />}
     </div>
   );
 };
