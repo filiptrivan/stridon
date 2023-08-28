@@ -22,7 +22,7 @@ const index = () => {
         <div className="max-w-full lg:max-w-[570px] lg:mb-0">
           <Image
             priority
-            src="/altina1.png"
+            src="/3333.png"
             alt="Stridon vojislava ilica maloprodaja"
             className="rounded-md w-full"
             width={1920}
@@ -105,7 +105,7 @@ const index = () => {
             <br />
           </div>
           <h2 className="text-xl sm:text-2xl font-semibold">E-mail:</h2>
-          office@stridon.rs
+          info@stridon.rs
         </div>
       </div>
     </div>

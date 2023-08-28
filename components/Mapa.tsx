@@ -24,7 +24,7 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate 
               Email
             </p>
             <a
-              href="mailto:office@stridon.rs"
+              href="mailto:info@stridon.rs"
               className="mb-4 hover:text-slate-700 duration-200"
             >
               {email}

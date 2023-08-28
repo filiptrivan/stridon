@@ -34,7 +34,7 @@ const index = () => {
           {translate("Poreski broj (PIB): 106376570")} <br />
           {translate("Web adresa: https://www.stridon.rs/")} <br />
           {translate("Kontakt telefon: +381-69-8058-374")} <br />
-          {translate("Kontakt E-mail: office@prodavnicaalata.rs")}
+          {translate("Kontakt E-mail: info@stridon.rs")}
         </div>
       </div>
     </div>
