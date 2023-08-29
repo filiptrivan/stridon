@@ -5,7 +5,7 @@ export const PRODUCTS = [
     { name: "011/210-0230", link: "tel:0112100230" },
     { name: "Vojislava Ilića 141g", link: "" },
     { name: "011/2886-509", link: "tel:0112886509" },
-    { name: "info@stridon.rs", link: "mailto:info@stridon.rs" },
+    { name: "office@stridon.rs", link: "mailto:office@stridon.rs" },
   ];
   export const RADNOVREME = [
     { name: "Ponedeljak - Petak: 8:00 - 18:00h", link: "" },

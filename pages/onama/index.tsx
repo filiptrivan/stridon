@@ -105,7 +105,7 @@ const index = () => {
             <br />
           </div>
           <h2 className="text-xl sm:text-2xl font-semibold">E-mail:</h2>
-          info@stridon.rs
+          office@stridon.rs
         </div>
       </div>
     </div>

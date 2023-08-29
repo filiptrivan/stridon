@@ -16,7 +16,7 @@ const Text = ({ translate }: any) => {
         {translate("Poreski broj (PIB): 106376570")} <br />
         {translate("Web adresa: https://www.stridon.rs/")} <br />
         {translate("Kontakt telefon: +381-69-8058-374")} <br />
-        {translate("Kontakt E-mail: info@stridon.rs")}
+        {translate("Kontakt E-mail: office@stridon.rs")}
       </div>
       <div className="text-5xl font-medium pt-10 pb-5">{translate("pp1")}</div>
       <div className="py-2">{translate("pp2")}</div>
