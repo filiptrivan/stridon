@@ -5,11 +5,28 @@ import Image from "next/image";
 
 const katalozi = [
   {
+    id: 27,
+    title: "Dewalt najprodavanije 2023",
+    slug: "/brendovi/dewalt",
+    img: "/dewaltlogo.png",
+    pdf_slug: "https://drive.google.com/file/d/1RuMzUGAO4sBoTsBYby_-qGIo5jlFirfP/view?usp=share",
+    color: "#ECFF44",
+  },
+  {
+    id: 28,
+    title: "Dewalt ograničeno izdanje",
+    slug: "/brendovi/dewalt",
+    img: "/dewaltlogo.png",
+    pdf_slug: "https://drive.google.com/file/d/13y1RuBHKXtsudGYMzIi67ym4w5rb3jew/view?usp=share",
+    color: "#ECFF44",
+  },
+  {
     id: 1,
     title: "Bosch DIY merni alati",
     slug: "/brendovi/bosch",
     img: "/boschlogo2.png",
     pdf_slug: "https://drive.google.com/file/d/1BK8KkkGrq2n9J9x3M0ZysdQ24MdhjAqe/view?usp=share",
+    //zelena
     color: "#05B920",
   },
   {
@@ -18,6 +35,7 @@ const katalozi = [
     slug: "/brendovi/bosch",
     img: "/boschlogo2.png",
     pdf_slug: "https://drive.google.com/file/d/1oVevfXbBrPfboKAJIQA62reSEowTyio7/view?usp=share",
+    //crvena
     color: "#FF0000",
   },
   {
@@ -26,6 +44,7 @@ const katalozi = [
     slug: "/brendovi/bosch",
     img: "/boschlogo2.png",
     pdf_slug: "https://drive.google.com/file/d/1xdVeZDXHNFhN3AwYE6XSW5dzVtcB_hSG/view?usp=share",
+    //plava
     color: "#2967FF",
   },
   {
@@ -238,15 +257,16 @@ const katalozi = [
 const Card = ({ translate }: any) => {
   return (
     <div className="max-w-[1140px] mx-auto p-2 text-center ">
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-10 sm:gap-5">
         {katalozi.map((catalog) => (
           <div
             key={catalog.id}
-            className="max-w-[550px] max-h-[550px] mb-10 rounded"
+            className="max-w-[550px] max-h-[550px] sm:mb-4 rounded flex flex-col justify-between"
             style={{
               background: `linear-gradient(to top, ${catalog?.color}, ${catalog?.color}50)`,
             }}
           >
+            <div>
             <div className="ml-4 w-[150px]">
               <Image
                 src={catalog.img}
@@ -261,6 +281,9 @@ const Card = ({ translate }: any) => {
             <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
             {translate(`${catalog.id}`)}
             </div>
+            </div>
+
+            <div className="absolut bottom-">
             <Link href={`${catalog.slug}`}>
               <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
                 {" "}
@@ -268,21 +291,18 @@ const Card = ({ translate }: any) => {
               </div>
             </Link>
             <div className="text-start ml-4 mb-2 text-lg font-semibold">
-              <ul>
-                <li className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
-                  <div>
+                <div className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
                     <a
                       href={`${catalog.pdf_slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="flex p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
+                      <button className="p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
                         {translate("Pogledaj PDF Katalog")}{" "}
                       </button>
                     </a>
-                  </div>
-                </li>
-              </ul>
+                </div>
+            </div>
             </div>
           </div>
         ))}

@@ -51,6 +51,9 @@
   "Bosch Plavi": "Bosch Blue",
   "Bosch VP cenovnik": "Bosch wholesale pricelist",
 
+  "Dewalt najprodavanije 2023": "Dewalt top sellers 2023",
+  "Dewalt ograničeno izdanje": "Dewalt limited catalog",
+
   "Rems akcija 2023": "Rems sale 2023",
   "Rubi akcija 2023": "Rubi sale 2023",
 
@@ -59,7 +62,7 @@
   "Wiha XXL III kofer": "Wiha XXL III tool case",
 
   "Knipex katalog": "Knipex catalog",
-  "MAX katalog": "MAX catalog",
+  "MAX katalog": "MAX catalog", 
   "GTV katalog": "GTV catalog",
   "Wolfcraft katalog": "Wolfcraft catalog",
   "Wera katalog": "Wera catalog",
@@ -79,7 +82,7 @@
   "KWB pribor": "KWB accessories",
 
   "SG Servis": "SG Service",
-  "Brendovi koje servisiramo": "Brands we service",
+  "Brendovi koje servisiramo": "Brands that we service",
   "Kontakt Telefon": "Contact Telephone",
   "Adresa": "Address",
 
@@ -310,6 +313,8 @@
   "24": "Browse our catalog of Wiha measuring tools for this season. In this catalog, we bring you a wide range of top-notch Wiha measuring tools to assist you in accurate measurements.",
   "25": "Discover our catalog of Wiha XXL III cases for this season. In this catalog, we bring you a wide range of top-notch Wiha tools housed in a practical case.",
   "26": "Browse our catalog of Wolfcraft tools for this season. In this catalog, we bring you a wide range of top-notch Wolfcraft tools that will be faithful collaborators in your projects.",
+  "27": "This catalog showcases the latest top-quality products and tools that Dewalt has offered in 2023. Explore a wide range of Dewalt products that have become the first choice for professionals worldwide.",
+  "28": "In this exclusive product range, you will discover tools and equipment that not only meet but also surpass the highest industry standards. Dewalt's limited editions are intended for those who demand the best.",
 
   "key1": "Tool Service under Warranty",
   "key2": "If your tool is within the warranty period",

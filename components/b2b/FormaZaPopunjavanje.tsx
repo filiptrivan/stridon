@@ -37,7 +37,7 @@ const FormaZaPopunjavanje = ({translate}: any) => {
   const formSubmit = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.post("/api/b2b/create", {
+      const { data } = await axios.post("/api/b2b/mail", {
         email: formik.values.email,
         naziv_firme: formik.values.naziv_firme,
         adresa_firme: formik.values.adresa_firme,
@@ -193,7 +193,7 @@ const FormaZaPopunjavanje = ({translate}: any) => {
 
         <button
           type="submit"
-          className="p-3 text-black font ring-1 bg-white hover:bg-slate-100 ring-red-500 rounded-md w-full font-semibold"
+          className="p-3 text-white font ring-1 hover:bg-darkerdarkerRed ring-red-500 rounded-md w-full font-semibold bg-darkerRed"
           disabled={formik.isSubmitting}
         >
           {!loading && translate("Potvrdi")}

@@ -2,7 +2,7 @@
   "hero opis": "Veleprodaja, maloprodaja i online prodaja alata i mašina.",
   "naslov buttona": "Online prodavnica",
   "brendovi": "Brendovi",
-  "svi brendovi": "Svi brendovi",
+  "svi brendovi": "Svi brendovi", 
   "Besplatna dostava": "Besplatna dostava",
   "Za kupovinu preko 15.000 RSD": "Za kupovinu preko 15.000 RSD",
   "Brza isporuka": "Brza isporuka",
@@ -50,6 +50,9 @@
   "Bosch pribor": "Bosch pribor",
   "Bosch Plavi": "Bosch Plavi",
   "Bosch VP cenovnik": "Bosch VP cenovnik",
+
+  "Dewalt najprodavanije 2023": "Dewalt najprodavanije 2023",
+  "Dewalt ograničeno izdanje": "Dewalt ograničeno izdanje",
 
   "Rems akcija 2023": "Rems akcija 2023",
   "Rubi akcija 2023": "Rubi akcija 2023",
@@ -310,6 +313,8 @@
   "24": "Pregledajte naš katalog Wiha mernih alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wiha mernih alata koji će vam pomoći u tačnom merenju.",
   "25": "Otkrijte naš katalog Wiha XXL III kofera za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wiha alata koji su smešteni u praktičnom koferu.",
   "26": "Pregledajte naš katalog Wolfcraft alata za ovu sezonu. U ovom katalogu vam donosimo širok asortiman vrhunskih Wolfcraft alata koji će vam biti verni saradnici u vašim projektima.",
+  "27": "Ovaj katalog predstavlja najnovije proizvode i alate koje je Dewalt ponudio tokom 2023. godine. Otkrijte širok spektar Dewalt proizvoda koji su postali prva opcija za profesionalce i entuzijaste širom sveta.",
+  "28": "U ovoj ekskluzivnoj paleti proizvoda otkrićete alate i opremu koje ne samo da ispunjavaju, već i prevazilaze najviše standarde industrije. Dewaltova ograničena izdanja namenjena su onima koji zahtevaju najbolje.",
 
   "key1": "Servis alata pod garancijom",
   "key2": "Ukoliko je Vaš alat u garantnom roku",

@@ -1,12 +1,5 @@
 import { useState } from "react";
 import Hero from "../../components/Hero";
-// import dynamic from "next/dynamic";
-// const FormaZaPopunjavanje = dynamic(
-//   () => import("@/components/b2b/FormaZaPopunjavanje"),
-//   {
-//     ssr: false,
-//   }
-// );
 import FormaZaPopunjavanje from "@/components/b2b/FormaZaPopunjavanje";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";

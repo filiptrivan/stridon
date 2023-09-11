@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   FaEnvelope,
   FaPhone,
@@ -16,11 +17,11 @@ interface MapaProps {
 const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate }) => {
   return (
     <>
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-16">
-        <div className="max-w-full lg:max-w-[570px] lg:pr-8 mb-4">
-          <div className="mb-6 pr-16">
-            <p className="font-semibold text-lg ">
-              <FaEnvelope className="inline-block mr-2" />
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse md:flex-row md:mb-16 border md:border-0">
+        <div className="max-w-full lg:max-w-[570px] text-center md:text-left md:mr-10 mt-6">
+          <div className="mb-6">
+            <p className="font-medium text-lg ">
+              <FaEnvelope className="inline-block mr-2 text-[28px] text-darkerRed" />
               Email
             </p>
             <a
@@ -31,10 +32,10 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate 
             </a>
           </div>
           <div className="mb-6">
-            <p className="font-semibold text-lg inline-block">
-              <FaPhone className="inline-block mr-2" />
+            <div className="font-medium text-lg">
+              <FaPhone className="inline-block mr-2 text-[28px] text-darkerRed" />
               {translate("Kontakt Telefon")}
-            </p>
+            </div>
             <p>
               <a
                 href={`tel:${kontakt}`}
@@ -45,8 +46,8 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate 
             </p>
           </div>
           <div className="mb-6">
-            <p className="font-semibold text-lg">
-              <FaMapMarkerAlt className="inline-block mr-2" />
+            <p className="font-medium text-lg">
+              <FaMapMarkerAlt className="inline-block mr-2 text-[28px] text-darkerRed" />
               {translate("Adresa")}
             </p>
             <p className="mb-4">{adresa}</p>

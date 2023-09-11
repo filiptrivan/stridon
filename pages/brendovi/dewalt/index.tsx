@@ -5,6 +5,18 @@ import dewalt from "../../../public/dewaltlogo.png";
 
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
+const dewaltKatalogVrednosti = [
+  {
+    imeKataloga: `Dewalt najprodavanije 2023`,
+    rutaKataloga: "/Cenovnik Bosch DIY mernih alata - JUN 2023 SRB.pdf",
+  },
+  {
+    imeKataloga: "Dewalt ograničeno izdanje",
+    rutaKataloga: "/Cenovnik Bosch pribora za mesec jul 2023 - SRB.pdf",
+  },
+];
+
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
@@ -21,8 +33,8 @@ const index = () => {
         translate={translate}
         title="DeWalt"
         opis={translate("DEWALT alati - Uvoznik za Srbiju")}
-        naslovButtona=""
-        catalogueValues=""
+        naslovButtona={translate("Pogledaj PDF kataloge")}
+        catalogueValues={dewaltKatalogVrednosti}
       />
       <TextoviISlike
         title={translate("Dewalt")}
