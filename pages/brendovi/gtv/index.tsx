@@ -8,7 +8,7 @@ const gtvKatalogVrednosti = [
   {
     imeKataloga: "GTV katalog",
     rutaKataloga:
-      "/https://drive.google.com/file/d/1O7cEdZPw2CyvNTsxmfR7ZpL9GAXlpJ5k/view?usp=drive_link",
+      "https://drive.google.com/file/d/1O7cEdZPw2CyvNTsxmfR7ZpL9GAXlpJ5k/view?usp=drive_link",
   },
 ];
 const index = () => {

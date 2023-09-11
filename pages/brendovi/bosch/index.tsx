@@ -7,29 +7,29 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const boschKatalogVrednosti = [
   {
     imeKataloga: `Bosch DIY merni alati`,
-    rutaKataloga: "/Cenovnik Bosch DIY mernih alata - JUN 2023 SRB.pdf",
+    rutaKataloga: "https://drive.google.com/file/d/1BK8KkkGrq2n9J9x3M0ZysdQ24MdhjAqe/view?usp=share",
   },
   {
     imeKataloga: "Bosch pribor",
-    rutaKataloga: "/Cenovnik Bosch pribora za mesec jul 2023 - SRB.pdf",
+    rutaKataloga: "https://drive.google.com/file/d/1oVevfXbBrPfboKAJIQA62reSEowTyio7/view?usp=share",
   },
   {
     imeKataloga: "Bosch DREMEL",
-    rutaKataloga: "/Cenovnik Dremel alata i pribora - JUN 2023 SRB.pdf",
+    rutaKataloga: "https://drive.google.com/file/d/1xdVeZDXHNFhN3AwYE6XSW5dzVtcB_hSG/view?usp=share",
   },
   {
     imeKataloga: "Bosch EXPERT",
-    rutaKataloga: "/EXPERT mini katalog pribora.pdf",
+    rutaKataloga: "https://drive.google.com/file/d/1rpkCB0d9SXnuQ3Pg1WXzV3yUKCLhICSz/view?usp=share",
   },
   {
     imeKataloga: "Bosch Plavi",
     rutaKataloga:
-      "/Neobavezno preporučeni cenovnik Plavih alata JUL 2023 SRB.pdf",
+      "https://drive.google.com/file/d/1lEwdsuzYNCMiq997mi2cS2jvPXfc6p88/view?usp=share",
   },
   {
     imeKataloga: "Bosch VP cenovnik",
     rutaKataloga:
-      "/Neobavezno preporučeni VP cenovnik PRO Mernih alata  JUN 2023 SRB.pdf",
+      "https://drive.google.com/file/d/1966qI7dLpBlcsJkuEoaoxc9XzvShqH-H/view?usp=share",
   },
 ];
 const index = () => {

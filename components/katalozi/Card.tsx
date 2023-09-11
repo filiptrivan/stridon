@@ -257,7 +257,7 @@ const katalozi = [
 const Card = ({ translate }: any) => {
   return (
     <div className="max-w-[1140px] mx-auto p-2 text-center ">
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-10 sm:gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-5">
         {katalozi.map((catalog) => (
           <div
             key={catalog.id}

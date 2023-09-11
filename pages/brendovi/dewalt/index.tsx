@@ -9,11 +9,11 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const dewaltKatalogVrednosti = [
   {
     imeKataloga: `Dewalt najprodavanije 2023`,
-    rutaKataloga: "/Cenovnik Bosch DIY mernih alata - JUN 2023 SRB.pdf",
-  },
+    rutaKataloga: "https://drive.google.com/file/d/1RuMzUGAO4sBoTsBYby_-qGIo5jlFirfP/view?usp=share",
+  }, 
   {
     imeKataloga: "Dewalt ograničeno izdanje",
-    rutaKataloga: "/Cenovnik Bosch pribora za mesec jul 2023 - SRB.pdf",
+    rutaKataloga: "https://drive.google.com/file/d/13y1RuBHKXtsudGYMzIi67ym4w5rb3jew/view?usp=share",
   },
 ];
 
