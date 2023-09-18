@@ -26,7 +26,12 @@ const TextoviISlike = ({
 }: Props) => {
   return (
     <>
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-8 items-center">
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:gap-5 lg:flex-row lg:mb-6 items-center">
+        <div className="max-w-full lg:max-w-[570px] lg:pl-0 mb-4">
+          <h2 className="text-4xl">{naslovPasusa1}</h2>
+          <span className="separator"></span>
+          <p className="text-base sm:text-lg"> {textPasusa1} </p>
+        </div>
         <div>
           <Image
             priority
@@ -35,26 +40,24 @@ const TextoviISlike = ({
             width={570}
           />
         </div>
-        <div className="max-w-full lg:max-w-[570px] lg:pl-10 mb-4">
-          <h2 className="text-4xl font-semibold mb-3">{naslovPasusa1}</h2>
-          <p className="text-base sm:text-xl"> {textPasusa1} </p>
-        </div>
       </div>
 
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:flex-row mb-8">
         <div className="max-w-full mb-4">
-          <h2 className="text-4xl font-semibold mb-3">{naslovPasusa2}</h2>
-          <p className="text-base sm:text-xl"> {textPasusa2} </p>
+          <h2 className="text-4xl">{naslovPasusa2}</h2>
+          <span className="separator"></span>
+          <p className="text-base sm:text-lg"> {textPasusa2} </p>
         </div>
       </div>
 
       <div className="max-w-[1140px] mx-auto p-3 flex lg:flex-ro mb-8">
         <div className="max-w-full mb-4">
-          <h2 className="text-4xl font-semibold mb-3">{naslovPasusa3}</h2>
-          <p className="text-base sm:text-xl"> {textPasusa3} </p>
+          <h2 className="text-4xl">{naslovPasusa3}</h2>
+          <span className="separator"></span>
+          <p className="text-base sm:text-lg"> {textPasusa3} </p>
         </div>
       </div>
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20 text-base sm:text-xl">
+      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-20 text-base sm:text-lg">
         {textDoKraja}
       </div>
     </>
