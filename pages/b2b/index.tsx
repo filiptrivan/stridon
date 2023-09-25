@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Hero from "../../components/Hero";
 import FormaZaPopunjavanje from "@/components/b2b/FormaZaPopunjavanje";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
+import Herob2b from "./HeroB2b";
 
 const index = () => {
   const { t: translate } = useTranslation("home");
@@ -18,7 +18,7 @@ const index = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero
+      <Herob2b
         titleNaHomePage="B2B"
         naslovButtona={translate("Link ka portalu")}
         opisNaHomePage={translate("Imate B2B nalog sa nama? Idite na portal.")}

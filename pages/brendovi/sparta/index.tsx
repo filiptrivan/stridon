@@ -23,7 +23,7 @@ const index = () => {
         title={"Sparta"}
         opis={translate("Sparta alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={spartaKatalogVrednosti}
       />
       <TextoviISlike

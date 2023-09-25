@@ -1,21 +1,21 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
-interface HeroProps {
+interface Herob2bProps {
   titleNaHomePage: string;
   opisNaHomePage: string;
   naslovButtona: string;
   slug: string;
 }
 
-const Hero: React.FC<HeroProps> = ({
+const Herob2b: React.FC<Herob2bProps> = ({
   titleNaHomePage,
   opisNaHomePage,
   naslovButtona,
   slug,
 }) => {
   return (
-    <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-landing-page-real text-center">
+    <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-b2b-page text-center">
       {/* Overlay */}
       <div className="flex absolute top-0 left-0 right-0 bg-black/60 custom-img-bg " />
       <div className="left-0 w-full z-[2]">
@@ -34,4 +34,4 @@ const Hero: React.FC<HeroProps> = ({
   );
 };
 
-export default Hero;
+export default Herob2b;

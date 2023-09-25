@@ -73,6 +73,15 @@ const katalozi = [
     color: "#FF0000",
   },
   {
+    id: 29,
+    title: "Stanley katalog",
+    slug: "/brendovi/stanley",
+    img: "/stanley-logo.png",
+    pdf_slug:
+      "https://drive.google.com/file/d/1B7teaotZAfVehBOZt-ENZvG3kRFScO9i/view?usp=drive_link",
+    color: "#ECFF44",
+  },
+  {
     id: 7,
     title: "GTV katalog",
     slug: "/brendovi/gtv",

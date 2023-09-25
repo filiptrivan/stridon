@@ -23,8 +23,21 @@ html {
 .custom-img-landing-page {
   background-image: url("https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
+/* TODO: change this name */
+.custom-img-landing-page-real{
+  background-image: url("/hero-image-landing.jpg");
+}
+.custom-img-contact-page{
+  background-image: url("/hero-image-contact.jpg");
+}
+.custom-img-b2b-page{
+  background-image: url("/hero-image-b2b.jpg");
+}
 .custom-img-servis-page {
   background-image: url("/majstor-servis.png");
+}
+.custom-img-catalogs-page{
+  background-image: url("/hero-image-catalogs.png");
 }
 .custom-img-stridon {
   background-image: url("/altina1.png");
@@ -323,8 +336,6 @@ b{
 
 .pages__title {
   color: var(--text-color);
-  font: normal normal 300 30px / 30px Raleway, Helvetica, Arial, Verdana,
-    sans-serif;
   text-transform: none;
   margin: 0px;
   padding: 0px 0px 10px 0px;
@@ -345,8 +356,6 @@ b{
 
 .pages__subtitle {
   color: var(--text-color);
-  font: normal normal 400 22px / 25px Raleway, Helvetica, Arial, Verdana,
-    sans-serif;
   text-transform: none;
   margin: 0px;
   padding: 0px 0px 10px 0px;

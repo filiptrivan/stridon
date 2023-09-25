@@ -4,6 +4,12 @@ import Head from "next/head";
 import stanley from "../../../public/stanley-logo.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+const stanleyKatalogVrednosti = [
+  {
+    imeKataloga: "Stanley katalog",
+    rutaKataloga: "https://drive.google.com/file/d/1B7teaotZAfVehBOZt-ENZvG3kRFScO9i/view?usp=drive_link",
+  },
+];
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -16,9 +22,9 @@ const index = () => {
       <Hero
         title={"Stanley"}
         opis={translate("Stanley alati - Uvoznik za Srbiju")}
-        naslovButtona={""}
-translate={translate}
-        catalogueValues={""}
+        naslovButtona={translate("Pogledaj PDF kataloge")}
+        translate={translate} 
+        catalogueValues={stanleyKatalogVrednosti}
       />
       <TextoviISlike
       title={"Stanley"}

@@ -4,6 +4,7 @@ import HeroWithoutButton from "../../components/HeroWithoutButton";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
+import HeroKatalozi from "@/components/katalozi/HeroKatalozi";
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
@@ -16,7 +17,7 @@ const index = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeroWithoutButton
+      <HeroKatalozi
         titleNaHomePage={translate("KataloziHeader")}
         opisNaHomePage={translate("opisNaKatalozima")}
       />

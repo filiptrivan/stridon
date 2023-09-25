@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import {VscChromeClose} from "react-icons/vsc"
 import { FaAngleDown } from "react-icons/fa";
 import stridon from "../public/stridon-prodavnica-alata.webp";
 import srpski from "../public/serbia (1).png";
@@ -33,7 +34,7 @@ const Navbar = ({ locale, translate }: any) => {
                 <Link href="/brendovi">
                   <div className="flex">
                     {translate("BrendoviHeader")}
-                    <FaAngleDown className="mt-1 ml-0.5 text-zinc-950" />
+                    <FaAngleDown className="mt-1 ml-0.5 text-zinc-500" />
                   </div>
                 </Link>
                 <div className="dropdown">
@@ -110,9 +111,9 @@ const Navbar = ({ locale, translate }: any) => {
             {/* //Mobile Button */}
             <div onClick={navHandler} className="block sm:hidden z-10">
               {navbar ? (
-                <AiOutlineClose size={20} className="text-white" />
+                <VscChromeClose size={25} className="text-white"  />
               ) : (
-                <AiOutlineMenu size={20} className="text-zinc-950" />
+                <AiOutlineMenu size={25} className="text-zinc-950" />
               )}
             </div>
             {/* //Mobile Menu */}
@@ -120,7 +121,7 @@ const Navbar = ({ locale, translate }: any) => {
               className={
                 navbar
                   ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex pt-14 pl-6 w-full h-screen bg-black ease-in duration-200 "
-                  : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex pt-14 pl-6  w-full h-screen bg-black ease-in duration-200"
+                  : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex pt-14 pl-6 w-full h-screen bg-black ease-in duration-200"
               }
             >
               <ul>
