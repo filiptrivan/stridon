@@ -12,7 +12,7 @@ const index = () => {
         <title>O nama - Stridon Group DOO</title>
         <meta
           name="description"
-          content="Saznajte više o našoj kompaniji, posvećenosti vrhunskom kvalitetu i širokom asortimanu mašina i alata. Jedan od vodećih uvoznika svetskih brendova.✅"
+          content="98989, posvećenosti vrhunskom kvalitetu i širokom asortimanu mašina i alata. Jedan od vodećih uvoznika svetskih brendova.✅"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
