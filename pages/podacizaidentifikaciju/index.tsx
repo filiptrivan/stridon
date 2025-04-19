@@ -25,7 +25,7 @@ const index = () => {
         </div>
         <div>
           {translate("Pun naziv pravnog subjekta: STRIDON GROUP DOO")} <br />
-          {translate("Poštanska adresa: Borivoja Stevanovića 9")} <br />
+          {translate("Poštanska adresa: Vojislava Ilića 141g")} <br />
           {translate(
             "Delatnost i šifra delatnosti: 4615 – Posredovanje u prodaji nameštaja, "
           )}
