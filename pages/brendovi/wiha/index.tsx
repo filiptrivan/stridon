@@ -39,11 +39,14 @@ translate={translate}
       naslovPasusa1={translate("naslov pasusa 1 wiha")}
       naslovPasusa2={translate("naslov pasusa 2 wiha")}
       naslovPasusa3={translate("naslov pasusa 3 wiha")}
+      naslovPasusa4={translate("naslov pasusa 4 wiha")}
       textPasusa1={translate("text pasusa 1 wiha")}
       textPasusa2={translate("text pasusa 2 wiha")}
       textPasusa3={translate("text pasusa 3 wiha")}
+      textPasusa4={translate("text pasusa 4 wiha")}
       slika1={wiha}
       textDoKraja={translate("text do kraja wiha")}
+      linkDoProizvodjaca={translate("link do proizvodjaca wiha")}
       />
     </div>
   );

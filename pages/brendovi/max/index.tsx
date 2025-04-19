@@ -36,6 +36,7 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 max")}
       slika1={max}
       textDoKraja={translate("text do kraja max")}
+      linkDoProizvodjaca={translate("link do proizvodjaca max")}
       />
     </div>
   );

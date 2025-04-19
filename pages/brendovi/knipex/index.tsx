@@ -31,11 +31,14 @@ translate={translate}
       naslovPasusa1={translate("naslov pasusa 1 knipex")}
       naslovPasusa2={translate("naslov pasusa 2 knipex")}
       naslovPasusa3={translate("naslov pasusa 3 knipex")}
+      naslovPasusa4={translate("naslov pasusa 4 knipex")}
       textPasusa1={translate("text pasusa 1 knipex")}
       textPasusa2={translate("text pasusa 2 knipex")}
       textPasusa3={translate("text pasusa 3 knipex")}
+      textPasusa4={translate("text pasusa 4 knipex")}
       slika1={knipex}
       textDoKraja={translate("text do kraja knipex")}
+      linkDoProizvodjaca={translate("link do proizvodjaca knipex")}
       />
     </div>
   );

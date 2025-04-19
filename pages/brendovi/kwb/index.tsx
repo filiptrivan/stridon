@@ -44,6 +44,7 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 kwb")}
       slika1={kwb}
       textDoKraja={translate("text do kraja kwb")}
+      linkDoProizvodjaca={translate("link do proizvodjaca kwb")}
       />
     </div>
   );

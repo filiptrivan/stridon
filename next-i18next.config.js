@@ -5,4 +5,7 @@ module.exports = {
     localeDetection: false,
     ns: ["common", "home"],
   },
+  interpolation: {
+    escapeValue: false,
+  },
 };
