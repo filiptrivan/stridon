@@ -11,7 +11,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Postanite naš B2B partner - Stridon Group DOO</title>
+        <title>Postanite naš B2B partner | Saradnja | Stridon Group DOO</title>
         <meta
           name="description"
           content="Pružamo vam mogućnost za rast uz vrhunsku podršku, širok asortiman proizvoda i stručnost našeg tima. Pridružite nam se i ostvarite poslovna dostignuća.✅"

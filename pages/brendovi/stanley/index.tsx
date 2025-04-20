@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stanley - Stridon Group DOO </title>
-        <meta name="description" content="Stanley mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>Stanley alati – akcija, ponuda i cene | Stridon Group DOO</title>
+        <meta name="description" content="Stanley mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

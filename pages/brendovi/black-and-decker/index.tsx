@@ -9,10 +9,10 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Black+Decker alati - Stridon Group DOO 2023</title>
+        <title>Black+Decker alati – akcija i ponuda | Stridon Group DOO</title>
         <meta
           name="description"
-          content="Black+Decker mašine i alati, pogledajte naše električne alate, baštenske alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅"
+          content="Black+Decker mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -28,11 +28,9 @@ const index = () => {
         naslovPasusa1={translate("naslov pasusa 1 black+decker")}
         naslovPasusa2={translate("naslov pasusa 2 black+decker")}
         naslovPasusa3={translate("naslov pasusa 3 black+decker")}
-        naslovPasusa4={translate("naslov pasusa 4 black+decker")}
         textPasusa1={translate("text pasusa 1 black+decker")}
         textPasusa2={translate("text pasusa 2 black+decker")}
         textPasusa3={translate("text pasusa 3 black+decker")}
-        textPasusa4={translate("text pasusa 4 black+decker")}
         slika1={blackdecker}
         textDoKraja={translate("text do kraja black+decker")}
         linkDoProizvodjaca={translate("link do proizvodjaca black+decker")}

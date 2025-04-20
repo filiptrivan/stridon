@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Wera alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Wera mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>Wera alati – akcija, ponuda i cene | Stridon Group DOO</title>
+        <meta name="description" content="Wera mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero

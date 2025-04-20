@@ -17,10 +17,10 @@ const {t:translate} = useTranslation('home')
   return (
     <main>
       <Head>
-        <title>Najbolja prodavnica alata u Srbiji - Stridon Group DOO</title>
+        <title>Najbolja prodavnica alata u Srbiji | Stridon Group DOO</title>
         <meta
           name="description"
-          content="Veleprodaja, maloprodaja i online prodaja opreme, alata i mašina najpoznatijih brendova po jeftinim cenama. Cene, akcije i katalozi za 2023. godinu.✅"
+          content="Veleprodaja, maloprodaja i online prodaja opreme, alata i mašina najpoznatijih brendova po jeftinim cenama u Srbiji. Pogledajte nase cene, akcije i kataloge.✅"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta name='image' property='og:image' content="/stridon-prodavnica-alata.webp" />

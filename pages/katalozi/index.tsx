@@ -10,10 +10,10 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Pregledajte naše kataloge - Stridon Group DOO</title>
+        <title>Otkrijte naše kataloge | Alati i mašine | Stridon Group DOO</title>
         <meta
           name="description"
-          content="Otkrijte širok izbor proizvoda i najbolje ponude u našim katalozima. Pronađite proizvode najboljih svetskih brendova koji odgovaraju vašim potrebama.✅"
+          content="Pregledajte širok izbor proizvoda i najbolje ponude u našim katalozima. Pronađite proizvode najboljih svetskih brendova koji odgovaraju vašim potrebama.✅"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
