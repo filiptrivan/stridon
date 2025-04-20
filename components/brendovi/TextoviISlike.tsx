@@ -30,8 +30,6 @@ const TextoviISlike = ({
   linkDoProizvodjaca,
   title
 }: Props) => {
-  console.log("linkDoProizvodjaca:", linkDoProizvodjaca);
-
   return (
     <>
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col lg:gap-5 lg:flex-row lg:mb-6">
