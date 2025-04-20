@@ -53,11 +53,14 @@ const index = () => {
         naslovPasusa1={translate("naslov pasusa 1 bosch")}
         naslovPasusa2={translate("naslov pasusa 2 bosch")}
         naslovPasusa3={translate("naslov pasusa 3 bosch")}
+        naslovPasusa4={translate("naslov pasusa 4 bosch")}
         textPasusa1={translate("text pasusa 1 bosch")}
         textPasusa2={translate("text pasusa 2 bosch")}
         textPasusa3={translate("text pasusa 3 bosch")}
+        textPasusa4={translate("text pasusa 4 bosch")}
         slika1={bosch}
         textDoKraja={translate("text do kraja bosch")}
+        linkDoProizvodjaca={translate("link do proizvodjaca bosch")}
       />
     </div>
   );

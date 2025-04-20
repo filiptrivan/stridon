@@ -36,6 +36,7 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 rems")}
       slika1={rems}
       textDoKraja={translate("text do kraja rems")}
+      linkDoProizvodjaca={translate("link do proizvodjaca rems")}
       />
     </div>
   );

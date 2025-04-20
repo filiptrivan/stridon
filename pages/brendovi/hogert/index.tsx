@@ -48,6 +48,7 @@ const index = () => {
       textPasusa3={translate("text pasusa 3 hogert")}
       slika1={hogert}
       textDoKraja={translate("text do kraja hogert")}
+      linkDoProizvodjaca={translate("link do proizvodjaca hogert")}
       />
     </div>
   );
