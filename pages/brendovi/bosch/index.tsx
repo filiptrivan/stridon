@@ -37,8 +37,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Bosch alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Bosch mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('BoschMetaTitle')}</title>
+        <meta name="description" content={translate('BoschMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -60,7 +60,8 @@ const index = () => {
         textPasusa4={translate("text pasusa 4 bosch")}
         slika1={bosch}
         textDoKraja={translate("text do kraja bosch")}
-        linkDoProizvodjaca={translate("link do proizvodjaca bosch")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text bosch")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url bosch")}
       />
     </div>
   );

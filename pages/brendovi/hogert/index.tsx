@@ -27,8 +27,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Hogert alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Hogert mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('HogertMetaTitle')}</title>
+        <meta name="description" content={translate('HogertMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -48,7 +48,8 @@ const index = () => {
       textPasusa3={translate("text pasusa 3 hogert")}
       slika1={hogert}
       textDoKraja={translate("text do kraja hogert")}
-      linkDoProizvodjaca={translate("link do proizvodjaca hogert")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text hogert")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url hogert")}
       />
     </div>
   );

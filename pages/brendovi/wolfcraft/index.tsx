@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Wolfcraft alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Wolfcraft mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('WolfcraftMetaTitle')}</title>
+        <meta name="description" content={translate('WolfcraftMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
         textPasusa3={translate("text pasusa 3 wolfcraft")}
         slika1={wolfcraft}
         textDoKraja={translate("text do kraja wolfcraft")}
-        linkDoProizvodjaca={translate("link do proizvodjaca wolfcraft")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text wolfcraft")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url wolfcraft")}
       />
     </div>
   );

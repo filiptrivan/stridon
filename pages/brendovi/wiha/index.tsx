@@ -23,8 +23,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Wiha alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Wiha mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('WihaMetaTitle')}</title>
+        <meta name="description" content={translate('WihaMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -46,7 +46,8 @@ translate={translate}
       textPasusa4={translate("text pasusa 4 wiha")}
       slika1={wiha}
       textDoKraja={translate("text do kraja wiha")}
-      linkDoProizvodjaca={translate("link do proizvodjaca wiha")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text wiha")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url wiha")}
       />
     </div>
   );

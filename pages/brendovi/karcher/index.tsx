@@ -21,8 +21,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Karcher alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Karcher mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('KarcherMetaTitle')}</title>
+        <meta name="description" content={translate('KarcherMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -42,7 +42,8 @@ const index = () => {
         textPasusa3={translate("text pasusa 3 karcher")}
         slika1={karcher}
         textDoKraja={translate("text do kraja karcher")}
-        linkDoProizvodjaca={translate("link do proizvodjaca karcher")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text karcher")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url karcher")}
       />
     </div>
   );

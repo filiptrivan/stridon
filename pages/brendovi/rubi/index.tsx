@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Rubi alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Rubi mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('RUBIMetaTitle')}</title>
+        <meta name="description" content={translate('RUBIMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 rubi")}
       slika1={rubi}
       textDoKraja={translate("text do kraja rubi")}
-      linkDoProizvodjaca={translate("link do proizvodjaca rubi")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text rubi")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url rubi")}
       />
     </div>
   );

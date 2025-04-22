@@ -9,11 +9,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Black+Decker alati – akcija i ponuda | Stridon Group DOO</title>
-        <meta
-          name="description"
-          content="Black+Decker mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅"
-        />
+        <title>{translate('BlackDeckerMetaTitle')}</title>
+        <meta name="description" content={translate('BlackDeckerMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -35,7 +32,8 @@ const index = () => {
         textPasusa4={translate("text pasusa 4 black+decker")}
         slika1={blackdecker}
         textDoKraja={translate("text do kraja black+decker")}
-        linkDoProizvodjaca={translate("link do proizvodjaca black+decker")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text black+decker")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url black+decker")}
       />
     </div>
   );

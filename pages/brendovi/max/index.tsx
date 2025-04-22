@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>MAX alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="MAX mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('MAXMetaTitle')}</title>
+        <meta name="description" content={translate('MAXMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 max")}
       slika1={max}
       textDoKraja={translate("text do kraja max")}
-      linkDoProizvodjaca={translate("link do proizvodjaca max")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text max")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url max")}
       />
     </div>
   );

@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Knipex alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="Knipex mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('KnipexMetaTitle')}</title>
+        <meta name="description" content={translate('KnipexMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -38,7 +38,8 @@ translate={translate}
       textPasusa4={translate("text pasusa 4 knipex")}
       slika1={knipex}
       textDoKraja={translate("text do kraja knipex")}
-      linkDoProizvodjaca={translate("link do proizvodjaca knipex")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text knipex")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url knipex")}
       />
     </div>
   );

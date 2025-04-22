@@ -23,8 +23,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>KWB alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="KWB mašine i alati, pogledajte našu ponudu profesionalnih mašina, alata i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('KWBMetaTitle')}</title>
+        <meta name="description" content={translate('KWBMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -44,7 +44,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 kwb")}
       slika1={kwb}
       textDoKraja={translate("text do kraja kwb")}
-      linkDoProizvodjaca={translate("link do proizvodjaca kwb")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text kwb")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url kwb")}
       />
     </div>
   );

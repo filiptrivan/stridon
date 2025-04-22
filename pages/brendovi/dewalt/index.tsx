@@ -22,11 +22,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>DeWalt alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta
-          name="description"
-          content="DeWalt mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅"
-        />
+        <title>{translate('DeWaltMetaTitle')}</title>
+        <meta name="description" content={translate('DeWaltMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -48,7 +45,8 @@ const index = () => {
         naslovPasusa4={translate("naslov pasusa 4 dewalt")}
         textPasusa4={translate("text pasusa 4 dewalt")}
         textDoKraja={translate("text do kraja dewalt")}  
-        linkDoProizvodjaca={translate("link do proizvodjaca dewalt")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text dewalt")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url dewalt")}
       />
     </div>
   );

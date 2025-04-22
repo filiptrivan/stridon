@@ -16,8 +16,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>GTV alati – akcija, ponuda i cene | Stridon Group DOO</title>
-        <meta name="description" content="GTV mašine i alati, pogledajte našu ponudu profesionalnog alata, mašina i dodatne opreme. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('GTVMetaTitle')}</title>
+        <meta name="description" content={translate('GTVMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -39,7 +39,8 @@ const index = () => {
         textPasusa4={translate("text pasusa 4 gtv")}
         slika1={gtv}
         textDoKraja={translate("text do kraja gtv")}
-        linkDoProizvodjaca={translate("link do proizvodjaca gtv")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text gtv")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url gtv")}
       />
     </div>
   );
