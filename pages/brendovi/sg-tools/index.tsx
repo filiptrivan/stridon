@@ -9,8 +9,8 @@ const index = () => {
   return ( 
     <div>
       <Head>
-        <title>SG Tools alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="SG Tools mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('SGToolsMetaTitle')}</title>
+        <meta name="description" content={translate('SGToolsMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -30,7 +30,8 @@ translate={translate}
        textPasusa3={translate("text pasusa 3 sg tools")}
        slika1={sgtools}
        textDoKraja={translate("text do kraja sg tools")}
-       linkDoProizvodjaca={translate("link do proizvodjaca sg tools")}
+       linkDoProizvodjacaText={translate("link do proizvodjaca text sg tools")}
+       linkDoProizvodjacaUrl={translate("link do proizvodjaca url sg tools")}
       />
     </div>
   );

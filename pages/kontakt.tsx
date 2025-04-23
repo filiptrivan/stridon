@@ -9,7 +9,7 @@ const kontakt = () => {
   return (
     <div>
       <Head>
-        <title>Kontakt - Stridon Group DOO</title>
+        <title>Kontakt | Sve potrebne informacije | Stridon Group DOO</title>
 
         <meta
           name="description"
@@ -17,7 +17,7 @@ const kontakt = () => {
         />
         <meta
           name="keywords"
-          content="kontakt, Stridon, podrška, saradnja, pitanja, informacije, proizvodi, usluge, probleme, povratne informacije"
+          content="kontakt, Stridon, podrška, saradnja, pitanja, informacije, proizvodi, usluge, probleme, povratne informacije, upiti, pomoć, rešenja, konsultacije, savetovanje, klijenti"
         />
         <link rel="canonical" href={`/kontakt/`} key="canonical" />
       </Head>

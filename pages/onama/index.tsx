@@ -9,10 +9,10 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>O nama - Stridon Group DOO</title>
+        <title>O nama | Profesionalni alati i mašine | Stridon Group DOO</title>
         <meta
           name="description"
-          content="Saznajte više o našoj kompaniji, posvećenosti vrhunskom kvalitetu i širokom asortimanu mašina i alata. Jedan od vodećih uvoznika svetskih brendova.✅"
+          content="Saznajte više o našoj kompaniji, posvećenosti vrhunskom kvalitetu i širokom asortimanu mašina i alata. Jedan od vodećih uvoznika svetskih brendova u Srbiji.✅"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

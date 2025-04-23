@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import kwb from "../../../public/kwb-logo.png";
+import kwb from "../../../public/kwb-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const kwbKatalogVrednosti = [
@@ -23,8 +23,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>KWB alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="KWB mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('KWBMetaTitle')}</title>
+        <meta name="description" content={translate('KWBMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -44,7 +44,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 kwb")}
       slika1={kwb}
       textDoKraja={translate("text do kraja kwb")}
-      linkDoProizvodjaca={translate("link do proizvodjaca kwb")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text kwb")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url kwb")}
       />
     </div>
   );

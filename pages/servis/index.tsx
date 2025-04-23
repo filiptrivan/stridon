@@ -11,10 +11,10 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Servis mašina i alata - SG Servis, Stridon Group</title>
+        <title>Servis mašina i alata - SG Servis | Stridon Group DOO</title>
         <meta
           name="description"
-          content="Servis mašina i alata van garantnog roka za DeWalt, Bosch, Makita, Metabo, Festool, Rubi i Senco. Usluge popravke za najpoznatije svetske brendove.✅"
+          content="Servis mašina i alata van garantnog roka za DeWalt, Bosch, Makita, Metabo, Festool, Rubi i Senco. Usluge popravke za najpoznatije svetske brendove alata.✅"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

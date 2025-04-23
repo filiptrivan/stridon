@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import rubi from "../../../public/rubi-logo2.png";
+import rubi from "../../../public/rubi-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const rubiKatalogVrednosti = [
@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Rubi alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Rubi mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('RUBIMetaTitle')}</title>
+        <meta name="description" content={translate('RUBIMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 rubi")}
       slika1={rubi}
       textDoKraja={translate("text do kraja rubi")}
-      linkDoProizvodjaca={translate("link do proizvodjaca rubi")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text rubi")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url rubi")}
       />
     </div>
   );

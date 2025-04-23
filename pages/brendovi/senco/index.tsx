@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import senco from "../../../public/senco-logo.png";
+import senco from "../../../public/senco-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const index = () => {
@@ -9,8 +9,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Senco alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Senco mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('SENCOMetaTitle')}</title>
+        <meta name="description" content={translate('SENCOMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -30,7 +30,8 @@ translate={translate}
        textPasusa3={translate("text pasusa 3 senco")}
        slika1={senco}
        textDoKraja={translate("text do kraja senco")}
-       linkDoProizvodjaca={translate("link do proizvodjaca senco")}
+       linkDoProizvodjacaText={translate("link do proizvodjaca text senco")}
+       linkDoProizvodjacaUrl={translate("link do proizvodjaca url senco")}
       />
     </div>
   );

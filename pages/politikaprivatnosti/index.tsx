@@ -23,10 +23,10 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Politika privatnosti - Stridon Group DOO</title>
+        <title>Politika privatnosti korisnika | Stridon Group DOO</title>
         <meta
           name="description"
-          content="Vaša privatnost je naš prioritet. Upoznajte se s našom detaljnom politikom privatnosti kako biste bili sigurni u zaštitu vaših podataka.✅"
+          content="Vaša privatnost je naš prioritet. Upoznajte se s našom detaljnom politikom privatnosti kako biste bili sigurni u zaštitu vaših podataka na našem sajtu.✅"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

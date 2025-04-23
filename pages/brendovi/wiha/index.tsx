@@ -1,7 +1,8 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import wiha from "../../../public/wiha-logo.png";
+//import wiha from "../../../public/wiha-logo.png";
+import wiha from "../../../public/wiha-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const wihaKatalogVrednosti = [
@@ -23,8 +24,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Wiha alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Wiha mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('WihaMetaTitle')}</title>
+        <meta name="description" content={translate('WihaMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -46,7 +47,8 @@ translate={translate}
       textPasusa4={translate("text pasusa 4 wiha")}
       slika1={wiha}
       textDoKraja={translate("text do kraja wiha")}
-      linkDoProizvodjaca={translate("link do proizvodjaca wiha")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text wiha")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url wiha")}
       />
     </div>
   );

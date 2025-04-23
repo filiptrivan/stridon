@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import knipex from "../../../public/knipex-logo.png";
+import knipex from "../../../public/knipex-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const knipexKatalogVrednosti = [
@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Knipex alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Knipex mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('KnipexMetaTitle')}</title>
+        <meta name="description" content={translate('KnipexMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -38,7 +38,8 @@ translate={translate}
       textPasusa4={translate("text pasusa 4 knipex")}
       slika1={knipex}
       textDoKraja={translate("text do kraja knipex")}
-      linkDoProizvodjaca={translate("link do proizvodjaca knipex")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text knipex")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url knipex")}
       />
     </div>
   );

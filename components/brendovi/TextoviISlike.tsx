@@ -12,7 +12,8 @@ interface Props {
   textPasusa4?: string;
   slika1: StaticImageData;
   textDoKraja: string;
-  linkDoProizvodjaca?: string;
+  linkDoProizvodjacaText: string;
+  linkDoProizvodjacaUrl: string;
   title:string
 }
 
@@ -27,7 +28,8 @@ const TextoviISlike = ({
   textPasusa4,
   slika1,
   textDoKraja,
-  linkDoProizvodjaca,
+  linkDoProizvodjacaText,
+  linkDoProizvodjacaUrl,
   title
 }: Props) => {
   return (
@@ -76,15 +78,19 @@ const TextoviISlike = ({
 
       <div className="max-w-[1140px] mx-auto p-3 mb-20 text-base sm:text-lg">
         {textDoKraja} 
-        {linkDoProizvodjaca && (
+        {linkDoProizvodjacaText && linkDoProizvodjacaUrl && (
           <>
             {" "}
-              <a className="text-darkerRed" href={linkDoProizvodjaca} target="_blank" rel="noopener noreferrer">
-                {linkDoProizvodjaca}
-              </a>.
+            <a
+              className="text-darkerRed"
+              href={linkDoProizvodjacaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {linkDoProizvodjacaText}
+            </a>.
           </>
-        )}
-        
+        )} 
       </div>
         
       

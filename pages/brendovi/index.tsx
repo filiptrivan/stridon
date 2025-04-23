@@ -13,7 +13,7 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Uvoznik najboljih svetskih brendova - Stridon Group DOO</title>
+        <title>Uvoznik najboljih svetskih brendova | Stridon Group DOO</title>
         <meta
           name="description"
           content="Otkrijte našu široku paletu renomiranih brendova i proizvoda koji će vas oduševiti. Pouzdanost, stručnost i vrhunska usluga, samo sa Stridon Group DOO.✅"

@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import wera from "../../../public/wera-logo.png";
+import wera from "../../../public/wera-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const weraKatalogVrednosti = [
@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Wera alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Wera mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('WeraMetaTitle')}</title>
+        <meta name="description" content={translate('WeraMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 wera")}
       slika1={wera}
       textDoKraja={translate("text do kraja wera")}
-      linkDoProizvodjaca={translate("link do proizvodjaca wera")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text wera")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url wera")}
       />
     </div>
   );

@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import stanley from "../../../public/stanley-logo.png";
+import stanley from "../../../public/stanley-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const stanleyKatalogVrednosti = [
@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Stanley - Stridon Group DOO </title>
-        <meta name="description" content="Stanley mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('StanleyMetaTitle')}</title>
+        <meta name="description" content={translate('StanleyMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ const index = () => {
       textPasusa3={translate("text pasusa 3 stanley")}
       slika1={stanley}
       textDoKraja={translate("text do kraja stanley")}
-      linkDoProizvodjaca={translate("link do proizvodjaca stanley")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text stanley")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url stanley")}
       />
     </div>
   );

@@ -13,7 +13,7 @@ const Footer = ({translate}:any) => {
       text-center pt-2 text-gray-400 text-sm pb-8"
         >
           <span>
-            {translate("© 2023 Sva prava zaštićena. Stridon Group d.o.o.")}
+            {translate("© 2025 Sva prava zaštićena. Stridon Group d.o.o.")}
           </span>
           <span>
             <Link

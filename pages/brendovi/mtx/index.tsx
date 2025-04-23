@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import mtx from "../../../public/mtx-logo.png";
+import mtx from "../../../public/mtx-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const mtxKatalogVrednosti = [
@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>MTX alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="MTX mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('MTXMetaTitle')}</title>
+        <meta name="description" content={translate('MTXMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 mtx")}
       slika1={mtx}
       textDoKraja={translate("text do kraja mtx")}
-      linkDoProizvodjaca={translate("link do proizvodjaca mtx")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text mtx")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url mtx")}
       />
     </div>
   );

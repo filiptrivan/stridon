@@ -1,7 +1,8 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import blackdecker from "../../../public/black-and-decker-logo.png";
+//import blackdecker from "../../../public/black-and-decker-logo.png";
+import blackdecker from "../../../public/black-and-decker-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const index = () => {
@@ -9,11 +10,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Black+Decker alati - Stridon Group DOO 2023</title>
-        <meta
-          name="description"
-          content="Black+Decker mašine i alati, pogledajte naše električne alate, baštenske alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅"
-        />
+        <title>{translate('BlackDeckerMetaTitle')}</title>
+        <meta name="description" content={translate('BlackDeckerMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -35,7 +33,8 @@ const index = () => {
         textPasusa4={translate("text pasusa 4 black+decker")}
         slika1={blackdecker}
         textDoKraja={translate("text do kraja black+decker")}
-        linkDoProizvodjaca={translate("link do proizvodjaca black+decker")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text black+decker")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url black+decker")}
       />
     </div>
   );

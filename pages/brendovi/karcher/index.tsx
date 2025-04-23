@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import karcher from "../../../public/karcher-logo.png";
+import karcher from "../../../public/karcher-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const index = () => {
@@ -21,8 +21,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Karcher alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Karcher mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('KarcherMetaTitle')}</title>
+        <meta name="description" content={translate('KarcherMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -42,7 +42,8 @@ const index = () => {
         textPasusa3={translate("text pasusa 3 karcher")}
         slika1={karcher}
         textDoKraja={translate("text do kraja karcher")}
-        linkDoProizvodjaca={translate("link do proizvodjaca karcher")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text karcher")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url karcher")}
       />
     </div>
   );

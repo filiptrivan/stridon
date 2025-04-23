@@ -1,7 +1,8 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import bosch from "../../../public/boschlogo2.png";
+//import bosch from "../../../public/boschlogo2.png";
+import bosch from "../../../public/bosch-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const boschKatalogVrednosti = [
@@ -37,8 +38,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Bosch alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Bosch mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('BoschMetaTitle')}</title>
+        <meta name="description" content={translate('BoschMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -60,7 +61,8 @@ const index = () => {
         textPasusa4={translate("text pasusa 4 bosch")}
         slika1={bosch}
         textDoKraja={translate("text do kraja bosch")}
-        linkDoProizvodjaca={translate("link do proizvodjaca bosch")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text bosch")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url bosch")}
       />
     </div>
   );

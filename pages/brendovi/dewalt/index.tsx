@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import dewalt from "../../../public/dewaltlogo.png";
+import dewalt from "../../../public/dewalt-logo.svg";
 
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -22,11 +22,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>DeWalt alati - Stridon Group DOO 2023</title>
-        <meta
-          name="description"
-          content="DeWalt mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅"
-        />
+        <title>{translate('DeWaltMetaTitle')}</title>
+        <meta name="description" content={translate('DeWaltMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -48,7 +45,8 @@ const index = () => {
         naslovPasusa4={translate("naslov pasusa 4 dewalt")}
         textPasusa4={translate("text pasusa 4 dewalt")}
         textDoKraja={translate("text do kraja dewalt")}  
-        linkDoProizvodjaca={translate("link do proizvodjaca dewalt")}
+        linkDoProizvodjacaText={translate("link do proizvodjaca text dewalt")}
+        linkDoProizvodjacaUrl={translate("link do proizvodjaca url dewalt")}
       />
     </div>
   );

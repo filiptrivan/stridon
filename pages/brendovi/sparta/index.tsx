@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Sparta alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="Sparta mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('SpartaMetaTitle')}</title>
+        <meta name="description" content={translate('SpartaMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ const index = () => {
       textPasusa3={translate("text pasusa 3 sparta")}
       slika1={sparta}
       textDoKraja={translate("text do kraja sparta")}
-      linkDoProizvodjaca={translate("link do proizvodjaca sparta")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text sparta")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url sparta")}
       />
     </div>
   );

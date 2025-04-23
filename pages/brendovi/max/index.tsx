@@ -1,7 +1,7 @@
 import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-import max from "../../../public/max-logo.png";
+import max from "../../../public/max-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const maxKatalogVrednosti = [
@@ -15,8 +15,8 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>MAX alati - Stridon Group DOO 2023</title>
-        <meta name="description" content="MAX mašine i alati, pogledajte naše mašine, alate i još mnogo toga. Pronađite informacije o proizvodima koji Vas zanimaju.✅" />
+        <title>{translate('MAXMetaTitle')}</title>
+        <meta name="description" content={translate('MAXMetaDescription')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -36,7 +36,8 @@ translate={translate}
       textPasusa3={translate("text pasusa 3 max")}
       slika1={max}
       textDoKraja={translate("text do kraja max")}
-      linkDoProizvodjaca={translate("link do proizvodjaca max")}
+      linkDoProizvodjacaText={translate("link do proizvodjaca text max")}
+      linkDoProizvodjacaUrl={translate("link do proizvodjaca url max")}
       />
     </div>
   );
