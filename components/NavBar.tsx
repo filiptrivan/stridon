@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import {VscChromeClose} from "react-icons/vsc"
 import { FaAngleDown } from "react-icons/fa";
 import stridon from "../public/stridon-prodavnica-alata.webp";
-import srpski from "../public/serbia (1).png";
-import engleski from "../public/united-kingdom.png";
+import rs from "../public/rs.svg";
+import en from "../public/en.svg";
 
 const Navbar = ({ locale, translate }: any) => {
   const [navbar, setNavbar] = useState(false);
@@ -93,15 +93,15 @@ const Navbar = ({ locale, translate }: any) => {
               <li className="pb-4 pt-4 hover:text-slate-700 duration-200 text-xl">
                 |
               </li>
-              <li className="hover:text-slate-700 duration-200 ">
+              <li>
                 <div className="pl-3 flex gap-3">
                   {locale === "sr" ? (
                     <Link href={"/"} locale="en">
-                      <Image src={engleski} alt="prevod na engleski" />
+                      <Image src={en} alt={translate('TranslateEn')} title={translate('TranslateEn')} width={30} />
                     </Link>
                   ) : (
                     <Link href={"/"} locale="sr">
-                      <Image src={srpski} alt="prevod na srpski" />
+                      <Image src={rs} alt={translate('TranslateSr')} title={translate('TranslateSr')} width={30} />
                     </Link>
                   )}
                 </div>
@@ -163,15 +163,15 @@ const Navbar = ({ locale, translate }: any) => {
                 </li>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pt-3 pb-3 text-2xl"
                 >
                   {locale === "sr" ? (
                     <Link href={"/"} locale="en">
-                      <Image src={engleski} alt="prevod na engleski" />
+                      <Image src={en} alt={translate('TranslateEn')} title={translate('TranslateEn')} width={40} />
                     </Link>
                   ) : (
                     <Link href={"/"} locale="sr">
-                      <Image src={srpski} alt="prevod na srpski" />
+                      <Image src={rs} alt={translate('TranslateSr')} title={translate('TranslateSr')} width={40} />
                     </Link>
                   )}
                 </li>

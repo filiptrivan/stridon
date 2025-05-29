@@ -2,22 +2,22 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import BrendoviImg from "./BrendoviImg";
-import boschlogo2 from "../public/boschlogo2.png";
-import dewaltlogo from "../public/dewaltlogo.png";
-import stanley from "../public/stanley-logo.png";
-import knipex from "../public/knipex-logo.png";
+import bosch from "../public/bosch-logo.svg";
+import dewalt from "../public/dewalt-logo.svg";
+import stanley from "../public/stanley-logo.svg";
+import knipex from "../public/knipex-logo.svg";
 import hoegert from "../public/hogert-logo.png";
-import karcher from "../public/karcher-logo.png";
-import wiha from "../public/wiha-logo.png";
+import karcher from "../public/karcher-logo.svg";
+import wiha from "../public/wiha-logo.svg";
 import gtv from "../public/gtv-logo.png";
 import rems from "../public/remslogo.png";
 import sgtools from "../public/sg-tools-logo.png";
-import max from "../public/max-logo.png";
-import wera from "../public/wera-logo.png";
-import mtx from "../public/mtx-logo.png";
-import blackdecker from "../public/black-and-decker-logo.png";
-import rubi from "../public/rubi-logo2.png";
-import senco from "../public/senco-logo.png";
+import max from "../public/max-logo.svg";
+import wera from "../public/wera-logo.svg";
+import mtx from "../public/mtx-logo.svg";
+import blackdecker from "../public/black-and-decker-logo.svg";
+import rubi from "../public/rubi-logo.svg";
+import senco from "../public/senco-logo.svg";
 import Link from "next/link";
 
 interface BrendoviProps {
@@ -27,7 +27,6 @@ interface BrendoviProps {
 const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 7,
       slidesToSlide: 1,
@@ -67,7 +66,7 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
           swipeable={false}
         >
           <Link href={"/brendovi/dewalt"}>
-            <BrendoviImg brendoviImg={dewaltlogo} title="DeWalt" />
+            <BrendoviImg brendoviImg={dewalt} title="DeWalt" />
           </Link>
 
           <Link href={"/brendovi/stanley"}>
@@ -75,7 +74,7 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
           </Link>
 
           <Link href={"/brendovi/bosch"}>
-            <BrendoviImg brendoviImg={boschlogo2} title="Bosch" />
+            <BrendoviImg brendoviImg={bosch} title="Bosch" />
           </Link>
 
           <Link href={"/brendovi/knipex"}>

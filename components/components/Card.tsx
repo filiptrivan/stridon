@@ -6,7 +6,7 @@ import Image from "next/image";
 const Card = ({ title, image, slug, translate }: any) => {
   return (
     <div className=" max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-zinc-600 to-zinc-200 rounded">
-      <div className="ml-4 w-[150px]">
+      <div className="ml-4 w-[150px] mt-1">
         <Image 
         src={image} 
         alt={title} 

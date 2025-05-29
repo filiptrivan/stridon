@@ -2,13 +2,13 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import BrendoviImg from "../../components/BrendoviImg";
-import boschlogo2 from "../../public/boschlogo2.png";
-import dewaltlogo from "../../public/dewaltlogo.png";
-import festool from "../../public/festool-logo.png"
-import makita from "../../public/makita-logo.png";
-import metabo from "../../public/metabo-logo.png";
-import rubi from "../../public/rubi-logo2.png";
-import senco from "../../public/senco-logo.png";
+import boschLogo from "../../public/bosch-logo.svg";
+import dewaltLogo from "../../public/dewalt-logo.svg";
+import festoolLogo from "../../public/festool-logo.png"
+import makitaLogo from "../../public/makita-logo.png";
+import metaboLogo from "../../public/metabo-logo.png";
+import rubiLogo from "../../public/rubi-logo.svg";
+import sencoLogo from "../../public/senco-logo.svg";
 import Link from "next/link";
 
 interface BrendoviProps {
@@ -58,24 +58,24 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
           swipeable={false}
         >
           <Link href={"/brendovi/dewalt"}>
-            <BrendoviImg brendoviImg={dewaltlogo} title="DeWalt"/>
+            <BrendoviImg brendoviImg={dewaltLogo} title="DeWalt"/>
           </Link>
           <Link href={"/brendovi/bosch"}>
-            <BrendoviImg brendoviImg={boschlogo2} title="Bosch"/>
+            <BrendoviImg brendoviImg={boschLogo} title="Bosch"/>
           </Link>
         
           {/* <Link href={"/brendovi/makita"}> */}
-            <BrendoviImg brendoviImg={makita} title="Makita"/>
-            <BrendoviImg brendoviImg={metabo} title="Metabo"/>
+            <BrendoviImg brendoviImg={makitaLogo} title="Makita"/>
+            <BrendoviImg brendoviImg={metaboLogo} title="Metabo"/>
           {/* </Link> */}
           {/* <Link href={"/brendovi/einhell"}> */}
-            <BrendoviImg brendoviImg={festool} title="Festool"/>
+            <BrendoviImg brendoviImg={festoolLogo} title="Festool"/>
           {/* </Link> */}
           <Link href={"/brendovi/rubi"}>
-            <BrendoviImg brendoviImg={rubi} title="Rubi"/>
+            <BrendoviImg brendoviImg={rubiLogo} title="Rubi"/>
           </Link>
           <Link href={"/brendovi/senco"}>
-            <BrendoviImg brendoviImg={senco} title="Senco"/>
+            <BrendoviImg brendoviImg={sencoLogo} title="Senco"/>
           </Link>
         </Carousel>
       </div>

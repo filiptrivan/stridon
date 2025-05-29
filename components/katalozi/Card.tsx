@@ -8,7 +8,7 @@ const katalozi = [
     id: 27,
     title: "Dewalt najprodavanije 2023",
     slug: "/brendovi/dewalt",
-    img: "/dewaltlogo.png",
+    img: "/dewalt-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/1RuMzUGAO4sBoTsBYby_-qGIo5jlFirfP/view?usp=share",
     color: "#ECFF44",
   },
@@ -16,7 +16,7 @@ const katalozi = [
     id: 28,
     title: "Dewalt ograničeno izdanje",
     slug: "/brendovi/dewalt",
-    img: "/dewaltlogo.png",
+    img: "/dewalt-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/13y1RuBHKXtsudGYMzIi67ym4w5rb3jew/view?usp=share",
     color: "#ECFF44",
   },
@@ -24,7 +24,7 @@ const katalozi = [
     id: 1,
     title: "Bosch DIY merni alati",
     slug: "/brendovi/bosch",
-    img: "/boschlogo2.png",
+    img: "/bosch-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/1BK8KkkGrq2n9J9x3M0ZysdQ24MdhjAqe/view?usp=share",
     //zelena
     color: "#05B920",
@@ -33,7 +33,7 @@ const katalozi = [
     id: 2,
     title: "Bosch pribor",
     slug: "/brendovi/bosch",
-    img: "/boschlogo2.png",
+    img: "/bosch-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/1oVevfXbBrPfboKAJIQA62reSEowTyio7/view?usp=share",
     //crvena
     color: "#FF0000",
@@ -42,7 +42,7 @@ const katalozi = [
     id: 3,
     title: "Bosch Dremel",
     slug: "/brendovi/bosch",
-    img: "/boschlogo2.png",
+    img: "/bosch-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/1xdVeZDXHNFhN3AwYE6XSW5dzVtcB_hSG/view?usp=share",
     //plava
     color: "#2967FF",
@@ -51,7 +51,7 @@ const katalozi = [
     id: 4,
     title: "Bosch EXPERT",
     slug: "/brendovi/bosch",
-    img: "/boschlogo2.png",
+    img: "/bosch-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/1rpkCB0d9SXnuQ3Pg1WXzV3yUKCLhICSz/view?usp=share",
     color: "#2967FF",
   },
@@ -59,7 +59,7 @@ const katalozi = [
     id: 5,
     title: "Bosch Plavi",
     slug: "/brendovi/bosch",
-    img: "/boschlogo2.png",
+    img: "/bosch-logo.svg",
     pdf_slug: "https://drive.google.com/file/d/1lEwdsuzYNCMiq997mi2cS2jvPXfc6p88/view?usp=share",
     color: "#2967FF",
   },
@@ -67,7 +67,7 @@ const katalozi = [
     id: 6,
     title: "Bosch VP cenovnik",
     slug: "/brendovi/bosch",
-    img: "/boschlogo2.png",
+    img: "/bosch-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1966qI7dLpBlcsJkuEoaoxc9XzvShqH-H/view?usp=share",
     color: "#FF0000",
@@ -76,7 +76,7 @@ const katalozi = [
     id: 29,
     title: "Stanley katalog",
     slug: "/brendovi/stanley",
-    img: "/stanley-logo.png",
+    img: "/stanley-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1B7teaotZAfVehBOZt-ENZvG3kRFScO9i/view?usp=drive_link",
     color: "#ECFF44",
@@ -130,7 +130,7 @@ const katalozi = [
     id: 12,
     title: "Karcher profesionalni program katalog",
     slug: "/brendovi/karcher",
-    img: "/karcher-logo.png",
+    img: "/karcher-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1rCZ63RGygIn4IeTTar4sLetDzc7UUoaJ/view?usp=share",
     color: "#ECFF44",
@@ -139,7 +139,7 @@ const katalozi = [
     id: 13,
     title: "Karcher žuti program katalog",
     slug: "/brendovi/karcher",
-    img: "/karcher-logo.png",
+    img: "/karcher-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/14ERZxuCZexyQZ0rNtbBUXGXKjzZm_x5Q/view?usp=share",
     color: "#ECFF44",
@@ -148,7 +148,7 @@ const katalozi = [
     id: 14,
     title: "Knipex katalog",
     slug: "/brendovi/knipex",
-    img: "/knipex-logo.png",
+    img: "/knipex-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1YgRP6jOCM6D4apCU-mRM_3mNn2yWiTpN/view?usp=share",
     color: "#FF0000",
@@ -157,7 +157,7 @@ const katalozi = [
     id: 15,
     title: "KWB AKKU TOP pribor za aku alate",
     slug: "/brendovi/kwb",
-    img: "/kwb-logo.png",
+    img: "/kwb-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/14yFw6dV6jnzqwOksY9_AECaI6wX3K8te/view?usp=share",
     color: "#C8C8C8",
@@ -166,7 +166,7 @@ const katalozi = [
     id: 16,
     title: "KWB dodaci za mašine katalog",
     slug: "/brendovi/kwb",
-    img: "/kwb-logo.png",
+    img: "/kwb-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1CpjLO7fBAU_twmPZy5KfHNJk27BG0MhV/view?usp=share",
     color: "#C8C8C8",
@@ -175,7 +175,7 @@ const katalozi = [
     id: 17,
     title: "KWB pribor",
     slug: "/brendovi/kwb",
-    img: "/kwb-logo.png",
+    img: "/kwb-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1E06fPvQOqKfLGxCzWH-nh_GQYfK2XtOz/view?usp=share",
     color: "#C8C8C8",
@@ -184,7 +184,7 @@ const katalozi = [
     id: 18,
     title: "MAX katalog",
     slug: "/brendovi/max",
-    img: "/max-logo.png",
+    img: "/max-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1k3AzwfcE_RlB8xJiO1Tp1nZQwrnEyZje/view?usp=share",
     color: "#FFA43B",
@@ -193,7 +193,7 @@ const katalozi = [
     id: 19,
     title: "MTX, Sparta katalog",
     slug: "/brendovi/mtx",
-    img: "/mtx-logo.png",
+    img: "/mtx-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1wASvbffFJGKsAIN9fb1R48XCrtJmYXkM/view?usp=share",
     color: "#FF5376",
@@ -211,7 +211,7 @@ const katalozi = [
     id: 21,
     title: "Rubi akcija 2023",
     slug: "/brendovi/rubi",
-    img: "/rubi-logo2.png",
+    img: "/rubi-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1Pu0Sd3ZYpC0pF6NHKWoyE0qMG8Upuxv7/view?usp=share",
     color: "#FF0000",
@@ -220,7 +220,7 @@ const katalozi = [
     id: 22,
     title: "Wera katalog",
     slug: "/brendovi/wera",
-    img: "/wera-logo.png",
+    img: "/wera-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/140HnM3JRm2k_F4iF_j46tbchAST-S45O/view?usp=share",
     color: "#05B920",
@@ -229,7 +229,7 @@ const katalozi = [
     id: 23,
     title: "Wiha katalog",
     slug: "/brendovi/wiha",
-    img: "/wiha-logo.png",
+    img: "/wiha-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1s2s4TmSn_7inwljmfF0mznbdVXWMGEDJ/view?usp=share",
     color: "#C8C8C8",
@@ -238,7 +238,7 @@ const katalozi = [
     id: 24,
     title: "Wiha merni alati",
     slug: "/brendovi/wiha",
-    img: "/wiha-logo.png",
+    img: "/wiha-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/196RbKP5DyiWkJnqvOx1ML10Gby4M2CiG/view?usp=share",
     color: "#C8C8C8",
@@ -247,7 +247,7 @@ const katalozi = [
     id: 25,
     title: "Wiha XXL III kofer",
     slug: "/brendovi/wiha",
-    img: "/wiha-logo.png",
+    img: "/wiha-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1gfqq3qQRqocaSAXVwRm-3s9lGDpyDNbn/view?usp=share",
     color: "#C8C8C8",
@@ -256,7 +256,7 @@ const katalozi = [
     id: 26,
     title: "Wolfcraft katalog",
     slug: "/brendovi/wolfcraft",
-    img: "/wolfcraft-logo.png",
+    img: "/wolfcraft-logo.svg",
     pdf_slug:
       "https://drive.google.com/file/d/1SU0y0Lr9TvJqvX0t20R44H6HxHLiWaZJ/view?usp=share",
     color: "#53FF6C",
