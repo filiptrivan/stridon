@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import rubi from "../../../public/rubi-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const rubiKatalogVrednosti = [
   {
     imeKataloga: "Rubi akcija 2023",
     rutaKataloga: "https://drive.google.com/file/d/1Pu0Sd3ZYpC0pF6NHKWoyE0qMG8Upuxv7/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,10 +22,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Rubi"}
-        opis={translate("Rubi alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Rubi"}
+        opisNaHomePage={translate("Rubi alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={rubiKatalogVrednosti}
       />
       <TextoviISlike
@@ -37,7 +39,7 @@ translate={translate}
       slika1={rubi}
       textDoKraja={translate("text do kraja rubi")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text rubi")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url rubi")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/rubi/"
       />
     </div>
   );

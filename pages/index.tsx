@@ -6,7 +6,6 @@ import Instagram from "../components/Instagram";
 import Brendovi from "../components/Brendovi";
 import SnageStridona from "../components/SnageStridona"; 
 import DynamicCounterContainer from "../components/DynamicCounterContainer";
-import Button from "../components/Button";
 import TestimonList from "../components/TestimonList"; 
 import records from "../data/testimonials.json" 
 import { useTranslation } from "next-i18next";
@@ -17,10 +16,10 @@ const {t:translate} = useTranslation('home')
   return (
     <main>
       <Head>
-        <title>Najbolja prodavnica alata u Srbiji | Stridon Group DOO</title>
+        <title>Najbolja prodavnica alata u Srbiji | Stridon Group</title>
         <meta
           name="description"
-          content="Veleprodaja, maloprodaja i online prodaja opreme, alata i mašina najpoznatijih brendova po jeftinim cenama u Srbiji. Pogledajte nase cene, akcije i kataloge.✅"
+          content="Veleprodaja, maloprodaja i online prodaja opreme, alata i mašina najpoznatijih brendova po jeftinim cenama u Srbiji. Pogledajte nase cene, akcije i kataloge."
         />
         <link rel="icon" href="/favicon.ico" />
         <meta name='image' property='og:image' content="/stridon-prodavnica-alata.webp" />
@@ -29,13 +28,13 @@ const {t:translate} = useTranslation('home')
       </Head>
       
       <Hero
+        translate={translate}
         titleNaHomePage={`Stridon Group`}
         opisNaHomePage={translate("hero opis")}
         naslovButtona={translate("naslov buttona")}
-        slug={"https://www.prodavnicaalata.rs"}
+        externalUrl={"https://www.prodavnicaalata.rs"}
       />
-      <Brendovi title={translate("brendovi")} />
-      <Button naslovButtona={translate("svi brendovi")}/>
+      <Brendovi translate={translate}/>
       <SnageStridona translate={translate}/>
       <Slider slides={SliderData} translate={translate}/>
       <DynamicCounterContainer translate={translate}/>

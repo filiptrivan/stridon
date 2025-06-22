@@ -1,10 +1,9 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import dewalt from "../../../public/dewalt-logo.svg";
-
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
 
 const dewaltKatalogVrednosti = [
   {
@@ -28,8 +27,8 @@ const index = () => {
       </Head>
       <Hero
         translate={translate}
-        title="DeWalt"
-        opis={translate("DEWALT alati - Uvoznik za Srbiju")}
+        titleNaHomePage="DeWalt"
+        opisNaHomePage={translate("DEWALT alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         catalogueValues={dewaltKatalogVrednosti}
       />

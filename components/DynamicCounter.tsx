@@ -73,62 +73,53 @@ const DynamicCounter = ({translate}:any) => {
     Promise.all(valueCounters).then(() => setIsIntersecting(false));
   }, [isIntersecting]);
 
-  // grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center pb-14 pt-10
-
   return (
-    <div className="w-full bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950">
-      <div className="text-slate-50 sm:text-4xl text-2xl text-center pt-12 px-10">
+    <div className="w-full bg-stone-50 text-center py-20 px-4">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-14 text-primaryRed">
         {translate("Brojevi govore umesto nas")}
-      </div>
+      </h2>
       <div
-        className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] p-3 text-center pb-20 pt-12"
+        className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] text-center"
         ref={counterSectionRef}
       >
-        {/* <div className="  border-r-zinc-950 border-r "> */}
-        <div className=" ">
-          <i className="fas fa-utensils "></i>
+        <h3>
           <div
-            className="text-5xl font-medium mb-3 text-gray-500 num"
+            className="text-5xl font-medium mb-3 num"
             data-val="10630"
           >
             {values.length > 0 ? values[0].startValue.toLocaleString()+'+' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">{translate("Veleprodajnih kupaca")}</div>
-        </div>
-        {/* <div className="  border-r-zinc-950 border-r "> */}
-        <div className=" ">
-          <i className="fas fa-smile-beam"></i>
+          <div className="text-xl mb-3">{translate("Veleprodajnih kupaca")}</div>
+        </h3>
+        <h3>
           <div
-            className="text-5xl font-medium mb-3 text-gray-500 num"
+            className="text-5xl font-medium mb-3 num"
             data-val="120"
           >
             {values.length > 1 ? values[1].startValue.toLocaleString()+'+' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">{translate("Dilera širom Srbije")}</div>
-        </div>
-        {/* <div className="  border-r-zinc-950 border-r "> */}
-        <div className=" ">
-          <i className="fas fa-list"></i>
+          <div className="text-xl mb-3">{translate("Dilera širom Srbije")}</div>
+        </h3>
+        <h3>
           <div
-            className="text-5xl font-medium mb-3 text-gray-500 num"
+            className="text-5xl font-medium mb-3 num"
             data-val="100"
           >
             {values.length > 2 ? values[2].startValue.toLocaleString()+'%' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">{translate("Zadovoljstvo uslugom")}</div>
-        </div>
-        <div className="">
-          <i className="fas fa-star"></i>
+          <div className="text-xl mb-3">{translate("Zadovoljstvo uslugom")}</div>
+        </h3>
+        <h3>
           <div
-            className="text-5xl font-medium mb-3 text-gray-500 num"
+            className="text-5xl font-medium mb-3 num"
             data-val="30"
           >
             {values.length > 3 ? values[3].startValue.toLocaleString()+'+' : "0"}
           </div>
-          <div className="text-xl mb-3 text-slate-50">
+          <div className="text-xl mb-3">
             {translate("Brendova koje zastupamo")}
           </div>
-        </div>
+        </h3>
       </div>
     </div>
   );

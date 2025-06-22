@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import max from "../../../public/max-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const maxKatalogVrednosti = [
   {
     imeKataloga: "MAX katalog",
     rutaKataloga: "https://drive.google.com/file/d/1k3AzwfcE_RlB8xJiO1Tp1nZQwrnEyZje/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,10 +22,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"MAX"}
-        opis={translate("MAX vezivači armature i žica - Uvoznik za Srbiju")}
+        titleNaHomePage={"MAX"}
+        opisNaHomePage={translate("MAX vezivači armature i žica - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={maxKatalogVrednosti}
       />
       <TextoviISlike
@@ -37,7 +39,7 @@ translate={translate}
       slika1={max}
       textDoKraja={translate("text do kraja max")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text max")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url max")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/max/"
       />
     </div>
   );

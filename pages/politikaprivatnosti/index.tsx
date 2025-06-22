@@ -1,27 +1,12 @@
-import dynamic from "next/dynamic";
-import { BeatLoader } from "react-spinners";
-// import Text from "@/components/politika-privatnosti/text";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
-const Text = dynamic(() => import("@/components/politika-privatnosti/text"), {
-  loading: () => (
-    <div className="text-center mt-12">
-      <BeatLoader
-        color="#111b2c"
-        size={10}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
-    </div>
-  ),
-  ssr: false,
-});
+import Text from '../../components/politika-privatnosti/text'
 
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
-    <div>
+    <div className="px-2">
       <Head>
         <title>Politika privatnosti korisnika | Stridon Group DOO</title>
         <meta

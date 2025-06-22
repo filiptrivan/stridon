@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import mtx from "../../../public/mtx-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const mtxKatalogVrednosti = [
   {
     imeKataloga: "MTX, Sparta katalog",
     rutaKataloga: "https://drive.google.com/file/d/1wASvbffFJGKsAIN9fb1R48XCrtJmYXkM/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,10 +22,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"MTX"}
-        opis={translate("MTX alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"MTX"}
+        opisNaHomePage={translate("MTX alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={mtxKatalogVrednosti}
       />
       <TextoviISlike
@@ -37,7 +39,7 @@ translate={translate}
       slika1={mtx}
       textDoKraja={translate("text do kraja mtx")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text mtx")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url mtx")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/mtx/"
       />
     </div>
   );

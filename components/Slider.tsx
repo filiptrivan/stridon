@@ -23,11 +23,11 @@ const Slider = ({ slides, translate }: SliderProps) => {
   }
 
   return (
-    <div id="gallery" className="max-w-[1140px] mx-auto pb-16 pt-16 ">
-      <h2 className="text-2xl sm:text-3xl font-medium text-center mb-1">
+    <div id="gallery" className="max-w-[1140px] mx-auto py-20 px-4 text-center">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
         {translate("galerija")}
       </h2>
-      <div className="relative flex justify-center p-3">
+      <div className="relative flex justify-center">
         {slides.map((slide, index) => {
           return (
             <div

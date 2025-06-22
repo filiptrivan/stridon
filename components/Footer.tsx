@@ -5,12 +5,11 @@ import Link from "next/link";
 
 const Footer = ({translate}:any) => {
   return (
-    <div className="w-full bg-gradient-to-r from-zinc-950 via-zinc-900 to-zinc-950 mt-12">
-      <footer className="text-white max-w-[1140px] m-auto text-center lg:text-left p-2">
+    <div className="w-full bg-gradient-to-r border-t">
+      <footer className="max-w-[1140px] m-auto text-center lg:text-left px-4 py-14">
         <FooterIconsContainer translate={translate} />
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-      text-center pt-2 text-gray-400 text-sm pb-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 items-center text-sm"
         >
           <span>
             {translate("© 2025 Sva prava zaštićena. Stridon Group d.o.o.")}

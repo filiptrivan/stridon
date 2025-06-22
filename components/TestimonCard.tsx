@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TestimonCard = ({ title, image, name, translate }: any) => {
   return (
-    <div className=" max-w-[400px] min-h-[296px] mb-10 border shadow-lg rounded bg-slate-50 mr-4">
+    <div className=" max-w-[400px] min-h-[296px] mb-2 border shadow-lg rounded bg-stone-50 mr-4">
       <div className="sm:ml-4 mt-[-5px] w-[150px]">
         <Image src={image} alt={title} width={250} height={180} />
       </div>

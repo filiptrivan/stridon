@@ -20,13 +20,15 @@ const FooterItem: React.FC<Props> = ({ Links, title, translate }) => {
         <li key={link.name}>
           <Link
             className={
+              link.name === "Altina - Ugrinovačka 212:" ||
+              link.name === "Vojislava Ilića 141g:" 
+              ? "text-sm leading-6 pointer-events-none font-semibold"
+              :
               link.name != "Ponedeljak - Petak: 8:00 - 18:00h" &&
               link.name != "Subota: 9:00 - 15:00h" &&
-              link.name != "Altina - Ugrinovačka 212" &&
-              link.name != "Vojislava Ilića 141g" &&
               link.name != "Nedelja: Neradan dan"
-                ? "text-gray-400 hover:text-red-500 duration-300 text-sm cursor-pointer leading-6"
-                : "text-gray-400 text-sm leading-6 pointer-events-none"
+              ? "hover:text-red-500 duration-300 text-sm cursor-pointer leading-6"
+              : "text-sm leading-6 pointer-events-none"
             }
             href={link.link}
           >

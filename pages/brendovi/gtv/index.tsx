@@ -1,9 +1,10 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import gtv from "../../../public/gtv-logo.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const gtvKatalogVrednosti = [
   {
     imeKataloga: "GTV katalog",
@@ -11,6 +12,7 @@ const gtvKatalogVrednosti = [
       "https://drive.google.com/file/d/1O7cEdZPw2CyvNTsxmfR7ZpL9GAXlpJ5k/view?usp=drive_link",
   },
 ];
+
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
@@ -21,8 +23,8 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"GTV"}
-        opis={translate("GTV alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"GTV"}
+        opisNaHomePage={translate("GTV alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}
         catalogueValues={gtvKatalogVrednosti}
@@ -40,7 +42,7 @@ const index = () => {
         slika1={gtv}
         textDoKraja={translate("text do kraja gtv")}
         linkDoProizvodjacaText={translate("link do proizvodjaca text gtv")}
-        linkDoProizvodjacaUrl={translate("link do proizvodjaca url gtv")}
+        linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/gtv/"
       />
     </div>
   );

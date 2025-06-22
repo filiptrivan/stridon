@@ -1,6 +1,7 @@
 const Text = ({ translate }: any) => {
   return (
-    <div className="max-w-[1140px] mx-auto text-left p-4 sm:p-2 mb-20">
+    // <div className="max-w-[1140px] mx-auto text-left p-4 sm:p-2 mb-20">
+    <div className="max-w-[1140px] mx-auto py-20 px-2 text-left">
       <h2 className="text-2xl sm:text-3xl font-medium text-cente pb-">
         {translate("key1")}
       </h2>

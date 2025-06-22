@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Card = ({ title, image, slug, translate }: any) => {
   return (
-    <div className=" max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-zinc-600 to-zinc-200 rounded">
+    <div className="max-w-[550px] max-h-[550px] mb-10 bg-gradient-to-t from-stone-600 to-stone-200 rounded">
       <div className="ml-4 w-[150px] mt-1">
         <Image 
         src={image} 
@@ -18,16 +18,12 @@ const Card = ({ title, image, slug, translate }: any) => {
         {title}
       </div>
 
-      <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
+      <div className="border-b border-stone-700 pb-2 text-start mx-4 text-base mb-4">
         {translate(`${title}`)}
       </div>
-      <Link href={`/brendovi/${slug}`}>
-        <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
-          {" "}
-          {translate(
-            "Idi na brend"
-          )} <FaArrowRight className="ml-1 text-sm" />{" "}
-        </div>
+      <Link className="text-start ml-4 mb-4 text-lg font-semibold flex items-center w-fit hover:text-stone-800 duration-200" href={`/brendovi/${slug}`}>
+          <span>{translate("Idi na brend")}</span>
+          <FaArrowRight className="ml-1 text-sm" />
       </Link>
     </div>
   );

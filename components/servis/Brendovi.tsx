@@ -13,12 +13,12 @@ import Link from "next/link";
 
 interface BrendoviProps {
   title: string;
+  textBelowTitle: string;
 }
 
-const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
+const Brendovi: React.FC<BrendoviProps> = ({ title, textBelowTitle }) => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 7,
       slidesToSlide: 1,
@@ -39,18 +39,20 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
       slidesToSlide: 1,
     },
   };
+
   return (
-    <div id="brands" className="max-w-[1140px] mx-auto pb-10 pt-4">
-      <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-6">
+    <div id="brands" className="max-w-[1140px] mx-auto py-20 px-4 text-center">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
         {title}
       </h2>
-      {/* div samo za peding od slika brendova */}
+      <div className="text-base sm:text-lg mb-9">
+        {textBelowTitle}
+      </div>
       <div className="px-4 pt-2 py-4">
         <Carousel
           ssr={true}
           className="z-[1]"
           centerMode={true}
-          // removeArrowOnDeviceType={["tablet", "mobile"]}
           keyBoardControl={true}
           infinite={true}
           draggable={false}
@@ -64,13 +66,10 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
             <BrendoviImg brendoviImg={boschLogo} title="Bosch"/>
           </Link>
         
-          {/* <Link href={"/brendovi/makita"}> */}
-            <BrendoviImg brendoviImg={makitaLogo} title="Makita"/>
-            <BrendoviImg brendoviImg={metaboLogo} title="Metabo"/>
-          {/* </Link> */}
-          {/* <Link href={"/brendovi/einhell"}> */}
-            <BrendoviImg brendoviImg={festoolLogo} title="Festool"/>
-          {/* </Link> */}
+          <BrendoviImg brendoviImg={makitaLogo} title="Makita"/>
+          <BrendoviImg brendoviImg={metaboLogo} title="Metabo"/>
+          <BrendoviImg brendoviImg={festoolLogo} title="Festool"/>
+
           <Link href={"/brendovi/rubi"}>
             <BrendoviImg brendoviImg={rubiLogo} title="Rubi"/>
           </Link>

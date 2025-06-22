@@ -7,9 +7,9 @@ import padlock from "../public/security (1).png";
 
 const SnageStridona = ({ translate }: any) => {
   return (
-    <div className="w-full bg-slate-100">
-      <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-2 m-auto justify-center max-w-[1140px] p-3 text-center pb-14 pt-10 ">
-        <div className="">
+    <div className="w-full bg-stone-50">
+      <div className="grid gap-10 lg:grid-cols-4 md:grid-cols-2 m-auto justify-center max-w-[1140px] p-3 text-center py-20 px-4">
+        <div>
           <div>
             <Image
               src={free}
@@ -19,13 +19,13 @@ const SnageStridona = ({ translate }: any) => {
               className="m-auto  mb-2"
             />
           </div>
-          <div className="text-xl font-medium mb-3">
+          <h2 className="text-xl font-medium mb-3">
             {" "}
             {translate("Besplatna dostava")}
-          </div>
+          </h2>
           <div>{translate("Za kupovinu preko 15.000 RSD")}</div>
         </div>
-        <div className="">
+        <div>
           <div>
             <Image
               src={clock}
@@ -35,10 +35,10 @@ const SnageStridona = ({ translate }: any) => {
               className="m-auto  mb-2"
             />
           </div>
-          <div className="text-xl font-medium mb-3"> {translate("Brza isporuka")}</div>
+          <h2 className="text-xl font-medium mb-3"> {translate("Brza isporuka")}</h2>
           <div>{translate("Isporuka 1-5 radnih dana")}</div>
         </div>
-        <div className="">
+        <div>
           <div>
             <Image
               src={padlock}
@@ -48,10 +48,10 @@ const SnageStridona = ({ translate }: any) => {
               className="m-auto  mb-2"
             />
           </div>
-          <div className="text-xl font-medium mb-3"> {translate("Sigurna kupovina")}</div>
+          <h2 className="text-xl font-medium mb-3"> {translate("Sigurna kupovina")}</h2>
           <div>{translate("Garancija na kupljene mašine")}</div>
         </div>
-        <div className="">
+        <div>
           <div>
             <Image
               src={bank}
@@ -61,7 +61,7 @@ const SnageStridona = ({ translate }: any) => {
               className="m-auto  mb-2"
             />
           </div>
-          <div className="text-xl font-medium mb-3"> {translate("Čekovima građana")}</div>
+          <h2 className="text-xl font-medium mb-3"> {translate("Čekovima građana")}</h2>
           <div>{translate("Na 4 rate bez kamate")}</div>
         </div>
       </div>

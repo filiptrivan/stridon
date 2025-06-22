@@ -1,11 +1,11 @@
 
 
 export const PRODUCTS = [ 
-    { name: "Altina - Ugrinovačka 212", link: "" },
+  { name: "office@stridon.rs", link: "mailto:office@stridon.rs" },
+    { name: "Altina - Ugrinovačka 212:", link: "" },
     { name: "011/210-0230", link: "tel:0112100230" },
-    { name: "Vojislava Ilića 141g", link: "" },
+    { name: "Vojislava Ilića 141g:", link: "" },
     { name: "011/2886-509", link: "tel:0112886509" },
-    { name: "office@stridon.rs", link: "mailto:office@stridon.rs" },
   ];
   export const RADNOVREME = [
     { name: "Ponedeljak - Petak: 8:00 - 18:00h", link: "" },

@@ -1,10 +1,10 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
-//import bosch from "../../../public/boschlogo2.png";
 import bosch from "../../../public/bosch-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const boschKatalogVrednosti = [
   {
     imeKataloga: `Bosch DIY merni alati`,
@@ -33,6 +33,7 @@ const boschKatalogVrednosti = [
       "https://drive.google.com/file/d/1966qI7dLpBlcsJkuEoaoxc9XzvShqH-H/view?usp=share",
   },
 ];
+
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
@@ -43,8 +44,8 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Bosch"}
-        opis={translate("BOSCH alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Bosch"}
+        opisNaHomePage={translate("BOSCH alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}
         catalogueValues={boschKatalogVrednosti}
@@ -62,7 +63,7 @@ const index = () => {
         slika1={bosch}
         textDoKraja={translate("text do kraja bosch")}
         linkDoProizvodjacaText={translate("link do proizvodjaca text bosch")}
-        linkDoProizvodjacaUrl={translate("link do proizvodjaca url bosch")}
+        linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/bosch/"
       />
     </div>
   );

@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import wera from "../../../public/wera-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const weraKatalogVrednosti = [
   {
     imeKataloga: "Wera katalog",
     rutaKataloga: "https://drive.google.com/file/d/140HnM3JRm2k_F4iF_j46tbchAST-S45O/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,10 +22,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Wera"}
-        opis={translate("Wera alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Wera"}
+        opisNaHomePage={translate("Wera alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={weraKatalogVrednosti}
       />
       <TextoviISlike
@@ -37,7 +39,7 @@ translate={translate}
       slika1={wera}
       textDoKraja={translate("text do kraja wera")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text wera")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url wera")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/wera/"
       />
     </div>
   );

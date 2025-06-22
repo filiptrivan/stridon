@@ -5,7 +5,7 @@ import Head from "next/head";
 const index = () => {
   const { t: translate } = useTranslation("home");
   return (
-    <div>
+    <div className="px-2">
       <Head>
         <title>Podaci za identifikaciju firme | Stridon Group DOO</title>
         <meta
@@ -14,15 +14,13 @@ const index = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="max-w-[1140px] m-auto py-10 my-10 border-2 p-16">
-        {/* naslov */}
-        <div className="text-5xl font-medium py-10">
+      <div className="max-w-[1140px] m-auto py-8 px-8 sm:py-10 sm:px-10 my-10 border-2">
+        <h1 className="text-5xl font-medium mb-10">
           {translate("Podaci za identifikaciju")}
-        </div>
-        {/* podnaslov */}
-        <div className="font-medium text-lg pb-4">
+        </h1>
+        <h2 className="font-medium text-lg pb-4">
           {translate("Podaci firme")}
-        </div>
+        </h2>
         <div>
           {translate("Pun naziv pravnog subjekta: STRIDON GROUP DOO")} <br />
           {translate("Poštanska adresa: Vojislava Ilića 141g")} <br />

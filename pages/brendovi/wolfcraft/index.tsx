@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import wolfcraft from "../../../public/wolfcraft-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const wolfcraftKatalogVrednosti = [
   {
     imeKataloga: "Wolfcraft katalog",
     rutaKataloga: "https://drive.google.com/file/d/1SU0y0Lr9TvJqvX0t20R44H6HxHLiWaZJ/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,10 +22,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Wolfcraft"}
-        opis={translate("Wolfcraft alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Wolfcraft"}
+        opisNaHomePage={translate("Wolfcraft alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={wolfcraftKatalogVrednosti}
       />
       <TextoviISlike
@@ -37,7 +39,7 @@ translate={translate}
         slika1={wolfcraft}
         textDoKraja={translate("text do kraja wolfcraft")}
         linkDoProizvodjacaText={translate("link do proizvodjaca text wolfcraft")}
-        linkDoProizvodjacaUrl={translate("link do proizvodjaca url wolfcraft")}
+        linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/wolfcraft/"
       />
     </div>
   );

@@ -1,9 +1,10 @@
 import React from "react";
 import Mapa from "../components/Mapa";
-import HeroWithoutButton from "../components/HeroWithoutButton";
 import Head from "next/head";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const kontakt = () => {
   const { t: translate } = useTranslation("home");
   return (
@@ -13,7 +14,7 @@ const kontakt = () => {
 
         <meta
           name="description"
-          content="Kontaktirajte Stridon tim za pitanja, podršku ili saradnju. Naša stručna ekipa je tu da vam pomogne i pruži informacije o našim proizvodima i uslugama.✅"
+          content="Kontaktirajte Stridon tim za pitanja, podršku ili saradnju. Naša stručna ekipa je tu da vam pomogne i pruži informacije o našim proizvodima i uslugama."
         />
         <meta
           name="keywords"
@@ -22,9 +23,10 @@ const kontakt = () => {
         <link rel="canonical" href={`/kontakt/`} key="canonical" />
       </Head>
 
-      <HeroWithoutButton
+      <Hero
         titleNaHomePage={translate("Kontaktirajte nas!")}
-        opisNaHomePage={""}
+        opisNaHomePage={translate("ContactTextBelowTitle")}
+        translate={translate}
       />
       <Mapa
         translate={translate}
@@ -39,6 +41,7 @@ const kontakt = () => {
         kontakt={"011/210-0230"}
         adresa={"Altina - Ugrinovačka 212"}
         map_src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.7173437038164!2d20.369132715536885!3d44.847689379098426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65d974f60c15%3A0xf5fe55315fa62f57!2sprodavnicaalata.rs!5e0!3m2!1sen!2srs!4v1690217663792!5m2!1sen!2srs"
+        isTransparentBackground={false}
       />
     </div>
   );

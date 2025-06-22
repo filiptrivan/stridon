@@ -11,9 +11,9 @@ module.exports = {
     extend: {
       colors: {
         primaryRed: "#8C2328",
-        darkerRed: "#8D2329",
-        darkerdarkerRed: "#741218",
+        darkerRed: "#741218",
         lighterRed: "#E50113",
+        lightestRed: "#b44846",
       },
     },
     fontFamily: {

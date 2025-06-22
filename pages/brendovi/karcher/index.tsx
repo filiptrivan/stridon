@@ -1,23 +1,26 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import karcher from "../../../public/karcher-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
+const karcherKatalogVrednosti = [
+  {
+    imeKataloga: "Karcher profesionalni program katalog",
+    rutaKataloga:
+      "https://drive.google.com/file/d/1rCZ63RGygIn4IeTTar4sLetDzc7UUoaJ/view?usp=drive_link",
+  },
+  {
+    imeKataloga: "Karcher žuti program katalog",
+    rutaKataloga:
+      "https://drive.google.com/file/d/14ERZxuCZexyQZ0rNtbBUXGXKjzZm_x5Q/view?usp=drive_link",
+  },
+];
+
 const index = () => {
-  const { t: translate } = useTranslation("home");
-  const karcherKatalogVrednosti = [
-    {
-      imeKataloga: "Karcher profesionalni program katalog",
-      rutaKataloga:
-        "https://drive.google.com/file/d/1rCZ63RGygIn4IeTTar4sLetDzc7UUoaJ/view?usp=drive_link",
-    },
-    {
-      imeKataloga: "Karcher žuti program katalog",
-      rutaKataloga:
-        "https://drive.google.com/file/d/14ERZxuCZexyQZ0rNtbBUXGXKjzZm_x5Q/view?usp=drive_link",
-    },
-  ];
+  const { t: translate } = useTranslation("home");  
+
   return (
     <div>
       <Head>
@@ -26,8 +29,8 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Karcher"}
-        opis={translate("Karcher alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Karcher"}
+        opisNaHomePage={translate("Karcher alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}
         catalogueValues={karcherKatalogVrednosti}
@@ -43,7 +46,7 @@ const index = () => {
         slika1={karcher}
         textDoKraja={translate("text do kraja karcher")}
         linkDoProizvodjacaText={translate("link do proizvodjaca text karcher")}
-        linkDoProizvodjacaUrl={translate("link do proizvodjaca url karcher")}
+        linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/karcher/"
       />
     </div>
   );

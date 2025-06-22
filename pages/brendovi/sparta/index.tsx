@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import sparta from "../../../public/sparta-logo.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const spartaKatalogVrednosti = [
   {
     imeKataloga: "Sparta, MTX katalog",
     rutaKataloga: "https://drive.google.com/file/d/1wASvbffFJGKsAIN9fb1R48XCrtJmYXkM/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,8 +22,8 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Sparta"}
-        opis={translate("Sparta alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Sparta"}
+        opisNaHomePage={translate("Sparta alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}
         catalogueValues={spartaKatalogVrednosti}
@@ -37,7 +39,7 @@ const index = () => {
       slika1={sparta}
       textDoKraja={translate("text do kraja sparta")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text sparta")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url sparta")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/sparta/"
       />
     </div>
   );

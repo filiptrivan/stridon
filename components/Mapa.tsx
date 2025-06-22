@@ -11,14 +11,15 @@ interface MapaProps {
   kontakt: string;
   adresa: string;
   map_src: string;
-  translate:any;
+  translate: any;
+  isTransparentBackground?: boolean;
 }
 
-const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate }) => {
+const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate, isTransparentBackground = true }) => {
   return (
-    <>
-      <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse md:flex-row md:mb-16 border md:border-0">
-        <div className="max-w-full lg:max-w-[570px] text-center md:text-left md:mr-10 mt-6 flex-none">
+    <div className={`${isTransparentBackground ? '' : 'bg-stone-50'}`}>
+      <div className="max-w-[1140px] mx-auto py-20 px-4 text-center flex flex-col-reverse md:flex-row">
+        <div className="max-w-full lg:max-w-[570px] md:text-left md:mr-10 md:mt-1 mt-8 flex-none">
           <div className="mb-6">
             <p className="font-medium text-lg ">
               <FaEnvelope className="inline-block mr-2 text-[28px] text-darkerRed" />
@@ -26,7 +27,7 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate 
             </p>
             <a
               href="mailto:office@stridon.rs"
-              className="mb-4 hover:text-slate-700 duration-200"
+              className="mb-4 hover:text-stone-700 duration-200"
             >
               {email}
             </a>
@@ -39,18 +40,18 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate 
             <p>
               <a
                 href={`tel:${kontakt}`}
-                className="mb-4 hover:text-slate-700 duration-200"
+                className="mb-4 hover:text-stone-700 duration-200"
               >
                 {kontakt}
               </a>
             </p>
           </div>
-          <div className="mb-6">
+          <div>
             <p className="font-medium text-lg">
               <FaMapMarkerAlt className="inline-block mr-2 text-[28px] text-darkerRed" />
               {translate("Adresa")}
             </p>
-            <p className="mb-4">{adresa}</p>
+            <p>{adresa}</p>
           </div>
         </div>
         <div className="w-full rounded-md overflow-hidden">
@@ -62,7 +63,7 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate 
           ></iframe>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -15,39 +15,6 @@ html {
   text-align: center;
 }
 
-.custom-img {
-  height: 45vh;
-}
-
-/* bg hero images */
-.custom-img-landing-page {
-  background-image: url("https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-}
-/* TODO: change this name */
-.custom-img-landing-page-real{
-  background-image: url("/hero-image-landing.jpg");
-}
-.custom-img-contact-page{
-  background-image: url("/hero-image-contact.jpg");
-}
-.custom-img-b2b-page{
-  background-image: url("/hero-image-b2b.jpg");
-}
-.custom-img-servis-page {
-  background-image: url("/majstor-servis.png");
-}
-.custom-img-catalogs-page{
-  background-image: url("/hero-image-catalogs.png");
-}
-.custom-img-stridon {
-  background-image: url("/altina1.png");
-}
-
-.custom-img-bg {
-  height: 45vh;
-  margin-top: 79.56px;
-}
-
 .nav-container {
   height: 79.56px;
 }
@@ -60,6 +27,7 @@ html {
 .react-multi-carousel-arrow--left {
   left: 20px;
 }
+
 .react-multi-carousel-arrow--right {
   right: 20px;
 }
@@ -68,51 +36,8 @@ a {
   text-decoration: none;
 }
 
-.nav-btn {
-  flex: 3;
-  display: flex;
-}
-
-.nav-links {
-  flex: 2;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1.3rem;
-  font-size: 0.8rem;
-  border: 2px solid #000000;
-  border-radius: 2rem;
-  line-height: 1;
-  margin: 0 0.2rem;
-  transition: 0.3s;
-  text-transform: uppercase;
-}
-
-.btn.solid,
-.btn.transparent:hover {
-  background-color: #000000;
-  color: #69bde7;
-}
-
-.btn.transparent,
-.btn.solid:hover {
-  background-color: transparent;
-  color: #000000;
-}
-
 .nav-link {
   position: relative;
-}
-
-/* navlink > a > i */
-.fontawesome {
-  margin-left: 0.2rem;
-  font-size: 1.1rem;
-}
-
-.dropdownbutton {
-  top: unset !important;
 }
 
 .dropdown {
@@ -161,75 +86,6 @@ a {
   pointer-events: auto;
 }
 
-.hamburger-menu-container {
-  flex: 1;
-  display: none;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.hamburger-menu {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.hamburger-menu div {
-  width: 1.6rem;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #fff;
-  position: relative;
-  z-index: 1001;
-  transition: 0.5s;
-}
-
-.hamburger-menu div:before,
-.hamburger-menu div:after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  background-color: #fff;
-  border-radius: 3px;
-  transition: 0.5s;
-}
-
-.hamburger-menu div:before {
-  transform: translateY(-7px);
-}
-
-.hamburger-menu div:after {
-  transform: translateY(7px);
-}
-
-#check {
-  position: absolute;
-  top: 50%;
-  right: 1.5rem;
-  transform: translateY(-50%);
-  width: 2.5rem;
-  height: 2.5rem;
-  z-index: 90000;
-  cursor: pointer;
-  opacity: 0;
-  display: none;
-}
-
-#check:checked ~ .hamburger-menu-container .hamburger-menu div {
-  background-color: transparent;
-}
-
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:before {
-  transform: translateY(0) rotate(-45deg);
-}
-
-#check:checked ~ .hamburger-menu-container .hamburger-menu div:after {
-  transform: translateY(0) rotate(45deg);
-}
-
 @keyframes animation {
   from {
     opacity: 0;
@@ -241,39 +97,10 @@ a {
   }
 }
 
-@media (max-width: 920px) {
-  .hamburger-menu-container {
-    display: flex;
-  }
-
-  #check {
-    display: block;
-  }
-
-  .nav-btn {
-    position: fixed;
-    height: calc(100vh - 3rem);
-    top: 3rem;
-    left: 0;
-    width: 100%;
-    background-color: #69bde7;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    overflow-x: hidden;
-    overflow-y: auto;
-    transform: translateX(100%);
-    transition: 0.65s;
-  }
-
-  #check:checked ~ .nav-btn {
-    transform: translateX(0);
-  }
-
-  #check:checked ~ .nav-btn .nav-link,
-  #check:checked ~ .nav-btn .log-sign {
-    animation: animation 0.5s ease forwards var(--i);
-  }
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Quiddita copied */
@@ -368,10 +195,4 @@ b{
     font-size: 24px;
     line-height: 28px;
   }
-}
-
-.react-multi-carousel-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

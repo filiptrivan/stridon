@@ -20,7 +20,7 @@ const Navbar = ({ locale, translate }: any) => {
       <div className="nav-container">
         <div
           style={{ backgroundColor: `white` }}
-          className="fixed left-0 top-0 w-full z-10 shadow-md"
+          className="fixed left-0 top-0 w-full z-20 shadow-md"
         >
           <div className="max-w-[1140px] m-auto flex justify-between items-center p-2.5 text-white">
             {/* //logo */}
@@ -29,12 +29,12 @@ const Navbar = ({ locale, translate }: any) => {
 
               {/* //nav links */}
             </Link>
-            <ul className="hidden sm:flex text-zinc-950 items-center">
-              <li className="nav-link pb-4 pt-4 pr-7  hover:text-slate-700 duration-200">
+            <ul className="hidden sm:flex text-stone-950 items-center">
+              <li className="nav-link pb-4 pt-4 pr-7  hover:text-stone-700 duration-200">
                 <Link href="/brendovi">
                   <div className="flex">
                     {translate("BrendoviHeader")}
-                    <FaAngleDown className="mt-1 ml-0.5 text-zinc-500" />
+                    <FaAngleDown className="mt-1 ml-0.5 text-stone-500" />
                   </div>
                 </Link>
                 <div className="dropdown">
@@ -72,17 +72,17 @@ const Navbar = ({ locale, translate }: any) => {
                   </ul>
                 </div>
               </li>
-              <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
+              <li className="pb-4 pt-4 pr-8 hover:text-stone-700 duration-200">
                 <Link href="/katalozi">{translate("KataloziHeader")}</Link>
               </li>
-              <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
+              <li className="pb-4 pt-4 pr-8 hover:text-stone-700 duration-200">
                 <Link href="/servis">{translate("ServisHeader")}</Link>
               </li>
 
-              <li className="pb-4 pt-4 pr-8 hover:text-slate-700 duration-200">
+              <li className="pb-4 pt-4 pr-8 hover:text-stone-700 duration-200">
                 <Link href="/kontakt">{translate("KontaktHeader")}</Link>
               </li>
-              <li className="pb-4 pt-4 pr-4 hover:text-slate-700 duration-200 ">
+              <li className="pb-4 pt-4 pr-4 hover:text-stone-700 duration-200 ">
                 <Link
                   className="border border-red-500 hover:bg-red-100 rounded-md py-1 px-4"
                   href="/b2b"
@@ -90,7 +90,7 @@ const Navbar = ({ locale, translate }: any) => {
                   B2B
                 </Link>
               </li>
-              <li className="pb-4 pt-4 hover:text-slate-700 duration-200 text-xl">
+              <li className="pb-4 pt-4 hover:text-stone-700 duration-200 text-xl">
                 |
               </li>
               <li>
@@ -127,37 +127,37 @@ const Navbar = ({ locale, translate }: any) => {
               <ul>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-stone-300"
                 >
                   <Link href="/brendovi">{translate("BrendoviFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-stone-300"
                 >
                   <Link href="/katalozi">{translate("KataloziFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-stone-300"
                 >
                   <Link href="/servis">{translate("ServisFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-stone-300"
                 >
                   <Link href="/kontakt">{translate("KontaktFon")}</Link>
                 </li>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-stone-300"
                 >
                   <Link href="/b2b">B2B</Link>
                 </li>
                 <li
                   onClick={navHandler}
-                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-gray-500"
+                  className="pl-0 pr-4 pt-3 pb-3 text-2xl hover:text-stone-300"
                 >
                   <Link href="/onama">{translate("O namaFon")}</Link>
                 </li>

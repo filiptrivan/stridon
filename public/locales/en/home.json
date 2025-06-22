@@ -1,7 +1,9 @@
 {
-  "hero opis": "Wholesale, retail and online sales of tools and machines.",
+  "hero opis": "The best tool store in Serbia. Wholesale, retail, and online sale of power and hand tools, protective equipment for professionals and craftsmen, machines, and accessories.",
   "naslov buttona": "Web shop",
   "brendovi": "Brands",
+  "HomepageBrandsTextBelowTitle": "Stridon offers tools and equipment from the most renowned brands such as DeWalt, Stanley, Bosch, Makita, Knipex, Wiha, Hogert, GTV, REMS, MAX, Wera, Black & Decker, Rubi, Senco, and many others. As the official importer and distributor for Serbia, we guarantee original quality, product availability, and technical support for every brand we represent.",
+  "HomepageTestimonialsTextBelowTitle": "Our strength lies in the trust we build with our partners. Read below to see what our associates think about working with us — their satisfaction is our greatest recommendation.",
   "svi brendovi": "All brands",
   "Besplatna dostava": "Free Shipping",
   "Za kupovinu preko 15.000 RSD": "For purchases over 15,000 RSD",
@@ -18,7 +20,7 @@
   "Zadovoljstvo uslugom": "Satisfaction with service",
   "Brendova koje zastupamo": "Brands we represent",
   "Šta naši saradnici kažu o nama": "What our associates say about us",
-
+  
   "IN GRADNJA": "\"Great professionals and good people, always ready to meet requirements and deadlines. Highly recommended for any kind of collaboration.\"",
   "ENTERIJER JANKOVIC": "\"Very good experience working with Stridon Group. Excellent in communication, they stick to deadlines, always have good professional advice, and tools in stock!\"",
   "HIDRO INA": "\"A company that always knows what our company needs. Invaluable friendly advice and solutions that only true professionals in their field know. Highly recommend Stridon!\"",
@@ -27,40 +29,40 @@
   "MBM RAD": "\"Advice from Stridon's professional salesmen has led to a 50% reduction in our company's work on certain parts of projects!\"",
   "Galens": "\"No matter how big the project you're starting, Stridon always has enough tools for you. Next-day delivery, quality tools, and a genuine desire to help the customer - invaluable!\"",
   "COLLIGO ARS": "\"A loyal partner in all our projects. In our many years of collaboration, they have never let us down. Recommendations for Stridon company!\"",
-
+  
   "Ko su naši klijenti?": "Who are our clients?",
   "klijenti": "Well-known renowned domestic companies in the fields of construction, carpentry, ceramics and others. Small and medium enterprises as well as individuals who need a quality tool and fast service!",
-
+  
   "BrendoviHeader": "Brands",
   "KataloziHeader": "Catalogs",
   "ServisHeader": "Service",
   "KontaktHeader": "Contact",
-
+  
+  "BrandsHeroTitle": "Importer and distributor of the best brands",
+  "BrandsHeroDescription": "Brands of machinery, accessories, electric, hand, and cordless tools that we import and for which our company is the importer and distributor in Serbia",
   "BrendoviFon": "Brands",
   "KataloziFon": "Catalogs",
   "ServisFon": "Service",
   "KontaktFon": "Contact",
   "O namaFon": "About us",
-
-  "opisNaHomePage": "Part of the assortment that we import and for which our company is the importer and distributor on the territory of Serbia",
-  "opisNaKatalozima": "Selection of excellent tools in one place - Browse our catalogs!",
-  "opisNaServisu": "If your machine is out of the warranty period - Vojislava Ilića 141b (next to our store) is the address for you!",
-
+  
+  "opisNaKatalozima": "Explore our promotional catalogs to review a wide range of products and discover the best offers on machinery, power tools, and hand tools for both professional and domestic use.",
+  
   "Bosch DIY merni alati": "Bosch DIY measuring tools",
   "Bosch pribor": "Bosch accessories",
   "Bosch Plavi": "Bosch Blue",
   "Bosch VP cenovnik": "Bosch wholesale pricelist",
-
+  
   "Dewalt najprodavanije 2023": "Dewalt top sellers 2023",
   "Dewalt ograničeno izdanje": "Dewalt limited catalog",
-
+  
   "Rems akcija 2023": "Rems sale 2023",
   "Rubi akcija 2023": "Rubi sale 2023",
-
+  
   "Wiha merni alati": "Wiha measuring tools",
   "Wiha katalog": "Wiha catalog",
   "Wiha XXL III kofer": "Wiha XXL III tool case",
-
+  
   "Knipex katalog": "Knipex catalog",
   "MAX katalog": "MAX catalog", 
   "GTV katalog": "GTV catalog",
@@ -69,29 +71,32 @@
   "MTX, Sparta katalog": "MTX, Sparta catalog",
   "Sparta, MTX katalog": "Sparta, MTX catalog",
   "Stanley katalog": "Stanley catalog",
-
+  
   "Hogert električarski alati": "Hogert electrician tools",
   "Hogert HTZ": "Hogert catalog",
   "Hogert odeća katalog": "Hogert clothing catalog",
   "Hogert ručni alati": "Hogert hand tools",
-
+  
   "Karcher profesionalni program katalog": "Karcher professional program catalog",
   "Karcher žuti program katalog": "Karcher yellow program catalog",
-
+  
   "KWB AKKU TOP pribor za aku alate": "KWB AKKU TOP accessories for cordless tools",
   "KWB dodaci za mašine katalog": "KWB machine accessories catalog",
   "KWB pribor": "KWB accessories",
-
-  "SG Servis": "SG Service",
+  
+  "SG Servis": "Out-of-warranty tool service in Belgrade",
+  "opisNaServisu": "We service and maintain electric, cordless, and hand tools - for professional and hobby use.",
   "Brendovi koje servisiramo": "Brands that we service",
+  "ServiceTextBelowBrandsThatWeService": "We service tools and equipment from leading brands such as DeWalt, Bosch, Makita, Metabo, Festool, Rubi, and SENCO.",
   "Kontakt Telefon": "Contact Telephone",
   "Adresa": "Address",
-
+  
   "Kontaktirajte nas!": "Contact us!",
-
+  "ContactTextBelowTitle": "Contact the Stridon team for questions, support, or collaboration. Our expert team is here to help you and provide information about our products and services.",
+  
   "TranslateEn": "Translate to English",
   "TranslateSr": "Translate into Serbian",
-
+  
   "DeWalt": "DeWalt tools are among the highest quality tools of today. They are used in all industries, and there is no heavy task for DeWalt professional machines. D...",
   "Bosch": "Bosch is one of the world's largest companies that deals with the production of electric and hand tools. Bosch Professional represents a synonym for quality...",
   "Stanley": "Stanley tools are synonymous with durability and precision. Trusted by professionals and homeowners alike, Stanley offers a wide range of high-quality...",
@@ -142,7 +147,6 @@
   "text pasusa 4 bosch": "The Bosch Group operates over 468 subsidiaries and regional offices in more than 60 countries.\n\nIts manufacturing, engineering, and sales activities span the globe.\n\nOver 90,000 researchers and engineers work across 125 locations worldwide — positioning Bosch as one of today’s most innovative global brands.",
   "text do kraja bosch": "Find the complete range and availability information for Bosch products on our ",
   "link do proizvodjaca text bosch": "official online store",
-  "link do proizvodjaca url bosch": "https://www.prodavnicaalata.rs/proizvodjaci/bosch/",
   "BoschMetaTitle": "Bosch tools store - Serbia, Belgrade | Stridon Group",
   "BoschMetaDescription": "Learn all about Bosch tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -155,7 +159,6 @@
   "text pasusa 3 stanley": "Stanley offers a broad range of hand tools for various applications, including woodworking, metalworking, and measurement.\n\nSome of the most recognized products include hand planes, saws, rulers, squares, chisels, screwdrivers, and a variety of other tools for both personal and commercial use.\n\nFor woodworking, Stanley provides precise saws, chisels, and measuring tools that ensure controlled cuts and accurate shaping.\n\nTheir tape measures and levels, especially those in the FatMax line, deliver accurate readings even in challenging work environments.\n\nIn the metalworking category, Stanley manufactures efficient shears, files, and other finishing tools that enable precise results.\n\nStanley tools are a trusted choice for professionals and hobbyists around the globe.",
   "text do kraja stanley": "Find the complete range and availability information for Stanley products on our ",
   "link do proizvodjaca text stanley": "official online store",
-  "link do proizvodjaca url stanley": "https://www.prodavnicaalata.rs/proizvodjaci/stanley/",
   "StanleyMetaTitle": "Stanley tools store - Serbia, Belgrade | Stridon Group",
   "StanleyMetaDescription": "Learn all about Stanley tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -168,7 +171,6 @@
   "text pasusa 3 rems": "REMS offers an extensive range of tools and machines for every aspect of pipe processing and installation work. Their product lineup includes thread cutting machines, rolling tools, electric and hydraulic threading machines, and pipe cutters, from manual tools to electric reciprocating saws and battery-powered circular pipe saws.\n\nThe company also provides solutions for beveling and deburring, as well as a wide variety of installation tools such as Swedish wrenches, pump pliers, cordless drills, and pressure testing units – both manual and electric.\n\nIn the field of soldering and welding, REMS supplies electric soldering tongs, turbo torches, and high-quality soldering materials. For pipe bending, they offer both manual and hydraulic benders, allowing precise and reliable work even under challenging conditions.\n\nREMS is also specialized in tools for radial and axial press fittings, including cordless and electro-hydraulic press machines and various expansion tools. For maintenance and inspection, the company provides pipe inspection cameras, cleaning machines, and tools for welding plastic pipes.",
   "text do kraja rems": "Find the complete range and availability information for REMS products on our ",
   "link do proizvodjaca text rems": "official online store",
-  "link do proizvodjaca url rems": "https://www.prodavnicaalata.rs/proizvodjaci/rems/",
   "REMSMetaTitle": "REMS tools store - Serbia, Belgrade | Stridon Group",
   "REMSMetaDescription": "Learn all about REMS tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -183,7 +185,6 @@
   "text pasusa 4 wiha": "Wiha has received numerous accolades for product design, technological innovations, and corporate social responsibility, including nearly 20 iF Awards, one of which is a gold award for the Wiha bit holder with magazine, and about 10 Red Dot Awards, including the prestigious Red Dot Best of the Best.\n\nSince 2010, Wiha has been the main sponsor of the regional basketball team Wiha Panthers Schwenningen, demonstrating its commitment to social responsibility and promoting sports activities.",
   "text do kraja wiha": "Find the complete range and availability information for Wiha products on our ",
   "link do proizvodjaca text wiha": "official online store",
-  "link do proizvodjaca url wiha": "https://www.prodavnicaalata.rs/proizvodjaci/wiha/",
   "WihaMetaTitle": "Wiha tools store - Serbia, Belgrade | Stridon Group",
   "WihaMetaDescription": "Learn all about Wiha tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -198,7 +199,6 @@
   "text pasusa 4 knipex": "The Knipex Museum, located at the company’s headquarters in Wuppertal, is dedicated to the history and evolution of hand tools over time. Spread over two floors, visitors can explore tools, machines, reconstructed workstations, and everyday items that illustrate the rich tradition of German toolmaking.\n\nThe museum is open to the public once a year during the Wuppertal-24h-live event, while group tours can be arranged by appointment throughout the year.",
   "text do kraja knipex": "Find the complete range and availability information for Knipex products on our ",
   "link do proizvodjaca text knipex": "official online store",
-  "link do proizvodjaca url knipex": "https://www.prodavnicaalata.rs/proizvodjaci/knipex/",
   "KnipexMetaTitle": "Knipex tools store - Serbia, Belgrade | Stridon Group",
   "KnipexMetaDescription": "Learn all about Knipex tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -213,7 +213,6 @@
   "text pasusa 4 gtv": "Customer satisfaction is GTV’s top priority. That’s why they provide full customer support throughout the entire purchasing process, from selecting the right furniture fittings to installing LED lighting. Their team of experienced specialists offers assistance in choosing the best solutions, processes orders promptly, and ensures efficient delivery logistics.\n\nGTV supports its B2B partners with a reliable online platform, technical documentation, 3D visualizations, and a wide array of marketing materials. Their advisors are experts in the fields of furniture fittings and LED lighting and are fluent in multiple languages to ensure smooth communication with international clients.\n\nEvery business partner can count on personalized marketing support, product range consulting, and valuable insights into market trends. GTV doesn’t just sell products, they build long-term relationships and contribute to the success of every project.",
   "text do kraja gtv": "Find the complete range and availability information for GTV products on our ",
   "link do proizvodjaca text gtv": "official online store",
-  "link do proizvodjaca url gtv": "https://www.prodavnicaalata.rs/proizvodjaci/gtv/",
   "GTVMetaTitle": "GTV tools store - Serbia, Belgrade | Stridon Group",
   "GTVMetaDescription": "Learn all about GTV tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -226,7 +225,6 @@
   "text pasusa 3 max": "MAX has pioneered many tools on the global market, including the first roofing nailer (1982), battery-powered rebar tying tool (1993), and high-pressure compressors and nailers (1994).\n\nThese tools are widely trusted by professionals for their performance, durability, and ergonomic design.\n\nMAX's industrial tools include powerful yet lightweight devices developed with proprietary features.\n\nThe range covers pneumatic nailers, 20-bar high-pressure compressors, metal and concrete tools, and accessories used in construction.\n\nThe office equipment division includes a variety of staplers, such as the innovative Flat Clinch and Integral models used in copy machines worldwide.\n\nMAX also offers check-processing devices for the financial sector and labeling systems for industrial and educational use, including tube marking tools and cable identification systems.\n\nMAX's diverse portfolio provides complete solutions for professionals across multiple sectors.\n\nIts tools and office equipment stand for reliability, innovation, and performance, making MAX a trusted brand for those who value quality in every task.",
   "text do kraja max": "Find the complete range and availability information for MAX products on our ",
   "link do proizvodjaca text max": "official online store",
-  "link do proizvodjaca url max": "https://www.prodavnicaalata.rs/proizvodjaci/max/",
   "MAXMetaTitle": "MAX tools store - Serbia, Belgrade | Stridon Group",
   "MAXMetaDescription": "Learn all about MAX tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -239,7 +237,6 @@
   "text pasusa 3 hogert": "Högert Technik offers a comprehensive portfolio of hand tools, including screwdrivers, wrenches, pliers, and measuring instruments, engineered for precision, durability, and professional performance.\n\nThe range also includes power tools designed for efficient task execution in various working environments.\n\nIn addition to tools, Högert produces high-quality protective equipment, including work gloves, safety glasses, helmets, and work footwear, all developed to ensure maximum protection and comfort in industrial settings.\n\nSpecial attention is given to raw materials: carbon steel is used in the production of hand tools, ensuring resistance, strength, and long service life.\n\nHögert Technik carefully selects and audits its suppliers, working only with trusted industry partners to provide tools of verified origin and superior quality.\n\nAll Högert products are certified by leading institutions such as TÜV Rheinland and VDE, and meet the requirements of the German DIN standard.\n\nThese certifications confirm that Högert tools comply with the highest standards of safety, quality, and performance.",
   "text do kraja hogert": "Find the complete range and availability information for Högert Technik products on our ",
   "link do proizvodjaca text hogert": "official online store",
-  "link do proizvodjaca url hogert": "https://www.prodavnicaalata.rs/proizvodjaci/hogert/",
   "HogertMetaTitle": "Högert tools store - Serbia, Belgrade | Stridon Group",
   "HogertMetaDescription": "Learn all about Högert tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -254,7 +251,6 @@
   "text pasusa 4 wera": "Over the years, Wera Tools has received numerous awards for product design, brand management, and innovation. In product design, Wera has won the iF Product Design Award in 1997, 2009, 2012, 2013, and 2015, including the prestigious Gold Award. The company also earned the Red Dot Design Award in 2014 for “Best of the Best,” and again in 2015.\n\nIn communication design, Wera received the Red Dot Design Award in 2014 and the German Design Award in 2015. For excellence in brand management, the company was honored with the German Brand Award from 2015 to 2017. In 2007, Wera was named a Top Innovator. In the industrial tools sector, Wera claimed first place in the “Partner des Fachhandels” award in both 2016 and 2021.",
   "text do kraja wera": "Find the complete range and availability information for Wera products on our ",
   "link do proizvodjaca text wera": "official online store",
-  "link do proizvodjaca url wera": "https://www.prodavnicaalata.rs/proizvodjaci/wera/",
   "WeraMetaTitle": "Wera tools store - Serbia, Belgrade | Stridon Group",
   "WeraMetaDescription": "Learn all about Wera tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -267,7 +263,6 @@
   "text pasusa 3 rubi": "RUBI offers a broad range of tools and machines, from basic manual tile cutters to complex electric devices for ceramic and stone cutting.\n\nTheir manual cutters ensure safety and precision, free of sharp parts that could pose a risk to users. RUBI electric cutters allow for precise, efficient cutting of materials like granite and marble.\n\nAdditionally, the RUBI product lineup includes diamond blades for wet and dry cutting, available in diameters from 115 mm to 350 mm, compatible with nearly every type of material. These blades are an ideal choice for a wide range of professional tiling tasks.",
   "text do kraja rubi": "Find the complete range and availability information for RUBI products on our ",
   "link do proizvodjaca text rubi": "official online store",
-  "link do proizvodjaca url rubi": "https://www.prodavnicaalata.rs/proizvodjaci/rubi/",
   "RUBIMetaTitle": "RUBI tools store - Serbia, Belgrade | Stridon Group",
   "RUBIMetaDescription": "Learn all about RUBI tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -280,7 +275,6 @@
   "text pasusa 3 senco": "Senco offers a wide range of products, from pneumatic tools to fastening machines, designed to meet the needs of professionals.\n\nTheir nailers and staplers provide precise and strong joints, even in demanding conditions, while models with quick reloading and ergonomic designs allow for long work hours with minimal fatigue.\n\nSenco compressors are compact, powerful, and reliable, enabling efficient work, while their nails and staples perfectly match their tools, providing durable and reliable joints for various projects.",
   "text do kraja senco": "Find the complete range and availability information for SENCO products on our ",
   "link do proizvodjaca text senco": "official online store",
-  "link do proizvodjaca url senco": "https://www.prodavnicaalata.rs/proizvodjaci/senco/",
   "SENCOMetaTitle": "SENCO tools store - Serbia, Belgrade | Stridon Group",
   "SENCOMetaDescription": "Learn all about SENCO tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -293,7 +287,6 @@
   "text pasusa 3 black+decker": "Black+Decker offers a vast range of products, including power tools, cordless tools, garden equipment, and cleaning devices, all designed to meet the diverse needs of professionals and everyday users.\n\nTheir power tools, such as drills, saws, grinders, and screwdrivers, are known for reliability and ergonomic design. Cordless tools, powered by lithium-ion technology, provide cable-free freedom, fast charging, and powerful performance for both home and job site tasks.\n\nIn the gardening segment, Black+Decker provides lawn mowers, trimmers, leaf blowers, and branch cutters, tools designed to simplify yard maintenance. Their home cleaning devices, including vacuums and steam cleaners, ensure hygienic and spotless environments.\n\nBlack+Decker tools blend functionality, durability, and modern technology to meet the evolving demands of users around the world.",
   "text do kraja black+decker": "Find the complete range and availability information for Black+Decker products on our ",
   "link do proizvodjaca text black+decker": "official online store",
-  "link do proizvodjaca url black+decker": "https://www.prodavnicaalata.rs/proizvodjaci/black-decker/",
   "BlackDeckerMetaTitle": "Black+Decker tools store - Serbia, Belgrade | Stridon Group",
   "BlackDeckerMetaDescription": "Learn all about Black+Decker tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -306,7 +299,6 @@
   "text pasusa 3 mtx": "The MTX tool range includes a wide variety of products, from basic hand tools to professional tools and specialized equipment. Thanks to competitive prices and reliable design, MTX tools are a great choice for both wholesale customers and end users. The product lineup includes tools for household use, construction work, gardening, and professional applications, making MTX one of the most in-demand brands in the tools category.",
   "text do kraja mtx": "Find the complete range and availability information for MTX products on our ",
   "link do proizvodjaca text mtx": "official online store",
-  "link do proizvodjaca url mtx": "https://www.prodavnicaalata.rs/proizvodjaci/mtx/",
   "MTXMetaTitle": "MTX tools store - Serbia, Belgrade | Stridon Group",
   "MTXMetaDescription": "Learn all about MTX tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -319,7 +311,6 @@
   "text pasusa 3 sparta": "The wide assortment of Sparta tools includes various hand tools such as wrenches, screwdrivers, pliers, utility knives, files, and squares, as well as woodworking tools and carpentry accessories. They also offer silicone guns that are often used in assembly and finishing work. In addition, Sparta also offers gardening tools and basic machines for use in household conditions and around the yard.\n\n\n\nSparta brand products are specifically developed to meet the demands of the mass consumer and are designed for carrying out simple repairs at home, in the countryside, and in the car. Sparta tools are accessible to everyone and will be useful in every household.",
   "text do kraja sparta": "Find the complete range and availability information for Sparta products on our ",
   "link do proizvodjaca text sparta": "official online store",
-  "link do proizvodjaca url sparta": "https://www.prodavnicaalata.rs/proizvodjaci/sparta/",
   "SpartaMetaTitle": "Sparta tools store - Serbia, Belgrade | Stridon Group",
   "SpartaMetaDescription": "Learn all about Sparta tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -332,7 +323,6 @@
   "text pasusa 3 sg tools": "SG Tools offers a wide range of products, including diamond blades and drills perfect for all types of ceramic work. The diamond blades come in various sizes, from 115 to 400 mm, providing precise, fast, and clean cuts. Additionally, the blades are compatible with most standard cutting machines, making them practical for a wide range of users.\n\nSG Tools ceramic drills are designed for dry drilling and are ideal for working with ceramic tiles, porcelain, and other hard materials.",
   "text do kraja sg tools": "Find the complete range and availability information for SG Tools products on our ",
   "link do proizvodjaca text sg tools": "official online store",
-  "link do proizvodjaca url sg tools": "https://www.prodavnicaalata.rs/proizvodjaci/sg-tools/",
   "SGToolsMetaTitle": "SG Tools tools store - Serbia, Belgrade | Stridon Group",
   "SGToolsMetaDescription": "Learn all about SG Tools tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -345,7 +335,6 @@
   "text pasusa 3 karcher": "Kärcher offers an extensive range of cleaning equipment for industrial and commercial use.\n\nTheir catalog includes pressure washers, vacuum cleaners, steam cleaners, and specialized equipment for floor and glass cleaning.\n\nHigh-pressure washers are Kärcher’s flagship products, using powerful water jets to remove stubborn dirt from concrete, stone, and tiled surfaces.\n\nTheir vacuum cleaners are designed for both household and commercial applications, capable of handling dry, wet, and specific types of waste.\n\nKärcher’s steam cleaners disinfect and clean various surfaces without chemicals, making them ideal for homes and healthcare facilities.\n\nIn addition, Kärcher offers floor cleaning machines for large industrial spaces and specialized tools for cleaning glass surfaces and facades, delivering fast and efficient maintenance solutions.",
   "text do kraja karcher": "Find the complete range and availability information for Kärcher products on our ",
   "link do proizvodjaca text karcher": "official online store",
-  "link do proizvodjaca url karcher": "https://www.prodavnicaalata.rs/proizvodjaci/karcher/",
   "KarcherMetaTitle": "Kärcher tools store - Serbia, Belgrade | Stridon Group",
   "KarcherMetaDescription": "Learn all about Kärcher tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -358,7 +347,6 @@
   "text pasusa 3 wolfcraft": "As of 2023, Wolfcraft offers around 3,000 products.\n\nThe range includes tools and accessories used in workshops, on construction sites, and at home.\n\nThe offering includes hand tools and accessories for power tools.\n\nWolfcraft workshop tools include clamps, templates, angle rulers, and squares.\n\nThese tools are commonly used in woodworking shops and are part of daily operations.\n\nThe tools are developed for various technical and practical applications.",
   "text do kraja wolfcraft": "Find the complete range and availability information for Wolfcraft products on our ",
   "link do proizvodjaca text wolfcraft": "official online store",
-  "link do proizvodjaca url wolfcraft": "https://www.prodavnicaalata.rs/proizvodjaci/wolfcraft/",
   "WolfcraftMetaTitle": "Wolfcraft tools store - Serbia, Belgrade | Stridon Group",
   "WolfcraftMetaDescription": "Learn all about Wolfcraft tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
@@ -371,11 +359,11 @@
   "text pasusa 3 kwb": "KWB provides a broad and diverse product range that covers all needs for cutting, drilling, grinding, and a wide selection of workshop tools that simplify daily tasks in the workshop, on the job site, or at home.\n\nTheir portfolio includes power tool accessories as well as hand tools, all developed to enhance performance and achieve better results. With more than 5,500 products, the KWB product offering includes patented innovations, showcasing the company’s dedication to product development.\n\nOngoing improvement of the product line allows KWB Germany GmbH to remain competitive in the fast-moving tool and power tool accessory market, with regular updates and new solutions.",
   "text do kraja kwb": "Find the complete range and availability information for KWB products on our ",
   "link do proizvodjaca text kwb": "official online store",
-  "link do proizvodjaca url kwb": "https://www.prodavnicaalata.rs/proizvodjaci/kwb/",
   "KWBMetaTitle": "KWB tools store - Serbia, Belgrade | Stridon Group",
   "KWBMetaDescription": "Learn all about KWB tools, from history and innovations to product range and curiosities. Find accurate information about the products you're interested in.✅",
 
-  "Radno Vreme": "Hours",
+  "Call centar": "Call center",
+  "Radno Vreme": "Working hours",
   "Informacije": "Informations",
   "Kompanija": "Company",
 
@@ -427,6 +415,7 @@
   "key16": "The mission of SG Service is to keep your power tools in the best possible condition so that you can perform your tasks without any hindrance. Whatever your needs, SG Service is here to help. Contact SG Service or visit them at the address",
 
   "Zatražite pristup B2B platformi": "Request access to the B2B platform",
+  "B2BRequestAccessTextBelowTitle": "Please fill out the form and our team will contact you as soon as possible.",
   "Imate B2B nalog sa nama? Idite na portal.": "Do you already have a B2B account with us? Go to the portal.",
   "Link ka portalu": "Link to the portal",
   "Ime": "Name",
@@ -437,7 +426,47 @@
   "Matični broj firme": "Company registration number",
   "Kontakt telefon": "Contact phone",
   "Potvrdi": "Confirm",
-  "Forma je uspešno potvrđena": "The form has been successfully submitted",
+  "B2BFormSubmitMessage": "Your request has been successfully sent. Our support team will contact you shortly.",
+
+  "emailValidation": {
+    "invalidEmail": "Invalid email",
+    "emailRequired": "Email is required"
+  },
+  "companyNameValidation": {
+    "minLength": "Company name must be at least 1 characters long",
+    "maxLength": "Company name cannot exceed 100 characters",
+    "required": "Company name is required"
+  },
+  "companyAddressValidation": {
+    "minLength": "Company address must be at least 1 characters long",
+    "maxLength": "Company address cannot exceed 100 characters",
+    "required": "Company address is required"
+  },
+  "pibValidation": {
+    "minLength": "PIB must be at least 9 digits long",
+    "maxLength": "PIB cannot exceed 9 digits",
+    "required": "PIB is required"
+  },
+  "companyRegistrationNumberValidation": {
+    "minLength": "Registration number must be at least 8 digits long",
+    "maxLength": "Registration number cannot exceed 8 digits",
+    "required": "Registration number is required"
+  },
+  "contactPhoneValidation": {
+    "minLength": "Contact phone must be at least 6 characters long",
+    "maxLength": "Contact phone cannot exceed 36 characters",
+    "required": "Contact phone is required"
+  },
+  "firstNameValidation": {
+    "minLength": "First name must be at least 2 characters long",
+    "maxLength": "First name cannot exceed 100 characters",
+    "required": "First name is required"
+  },
+  "lastNameValidation": {
+    "minLength": "Last name must be at least 2 characters long",
+    "maxLength": "Last name cannot exceed 100 characters",
+    "required": "Last name is required"
+  },
 
   "Ponedeljak - Petak: 8:00 - 18:00h": "Monday - Friday: 8:00 AM - 6:00 PM",
   "Subota: 9:00 - 15:00h": "Saturday: 9:00 AM - 3:00 PM",

@@ -1,35 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Button } from "./buttons/Button";
+import MyModal from "./MyModal";
 
 interface HeroProps {
+  translate: any;
   titleNaHomePage: string;
+  titleBelow?: string;
   opisNaHomePage: string;
-  naslovButtona: string;
-  slug: string;
+  naslovButtona?: string;
+  externalUrl?: string;
+  bigTitle?: boolean;
+  catalogueValues?: {
+    imeKataloga: string;
+    rutaKataloga: string;
+  }[];
 }
 
 const Hero: React.FC<HeroProps> = ({
+  translate,
   titleNaHomePage,
+  titleBelow,
   opisNaHomePage,
   naslovButtona,
-  slug,
+  externalUrl,
+  bigTitle = true,
+  catalogueValues,
 }) => {
+  const [visible, setVisible] = useState(false);
+  const handleOnClose = () => {
+    setVisible(false);
+  };
+  
   return (
-    <div className="flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img custom-img-landing-page-real text-center">
-      {/* Overlay */}
-      <div className="flex absolute top-0 left-0 right-0 bg-black/60 custom-img-bg " />
-      <div className="left-0 w-full z-[2]">
-        <div className=" max-w-[1140px] p-3 text-white mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl mb-2 font-medium">{titleNaHomePage}</h1>
-          <h2 className="text-base sm:text-xl mb-4">{opisNaHomePage}</h2>
-          <button className="px-8 py-2 border rounded-md hover:bg-slate-600 duration-200 flex items-center m-auto">
-            <a href={slug} target="_blank" className="flex items-center">
-              {naslovButtona}
-              <FaArrowRight className="ml-2 text-sm" />
-            </a>
-          </button>
-        </div>
+    <div className="flex items-center justify-center py-28 text-center bg-stone-50 relative overflow-hidden">
+      <div className="max-w-[1140px] p-3 mx-auto z-10">
+        <h1 className={`${bigTitle ? 'lg:text-8xl' : 'lg:text-7xl'} text-5xl md:text-6xl mb-3 bg-gradient-to-r from-lighterRed to-darkerRed inline-block text-transparent bg-clip-text pb-2 font-bold`}>
+          <div>
+            {titleNaHomePage}
+          </div>
+          <div>
+            {titleBelow}
+          </div>
+        </h1>
+        <div className={`text-base sm:text-xl ${naslovButtona ? 'mb-9' : 'mb-0'}`}>{opisNaHomePage}</div>
+        { externalUrl && naslovButtona &&
+          <div className="flex justify-center">
+            <Button label={naslovButtona} icon={<FaArrowRight/>} externalUrl={externalUrl}></Button>
+          </div>
+        }
+        { catalogueValues && naslovButtona &&
+          <div className="flex justify-center">
+            <Button label={naslovButtona} onClick={() => setVisible(true)}></Button>
+          </div>
+        }
       </div>
+      <MyModal
+        translate={translate}
+        catalogueValues={catalogueValues}
+        onClose={handleOnClose}
+        visible={visible}
+      />
+      <img className="absolute right-0 w-[600px] opacity-10 sm:opacity-30 rotate-45 sm:rotate-0" src="/drill-electric.svg" alt="Test" />
     </div>
   );
 };

@@ -7,7 +7,6 @@ import dewalt from "../public/dewalt-logo.svg";
 import stanley from "../public/stanley-logo.svg";
 import knipex from "../public/knipex-logo.svg";
 import hoegert from "../public/hogert-logo.png";
-import karcher from "../public/karcher-logo.svg";
 import wiha from "../public/wiha-logo.svg";
 import gtv from "../public/gtv-logo.png";
 import rems from "../public/remslogo.png";
@@ -19,12 +18,13 @@ import blackdecker from "../public/black-and-decker-logo.svg";
 import rubi from "../public/rubi-logo.svg";
 import senco from "../public/senco-logo.svg";
 import Link from "next/link";
+import { Button } from "./buttons/Button";
 
 interface BrendoviProps {
-  title: string;
+  translate: any;
 }
 
-const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
+const Brendovi: React.FC<BrendoviProps> = ({ translate }) => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -47,18 +47,20 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
       slidesToSlide: 1,
     },
   };
+  
   return (
-    <div id="brands" className="max-w-[1140px] mx-auto pb-10 pt-4">
-      <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-6">
-        {title}
+    <div id="brands" className="max-w-[1140px] mx-auto py-20 px-4 text-center">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
+        {translate("brendovi")}
       </h2>
-      {/* div samo za peding od slika brendova */}
-      <div className="px-4 pt-2 py-4">
+      <div className="text-base sm:text-lg mb-9">
+        {translate('HomepageBrandsTextBelowTitle')}
+      </div>
+      <div className="mb-9">
         <Carousel
           ssr={true}
           className="z-[1]"
           centerMode={true}
-          // removeArrowOnDeviceType={["tablet", "mobile"]}
           keyBoardControl={true}
           infinite={true}
           draggable={false}
@@ -101,10 +103,6 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
             <BrendoviImg brendoviImg={max} title="Max" />
           </Link>
 
-          <Link href={"/brendovi/karcher"}>
-            <BrendoviImg brendoviImg={karcher} title="Karcher" />
-          </Link>
-
           <Link href={"/brendovi/wera"}>
             <BrendoviImg brendoviImg={wera} title="Wera" />
           </Link>
@@ -129,6 +127,9 @@ const Brendovi: React.FC<BrendoviProps> = ({ title }) => {
             <BrendoviImg brendoviImg={senco} title="Senco" />
           </Link>
         </Carousel>
+      </div>
+      <div className="flex justify-center">
+        <Button label={translate("svi brendovi")} url="/brendovi"/>
       </div>
     </div>
   );

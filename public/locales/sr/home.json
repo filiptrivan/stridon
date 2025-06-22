@@ -1,7 +1,9 @@
 {
-  "hero opis": "Veleprodaja, maloprodaja i online prodaja alata i mašina.",
+  "hero opis": "Najbolja prodavnica alata u Srbijii. Veleprodaja, maloprodaja i online prodaja električnog i ručnog alata, zaštitne oprema za profesionalce i majstore, mašina i pribora.",
   "naslov buttona": "Online prodavnica",
   "brendovi": "Brendovi",
+  "HomepageBrandsTextBelowTitle": "Stridon nudi alate i opremu najpoznatijih brendova kao što su DeWalt, Stanley, Bosch, Makita, Knipex, Wiha, Hogert, GTV, REMS, MAX, Wera, Black & Decker, Rubi, Senco i mnogi drugi. Kao zvanični uvoznik i distributer za Srbiju, garantujemo originalan kvalitet, dostupnost proizvoda i tehničku podršku za svaki brend koji zastupamo.",
+  "HomepageTestimonialsTextBelowTitle": "Naša snaga leži u poverenju koje gradimo sa partnerima. U nastavku pročitajte šta naši saradnici misle o radu sa nama — njihovo zadovoljstvo je naša najveća preporuka.",
   "svi brendovi": "Svi brendovi", 
   "Besplatna dostava": "Besplatna dostava",
   "Za kupovinu preko 15.000 RSD": "Za kupovinu preko 15.000 RSD",
@@ -31,6 +33,8 @@
   "Ko su naši klijenti?": "Ko su naši klijenti?",
   "klijenti": "Poznate renomirane domaće firme iz oblasti građevine, stolarstva, keramike i drugih. Mala i srednja preduzeća kao i individualci koji imaju potrebu za kvalitetnim alatom i brzom uslugom!",
 
+  "BrandsHeroTitle": "Uvoznik i distributer najboljih brendova",
+  "BrandsHeroDescription": "Brendovi mašina, pribora, električnog, ručnog i akumulatorskog alata koje uvozimo i za koje je naša firma uvoznik i distributer na teritoriji Srbije.",
   "BrendoviHeader": "Brendovi",
   "KataloziHeader": "Katalozi",
   "ServisHeader": "Servis",
@@ -42,9 +46,7 @@
   "KontaktFon": "Kontakt",
   "O namaFon": "O nama",
 
-  "opisNaHomePage": "Deo asortimana koji uvozimo i za koji je naša firma uvoznik i distributer na teritoriji Srbije",
-  "opisNaKatalozima": "Izbor izvrsnih alata na jednom mestu - Pregledajte naše kataloge!",
-  "opisNaServisu": "Ukoliko je Vaša mašina Van garantnog roka - Vojislava Ilića 141b (pored naše radnje) je adresa za Vas!",
+  "opisNaKatalozima": "Pregledajte širok izbor proizvoda i najbolje ponude mašina, električnog i ručnog alata za profesionalnu i kućnu upotrebu u našim akcijskim katalozima.",
 
   "Bosch DIY merni alati": "Bosch DIY merni alati",
   "Bosch pribor": "Bosch pribor",
@@ -82,12 +84,15 @@
   "KWB dodaci za mašine katalog": "KWB dodaci za mašine katalog",
   "KWB pribor": "KWB pribor",
 
-  "SG Servis": "SG Servis",
+  "SG Servis": "Servis alata van garancije u Beogradu",
+  "opisNaServisu": "Servisiramo i održavamo električne, akumulatorske i ručne alate - za profesionalnu i hobi upotrebu.",
   "Brendovi koje servisiramo": "Brendovi koje servisiramo",
+  "ServiceTextBelowBrandsThatWeService": "Servisiramo alate i opremu vodećih brendova kao što su DeWalt, Bosch, Makita, Metabo, Festool, Rubi i SENCO.",
   "Kontakt Telefon": "Kontakt Telefon",
   "Adresa": "Adresa",
 
   "Kontaktirajte nas!": "Kontaktirajte nas!",
+  "ContactTextBelowTitle": "Kontaktirajte Stridon tim za pitanja, podršku ili saradnju. Naša stručna ekipa je tu da vam pomogne i pruži informacije o našim proizvodima i uslugama.",
 
   "TranslateEn": "Prevedi na engleski",
   "TranslateSr": "Prevedi na srpski",
@@ -142,7 +147,6 @@
   "text pasusa 4 bosch": "Bosch grupa ima više od 468 filijala i regionalnih predstavništava u preko 60 zemalja. Njene aktivnosti u oblasti proizvodnje, razvoja i prodaje pokrivaju čitav svet. Više od 90.000 istraživača i inženjera radi na 125 lokacija širom sveta, što Bosch čini jednim od najinovativnijih brendova današnjice.",
   "text do kraja bosch": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Bosch potražite na našoj ",
   "link do proizvodjaca text bosch": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url bosch": "https://www.prodavnicaalata.rs/proizvodjaci/bosch/",
   "BoschMetaTitle": "Bosch alati prodavnica - Srbija, Beograd | Stridon Group",
   "BoschMetaDescription": "Saznajte sve o Bosch alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -155,7 +159,6 @@
   "text pasusa 3 stanley": "Stanley nudi širok asortiman ručnih alata za različite primene, od stolarije do obrade metala i merenja.\n\nMeđu najpoznatijim proizvodima nalaze se blanjalice, testere, lenjiri, ugaonici, dleta, odvijači, kao i razni drugi alati za ličnu i profesionalnu upotrebu.\n\nZa obradu drveta, Stanley nudi precizne testere, dleta i metre koji omogućavaju kontrolisano sečenje i oblikovanje materijala.\n\nNjihovi metri i libele, kao što su modeli iz FatMax serije, omogućavaju tačna merenja u zahtevnim uslovima rada.\n\nU oblasti obrade metala, Stanley proizvodi efikasne makaze, turpije i druge alate koji osiguravaju preciznu završnu obradu.\n\nStanley alati su prepoznati kao kvalitetno rešenje za profesionalce i hobiste širom sveta.",
   "text do kraja stanley": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Stanley potražite na našoj ",
   "link do proizvodjaca text stanley": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url stanley": "https://www.prodavnicaalata.rs/proizvodjaci/stanley/",
   "StanleyMetaTitle": "Stanley alati prodavnica - Srbija, Beograd | Stridon Group",
   "StanleyMetaDescription": "Saznajte sve o Stanley alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -168,7 +171,6 @@
   "text pasusa 3 rems": "REMS nudi kompletan asortiman alata i mašina za obradu cevi, namenjenih profesionalcima u instalaterskoj industriji. Njihovi proizvodi obuhvataju mašine za navojno rezanje i valjanje, kao i elektro-hidraulične alate za obradu navoja. Tu su i različiti alati za sečenje cevi, od ručnih rezača, preko električnih i pneumatskih testera, pa sve do baterijskih uređaja za kružno sečenje.\n\nZa dodatnu obradu cevi, REMS nudi rešenja za fazetiranje i uklanjanje ivica, kao i širok spektar alata za montažu, uključujući švedske i pumpne ključeve, akumulatorske bušilice, kao i uređaje za ispitivanje pritiska, kako električne tako i ručne.\n\nU oblasti zavarivanja i lemljenja, REMS je razvio efikasna rešenja kao što su električne klešta za lemljenje, turbo plamenici i kvalitetni materijali za lemljenje. Za potrebe savijanja cevi, dostupni su kako ručni tako i hidraulični savijači, koji omogućavaju precizan i lak rad na terenu.\n\nPored toga, REMS se ističe i alatima za rad sa radijalnim i aksijalnim spajanjima, uključujući akumulatorske i elektro-hidraulične prese, kao i ekspanzione alate. Za potrebe održavanja, REMS nudi opremu za inspekciju i čišćenje cevi, poput inspekcijskih kamera, mašina za čišćenje i alata za zavarivanje plastičnih cevi.",
   "text do kraja rems": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda REMS potražite na našoj ",
   "link do proizvodjaca text rems": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url rems": "https://www.prodavnicaalata.rs/proizvodjaci/rems/",
   "REMSMetaTitle": "REMS alati prodavnica - Srbija, Beograd | Stridon Group",
   "REMSMetaDescription": "Saznajte sve o REMS alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -183,7 +185,6 @@
   "text pasusa 4 wiha": "Wiha je više puta nagrađena za dizajn svojih proizvoda, tehničke inovacije i društvenu odgovornost. Kompanija je osvojila brojne prestižne nagrade, uključujući oko 20 iF nagrada, od kojih je jedna zlatna nagrada za Wiha držač bitova sa magazinom, kao i desetine Red Dot nagrada, uključujući prestižnu Red Dot Best of the Best nagradu.\n\nPored toga, Wiha je od 2010. godine glavni sponzor regionalnog košarkaškog tima Wiha Panthers Schwenningen, čime pokazuje svoju posvećenost društvenoj odgovornosti i promociji sportskih aktivnosti.",
   "text do kraja wiha": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Wiha potražite na našoj ",
   "link do proizvodjaca text wiha": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url wiha": "https://www.prodavnicaalata.rs/proizvodjaci/wiha/",
   "WihaMetaTitle": "Wiha alati prodavnica - Srbija, Beograd | Stridon Group",
   "WihaMetaDescription": "Saznajte sve o Wiha alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -198,7 +199,6 @@
   "text pasusa 4 knipex": "U sedištu firme u Vupertalu nalazi se Knipex muzej, posvećen istoriji ručnih alata i razvoja alata kroz vreme. Na dva sprata, posetioci mogu videti alate, mašine, rekonstruisana radna mesta i predmete iz svakodnevnog života koji oslikavaju bogatu tradiciju nemačke alatničarske industrije.\n\nMuzej je otvoren za javnost jednom godišnje tokom manifestacije Wuppertal-24h-live, dok su grupne posete moguće uz prethodnu najavu tokom cele godine.",
   "text do kraja knipex": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Knipex potražite na našoj ",
   "link do proizvodjaca text knipex": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url knipex": "https://www.prodavnicaalata.rs/proizvodjaci/knipex/",
   "KnipexMetaTitle": "Knipex alati prodavnica - Srbija, Beograd | Stridon Group",
   "KnipexMetaDescription": "Saznajte sve o Knipex alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -213,7 +213,6 @@
   "text pasusa 4 gtv": "Zadovoljan kupac je glavni prioritet kompanije GTV. Zato nude sveobuhvatnu korisničku podršku tokom cele saradnje, od izbora nameštajskih okova do instalacije LED rasvete. Tim stručnjaka pruža pomoć u odabiru optimalnog rešenja, brzo procesira porudžbine i organizuje efikasnu isporuku.\n\nGTV podržava svoje B2B partnere kroz pouzdanu platformu, tehničku dokumentaciju, vizualizacije i marketinške materijale. Njihovi savetnici su eksperti u oblasti nameštajske galanterije i LED osvetljenja, a govore više jezika, kako bi komunikacija sa kupcima iz različitih zemalja bila što jednostavnija.\n\nPoslovni partneri mogu računati na personalizovanu marketinšku podršku, savete o asortimanu i znanje o tržišnim trendovima. GTV ne samo da prodaje proizvode, oni grade dugoročne odnose sa svojim klijentima i doprinose uspehu svakog projekta.",
   "text do kraja gtv": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda GTV potražite na našoj ",
   "link do proizvodjaca text gtv": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url gtv": "https://www.prodavnicaalata.rs/proizvodjaci/gtv/",
   "GTVMetaTitle": "GTV alati prodavnica - Srbija, Beograd | Stridon Group",
   "GTVMetaDescription": "Saznajte sve o GTV alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -226,7 +225,6 @@
   "text pasusa 3 max": "MAX je postao sinonim za inovacije u oblasti alata, bio je prvi na svetu koji je razvio eksericu za krovove (1982), baterijski alat za vezivanje armature (1993), kao i kompresore i pneumatske ekserice visokog pritiska (1994).\n\nOvi alati su prepoznati među profesionalcima zbog svoje pouzdanosti, dugotrajnosti i ergonomije.\n\nIndustrijski alati MAX uključuju čvrste, ali lagane uređaje specijalno razvijene za primenu u građevinskoj industriji.\n\nAsortiman obuhvata pneumatske ekserice, kompresore visokog pritiska (do 20 bara), alate za metal i beton, kao i dodatke za efikasno izvođenje radova na terenu.\n\nKancelarijska divizija kompanije MAX nudi širok spektar uređaja, među kojima su poznate heftalice „Flat Clinch“ i „Integral“ koje se koriste širom sveta u štamparijama i kancelarijama.\n\nMAX je poznat i po uređajima za obradu čekova namenjenim finansijskom sektoru, kao i sistemima za štampanje i rezanje etiketa, oznaka i kablova, koji nalaze primenu u industrijskim i obrazovnim okruženjima.\n\nMAX alati, kancelarijska oprema i uređaji za specijalizovanu upotrebu nude kompletna rešenja za profesionalce iz različitih sektora.\n\nNjihov širok asortiman čini ih pouzdanim partnerom za sve koji traže kvalitet, preciznost i inovaciju.",
   "text do kraja max": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda MAX potražite na našoj ",
   "link do proizvodjaca text max": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url max": "https://www.prodavnicaalata.rs/proizvodjaci/max/",
   "MAXMetaTitle": "MAX alati prodavnica - Srbija, Beograd | Stridon Group",
   "MAXMetaDescription": "Saznajte sve o MAX alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -239,7 +237,6 @@
   "text pasusa 3 hogert": "Högert Technik nudi širok spektar proizvoda koji obuhvataju ručne alate, kao što su odvijači, ključevi, klešta i merni instrumenti, dizajnirani za precizan, dugotrajan i profesionalan rad.\n\nU ponudi su i električni alati koji omogućavaju efikasno izvođenje zadataka u različitim radnim uslovima.\n\nPored alata, Högert razvija i visokokvalitetnu zaštitnu opremu, radne rukavice, zaštitne naočare, šlemove i radnu obuću.\n\nOva oprema je dizajnirana da pruži maksimalnu sigurnost i udobnost korisnicima u industrijskim i građevinskim okruženjima.\n\nPoseban akcenat stavljen je na izbor sirovina: ugljenični čelik koji se koristi u proizvodnji ručnih alata osigurava otpornost, čvrstoću i dug vek trajanja.\n\nHögert Technik sarađuje isključivo sa renomiranim industrijskim partnerima, proveravajući svaki korak u lancu snabdevanja kako bi garantovao alat visokog kvaliteta i pouzdanog porekla.\n\nSvi Högert alati i proizvodi poseduju relevantne sertifikate kvaliteta, uključujući TÜV Rheinland i VDE, kao i usklađenost sa zahtevima DIN standarda Nemačkog instituta za standardizaciju.\n\nOvi sertifikati potvrđuju da su Högert proizvodi u skladu sa najvišim standardima sigurnosti i performansi.",
   "text do kraja hogert": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Högert Technik potražite na našoj ",
   "link do proizvodjaca text hogert": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url hogert": "https://www.prodavnicaalata.rs/proizvodjaci/hogert/",
   "HogertMetaTitle": "Högert alati prodavnica - Srbija, Beograd | Stridon Group",
   "HogertMetaDescription": "Saznajte sve o Högert alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -254,7 +251,6 @@
   "text pasusa 4 wera": "Kao dokaz kvaliteta i inovacija, Wera Tools je dobitnik brojnih nagrada u oblasti dizajna i upravljanja brendom. Među najvažnijima su iF Product Design Award (1997, 2009, 2012, 2013, 2015. uključujući Zlatnu nagradu), Red Dot Design Award („Best of the Best“ u 2014. i nagrada 2015), i German Design Award 2015. godine.\n\nU oblasti komunikacije, Wera je takođe nagrađena Red Dot Design Award 2014. godine, a u upravljanju brendom, German Brand Award tri godine zaredom (2015–2017). Kompanija je 2007. godine proglašena za Top Innovator-a, dok je 2016. i 2021. godine osvojila prvo mesto u industrijskoj kategoriji Partner des Fachhandels.",
   "text do kraja wera": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Wera potražite na našoj ",
   "link do proizvodjaca text wera": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url wera": "https://www.prodavnicaalata.rs/proizvodjaci/wera/",
   "WeraMetaTitle": "Wera alati prodavnica - Srbija, Beograd | Stridon Group",
   "WeraMetaDescription": "Saznajte sve o Wera alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -267,7 +263,6 @@
   "text pasusa 3 rubi": "RUBI nudi širok spektar alata i mašina, od osnovnih ručnih rezača za pločice do specijalizovanih električnih uređaja za sečenje keramike i kamena.\n\nNjihovi ručni rezači predstavljaju siguran i precizan alat za profesionalce, bez oštrih delova koji bi mogli ugroziti bezbednost korisnika. RUBI električni rezači omogućavaju efikasno i precizno sečenje različitih materijala, uključujući granit i mermer.\n\nDodatno, RUBI asortiman obuhvata dijamantske sečice za mokro i suvo sečenje. Ove sečice su dostupne u prečnicima od 115 mm do 350 mm i kompatibilne su sa gotovo svim vrstama materijala, što ih čini idealnim izborom za razne tipove keramičarskih radova.",
   "text do kraja rubi": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda RUBI potražite na našoj ",
   "link do proizvodjaca text rubi": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url rubi": "https://www.prodavnicaalata.rs/proizvodjaci/rubi/",
   "RUBIMetaTitle": "RUBI alati prodavnica - Srbija, Beograd | Stridon Group",
   "RUBIMetaDescription": "Saznajte sve o RUBI alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -280,7 +275,6 @@
   "text pasusa 3 senco": "SENCO nudi širok spektar alata za pričvršćivanje, uključujući pneumatske alate, pištolje za ekserke, klamerice, spajalice i kompresore.\n\nNjihov asortiman zadovoljava potrebe stolara, građevinara i profesionalaca iz svih oblasti.\n\nSENCO pneumatski alati i pričvršćivači omogućavaju precizno i čvrsto povezivanje materijala, čak i u najzahtevnijim uslovima rada.\n\nBrzo punjenje i ergonomski dizajn omogućavaju dugotrajan rad bez umora.\n\nNjihovi kompaktni i pouzdani kompresori olakšavaju svakodnevne zadatke, dok su SENCO ekseri i spajalice savršeno usklađeni sa alatima, za maksimalnu pouzdanost i vrhunske rezultate.",
   "text do kraja senco": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda SENCO potražite na našoj ",
   "link do proizvodjaca text senco": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url senco": "https://www.prodavnicaalata.rs/proizvodjaci/senco/",
   "SENCOMetaTitle": "SENCO alati prodavnica - Srbija, Beograd | Stridon Group",
   "SENCOMetaDescription": "Saznajte sve o SENCO alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -293,7 +287,6 @@
   "text pasusa 3 black+decker": "Black+Decker nudi izuzetno širok asortiman proizvoda, uključujući električne alate, akumulatorske alate, opremu za baštu i uređaje za čišćenje. Njihovi alati su dizajnirani za profesionalce, hobiste, ali i za svakodnevnu upotrebu u domaćinstvu.\n\nElektrični alati kao što su bušilice, testerice, brusilice i odvijači poznati su po pouzdanosti i ergonomiji. Akumulatorski alati, koji koriste naprednu litijum-jonsku tehnologiju, pružaju visoke performanse bez potrebe za kablovima. Alati su laki za upotrebu i brzo se pune, što ih čini idealnim za rad na terenu i kod kuće.\n\nU segmentu alata za baštu, Black+Decker nudi kosilice, trimere, duvače lišća i testere za grane, sve dizajnirano da olakša održavanje dvorišta. Pored toga, kompanija nudi i kućne uređaje za čišćenje poput usisivača i paročistača, koji garantuju visok nivo higijene u domu.\n\nBlack+Decker alati kombinuju funkcionalnost, izdržljivost i modernu tehnologiju, čime zadovoljavaju širok spektar potreba potrošača širom sveta.",
   "text do kraja black+decker": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Black+Decker potražite na našoj ",
   "link do proizvodjaca text black+decker": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url black+decker": "https://www.prodavnicaalata.rs/proizvodjaci/black-decker/",
   "BlackDeckerMetaTitle": "Black+Decker alati prodavnica - Srbija, Beograd | Stridon Group",
   "BlackDeckerMetaDescription": "Saznajte sve o Black+Decker alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -306,7 +299,6 @@
   "text pasusa 3 mtx": "Asortiman MTX alata obuhvata veliki broj proizvoda, uključujući osnovne ručne alate, profesionalne alate, kao i alate za specijalizovanu upotrebu. Zahvaljujući konkurentnim cenama i kvalitetnoj izradi, MTX alati su idealni za veleprodajne kupce i krajnje korisnike. U ponudi se nalaze alati za domaćinstvo, građevinske radove, baštovanstvo i profesionalne primene, što ih čini jednim od najtraženijih brendova u kategoriji alata na tržištu.",
   "text do kraja mtx": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda MTX potražite na našoj ",
   "link do proizvodjaca text mtx": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url mtx": "https://www.prodavnicaalata.rs/proizvodjaci/mtx/",
   "MTXMetaTitle": "MTX alati prodavnica - Srbija, Beograd | Stridon Group",
   "MTXMetaDescription": "Saznajte sve o MTX alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -319,7 +311,6 @@
   "text pasusa 3 sparta": "U širokom asortimanu Sparta alata nalaze se raznovrsni ručni alati poput ključeva, odvijača, klešta, skalpela, turpija i uglomera, kao i alati za obradu drveta i stolarski pribor. Takođe nude i pištolje za silikon koji se često koriste u montažama i završnim radovima. Pored toga, Sparta u svojoj ponudi ima i baštenski alat i osnovne mašine za rad u kućnim uslovima i oko dvorišta. \n\nProizvodi brenda Sparta razvijeni su posebno da zadovolje zahteve masovnog potrošača i dizajnirani su za obavljanje jednostavnih popravki kod kuće, na selu iu automobilu. Sparta alati su dostupni svima i biće korisni u svakom domaćinstvu.",
   "text do kraja sparta": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Sparta potražite na našoj ",
   "link do proizvodjaca text sparta": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url sparta": "https://www.prodavnicaalata.rs/proizvodjaci/sparta/",
   "SpartaMetaTitle": "Sparta alati prodavnica - Srbija, Beograd | Stridon Group",
   "SpartaMetaDescription": "Saznajte sve o Sparta alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -332,7 +323,6 @@
   "text pasusa 3 sg tools": "Asortiman proizvoda SG Tools uključuje dijamantske ploče i burgije koje su savršene za sve vrste radova na keramici. Dijamantske ploče su dostupne u različitim veličinama, od 115 do 400 mm, i pružaju precizno, brzo i čisto sečenje. Takođe, ploče su kompatibilne sa većinom standardnih mašina za sečenje, što ih čini praktičnim za širok spektar korisnika.\n\nBurgije za keramiku SG Tools su dizajnirane za suvo bušenje i idealne su za rad sa keramičkim pločicama, porcelanom i drugim tvrdim materijalima.",
   "text do kraja sg tools": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda SG Tools potražite na našoj ",
   "link do proizvodjaca text sg tools": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url sg tools": "https://www.prodavnicaalata.rs/proizvodjaci/sg-tools/",
   "SGToolsMetaTitle": "SG Tools alati prodavnica - Srbija, Beograd | Stridon Group",
   "SGToolsMetaDescription": "Saznajte sve o SG Tools alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -345,7 +335,6 @@
   "text pasusa 3 karcher": "Kärcher nudi bogat izbor opreme za čišćenje, uključujući čistače pod pritiskom, industrijske usisivače, parne čistače i uređaje za održavanje podova i fasada.\n\nNjihovi visokotlačni čistači su ključni proizvodi, idealni za uklanjanje tvrdokornih prljavština sa betona, pločica, kamena i drugih površina.\n\nAsortiman obuhvata profesionalne usisivače za suvo i mokro čišćenje, kao i komercijalne modele za fabrike, skladišta i kancelarije.\n\nKärcher paročistači koriste paru za dezinfekciju, uklanjajući nečistoće bez hemikalija, što ih čini idealnim za domaćinstva i zdravstvene ustanove.\n\nU ponudi su i sistemi za čišćenje podova velikih površina, kao i specijalizovani uređaji za pranje prozora i fasada.\n\nKompanija je poznata po kvalitetu i pouzdanosti, čineći Kärcher idealnim izborom kako za profesionalce, tako i za privatne korisnike koji traže vrhunske aparate za čišćenje.",
   "text do kraja karcher": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Kärcher potražite na našoj ",
   "link do proizvodjaca text karcher": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url karcher": "https://www.prodavnicaalata.rs/proizvodjaci/karcher/",
   "KarcherMetaTitle": "Kärcher alati prodavnica - Srbija, Beograd | Stridon Group",
   "KarcherMetaDescription": "Saznajte sve o Kärcher alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -358,7 +347,6 @@
   "text pasusa 3 wolfcraft": "Od 2023. godine, Wolfcraft u svojoj ponudi ima oko 3.000 proizvoda.\n\nAsortiman obuhvata alate i dodatke koji se koriste u radionici, na gradilištu i u kućnim uslovima.\n\nU ponudi su ručni alati i dodaci za električne alate.\n\nWolfcraft radionički alati uključuju stege, šablone, uglomere i vinkel.\n\nOvi alati su prisutni u stolarskim radionicama i deo su redovne upotrebe.\n\nAlati su razvijeni za različite namene u okviru tehničkih i praktičnih poslova.",
   "text do kraja wolfcraft": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda Wolfcraft potražite na našoj ",
   "link do proizvodjaca text wolfcraft": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url wolfcraft": "https://www.prodavnicaalata.rs/proizvodjaci/wolfcraft/",
   "WolfcraftMetaTitle": "Wolfcraft alati prodavnica - Srbija, Beograd | Stridon Group",
   "WolfcraftMetaDescription": "Saznajte sve o Wolfcraft alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
@@ -371,11 +359,11 @@
   "text pasusa 3 kwb": "KWB nudi širok i raznovrstan asortiman proizvoda koji obuhvata sve što je potrebno za sečenje, bušenje, brušenje, kao i veliki izbor radioničkih alata koji olakšavaju svakodnevne zadatke u radionici, na gradilištu ili kod kuće.\n\nNjihova ponuda uključuje pribor za električne alate, kao i ručne alate, razvijene s ciljem da optimizuju rad i unaprede krajnji rezultat. Više od 5.500 proizvoda u KWB katalogu uključuje i patentirane proizvode, čime se dodatno potvrđuje fokus na inovacije i razvoj proizvoda.\n\nKontinuirano unapređenje ponude omogućava KWB Germany GmbH da bude konkurentna na dinamičnom tržištu alata i pribora za električne alate, uz stalno osvežavanje programa i razvoj novih rešenja.",
   "text do kraja kwb": "Kompletan asortiman i informacije o dostupnosti proizvoda brenda KWB potražite na našoj ",
   "link do proizvodjaca text kwb": "zvaničnoj internet prodavnici",
-  "link do proizvodjaca url kwb": "https://www.prodavnicaalata.rs/proizvodjaci/kwb/",
   "KWBMetaTitle": "KWB alati prodavnica - Srbija, Beograd | Stridon Group",
   "KWBMetaDescription": "Saznajte sve o KWB alatu, od bogate istorije i inovacija do asortimana proizvoda i zanimljivosti. Pronađite prave informacije o proizvodima koji Vas zanimaju.✅",
 
-  "Radno Vreme": "Radno Vreme",
+  "Call centar": "Call centar",
+  "Radno Vreme": "Radno vreme",
   "Informacije": "Informacije",
   "Kompanija": "Kompanija",
 
@@ -427,6 +415,7 @@
   "key16": "Misija SG Servisa je da vaše električne alate održi u najboljem mogućem stanju kako biste mogli nesmetano da obavljate svoje radne zadatke. Bez obzira na vaše potrebe, SG Servis je tu da vam pomogne. Kontaktirajte SG Servis ili ih posetite na adresi",
 
   "Zatražite pristup B2B platformi": "Zatražite pristup B2B platformi",
+  "B2BRequestAccessTextBelowTitle": "Popunite formular i naš tim će Vas kontaktirati u najkraćem mogućem roku.",
   "Imate B2B nalog sa nama? Idite na portal.": "Imate B2B nalog sa nama? Idite na portal.",
   "Link ka portalu": "Link ka portalu",
   "Ime": "Ime",
@@ -437,7 +426,47 @@
   "Matični broj firme": "Matični broj firme",
   "Kontakt telefon": "Kontakt telefon",
   "Potvrdi": "Potvrdi",
-  "Forma je uspešno potvrđena": "Forma je uspešno potvrđena",
+  "B2BFormSubmitMessage": "Vaš zahtev je uspešno poslat. Naša podrška će vas uskoro kontaktirati.",
+
+  "emailValidation": {
+    "invalidEmail": "Neispravan email",
+    "emailRequired": "Email je obavezan"
+  },
+  "companyNameValidation": {
+    "minLength": "Naziv firme mora imati najmanje 1 karaktera",
+    "maxLength": "Naziv firme ne sme imati više od 100 karaktera",
+    "required": "Naziv firme je obavezan"
+  },
+  "companyAddressValidation": {
+    "minLength": "Adresa firme mora imati najmanje 1 karaktera",
+    "maxLength": "Adresa firme ne sme imati više od 100 karaktera",
+    "required": "Adresa firme je obavezna"
+  },
+  "pibValidation": {
+    "minLength": "PIB mora imati najmanje 9 cifara",
+    "maxLength": "PIB ne sme imati više od 9 cifara",
+    "required": "PIB je obavezan"
+  },
+  "companyRegistrationNumberValidation": {
+    "minLength": "Matični broj mora imati najmanje 8 cifara",
+    "maxLength": "Matični broj ne sme imati više od 8 cifara",
+    "required": "Matični broj je obavezan"
+  },
+  "contactPhoneValidation": {
+    "minLength": "Kontakt telefon mora imati najmanje 6 karaktera",
+    "maxLength": "Kontakt telefon ne sme imati više od 36 karaktera",
+    "required": "Kontakt telefon je obavezan"
+  },
+  "firstNameValidation": {
+    "minLength": "Ime mora imati najmanje 2 karaktera",
+    "maxLength": "Ime ne sme imati više od 100 karaktera",
+    "required": "Ime je obavezno"
+  },
+  "lastNameValidation": {
+    "minLength": "Prezime mora imati najmanje 2 karaktera",
+    "maxLength": "Prezime ne sme imati više od 100 karaktera",
+    "required": "Prezime je obavezno"
+  },
 
   "Ponedeljak - Petak: 8:00 - 18:00h": "Ponedeljak - Petak: 8:00 - 18:00h",
   "Subota: 9:00 - 15:00h": "Subota: 9:00 - 15:00h",

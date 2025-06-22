@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
+import { Button } from "../buttons/Button";
 
 const katalozi = [
   {
@@ -9,7 +10,8 @@ const katalozi = [
     title: "Dewalt najprodavanije 2023",
     slug: "/brendovi/dewalt",
     img: "/dewalt-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/1RuMzUGAO4sBoTsBYby_-qGIo5jlFirfP/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/1RuMzUGAO4sBoTsBYby_-qGIo5jlFirfP/view?usp=share",
     color: "#ECFF44",
   },
   {
@@ -17,7 +19,8 @@ const katalozi = [
     title: "Dewalt ograničeno izdanje",
     slug: "/brendovi/dewalt",
     img: "/dewalt-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/13y1RuBHKXtsudGYMzIi67ym4w5rb3jew/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/13y1RuBHKXtsudGYMzIi67ym4w5rb3jew/view?usp=share",
     color: "#ECFF44",
   },
   {
@@ -25,7 +28,8 @@ const katalozi = [
     title: "Bosch DIY merni alati",
     slug: "/brendovi/bosch",
     img: "/bosch-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/1BK8KkkGrq2n9J9x3M0ZysdQ24MdhjAqe/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/1BK8KkkGrq2n9J9x3M0ZysdQ24MdhjAqe/view?usp=share",
     //zelena
     color: "#05B920",
   },
@@ -34,7 +38,8 @@ const katalozi = [
     title: "Bosch pribor",
     slug: "/brendovi/bosch",
     img: "/bosch-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/1oVevfXbBrPfboKAJIQA62reSEowTyio7/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/1oVevfXbBrPfboKAJIQA62reSEowTyio7/view?usp=share",
     //crvena
     color: "#FF0000",
   },
@@ -43,7 +48,8 @@ const katalozi = [
     title: "Bosch Dremel",
     slug: "/brendovi/bosch",
     img: "/bosch-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/1xdVeZDXHNFhN3AwYE6XSW5dzVtcB_hSG/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/1xdVeZDXHNFhN3AwYE6XSW5dzVtcB_hSG/view?usp=share",
     //plava
     color: "#2967FF",
   },
@@ -52,7 +58,8 @@ const katalozi = [
     title: "Bosch EXPERT",
     slug: "/brendovi/bosch",
     img: "/bosch-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/1rpkCB0d9SXnuQ3Pg1WXzV3yUKCLhICSz/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/1rpkCB0d9SXnuQ3Pg1WXzV3yUKCLhICSz/view?usp=share",
     color: "#2967FF",
   },
   {
@@ -60,7 +67,8 @@ const katalozi = [
     title: "Bosch Plavi",
     slug: "/brendovi/bosch",
     img: "/bosch-logo.svg",
-    pdf_slug: "https://drive.google.com/file/d/1lEwdsuzYNCMiq997mi2cS2jvPXfc6p88/view?usp=share",
+    pdf_slug:
+      "https://drive.google.com/file/d/1lEwdsuzYNCMiq997mi2cS2jvPXfc6p88/view?usp=share",
     color: "#2967FF",
   },
   {
@@ -265,8 +273,8 @@ const katalozi = [
 
 const Card = ({ translate }: any) => {
   return (
-    <div className="max-w-[1140px] mx-auto p-2 text-center ">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 sm:gap-5">
+    <div className="max-w-[1140px] mx-auto px-2 py-10 text-center ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-5">
         {katalozi.map((catalog) => (
           <div
             key={catalog.id}
@@ -276,42 +284,30 @@ const Card = ({ translate }: any) => {
             }}
           >
             <div>
-            <div className="ml-4 w-[150px]">
-              <Image
-                src={catalog.img}
-                alt={catalog.title}
-                width={1000}
-                height={563}
-              />
-            </div>
-            <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
-              {translate(`${catalog.title}`)}
-            </div>
-            <div className="border-b pb-2 text-start mx-4 text-base mb-2  ">
-            {translate(`${catalog.id}`)}
-            </div>
+              <div className="ml-4 w-[150px]">
+                <Image
+                  src={catalog.img}
+                  alt={catalog.title}
+                  width={1000}
+                  height={563}
+                />
+              </div>
+              <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
+                {translate(`${catalog.title}`)}
+              </div>
+              <div className="border-b border-stone-700 pb-4 text-start mx-4 text-base mb-4  ">
+                {translate(`${catalog.id}`)}
+              </div>
             </div>
 
-            <div className="absolut bottom-">
-            <Link href={`${catalog.slug}`}>
-              <div className="text-start ml-4 mb-6 mt-6 text-lg font-semibold flex items-center hover:text-slate-700 duration-200">
-                {" "}
-                {translate("Idi na brend")} <FaArrowRight className="ml-1 text-sm" />{" "}
+            <div>
+              <Link className="text-start ml-4 mb-4 text-lg font-semibold flex items-center w-fit hover:text-stone-800 duration-200" href={`${catalog.slug}`}>
+                  <span>{translate("Idi na brend")}</span>
+                  <FaArrowRight className="ml-1 text-sm" />
+              </Link>
+              <div className="text-start ml-4 mb-4">
+                <Button label={translate("Pogledaj PDF katalog")} externalUrl={`${catalog.pdf_slug}`} isSecondary={true}></Button>
               </div>
-            </Link>
-            <div className="text-start ml-4 mb-2 text-lg font-semibold">
-                <div className="nav-link pb-4 pt-4 pr-7 hover:text-slate-700 duration-200 ">
-                    <a
-                      href={`${catalog.pdf_slug}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <button className="p-3 px-8 items-center bg-zinc-950 text-gray-200 hover:bg-slate-700 duration-200 rounded">
-                        {translate("Pogledaj PDF Katalog")}{" "}
-                      </button>
-                    </a>
-                </div>
-            </div>
             </div>
           </div>
         ))}

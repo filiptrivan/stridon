@@ -12,6 +12,7 @@ const BrendoviImg: React.FC<BrendoviImgProps> = ({ brendoviImg, title }) => {
         priority 
         src={brendoviImg}
         alt={title}
+        title={title}
         layout="responsive"
       />
     </div>

@@ -20,39 +20,45 @@ const TestimonList = ({ records, translate }: Props) => {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 4,
       slidesToSlide: 1,
+      partialVisibilityGutter: 40,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 3,
       slidesToSlide: 1,
+      partialVisibilityGutter: 30,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 2,
       slidesToSlide: 1,
+      partialVisibilityGutter: 20,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
       slidesToSlide: 1,
+      partialVisibilityGutter: -15,
     },
   };
  
   return (
-    <div className="w-full bg-slate-100">
-      <h2 className="text-2xl sm:text-3xl  font-medium text-center pb-2 pt-16">
-        {translate("Šta naši saradnici kažu o nama")}
-      </h2>
-      <div className="max-w-[1140px] mx-auto px- sm:px-6 text-center mt-10">
+    <div className="w-full text-center">
+      <div className="max-w-[1140px] mx-auto py-20 px-4 text-center">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
+          {translate("Šta naši saradnici kažu o nama")}
+        </h2>
+        <div className="text-base sm:text-lg mb-9">
+          {translate('HomepageTestimonialsTextBelowTitle')}
+        </div>
         <Carousel
           ssr={true}
           className="z-[1]"
-          centerMode={true}
           keyBoardControl={true}
+          partialVisible={true}
           infinite={true}
           draggable={false}
           responsive={responsive}

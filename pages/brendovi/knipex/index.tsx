@@ -1,15 +1,17 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import knipex from "../../../public/knipex-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const knipexKatalogVrednosti = [
   {
     imeKataloga: "Knipex katalog",
     rutaKataloga: "https://drive.google.com/file/d/1YgRP6jOCM6D4apCU-mRM_3mNn2yWiTpN/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -20,10 +22,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Knipex"}
-        opis={translate("Knipex alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Knipex"}
+        opisNaHomePage={translate("Knipex alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={knipexKatalogVrednosti}
       />
       <TextoviISlike
@@ -39,7 +41,7 @@ translate={translate}
       slika1={knipex}
       textDoKraja={translate("text do kraja knipex")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text knipex")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url knipex")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/knipex/"
       />
     </div>
   );

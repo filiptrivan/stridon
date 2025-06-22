@@ -1,9 +1,10 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import sgtools from "../../../public/sg-tools-logo.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return ( 
@@ -14,11 +15,9 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"SG Tools"}
-        opis={translate("SG Tools alati - Uvoznik za Srbiju")}
-        naslovButtona={""}
-translate={translate}
-        catalogueValues={""}
+        titleNaHomePage={"SG Tools"}
+        opisNaHomePage={translate("SG Tools alati - Uvoznik za Srbiju")}
+        translate={translate}
       />
       <TextoviISlike
        title={"SG Tools"}
@@ -31,7 +30,7 @@ translate={translate}
        slika1={sgtools}
        textDoKraja={translate("text do kraja sg tools")}
        linkDoProizvodjacaText={translate("link do proizvodjaca text sg tools")}
-       linkDoProizvodjacaUrl={translate("link do proizvodjaca url sg tools")}
+       linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/sg-tools/"
       />
     </div>
   );

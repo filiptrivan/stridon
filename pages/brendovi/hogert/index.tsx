@@ -1,9 +1,10 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import hogert from "../../../public/hogert-logo.png";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const hogertKatalogVrednosti = [
   {
     imeKataloga: "Hogert električarski alati",
@@ -22,6 +23,7 @@ const hogertKatalogVrednosti = [
     rutaKataloga: "https://drive.google.com/file/d/1hFN3PuIF2n-LS86D3cGeI0sIlmXoMUTe/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -32,9 +34,9 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-      translate={translate}
-        title={"Hogert"}
-        opis={translate("Hogert alati - Uvoznik za Srbiju")}
+        translate={translate}
+        titleNaHomePage={"Hogert"}
+        opisNaHomePage={translate("Hogert alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         catalogueValues={hogertKatalogVrednosti}
       />
@@ -49,7 +51,7 @@ const index = () => {
       slika1={hogert}
       textDoKraja={translate("text do kraja hogert")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text hogert")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url hogert")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/hogert-technik/"
       />
     </div>
   );

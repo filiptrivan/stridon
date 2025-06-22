@@ -1,9 +1,10 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import wiha from "../../../public/wiha-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const wihaKatalogVrednosti = [
   {
     imeKataloga: "Wiha katalog",
@@ -18,6 +19,7 @@ const wihaKatalogVrednosti = [
     rutaKataloga: "https://drive.google.com/file/d/1gfqq3qQRqocaSAXVwRm-3s9lGDpyDNbn/view?usp=drive_link",
   },
 ];
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -28,10 +30,10 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Wiha"}
-        opis={translate("Wiha alati - Uvoznik za Srbiju")}
+        titleNaHomePage={"Wiha"}
+        opisNaHomePage={translate("Wiha alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
-translate={translate}
+        translate={translate}
         catalogueValues={wihaKatalogVrednosti}
       />
       <TextoviISlike
@@ -47,7 +49,7 @@ translate={translate}
       slika1={wiha}
       textDoKraja={translate("text do kraja wiha")}
       linkDoProizvodjacaText={translate("link do proizvodjaca text wiha")}
-      linkDoProizvodjacaUrl={translate("link do proizvodjaca url wiha")}
+      linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/wiha/"
       />
     </div>
   );

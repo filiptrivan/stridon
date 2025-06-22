@@ -1,9 +1,10 @@
-import Hero from "../../../components/brendovi/Hero";
 import TextoviISlike from "../../../components/brendovi/TextoviISlike";
 import Head from "next/head";
 import senco from "../../../public/senco-logo.svg";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "@/components/Hero";
+
 const index = () => {
     const { t: translate } = useTranslation("home");
   return (
@@ -14,11 +15,9 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        title={"Senco"}
-        opis={translate("Senco alati - Uvoznik za Srbiju")}
-        naslovButtona={""}
-translate={translate}
-        catalogueValues={""}
+        titleNaHomePage={"Senco"}
+        opisNaHomePage={translate("Senco alati - Uvoznik za Srbiju")}
+        translate={translate}
       />
       <TextoviISlike
        title={"Senco"}
@@ -31,7 +30,7 @@ translate={translate}
        slika1={senco}
        textDoKraja={translate("text do kraja senco")}
        linkDoProizvodjacaText={translate("link do proizvodjaca text senco")}
-       linkDoProizvodjacaUrl={translate("link do proizvodjaca url senco")}
+       linkDoProizvodjacaUrl="https://www.prodavnicaalata.rs/proizvodjaci/senco/"
       />
     </div>
   );

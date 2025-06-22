@@ -1,10 +1,10 @@
 import React from 'react'
 import CardList from '../../components/components/CardList'
 import {Brendovi} from "../../data/Brendovi"
-import HeroWithoutButton from '../../components/HeroWithoutButton'
 import { useTranslation } from "next-i18next";
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import Head from 'next/head';
+import Hero from '@/components/Hero';
 
 const index = () => {
 
@@ -13,14 +13,19 @@ const index = () => {
   return (
     <div>
       <Head>
-        <title>Uvoznik najboljih svetskih brendova | Stridon Group DOO</title>
+        <title>Uvoznik i distributer najboljih brendova | Stridon Group</title>
         <meta
           name="description"
-          content="Otkrijte našu široku paletu renomiranih brendova i proizvoda koji će vas oduševiti. Pouzdanost, stručnost i vrhunska usluga, samo sa Stridon Group DOO.✅"
+          content="Brendovi mašina, pribora, električnog, ručnog i akumulatorskog alata koje uvozimo i za koje je naša firma uvoznik i distributer na teritoriji Srbije."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeroWithoutButton titleNaHomePage={translate('brendovi')} opisNaHomePage={translate('opisNaHomePage')} />
+      <Hero 
+      translate={translate}
+      titleNaHomePage={translate('BrandsHeroTitle')}
+      opisNaHomePage={translate('BrandsHeroDescription')} 
+      bigTitle={false}
+      />
       <CardList Brendovi = {Brendovi} translate={translate}/>
     </div>
   )
