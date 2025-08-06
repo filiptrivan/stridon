@@ -62,16 +62,15 @@ const FormaZaPopunjavanje = ({translate}: any) => {
       prezime: "",
     },
     onSubmit: (values, { resetForm }) => {
-      setSubmitted(true);
-      resetForm();
       formSubmit();
     },
     validationSchema: validacija,
   });
 
   const formSubmit = async () => {
+    setLoading(true);
+
     try {
-      setLoading(true);
       const { data } = await axios.post("/api/b2b/mail", {
         email: formik.values.email,
         naziv_firme: formik.values.naziv_firme,
@@ -83,11 +82,13 @@ const FormaZaPopunjavanje = ({translate}: any) => {
         prezime: formik.values.prezime,
       });
       setError("");
-      setLoading(false);
-    } catch (error: any) {
-      setLoading(false);
+    } 
+    catch (error: any) {
       setError(error.response.data.message);
-    }
+    } 
+
+    setLoading(false);
+    setSubmitted(true);
   };
 
   const handleClose = (
@@ -108,14 +109,6 @@ const FormaZaPopunjavanje = ({translate}: any) => {
       <div className="text-base sm:text-lg mb-9">
         {translate('B2BRequestAccessTextBelowTitle')}
       </div>
-      {error && (
-        <div
-          className="text-white p-2 bg-red-600 rounded-md mt-[-50px] absolute"
-          role="alert"
-        >
-          {error}
-        </div>
-      )}
       <form onSubmit={formik.handleSubmit}>
         <input
           type="ime"
@@ -248,8 +241,8 @@ const FormaZaPopunjavanje = ({translate}: any) => {
             horizontal: "center",
           }}
         >
-          <SnackbarAlert onClose={handleClose} severity="success" className="bg-green-600 text-white text-base">
-            {translate("B2BFormSubmitMessage")}
+          <SnackbarAlert onClose={handleClose} severity={error ? 'error' : 'success'} className="text-white text-base">
+            {error ? translate("B2BFormSubmitErrorMessage") : translate("B2BFormSubmitMessage")}
           </SnackbarAlert>
         </Snackbar>
       </form>

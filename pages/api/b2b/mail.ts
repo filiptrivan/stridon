@@ -19,8 +19,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       case "POST": {
         await sendMail(
           "B2B Prijava",
-          // "aleksatrivan@gmail.com",
-          "filiptrivan5@gmail.com",
+          <string>process.env.B2B_RECIPIENT,
           `
           EMAIL: ${email}\n
           NAZIV FIRME: ${naziv_firme}\n

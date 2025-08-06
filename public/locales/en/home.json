@@ -427,6 +427,7 @@
   "Kontakt telefon": "Contact phone",
   "Potvrdi": "Confirm",
   "B2BFormSubmitMessage": "Your request has been successfully sent. Our support team will contact you shortly.",
+  "B2BFormSubmitErrorMessage": "Something went wrong while submitting the form. Please try again. If the issue persists, contact support at filiptrivan5@gmail.com",
 
   "emailValidation": {
     "invalidEmail": "Invalid email",

@@ -427,6 +427,7 @@
   "Kontakt telefon": "Kontakt telefon",
   "Potvrdi": "Potvrdi",
   "B2BFormSubmitMessage": "Vaš zahtev je uspešno poslat. Naša podrška će vas uskoro kontaktirati.",
+  "B2BFormSubmitErrorMessage": "Dogodila se greška prilikom slanja. Molimo pokušajte ponovo. Ako se problem ponovi, obratite se podršci na filiptrivan5@gmail.com",
 
   "emailValidation": {
     "invalidEmail": "Neispravan email",

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import FormaZaPopunjavanje from "@/components/b2b/FormaZaPopunjavanje";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
