@@ -9,7 +9,7 @@ function ErrorPage() {
       <div className="max-w-[1140px] m-auto py-24 my-10 border-2 p-16 text-center">
         {/* naslov */}
         <div className="text-3xl font-medium py-24">
-          {translate("Došlo je do greške, molimo Vas kontaktirajte podršku")}
+          {translate("NotFoundErrorMessage")}
         </div>
       </div>
     </div>
