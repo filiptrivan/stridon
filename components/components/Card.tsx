@@ -11,8 +11,7 @@ const Card = ({ title, image, slug, translate }: any) => {
         src={image} 
         alt={title} 
         width={150}
-        height={79}
-        className="w-[150px] h-[79px]"
+        height={75}
         />
       </div>
       <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
