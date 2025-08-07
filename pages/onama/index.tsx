@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 import Mapa from "@/components/Mapa";
+import Hero from "@/components/Hero";
 
 const index = () => {
   const { t: translate } = useTranslation("home");
@@ -16,9 +17,12 @@ const index = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-3xl sm:text-5xl font-medium text-center pb-12 pt-12">
-        {translate("O nama")}
-      </h1>
+
+      <Hero
+        translate={translate}
+        titleNaHomePage={translate("O nama")}
+        opisNaHomePage={translate("AboutUsDescription")}
+      />
       <div className="max-w-[1140px] mx-auto p-3 flex flex-col-reverse lg:flex-row mb-10 sm:mb-20">
         <div className="max-w-full lg:max-w-[570px] lg:mb-0">
           <Image
