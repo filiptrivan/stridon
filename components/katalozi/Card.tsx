@@ -288,8 +288,8 @@ const Card = ({ translate }: any) => {
                 <Image
                   src={catalog.img}
                   alt={catalog.title}
-                  width={1000}
-                  height={563}
+                  width={150}
+                  height={75}
                 />
               </div>
               <div className="text-start ml-4 mb-2 text-3xl  whitespace-nowrap overflow-hidden text-ellipsis">
