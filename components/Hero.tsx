@@ -61,7 +61,7 @@ const Hero: React.FC<HeroProps> = ({
         onClose={handleOnClose}
         visible={visible}
       />
-      <img className="absolute right-0 w-[600px] opacity-10 sm:opacity-30 rotate-45 sm:rotate-0" src="/drill-electric.svg" alt="Drill as header's background" />
+      <img className="absolute right-0 w-[600px] opacity-10 sm:opacity-30 rotate-45 sm:rotate-0" src="/drill-electric.svg" alt="Drill as hero's background" />
     </div>
   );
 };
