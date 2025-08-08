@@ -29,7 +29,7 @@ const index = () => {
         catalogueValues={maxKatalogVrednosti}
       />
       <TextoviISlike
-      title={"MAX"}
+      title={"MAX Logo"}
       naslovPasusa1={translate("naslov pasusa 1 max")}
       naslovPasusa2={translate("naslov pasusa 2 max")}
       naslovPasusa3={translate("naslov pasusa 3 max")}

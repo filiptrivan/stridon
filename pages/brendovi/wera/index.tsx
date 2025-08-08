@@ -22,7 +22,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        titleNaHomePage={"Wera"}
+        titleNaHomePage={"Wera Logo"}
         opisNaHomePage={translate("Wera alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}

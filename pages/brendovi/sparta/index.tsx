@@ -22,7 +22,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        titleNaHomePage={"Sparta"}
+        titleNaHomePage={"Sparta Logo"}
         opisNaHomePage={translate("Sparta alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}

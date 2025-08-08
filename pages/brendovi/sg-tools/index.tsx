@@ -20,7 +20,7 @@ const index = () => {
         translate={translate}
       />
       <TextoviISlike
-       title={"SG Tools"}
+       title={"SG Tools Logo"}
        naslovPasusa1={translate("naslov pasusa 1 sg tools")}
        naslovPasusa2={translate("naslov pasusa 2 sg tools")}
        naslovPasusa3={translate("naslov pasusa 3 sg tools")}
