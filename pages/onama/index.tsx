@@ -23,7 +23,7 @@ const index = () => {
         titleNaHomePage={translate("O nama")}
         opisNaHomePage={translate("AboutUsDescription")}
       />
-      <div className="max-w-[1140px] py-20 px-4 mx-auto flex flex-col-reverse lg:flex-row">
+      <div className="max-w-[1140px] py-20 px-4 mx-auto flex flex-col-reverse lg:flex-row gap-10">
         <div className="max-w-full lg:max-w-[570px] lg:mb-0">
           <Image
             priority
@@ -34,7 +34,7 @@ const index = () => {
             height={1080}
           />
         </div>
-        <div className="max-w-full lg:max-w-[570px] lg:pl-10">
+        <div className="max-w-full lg:max-w-[570px]">
           <h2 className="sm:text-3xl text-2xl font-medium">
             {translate("Osnivanje")}
           </h2>
@@ -46,9 +46,9 @@ const index = () => {
           </p>
         </div>
       </div>
-      <div className="w-full bg-stone-50 ">
-        <div className="max-w-[1140px] py-20 px-4 mx-auto flex flex-col lg:flex-row">
-          <div className="max-w-full lg:max-w-[570px] lg:pr-10">
+      <div className="w-full bg-stone-50">
+        <div className="max-w-[1140px] py-20 px-4 mx-auto flex flex-col lg:flex-row gap-10">
+          <div className="max-w-full lg:max-w-[570px]">
             <h2 className="sm:text-3xl text-2xl font-medium">
               {translate("Veleprodaja i maloprodaja")}
             </h2>
@@ -70,7 +70,7 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1140px] py-20 px-4 mx-auto flex flex-col-reverse lg:flex-row">
+      <div className="max-w-[1140px] py-20 px-4 mx-auto flex flex-col-reverse lg:flex-row gap-10">
         <div className="max-w-full lg:max-w-[570px] lg:mb-0">
           <Image
             priority
@@ -81,7 +81,7 @@ const index = () => {
             height={1080}
           />
         </div>
-        <div className="max-w-full lg:max-w-[570px] lg:pl-10">
+        <div className="max-w-full lg:max-w-[570px]">
           <h2 className="sm:text-3xl text-2xl font-medium">
             {translate("Internet prodavnica")}
           </h2>
