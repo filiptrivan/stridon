@@ -60,21 +60,21 @@ const Brendovi: React.FC<BrendoviProps> = ({ title, textBelowTitle }) => {
           swipeable={false}
         >
           <Link href={"/brendovi/dewalt"}>
-            <BrendoviImg brendoviImg={dewaltLogo} title="DeWalt"/>
+            <BrendoviImg brendoviImg={dewaltLogo} title="DeWalt Logo"/>
           </Link>
           <Link href={"/brendovi/bosch"}>
-            <BrendoviImg brendoviImg={boschLogo} title="Bosch"/>
+            <BrendoviImg brendoviImg={boschLogo} title="Bosch Logo"/>
           </Link>
         
-          <BrendoviImg brendoviImg={makitaLogo} title="Makita"/>
-          <BrendoviImg brendoviImg={metaboLogo} title="Metabo"/>
-          <BrendoviImg brendoviImg={festoolLogo} title="Festool"/>
+          <BrendoviImg brendoviImg={makitaLogo} title="Makita Logo"/>
+          <BrendoviImg brendoviImg={metaboLogo} title="Metabo Logo"/>
+          <BrendoviImg brendoviImg={festoolLogo} title="Festool Logo"/>
 
           <Link href={"/brendovi/rubi"}>
-            <BrendoviImg brendoviImg={rubiLogo} title="Rubi"/>
+            <BrendoviImg brendoviImg={rubiLogo} title="Rubi Logo"/>
           </Link>
           <Link href={"/brendovi/senco"}>
-            <BrendoviImg brendoviImg={sencoLogo} title="Senco"/>
+            <BrendoviImg brendoviImg={sencoLogo} title="Senco Logo"/>
           </Link>
         </Carousel>
       </div>

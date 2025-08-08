@@ -29,7 +29,7 @@ const index = () => {
         catalogueValues={mtxKatalogVrednosti}
       />
       <TextoviISlike
-      title={"MTX"}
+      title={"MTX Logo"}
       naslovPasusa1={translate("naslov pasusa 1 mtx")}
       naslovPasusa2={translate("naslov pasusa 2 mtx")}
       naslovPasusa3={translate("naslov pasusa 3 mtx")}
