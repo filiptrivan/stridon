@@ -6,7 +6,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "@/components/Hero";
 
 const kontakt = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("kontakt");
+  const { t: translateMapa } = useTranslation("Mapa");
   return (
     <div>
       <Head>
@@ -29,14 +30,14 @@ const kontakt = () => {
         translate={translate}
       />
       <Mapa
-        translate={translate}
+        translate={translateMapa}
         email={"office@stridon.rs"}
         kontakt={"011/2886-509"}
         adresa={"Vojislava Ilića 141g"}
         map_src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90567.5103257972!2d20.365943012636272!3d44.81678309583739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7163a682044d%3A0x2a07a073e49f36ae!2sStridon%20group!5e0!3m2!1sen!2snl!4v1682522248790!5m2!1sen!2snl"
       />
       <Mapa
-        translate={translate}
+        translate={translateMapa}
         email={"office@stridon.rs"}
         kontakt={"011/210-0230"}
         adresa={"Altina - Ugrinovačka 212"}
@@ -51,7 +52,7 @@ export default kontakt;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["kontakt", "NavBar", "Mapa", "Footer"])),
     },
   };
 }

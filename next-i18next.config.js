@@ -3,7 +3,8 @@ module.exports = {
     locales: ["sr", "en"],
     defaultLocale: "sr",
     localeDetection: false,
-    ns: ["common", "home"],
+    ns: ["common", "home", "kontakt", 
+      "NavBar", "Mapa", "Footer"],
   },
   interpolation: {
     escapeValue: false,
