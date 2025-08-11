@@ -5,7 +5,7 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("b2b");
 
   return (
     <div>
@@ -33,7 +33,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["b2b", "NavBar", "Footer"])),
     },
   };
 }
