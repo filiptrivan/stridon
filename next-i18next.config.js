@@ -4,7 +4,7 @@ module.exports = {
     defaultLocale: "sr",
     localeDetection: false,
     ns: ["common", "home", "error", "kontakt", "b2b", 
-      "NavBar", "Mapa", "Footer"],
+      "FormaZaPopunjavanje", "NavBar", "Mapa", "Footer"],
   },
   interpolation: {
     escapeValue: false,

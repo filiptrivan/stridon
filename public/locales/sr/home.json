@@ -392,59 +392,6 @@
   "key15": " SG Servis koristi isključivo kvalitetne zamenske delove kako bi obezbedili dugotrajnost i pouzdanost vaših alata.",
   "key16": "Misija SG Servisa je da vaše električne alate održi u najboljem mogućem stanju kako biste mogli nesmetano da obavljate svoje radne zadatke. Bez obzira na vaše potrebe, SG Servis je tu da vam pomogne. Kontaktirajte SG Servis ili ih posetite na adresi",
 
-  "Zatražite pristup B2B platformi": "Zatražite pristup B2B platformi",
-  "B2BRequestAccessTextBelowTitle": "Popunite formular i naš tim će Vas kontaktirati u najkraćem mogućem roku.",
-  "Ime": "Ime",
-  "Prezime": "Prezime", 
-  "Naziv firme": "Naziv firme",
-  "Adresa firme": "Adresa firme",
-  "Pib firme": "Pib firme",
-  "Matični broj firme": "Matični broj firme",
-  "Kontakt telefon": "Kontakt telefon",
-  "Potvrdi": "Potvrdi",
-  "B2BFormSubmitMessage": "Vaš zahtev je uspešno poslat. Naša podrška će vas uskoro kontaktirati.",
-  "B2BFormSubmitErrorMessage": "Dogodila se greška prilikom slanja. Molimo pokušajte ponovo. Ako se problem ponovi, obratite se podršci na filiptrivan5@gmail.com",
-
-  "emailValidation": {
-    "invalidEmail": "Neispravan email",
-    "emailRequired": "Email je obavezan"
-  },
-  "companyNameValidation": {
-    "minLength": "Naziv firme mora imati najmanje 1 karaktera",
-    "maxLength": "Naziv firme ne sme imati više od 100 karaktera",
-    "required": "Naziv firme je obavezan"
-  },
-  "companyAddressValidation": {
-    "minLength": "Adresa firme mora imati najmanje 1 karaktera",
-    "maxLength": "Adresa firme ne sme imati više od 100 karaktera",
-    "required": "Adresa firme je obavezna"
-  },
-  "pibValidation": {
-    "minLength": "PIB mora imati najmanje 9 cifara",
-    "maxLength": "PIB ne sme imati više od 9 cifara",
-    "required": "PIB je obavezan"
-  },
-  "companyRegistrationNumberValidation": {
-    "minLength": "Matični broj mora imati najmanje 8 cifara",
-    "maxLength": "Matični broj ne sme imati više od 8 cifara",
-    "required": "Matični broj je obavezan"
-  },
-  "contactPhoneValidation": {
-    "minLength": "Kontakt telefon mora imati najmanje 6 karaktera",
-    "maxLength": "Kontakt telefon ne sme imati više od 36 karaktera",
-    "required": "Kontakt telefon je obavezan"
-  },
-  "firstNameValidation": {
-    "minLength": "Ime mora imati najmanje 2 karaktera",
-    "maxLength": "Ime ne sme imati više od 100 karaktera",
-    "required": "Ime je obavezno"
-  },
-  "lastNameValidation": {
-    "minLength": "Prezime mora imati najmanje 2 karaktera",
-    "maxLength": "Prezime ne sme imati više od 100 karaktera",
-    "required": "Prezime je obavezno"
-  },
-
   "Ponedeljak - Petak: 8:00 - 18:00h": "Ponedeljak - Petak: 8:00 - 18:00h",
   "Subota: 9:00 - 15:00h": "Subota: 9:00 - 15:00h",
   "Nedelja: Neradan dan": "Nedelja: Neradan dan",
