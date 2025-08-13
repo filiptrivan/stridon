@@ -6,7 +6,8 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("katalozi");
+  const { t: translateCard } = useTranslation("kataloziCard");
   return (
     <div>
       <Head>
@@ -22,7 +23,7 @@ const index = () => {
       titleNaHomePage={translate("KataloziHeader")}
       opisNaHomePage={translate("opisNaKatalozima")}
       />
-      <Card translate={translate} />
+      <Card translate={translateCard} />
     </div>
   );
 };
@@ -31,7 +32,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["katalozi", "kataloziCard", "NavBar", "Footer"])),
     },
   };
 }

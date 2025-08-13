@@ -3,8 +3,8 @@ module.exports = {
     locales: ["sr", "en"],
     defaultLocale: "sr",
     localeDetection: false,
-    ns: ["common", "home", "error", "kontakt", "b2b", 
-      "FormaZaPopunjavanje", "NavBar", "Mapa", "Footer"],
+    ns: ["common", "home", "error", "kontakt", "b2b", "katalozi",
+      "FormaZaPopunjavanje", "kataloziCard", "NavBar", "Mapa", "Footer"],
   },
   interpolation: {
     escapeValue: false,
