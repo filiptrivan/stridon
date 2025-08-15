@@ -13,7 +13,7 @@ const knipexKatalogVrednosti = [
 ];
 
 const index = () => {
-    const { t: translate } = useTranslation("home");
+    const { t: translate } = useTranslation("knipex");
   return (
     <div>
       <Head>
@@ -51,7 +51,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["knipex", "NavBar", "Footer"])),
     },
   };
 }
