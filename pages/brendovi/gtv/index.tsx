@@ -14,7 +14,7 @@ const gtvKatalogVrednosti = [
 ];
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("gtv");
   return (
     <div>
       <Head>
@@ -52,7 +52,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["gtv", "NavBar", "Footer"])),
     },
   };
 }
