@@ -19,7 +19,7 @@ const karcherKatalogVrednosti = [
 ];
 
 const index = () => {
-  const { t: translate } = useTranslation("home");  
+  const { t: translate } = useTranslation("karcher");  
 
   return (
     <div>
@@ -56,7 +56,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["karcher", "NavBar", "Footer"])),
     },
   };
 }

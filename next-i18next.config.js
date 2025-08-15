@@ -4,7 +4,7 @@ module.exports = {
     defaultLocale: "sr",
     localeDetection: false,
     ns: ["common", "home", "error", "kontakt", "b2b", "katalozi", "onama", "podacizaidentifikaciju", "politikaprivatnosti", "servis",
-      "brendovi", "black-and-decker", "bosch", "dewalt", "gtv", "hogert",
+      "brendovi", "black-and-decker", "bosch", "dewalt", "gtv", "hogert", "karcher",
       "FormaZaPopunjavanje", "kataloziCard", "brendoviCard", "NavBar", "Mapa", "Footer"],
   },
   interpolation: {
