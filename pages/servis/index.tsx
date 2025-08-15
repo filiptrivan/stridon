@@ -8,7 +8,8 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("servis");
+  const { t: translateMapa } = useTranslation("Mapa");
   return (
     <div>
       <Head>
@@ -30,7 +31,7 @@ const index = () => {
       textBelowTitle={translate("ServiceTextBelowBrandsThatWeService")}
       />
       <Mapa
-        translate={translate}
+        translate={translateMapa}
         email={"sgservis22@gmail.com"}
         kontakt={"+381653378812"}
         adresa={"Vojislava Ilića 141b"}
@@ -46,7 +47,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", 'NavBar', 'Footer'])),
+      ...(await serverSideTranslations(locale, ["servis", "NavBar", "Footer", "Mapa"])),
     },
   };
 }

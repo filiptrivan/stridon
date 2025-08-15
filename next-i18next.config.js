@@ -3,7 +3,7 @@ module.exports = {
     locales: ["sr", "en"],
     defaultLocale: "sr",
     localeDetection: false,
-    ns: ["common", "home", "error", "kontakt", "b2b", "katalozi", "onama", "podacizaidentifikaciju", "politikaprivatnosti",
+    ns: ["common", "home", "error", "kontakt", "b2b", "katalozi", "onama", "podacizaidentifikaciju", "politikaprivatnosti", "servis",
       "FormaZaPopunjavanje", "kataloziCard", "NavBar", "Mapa", "Footer"],
   },
   interpolation: {
