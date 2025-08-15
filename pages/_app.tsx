@@ -12,14 +12,16 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import dynamic from "next/dynamic";
 function App({ Component, pageProps }: AppProps) {
   const { t: translate } = useTranslation("home");
+  const { t: translateNavBar } = useTranslation("NavBar");
+  const { t: translateFooter } = useTranslation("Footer");
   const { locale } = useRouter();
   const { statusCode } = pageProps;
   return (
     <main>
-      {statusCode != 404 && <Navbar locale={locale} translate={translate} />}
+      {statusCode != 404 && <Navbar locale={locale} translate={translateNavBar} />}
       <Component {...pageProps} />
       {/* <Analytics/> */}
-      {statusCode != 404 && <Footer translate={translate} />}
+      {statusCode != 404 && <Footer translate={translateFooter} />}
     </main>
   );
 }
@@ -28,7 +30,7 @@ export default appWithTranslation(App);
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
     },
   };
 }

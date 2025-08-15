@@ -4,7 +4,7 @@ import Head from "next/head";
 import Text from '../../components/politika-privatnosti/text'
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("politikaprivatnosti");
   return (
     <div className="px-2">
       <Head>
@@ -23,7 +23,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["politikaprivatnosti", "NavBar", "Footer"])),
     },
   };
 }
