@@ -13,7 +13,7 @@ const mtxKatalogVrednosti = [
 ];
 
 const index = () => {
-    const { t: translate } = useTranslation("home");
+    const { t: translate } = useTranslation("mtx");
   return (
     <div>
       <Head>
@@ -49,7 +49,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["mtx", "NavBar", "Footer"])),
     },
   };
 }
