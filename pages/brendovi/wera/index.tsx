@@ -13,7 +13,7 @@ const weraKatalogVrednosti = [
 ];
 
 const index = () => {
-    const { t: translate } = useTranslation("home");
+    const { t: translate } = useTranslation("wera");
   return (
     <div>
       <Head>
@@ -22,7 +22,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        titleNaHomePage={"Wera Logo"}
+        titleNaHomePage={"Wera"}
         opisNaHomePage={translate("Wera alati - Uvoznik za Srbiju")}
         naslovButtona={translate("Pogledaj PDF kataloge")}
         translate={translate}
@@ -49,7 +49,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["wera", "NavBar", "Footer"])),
     },
   };
 }
