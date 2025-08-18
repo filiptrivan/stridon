@@ -1,0 +1,54 @@
+{
+  "Zatražite pristup B2B platformi": "Request access to the B2B platform",
+  "B2BRequestAccessTextBelowTitle": "Please fill out the form and our team will contact you as soon as possible.",
+  "Ime": "Name",
+  "Prezime": "Surname",
+  "Naziv firme": "Company name",
+  "Adresa firme": "Company address",
+  "Pib firme": "Company tax identification number (TIN)",
+  "Matični broj firme": "Company registration number",
+  "Kontakt telefon": "Contact phone",
+  "Potvrdi": "Confirm",
+  "B2BFormSubmitMessage": "Your request has been successfully sent. Our support team will contact you shortly.",
+  "B2BFormSubmitErrorMessage": "Something went wrong while submitting the form. Please try again. If the issue persists, contact support at filiptrivan5@gmail.com",
+  
+  "emailValidation": {
+    "invalidEmail": "Invalid email",
+    "emailRequired": "Email is required"
+  },
+  "companyNameValidation": {
+    "minLength": "Company name must be at least 1 characters long",
+    "maxLength": "Company name cannot exceed 100 characters",
+    "required": "Company name is required"
+  },
+  "companyAddressValidation": {
+    "minLength": "Company address must be at least 1 characters long",
+    "maxLength": "Company address cannot exceed 100 characters",
+    "required": "Company address is required"
+  },
+  "pibValidation": {
+    "minLength": "PIB must be at least 9 digits long",
+    "maxLength": "PIB cannot exceed 9 digits",
+    "required": "PIB is required"
+  },
+  "companyRegistrationNumberValidation": {
+    "minLength": "Registration number must be at least 8 digits long",
+    "maxLength": "Registration number cannot exceed 8 digits",
+    "required": "Registration number is required"
+  },
+  "contactPhoneValidation": {
+    "minLength": "Contact phone must be at least 6 characters long",
+    "maxLength": "Contact phone cannot exceed 36 characters",
+    "required": "Contact phone is required"
+  },
+  "firstNameValidation": {
+    "minLength": "First name must be at least 2 characters long",
+    "maxLength": "First name cannot exceed 100 characters",
+    "required": "First name is required"
+  },
+  "lastNameValidation": {
+    "minLength": "Last name must be at least 2 characters long",
+    "maxLength": "Last name cannot exceed 100 characters",
+    "required": "Last name is required"
+  }
+}

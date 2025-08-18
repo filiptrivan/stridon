@@ -17,7 +17,7 @@ const dewaltKatalogVrednosti = [
 ];
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("dewalt");
   return (
     <div>
       <Head>
@@ -55,7 +55,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["dewalt", "NavBar", "Footer"])),
     },
   };
 }

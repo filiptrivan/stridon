@@ -6,7 +6,8 @@ import Mapa from "@/components/Mapa";
 import Hero from "@/components/Hero";
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("onama");
+  const { t: translateMapa } = useTranslation("Mapa");
   return (
     <div>
       <Head>
@@ -95,7 +96,7 @@ const index = () => {
       </div>
       <div className="bg-stone-50">
         <Mapa
-          translate={translate}
+          translate={translateMapa}
           email={"office@stridon.rs"}
           kontakt={"011/2886-509"}
           adresa={"Vojislava Ilića 141g"}
@@ -103,7 +104,7 @@ const index = () => {
         />
       </div>
       <Mapa
-        translate={translate}
+        translate={translateMapa}
         email={"office@stridon.rs"}
         kontakt={"011/210-0230"}
         adresa={"Altina - Ugrinovačka 212"}
@@ -118,7 +119,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["onama", "Mapa", "NavBar", "Footer"])),
     },
   };
 }

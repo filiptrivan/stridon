@@ -5,7 +5,8 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("b2b");
+  const { t: translateForm } = useTranslation("FormaZaPopunjavanje");
 
   return (
     <div>
@@ -24,7 +25,7 @@ const index = () => {
         externalUrl="https://b2b.wings.rs/stridon"
         translate={translate}
       />
-      <FormaZaPopunjavanje translate={translate} />
+      <FormaZaPopunjavanje translate={translateForm} />
     </div>
   );
 };
@@ -33,7 +34,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["b2b", "FormaZaPopunjavanje", "NavBar", "Footer"])),
     },
   };
 }

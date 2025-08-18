@@ -8,7 +8,8 @@ import Hero from '@/components/Hero';
 
 const index = () => {
 
-  const {t:translate} = useTranslation('home')
+  const {t:translate} = useTranslation("brendovi");
+  const {t:translateCard} = useTranslation("brendoviCard");
   
   return (
     <div>
@@ -22,11 +23,11 @@ const index = () => {
       </Head>
       <Hero 
       translate={translate}
-      titleNaHomePage={translate('BrandsHeroTitle')}
-      opisNaHomePage={translate('BrandsHeroDescription')} 
+      titleNaHomePage={translate("BrandsHeroTitle")}
+      opisNaHomePage={translate("BrandsHeroDescription")} 
       bigTitle={false}
       />
-      <CardList Brendovi = {Brendovi} translate={translate}/>
+      <CardList Brendovi = {Brendovi} translate={translateCard}/>
     </div>
   )
 }
@@ -36,7 +37,7 @@ export default index
 export async function getStaticProps({locale}:any) {
   return{
     props:{
-      ...(await serverSideTranslations(locale,['home']))
+      ...(await serverSideTranslations(locale,["brendovi", "brendoviCard", "NavBar", "Footer"]))
     }
   }
 }

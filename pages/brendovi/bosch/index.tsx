@@ -35,7 +35,7 @@ const boschKatalogVrednosti = [
 ];
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("bosch");
   return (
     <div>
       <Head>
@@ -74,7 +74,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["bosch", "NavBar", "Footer"])),
     },
   };
 }

@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 function ErrorPage() {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("error");
 
   return (
     <div>
@@ -19,7 +19,7 @@ export default ErrorPage;
 export async function getStaticProps({locale}:any) {
   return{
     props:{
-      ...(await serverSideTranslations(locale,["home"]))
+      ...(await serverSideTranslations(locale,["error", "NavBar", "Footer"]))
     }
   }
 }

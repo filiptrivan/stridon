@@ -6,12 +6,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "@/components/Hero";
 
 const index = () => {
-  const { t: translate } = useTranslation("home");
+  const { t: translate } = useTranslation("black-and-decker");
   return (
     <div>
       <Head>
-        <title>{translate('BlackDeckerMetaTitle')}</title>
-        <meta name="description" content={translate('BlackDeckerMetaDescription')} />
+        <title>{translate("BlackDeckerMetaTitle")}</title>
+        <meta name="description" content={translate("BlackDeckerMetaDescription")} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
@@ -40,7 +40,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["black-and-decker", "NavBar", "Footer"])),
     },
   };
 }

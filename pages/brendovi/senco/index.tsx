@@ -6,7 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "@/components/Hero";
 
 const index = () => {
-    const { t: translate } = useTranslation("home");
+    const { t: translate } = useTranslation("senco");
   return (
     <div>
       <Head>
@@ -40,7 +40,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["senco", "NavBar", "Footer"])),
     },
   };
 }
