@@ -1,10 +1,11 @@
 {
   "hero opis": "Najbolja prodavnica alata u Srbijii. Veleprodaja, maloprodaja i online prodaja električnog i ručnog alata, zaštitne oprema za profesionalce i majstore, mašina i pribora.",
   "naslov buttona": "Online prodavnica",
+
   "brendovi": "Brendovi",
   "HomepageBrandsTextBelowTitle": "Stridon nudi alate i opremu najpoznatijih brendova kao što su DeWalt, Stanley, Bosch, Makita, Knipex, Wiha, Hogert, GTV, REMS, MAX, Wera, Black & Decker, Rubi, Senco i mnogi drugi. Kao zvanični uvoznik i distributer za Srbiju, garantujemo originalan kvalitet, dostupnost proizvoda i tehničku podršku za svaki brend koji zastupamo.",
-  "HomepageTestimonialsTextBelowTitle": "Naša snaga leži u poverenju koje gradimo sa partnerima. U nastavku pročitajte šta naši saradnici misle o radu sa nama — njihovo zadovoljstvo je naša najveća preporuka.",
   "svi brendovi": "Svi brendovi", 
+
   "Besplatna dostava": "Besplatna dostava",
   "Za kupovinu preko 15.000 RSD": "Za kupovinu preko 15.000 RSD",
   "Brza isporuka": "Brza isporuka",
@@ -13,14 +14,18 @@
   "Garancija na kupljene mašine": "Garancija na kupljene mašine",
   "Čekovima građana": "Čekovima građana",
   "Na 4 rate bez kamate": "Na 4 rate bez kamate",
+
   "galerija": "Galerija",
+  
   "Brojevi govore umesto nas": "Brojevi govore umesto nas",
   "Veleprodajnih kupaca": "Veleprodajnih kupaca",
   "Dilera širom Srbije": "Dilera širom Srbije",
   "Zadovoljstvo uslugom": "Zadovoljstvo uslugom",
   "Brendova koje zastupamo": "Brendova koje zastupamo",
-  "Šta naši saradnici kažu o nama": "Šta naši saradnici kažu o nama",
 
+  "Šta naši saradnici kažu o nama": "Šta naši saradnici kažu o nama",
+  "HomepageTestimonialsTextBelowTitle": "Naša snaga leži u poverenju koje gradimo sa partnerima. U nastavku pročitajte šta naši saradnici misle o radu sa nama — njihovo zadovoljstvo je naša najveća preporuka.",
+  
   "IN GRADNJA": "\"Veliki profesionalci i dobri ljudi, uvek spremni da ispune zahteve i rokove. Sve preporuke za bilo koju vrstu saradnje\"",
   "ENTERIJER JANKOVIC": "\"Vrlo dobro iskustvo u radu sa firmom Stridon Group. Odlični u komunikaciji, drže se rokova, uvek imaju dobar profesionalni savet i alat na lageru!\"",
   "HIDRO INA": "\"Firma koja uvek zna šta našoj firmi treba. Neprocenjivi prijateljski saveti i rešenja koja samo veliki profesionalci u svom poslu znaju. Sve preporuke za Stridon!\"",
@@ -31,13 +36,5 @@
   "COLLIGO ARS": "\"Verni saradnik na svim našim projektima. U dugogodišnjoj saradnji nas ni jednom nisu izneverili. Preporuke za firmu Stridon!\"",
 
   "Ko su naši klijenti?": "Ko su naši klijenti?",
-  "klijenti": "Poznate renomirane domaće firme iz oblasti građevine, stolarstva, keramike i drugih. Mala i srednja preduzeća kao i individualci koji imaju potrebu za kvalitetnim alatom i brzom uslugom!",
-
-  "Adrese maloprodaja:":"Adrese maloprodaja:",
-  "Adresa maloprodaje 1: Ugrinovačka 212": "Adresa maloprodaje 1: Ugrinovačka 212",
-  "Adresa maloprodaje 2: Vojislava Ilića 141g": "Adresa maloprodaje 2: Vojislava Ilića 141g",
-  "Kontakt telefoni:": "Kontakt telefoni:",
-  "Fiksni telefon internet prodaja: 011/4520-171,": "Fiksni telefon internet prodaja: 011/4520-171,",
-  "Maloprodaja Ugrinovačka: 011/210-0230,": "Maloprodaja Ugrinovačka: 011/210-0230,",
-  "Maloprodaja Vojislava Ilića: 011/2886-509 (samo profesionalni alati)": "Maloprodaja Vojislava Ilića: 011/2886-509 (samo profesionalni alati)"
+  "klijenti": "Poznate renomirane domaće firme iz oblasti građevine, stolarstva, keramike i drugih. Mala i srednja preduzeća kao i individualci koji imaju potrebu za kvalitetnim alatom i brzom uslugom!"
 }
