@@ -13,7 +13,7 @@ const remsKatalogVrednosti = [
 ];
 
 const index = () => {
-    const { t: translate } = useTranslation("rem");
+    const { t: translate } = useTranslation("rems");
   return (
     <div>
       <Head>
@@ -49,7 +49,7 @@ export default index;
 export async function getStaticProps({ locale }: any) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["rem", "NavBar", "Footer"])),
+      ...(await serverSideTranslations(locale, ["rems", "NavBar", "Footer"])),
     },
   };
 }
