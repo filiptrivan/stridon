@@ -13,7 +13,8 @@ const remsKatalogVrednosti = [
 ];
 
 const index = () => {
-    const { t: translate } = useTranslation("rems");
+  const { t: translate } = useTranslation("rems");
+  
   return (
     <div>
       <Head>
