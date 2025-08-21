@@ -11,11 +11,12 @@ interface MapaProps {
   kontakt: string;
   adresa: string;
   map_src: string;
+  title: string;
   translate: any;
   isTransparentBackground?: boolean;
 }
 
-const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate, isTransparentBackground = true }) => {
+const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, title, translate, isTransparentBackground = true }) => {
   return (
     <div className={`${isTransparentBackground ? '' : 'bg-stone-50'}`}>
       <div className="max-w-[1140px] mx-auto py-20 px-4 text-center flex flex-col-reverse md:flex-row">
@@ -57,6 +58,7 @@ const Mapa: React.FC<MapaProps> = ({ email, kontakt, adresa, map_src, translate,
         <div className="w-full rounded-md overflow-hidden">
           <iframe
             src={map_src}
+            title={title}
             loading="lazy"
             height="100%"
             width="100%"
