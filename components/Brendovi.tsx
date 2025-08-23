@@ -47,7 +47,7 @@ const Brendovi: React.FC<BrendoviProps> = ({ translate }) => {
       slidesToSlide: 1,
     },
   };
-  
+
   return (
     <div id="brands" className="max-w-[1140px] mx-auto py-20 px-4 text-center">
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
@@ -63,9 +63,15 @@ const Brendovi: React.FC<BrendoviProps> = ({ translate }) => {
           centerMode={true}
           keyBoardControl={true}
           infinite={true}
-          draggable={false}
           responsive={responsive}
-          swipeable={false}
+          autoPlay={true}
+          autoPlaySpeed={3000}
+          pauseOnHover
+          arrows={false}
+          draggable={true}
+          swipeable={true}
+          customTransition="transform 1000ms ease-in-out"
+          transitionDuration={1000}
         >
           <Link href={"/brendovi/dewalt"}>
             <BrendoviImg brendoviImg={dewalt} title="DeWalt Logo" />
@@ -129,7 +135,7 @@ const Brendovi: React.FC<BrendoviProps> = ({ translate }) => {
         </Carousel>
       </div>
       <div className="flex justify-center">
-        <Button label={translate("svi brendovi")} url="/brendovi"/>
+        <Button label={translate("svi brendovi")} url="/brendovi" />
       </div>
     </div>
   );

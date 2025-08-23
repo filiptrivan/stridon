@@ -60,9 +60,15 @@ const TestimonList = ({ records, translate }: Props) => {
           keyBoardControl={true}
           partialVisible={true}
           infinite={true}
-          draggable={false}
+          draggable={true}
           responsive={responsive}
-          swipeable={false}
+          swipeable={true}
+          autoPlay={true}
+          autoPlaySpeed={3000}
+          pauseOnHover
+          arrows={false}
+          customTransition="transform 1000ms ease-in-out"
+          transitionDuration={1000}
         >
           {records.map((record, index) => (
             <TestimonCard
