@@ -1,95 +1,83 @@
 import React, { useEffect, useState, useRef } from "react";
-const counterData = [
-  {
-    endValue: 10630,
-    startValue: 10000,
-    label: "Veleprodajnih kupaca",
-    suffix: "+",
-  },
-  {
-    endValue: 120,
-    startValue: 0,
-    label: "Dilera širom Srbije",
-    suffix: "+",
-  },
-  {
-    endValue: 100,
-    startValue: 0,
-    label: "Zadovoljstvo uslugom",
-    suffix: "%",
-  },
-  {
-    endValue: 30,
-    startValue: 0,
-    label: "Brendova koje zastupamo",
-    suffix: "+",
-  },
-];
 
-const DynamicCounter = ({ translate }: any) => {
-  const [displayValues, setDisplayValues] = useState(
-    counterData.map((item) => item.endValue)
-  );
+interface CounterValue {
+  startValue: number;
+  endValue: number;
+  duration: number;
+  intervalId: NodeJS.Timeout | null;
+}
 
-  const [startAnimation, setStartAnimation] = useState(false);
+const DynamicCounter = ({translate}:any) => {
+  const [values, setValues] = useState<CounterValue[]>([]);
+  // This state is now our switch for SEO vs. animation
+  const [isIntersecting, setIsIntersecting] = useState(false);
   const counterSectionRef = useRef<HTMLDivElement>(null);
-  const animationTriggered = useRef(false); 
-  // This hook sets up the observer to detect when the component is visible.
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const [entry] = entries;
-        // Trigger animation only once when it becomes visible
-        if (entry.isIntersecting && !animationTriggered.current) {
-          setStartAnimation(true);
-          animationTriggered.current = true;
-        }
-      },
-      {
-        threshold: 0.5, // Start when 50% of the element is visible
-      }
-    );
 
+  // NO CHANGES to this useEffect
+  useEffect(() => {
+    const valueDisplays = document.querySelectorAll(".num");
+    const interval = 3000;
+    const newValues: CounterValue[] = [];
+    valueDisplays.forEach((valueDisplay) => {
+      const endValue = parseInt(valueDisplay.getAttribute("data-val") || "");
+      if (!isNaN(endValue)) {
+        let startValue = endValue === 10630 ? 10000 : 0;
+        newValues.push({
+          startValue,
+          endValue,
+          duration: Math.floor(interval / Math.abs(endValue - startValue)),
+          intervalId: null,
+        });
+      }
+    });
+    setValues(newValues);
+  }, []);
+
+  // NO CHANGES to this useEffect
+  useEffect(() => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5,
+    });
     if (counterSectionRef.current) {
       observer.observe(counterSectionRef.current);
     }
-
     return () => observer.disconnect();
-  }, []);
-  // This effect runs only when `startAnimation` becomes true.
+  }, [counterSectionRef]);
+
+  // NO CHANGES to this useEffect
   useEffect(() => {
-    if (!startAnimation) return;
-
-    // Reset to start values before animating for the user
-    setDisplayValues(counterData.map((item) => item.startValue));
-
-    const animationDuration = 2000; // Total animation time in ms
-
-    const intervals = counterData.map((item, index) => {
-      const range = item.endValue - item.startValue;
-      if (range <= 0) return null; // No animation needed if range is zero or negative
-
-      // Calculate the time per step to finish in `animationDuration`
-      const stepTime = Math.abs(Math.floor(animationDuration / range));
-
-      const timer = setInterval(() => {
-        setDisplayValues((prevValues) => {
-          const newValues = [...prevValues];
-          if (newValues[index] < item.endValue) {
-            newValues[index] += 1;
-          } else {
-            clearInterval(timer); // Stop when the end value is reached
-          }
-          return newValues;
-        });
-      }, stepTime);
-      return timer;
+    if (!isIntersecting) return;
+    const valueCounters = values.map((value) => {
+      return new Promise<void>((resolve) => {
+        const intervalId = setInterval(() => {
+          const newValues = [...values];
+          newValues.forEach((newValue, index) => {
+            if (newValue.startValue < newValue.endValue) {
+              newValues[index].startValue += 1;
+            } else {
+              clearInterval(newValue.intervalId as NodeJS.Timeout);
+            }
+          });
+          setValues(newValues);
+          resolve();
+        }, value.duration);
+        const newValues = [...values];
+        newValues.find((newValue) => newValue === value)!.intervalId =
+          intervalId;
+        setValues(newValues);
+      });
     });
+    Promise.all(valueCounters).then(() => setIsIntersecting(false));
+  }, [isIntersecting, values]); // Note: Added 'values' to dependency array for correctness
 
-    // Cleanup function to clear intervals if the component unmounts
-    return () => intervals.forEach((timer) => timer && clearInterval(timer));
-  }, [startAnimation]);
-
+  // MINIMAL CHANGES ARE HERE
   return (
     <div className="w-full bg-stone-50 text-center py-20 px-4">
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-14 text-primaryRed">
@@ -99,16 +87,53 @@ const DynamicCounter = ({ translate }: any) => {
         className="grid gap-10 lg:grid-cols-4 m-auto justify-center max-w-[1140px] text-center"
         ref={counterSectionRef}
       >
-        {/* 5. Dynamic Rendering from State */}
-        {counterData.map((item, index) => (
-          <h3 key={item.label}>
-            <div className="text-5xl font-medium mb-3">
-              {displayValues[index].toLocaleString()}
-              {item.suffix}
-            </div>
-            <div className="text-xl mb-3">{translate(item.label)}</div>
-          </h3>
-        ))}
+        <h3>
+          <div
+            className="text-5xl font-medium mb-3 num"
+            data-val="10630"
+          >
+            {/* If intersecting, animate. If not, show final value for SEO. */}
+            {isIntersecting && values.length > 0
+              ? values[0].startValue.toLocaleString() + '+'
+              : "10,630+"}
+          </div>
+          <div className="text-xl mb-3">{translate("Veleprodajnih kupaca")}</div>
+        </h3>
+        <h3>
+          <div
+            className="text-5xl font-medium mb-3 num"
+            data-val="120"
+          >
+            {isIntersecting && values.length > 1
+              ? values[1].startValue.toLocaleString() + '+'
+              : "120+"}
+          </div>
+          <div className="text-xl mb-3">{translate("Dilera širom Srbije")}</div>
+        </h3>
+        <h3>
+          <div
+            className="text-5xl font-medium mb-3 num"
+            data-val="100"
+          >
+            {isIntersecting && values.length > 2
+              ? values[2].startValue.toLocaleString() + '%'
+              : "100%"}
+          </div>
+          <div className="text-xl mb-3">{translate("Zadovoljstvo uslugom")}</div>
+        </h3>
+        <h3>
+          <div
+            className="text-5xl font-medium mb-3 num"
+            data-val="30"
+          >
+            {isIntersecting && values.length > 3
+              ? values[3].startValue.toLocaleString() + '+'
+              : "30+"}
+          </div>
+          <div className="text-xl mb-3">
+            {translate("Brendova koje zastupamo")}
+          </div>
+        </h3>
       </div>
     </div>
   );
