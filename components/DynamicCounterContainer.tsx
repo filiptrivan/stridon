@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DynamicCounter from "./DynamicCounter";
-
 const DynamicCounterContainer = ({translate}:any) => {
-  const [shouldRender, setShouldRender] = useState(false);
-
-  useEffect(() => {
-    setShouldRender(true);
-  }, []);
-
-  return shouldRender ? <DynamicCounter translate={translate}/> : null;
+  return <DynamicCounter translate={translate}/>;
 };
 
 export default DynamicCounterContainer;

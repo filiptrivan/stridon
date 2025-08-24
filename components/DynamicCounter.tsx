@@ -9,21 +9,23 @@ interface CounterValue {
 
 const DynamicCounter = ({translate}:any) => {
   const [values, setValues] = useState<CounterValue[]>([]);
+  // This state is now our switch for SEO vs. animation
   const [isIntersecting, setIsIntersecting] = useState(false);
   const counterSectionRef = useRef<HTMLDivElement>(null);
 
+  // NO CHANGES to this useEffect
   useEffect(() => {
     const valueDisplays = document.querySelectorAll(".num");
-    const interval = 3000; // Change this value to adjust the counting speed
+    const interval = 3000;
     const newValues: CounterValue[] = [];
     valueDisplays.forEach((valueDisplay) => {
       const endValue = parseInt(valueDisplay.getAttribute("data-val") || "");
       if (!isNaN(endValue)) {
-        let startValue = endValue === 10630 ? 10000 : 0; // Adjust the start value for 10630
+        let startValue = endValue === 10630 ? 10000 : 0;
         newValues.push({
           startValue,
           endValue,
-          duration: Math.floor(interval / Math.abs(endValue - startValue)), // Adjust the duration based on the difference
+          duration: Math.floor(interval / Math.abs(endValue - startValue)),
           intervalId: null,
         });
       }
@@ -31,6 +33,7 @@ const DynamicCounter = ({translate}:any) => {
     setValues(newValues);
   }, []);
 
+  // NO CHANGES to this useEffect
   useEffect(() => {
     const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
@@ -48,6 +51,7 @@ const DynamicCounter = ({translate}:any) => {
     return () => observer.disconnect();
   }, [counterSectionRef]);
 
+  // NO CHANGES to this useEffect
   useEffect(() => {
     if (!isIntersecting) return;
     const valueCounters = values.map((value) => {
@@ -71,8 +75,9 @@ const DynamicCounter = ({translate}:any) => {
       });
     });
     Promise.all(valueCounters).then(() => setIsIntersecting(false));
-  }, [isIntersecting]);
+  }, [isIntersecting, values]); // Note: Added 'values' to dependency array for correctness
 
+  // MINIMAL CHANGES ARE HERE
   return (
     <div className="w-full bg-stone-50 text-center py-20 px-4">
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-14 text-primaryRed">
@@ -87,7 +92,10 @@ const DynamicCounter = ({translate}:any) => {
             className="text-5xl font-medium mb-3 num"
             data-val="10630"
           >
-            {values.length > 0 ? values[0].startValue.toLocaleString()+'+' : "0"}
+            {/* If intersecting, animate. If not, show final value for SEO. */}
+            {isIntersecting && values.length > 0
+              ? values[0].startValue.toLocaleString() + '+'
+              : "10,630+"}
           </div>
           <div className="text-xl mb-3">{translate("Veleprodajnih kupaca")}</div>
         </h3>
@@ -96,7 +104,9 @@ const DynamicCounter = ({translate}:any) => {
             className="text-5xl font-medium mb-3 num"
             data-val="120"
           >
-            {values.length > 1 ? values[1].startValue.toLocaleString()+'+' : "0"}
+            {isIntersecting && values.length > 1
+              ? values[1].startValue.toLocaleString() + '+'
+              : "120+"}
           </div>
           <div className="text-xl mb-3">{translate("Dilera širom Srbije")}</div>
         </h3>
@@ -105,7 +115,9 @@ const DynamicCounter = ({translate}:any) => {
             className="text-5xl font-medium mb-3 num"
             data-val="100"
           >
-            {values.length > 2 ? values[2].startValue.toLocaleString()+'%' : "0"}
+            {isIntersecting && values.length > 2
+              ? values[2].startValue.toLocaleString() + '%'
+              : "100%"}
           </div>
           <div className="text-xl mb-3">{translate("Zadovoljstvo uslugom")}</div>
         </h3>
@@ -114,7 +126,9 @@ const DynamicCounter = ({translate}:any) => {
             className="text-5xl font-medium mb-3 num"
             data-val="30"
           >
-            {values.length > 3 ? values[3].startValue.toLocaleString()+'+' : "0"}
+            {isIntersecting && values.length > 3
+              ? values[3].startValue.toLocaleString() + '+'
+              : "30+"}
           </div>
           <div className="text-xl mb-3">
             {translate("Brendova koje zastupamo")}
