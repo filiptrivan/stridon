@@ -16,7 +16,7 @@ import InstagramImg from "./InstagramImg";
 
 const Instagram = ({ translate }: any) => {
   return (
-    <div className="w-full text-center bg-stone-50 py-20 px-4">
+    <div className="w-full text-center py-20 px-4">
       <div id="work" className="max-w-[1140px] mx-auto text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
           {translate("Ko su naši klijenti?")}

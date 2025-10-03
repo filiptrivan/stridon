@@ -36,7 +36,7 @@ const {t:translate} = useTranslation('home')
       />
       <Brendovi translate={translate}/>
       <SnageStridona translate={translate}/>
-      <Slider slides={SliderData} translate={translate}/>
+      {/* <Slider slides={SliderData} translate={translate}/> */}
       <DynamicCounterContainer translate={translate}/>
       <TestimonList records={records} translate={translate}/>
       <Instagram translate={translate}/>

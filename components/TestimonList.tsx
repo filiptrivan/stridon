@@ -46,7 +46,7 @@ const TestimonList = ({ records, translate }: Props) => {
   };
  
   return (
-    <div className="w-full text-center">
+    <div className="w-full bg-stone-50 text-center">
       <div className="max-w-[1140px] mx-auto py-20 px-4 text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primaryRed">
           {translate("Šta naši saradnici kažu o nama")}

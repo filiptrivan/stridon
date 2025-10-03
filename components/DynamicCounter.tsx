@@ -2,7 +2,7 @@ import React from "react";
 
 const DynamicCounter = ({ translate }: any) => {
   return (
-    <div className="w-full bg-stone-50 text-center py-20 px-4">
+    <div className="w-full text-center py-20 px-4">
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-14 text-primaryRed">
         {translate("Brojevi govore umesto nas")}
       </h2>
